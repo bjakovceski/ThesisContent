@@ -1,0 +1,30 @@
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {subsection}{Citation of this thesis}{vi}{section*.1}
+\contentsline {chapter}{Introduction}{1}{chapter*.5}
+\contentsline {section}{Motivation}{1}{section*.6}
+\contentsline {section}{Goals of the thesis}{1}{section*.7}
+\contentsline {section}{Thesis outline}{1}{section*.8}
+\contentsline {chapter}{\chapternumberline {1}Background and related work}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Information extraction}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}NER}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}RDF/NIF}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}DBpedia ontology}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Evaluation/training datasets}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}Domain specific NER}{3}{section.1.6}
+\contentsline {section}{\numberline {1.7}Stanford NER}{4}{section.1.7}
+\contentsline {chapter}{\chapternumberline {2}Domain specific NER}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Data pre-processing}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Types retrieval}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Domain specification}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Data transformation/output for Stanford}{6}{section.2.4}
+\contentsline {chapter}{\chapternumberline {3}Experiments}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Goals of the experiments}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}List of experiments}{7}{section.3.2}
+\protect \begingroup \let 
+\protect \begingroup \let 
+\protect \begingroup \let 
+\contentsline {section}{\numberline {3.3}Summary of results}{43}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Graphs}{43}{subsection.3.3.1}
+\contentsline {chapter}{Conclusion}{45}{chapter*.9}
+\contentsline {appendix}{\chapternumberline {A}Contents of CD}{47}{appendix.A}

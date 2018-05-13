@@ -1,0 +1,1080 @@
+% arara: xelatex
+% arara: xelatex
+% arara: xelatex
+
+% options:
+% thesis=B bachelor's thesis
+% thesis=M master's thesis
+% czech thesis in Czech language
+% english thesis in English language
+% hidelinks remove colour boxes around hyperlinks
+
+\documentclass[thesis=M,english]{FITthesis}[2012/10/20]
+
+\usepackage{graphicx} %graphics files inclusion
+% \usepackage{subfig} %subfigures
+% \usepackage{amsmath} %advanced maths
+% \usepackage{amssymb} %additional math symbols
+
+\usepackage{dirtree} %directory tree visualisation
+
+\usepackage[section]{placeins}
+
+\graphicspath{ {"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank/"} }
+
+% list of acronyms
+% \usepackage[acronym,nonumberlist,toc,numberedsection=autolabel,nomain]{glossaries}
+%\iflanguage{czech}{\renewcommand*{\acronymname}{Seznam pou{\v z}it{\' y}ch zkratek}}{}
+% \makeglossaries
+
+%\newcommand{\tg}{\mathop{\mathrm{tg}}} %cesky tangens
+%\newcommand{\cotg}{\mathop{\mathrm{cotg}}} %cesky cotangens
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\department{Department of theoretical computer science}
+\title{Domain-specific Name Entity Recognition}
+\authorGN{Bogoljub} %author's given name/names
+\authorFN{Jakovcheski} %author's surname
+\authorWithDegrees{Bc. Bogoljub Jakovcheski} %author's name with academic degrees
+\author{Bogoljub Jakovcheski} %author's name without academic degrees
+\supervisor{Ing. Milan Dojchinovski, Ph.D.}
+\acknowledgements{I would like to thank my family and friends for support during writing this thesis.}
+\abstractCS{}
+\abstractEN{}
+\placeForDeclarationOfAuthenticity{Prague} %where you have signed the declaration
+\keywordsCS{}
+\keywordsEN{}
+\declarationOfAuthenticityOption{4} %select as appropriate, according to the desired license
+
+\begin{document}
+% \newacronym{LZW}{LZW}{Lempel Ziv Welch}
+% \newacronym{RLE}{RLE}{Run-Length Encoding}
+
+\begin{introduction}
+
+\section{Motivation}
+
+\section{Goals of the thesis}
+	The main goal of the thesis is to show (test) does extracting information from a 	global domain gives us better results that extracting information from a specific domain, for example politics domain or any other domain.
+\section{Thesis outline}
+	
+% 	There are two basic ways in the world of dictionary word-based algorithms. The both of them are based on dictionary method \gls{LZW}. The method Word-Based \gls{LZW}, independently presented by Horspool and Cormack \cite{HC92}, and Jiang and Jones \cite{JJ92} in 1992 as first, is adaptive version of mentioned algorithm. The main sight is recently concentred to word-based context methods of data compression and related word-based \textit{preprocessing} transformations, which reversibly transform a data into another form. The reverse process is called \textit{postprocessing} transformation. Affected data could be compressed with most of existing lossless data compression algorithms with better compression efficiency than it can be achieved using an unaltered data. 
+\end{introduction}
+
+\chapter{Background and related work}\label{textcompr}
+
+	%This thesis was submitted at Czech Technical University in Prague (see Figure~\ref{fig:logo}).
+	
+	%\begin{figure}\centering
+		%\includegraphics{cvut-logo-bw}
+		%\caption{CTU logo}\label{fig:logo}
+	%\end{figure}
+
+\section{Information extraction}
+information extraction, that is, automatically building a relational database from information contained in unstructured text. Unlike linear-chain models, general CRFs can capture long distance dependencies between labels. 
+%http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf
+%https://web.stanford.edu/~jurafsky/slp3/21.pdf
+%https://en.wikipedia.org/wiki/Information_extraction
+%https://ontotext.com/knowledgehub/fundamentals/information-extraction/
+
+\section{NER}
+NER is the problem of identifying and classifying proper names in text, including locations, such as China; people, such as George Bush; and organizations, such as the United Nations. The named-entity recognition task is, given a sentence, first to segment which words are part of entities, and then to classify each entity by type (person, organization, location, and so on). The challenge of this problem is that many named entities are too rare to appear even in a large training set, and therefore the system must identify them based only on context
+%http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf section 1.2.2.2
+\section{RDF/NIF}
+%http://wiki.dbpedia.org/dbpedia-nif-dataset
+%http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.html
+%https://www.w3.org/2015/09/bpmlod-reports/nif-based-nlp-webservices/#natural-language-%processing-interchange-format-nif
+%http://lov.okfn.org/dataset/lov/vocabs/nif
+%http://aksw.org/Projects/NIF.html
+
+\section{DBpedia ontology}
+http://wiki.dbpedia.org/services-resources/ontology
+http://mappings.dbpedia.org/server/ontology/classes
+
+\section{Evaluation/training datasets}
+
+\section{Domain specific NER}
+https://arxiv.org/pdf/1612.00148.pdf
+
+\section{Stanford NER}
+
+\chapter{Domain specific NER}\label{}
+
+There are parameters of the computer used for tests shown in Table \ref{tab:PCparam}.
+%\begin{table}\centering
+%	\caption{Testing computer parameters}
+%	\label{tab:PCparam}
+%	\begin{tabular}{|l|r|}
+%	\hline \multicolumn{1}{|c|}{\textbf{Part}} & \multicolumn{1}{|c|}{\textbf{Description}} \\\hline
+%	CPU & 2.2 GHz AMD Athlon(tm) 64 Processor 3200+\\
+%	MEM & 2.5 GB\\
+%	OS & x86\_64 GNU/Linux Fedora release 7 (Moonshine)\\\hline
+%	\end{tabular}
+%\end{table}
+
+\section{Data pre-processing}
+•	Coarse grained
+•	Fine grained 
+
+\section{Types retrieval}\label{}
+At the main file where we write text we retrieve all types that are available for that text. After that, that text is processed with coarse and fine grained types. In coarse grained we have politics, sport and transportation specific domains. In fine grained in politics domain we retrieve in total 26 types (write them all), which we sort in 11 more specific types like for example Ambassador, Mayor, Deputy etc. are fused in one specific domain Politician. We do the same for sport domain where we retrieve in total 171 types, so those types, same as politics domain, are specified in 8 types, like SportClub, SportsLeague, SportsTeam, Athlete, Coach, OrganizationMember, SportsManager, SportsEvent. We also do the same for transportation domain, where we retrieve in total 78 types and minimized in 14 more specific types like Aircraft, Automobile, Locomotive, MilitaryVehicle, Motorcycle, On-SiteTransportation, Rocket, Ship, SpaceShuttle, SpaceStation, Spacecraft, Train, PublicTransitSystem and Infrastructure.  
+
+\section{Domain specification}
+•	How we choose those domains (Politics, Sport, Transportation)?
+
+\section{Data transformation/output for Stanford}
+•	How we process data to be ready to use on Stanford NER system?
+
+
+\chapter{Experiments}
+We have provide various types of experiments. In next sections we will discuss more about every provided experiment.
+\section{Goals of the experiments}
+We set a few goals of the experiments. First of all we waned to test does we will get better results if we run the model of all domains in coarse grained, against the model of all domains in fine grained. In this test we run the models also with all domains texts. Then we get those models and we run it with specific domain texts, in both fine and coarse grained. Also we make experiments with specific domain model runned with domain specific texts, for example, politics domain model in coarse grained is runned with politics domain text also annotated in coarse grained, politics domain model in fine grained is runned with politics domain text also annotated in fine grained, and the same for sport and transportation domains.
+
+\section{List of experiments}
+Make it like experiment - discussion
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/500All3DomainsCoarseGrainedRunnedWithAll3DomainsBBCCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse BBC Coarse}\label{}
+	\end{figure}
+
+	In this experiment we get the model that is trained with all 3 domains together with coarse grained and we make an experiment with the text that is trained, that means text from all 3 domains annotated with coarse grained. 
+	Here we have for every domain 10 abstracts, in total 30 annotated abstracts. This is our smallest model. 
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 10 Links}\label{}
+	\end{figure}
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 10 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 10 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 10 Links Transportation}\label{}	
+	\end{figure}
+		
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 10 Links }\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 10 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 10 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 10 Links Transportation}\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 10 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{Politics Fine Top 10 Links Politics}\label{}
+	\end{figure}
+
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 10 Links Politics}\label{}
+	\end{figure}		
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{Sport Fine Top 10 Links Sport}\label{}	
+	\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 20 Links}\label{}
+	\end{figure}
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 20 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 20 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 20 Links Transportation}\label{}	
+	\end{figure}
+		
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 20 Links }\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 20 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 20 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 20 Links Transportation}\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 20 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{Politics Fine Top 20 Links Politics}\label{}
+	\end{figure}
+
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 20 Links Politics}\label{}
+	\end{figure}		
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{Sport Fine Top 20 Links Sport}\label{}	
+	\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 40 Links}\label{}
+	\end{figure}
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 40 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 40 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 40 Links Transportation}\label{}	
+	\end{figure}
+		
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 40 Links }\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 40 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 40 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 40 Links Transportation}\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 40 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{Politics Fine Top 40 Links Politics}\label{}
+	\end{figure}
+
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 40 Links Politics}\label{}
+	\end{figure}		
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top40Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{Sport Fine Top 40 Links Sport}\label{}	
+	\end{figure}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 100 Links}\label{}
+	\end{figure}
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 100 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 100 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 100 Links Transportation}\label{}	
+	\end{figure}
+		
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 100 Links }\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 100 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 100 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 100 Links Transportation}\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 100 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{Politics Fine Top 100 Links Politics}\label{}
+	\end{figure}
+
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 100 Links Politics}\label{}
+	\end{figure}		
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top100Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{Sport Fine Top 100 Links Sport}\label{}	
+	\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 300 Links}\label{}
+	\end{figure}
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 300 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 300 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 300 Links Transportation}\label{}	
+	\end{figure}
+		
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 300 Links }\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 300 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 300 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 300 Links Transportation}\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 300 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{Politics Fine Top 300 Links Politics}\label{}
+	\end{figure}
+
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 300 Links Politics}\label{}
+	\end{figure}		
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top300Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{Sport Fine Top 300 Links Sport}\label{}	
+	\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 400 Links}\label{}
+	\end{figure}
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 400 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 400 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 400 Links Transportation}\label{}	
+	\end{figure}
+		
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 400 Links }\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 400 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 400 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 400 Links Transportation}\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 400 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{Politics Fine Top 400 Links Politics}\label{}
+	\end{figure}
+
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 400 Links Politics}\label{}
+	\end{figure}		
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top400Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{Sport Fine Top 400 Links Sport}\label{}	
+	\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 500 Links}\label{}
+	\end{figure}
+
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 500 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 500 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGrained-tsv".png}
+		\caption{All 3 Domains Coarse Top 500 Links Transportation}\label{}	
+	\end{figure}
+		
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 500 Links }\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 500 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 500 Links Sport}\label{}
+	\end{figure}
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained-tsv".png}
+		\caption{All 3 Domains Fine Top 500 Links Transportation}\label{}	
+	\end{figure}
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 500 Links Politics}\label{}
+	\end{figure}	
+
+	TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
+		\caption{Politics Fine Top 500 Links Politics}\label{}
+	\end{figure}
+
+	
+	TEXT
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 500 Links Politics}\label{}
+	\end{figure}		
+	
+		TEXT	
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top500Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png}
+		\caption{Sport Fine Top 500 Links Sport}\label{}	
+	\end{figure}			
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	\subsection{MIXED}
+		
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png}
+		\caption{All 3 Domains Fine Grained Top 300 With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower PageRank}\label{}
+	\end{figure}
+	
+	\begin{figure}
+		\includegraphics[width=\textwidth]{"/Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png}		\caption{All 3 Domains Fine Grained Top 500 Links  With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower Page Rank}
+	\end{figure}
+
+	\begin{figure}
+		\includegraphics[width=\textwidth]{"/Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png}		
+		\caption{All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}
+	\end{figure}
+
+	\begin{figure}
+		\includegraphics[width=\textwidth]{"/Mixed/TransportationFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300LinksAndTransportationFineGrainedTop300Links".png}		
+		\caption{Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links And Transportation Fine Grained Top 300 Links}
+	\end{figure}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{With lower links on model}	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop100Links".png}
+		\caption{All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 100 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop300Links".png}
+		\caption{All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 300 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop500Links".png}
+		\caption{All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 500 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png}
+		\caption{All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithAll3DomainsFineGrainedTop500Links".png}
+		\caption{All 3 Domains Fine Grained Top 100 Links Runned With All 3 Domains Fine Grained Top 500 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png}
+		\caption{All 3 Domains Fine Grained Top 100 Links Runned With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithPoliticsFineGrainedTop500Links".png}
+		\caption{All 3 Domains Fine Grained Top 100 Links Runned With Politics Fine Grained Top 500 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank".png}
+		\caption{All 3 Domains Fine Grained Top 100 Links Runned With Politics Fine Grained Top 500 Links With Lower PageRank}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithSportFineGrainedTop500Links".png}
+		\caption{All 3 Domains Fine Grained Top 100 Links Runned With Sport Fine Grained Top 500 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithSportFineGrainedTop500LinksWithLowerPageRank".png}
+		\caption{All 3 Domains Fine Grained Top 100 Links Runned With Sport Fine Grained Top 500 Links With Lower PageRank}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithTransportationFineGrainedTop500Links".png}
+		\caption{All 3 Domains Fine Grained Top 100 Links Runned With Transportation Fine Grained Top 500 Links}\label{}
+	\end{figure}
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithTransportationFineGrainedTop500LinksWithLowerPageRank".png}
+		\caption{All 3 Domains Fine Grained Top 100 Links Runned With Transportation Fine Grained Top 500 Links With Lower PageRank}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop500Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 500 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithPoliticsFineGrainedTop500Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 500 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 500 Links With Lower PageRank}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithSportFineGrainedTop500Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 500 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithSportFineGrainedTop500LinksWithLowerPageRank".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 500 Links With Lower PageRank}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithTransportationFineGrainedTop500Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithTransportationFineGrainedTop500LinksWithLowerPageRank".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links With Lower PageRank}\label{}
+	\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{With higher links on model}	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop10Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 10 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithPoliticsFineGrainedTop10Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 10 Links}\label{}
+	\end{figure}
+		
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithPoliticsFineGrainedTop100Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 100 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithSportFineGrainedTop10Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 10 Links}\label{}
+	\end{figure}
+				
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithSportFineGrainedTop100Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 100 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithTransportationFineGrainedTop10Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 10 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithTransportationFineGrainedTop100Links".png}
+		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 100 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop10Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 10 Links}\label{}
+	\end{figure}	
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}\label{}
+	\end{figure}	
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithPoliticsFineGrainedTop10Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With Politics Fine Grained Top 10 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithPoliticsFineGrainedTop100Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With Politics Fine Grained Top 100 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithPoliticsFineGrainedTop300Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With Politics Fine Grained Top 300 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithSportFineGrainedTop10Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With Sport Fine Grained Top 10 Links}\label{}
+	\end{figure}	
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithSportFineGrainedTop100Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With Sport Fine Grained Top 100 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithSportFineGrainedTop300Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With Sport Fine Grained Top 300 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithTransportationFineGrainedTop10Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With Transportation Fine Grained Top 10 Links}\label{}
+	\end{figure}	
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithTransportationFineGrainedTop100Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With Transportation Fine Grained Top 100 Links}\label{}
+	\end{figure}	
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithTransportationFineGrainedTop300Links".png}
+		\caption{All 3 Domains Fine Grained Top 500 Links Runned With Transportation Fine Grained Top 300 Links}\label{}
+	\end{figure}	
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links".png}
+		\caption{Politics Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}\label{}
+	\end{figure}	
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links".png}
+		\caption{Politics Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links".png}
+		\caption{Politics Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}\label{}
+	\end{figure}
+	
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/SportFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links".png}
+		\caption{Sport Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}\label{}
+	\end{figure}
+%	
+%	\begin{figure}[!htb]\centering
+%		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/SportFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links".png}
+%		\caption{Sport Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}\label{}
+%	\end{figure}
+	
+%	\begin{figure}[!htb]\centering
+%		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/SportFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links".png}
+%		\caption{Sport Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}\label{}
+%	\end{figure}
+
+
+%	\begin{figure}[!htb]\centering
+%		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/TransportationFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links".png}
+%		\caption{Transportation Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}\label{}
+%	\end{figure}	
+
+%	\begin{figure}[!htb]\centering
+%		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/TransportationFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links".png}
+%		\caption{Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}\label{}
+%	\end{figure}	
+
+%	\begin{figure}[!htb]\centering
+%		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/TransportationFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links".png}
+%		\caption{Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}\label{}
+%	\end{figure}			
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\section{Summary of results}
+\subsection{Graphs}
+	\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"C:/Users/Jakovcheski/Desktop/Experiments Graphs/Top500Links/Top500LinksF1".png}
+		\caption{Top 500 Links F1}\label{}
+	\end{figure}
+	
+		\begin{figure}[!htb]\centering
+		\includegraphics[width=\textwidth]{"C:/Users/Jakovcheski/Desktop/Experiments Graphs/Total/TotalAll3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsvF1".png}
+		\caption{All 3 Domains Coarse Grained Runned With All 3 Domains Coarse Grained-tsv F1}\label{}
+	\end{figure}
+
+
+
+\begin{conclusion}
+	The word-based dictionary data compression algorithms (a part of lossless data compression) are the subject of this thesis. The lossless data compression is a very important field of research because the data compression allows to reduce the amount of space needed to store data.
+
+	The background of data compression field was presented in Chapter~\ref{textcompr}. There are basic notions and definitions followed by description of character-based dictionary algorithms. The word-based dictionary compression methods were investigated and discussed at the end of this chapter too.
+
+% 	There is the investigation of index distribution of tested files in Section \ref{sec:distr}. It led to the new modification of semi-adaptive word-based \gls{LZW} algorithm---\textit{WLZWE2}. The compression efficiency of this algorithm applied to the large files is better than the other implemented algorithms. However, the compression efficiency of \textit{WLZWE2} algorithm is much worse when it is applied to the small files. The experiments with \textit{WLZWE2} and \textit{WLZWES2} algorithms confirm the assumption from Section \ref{sec:distr}---the compression efficiency of version with unsorted dictionaries (\textit{WLZWE2}) is analogous to version with sorted ones (\textit{WLZWES2}).
+
+	The testing of memory used during compression and/or decompression process is one of the possibilities of further research. The experiments with files of greater size or multilingual files could be also good opportunity to gain new improvements of algorithms. The static part of dictionaries could improve the compression efficiency too.
+
+	The implemented methods achieve fairly good compression ratio (25--30$\%$ at large files) with acceptable compression and decompression time. There are possibilities of further improvements especially at semi-adaptive methods. However, the gain of these improvements is not good enough to top the compression efficiency of other lossless data compression methods (context methods from PPM family). The results of implemented algorithms were not as good as it was expected but the work on this thesis showed new ways of possible further research---word-based version of grammar-based compression algorithms and another possibilities in the field of word-based context methods of data compression.
+
+	The Gnuplot 4.2 utility was very useful for generation of graphs in this thesis. There was the drawing editor Ipe 6.0 used for figures creation.
+	\nocite{Po01}
+\end{conclusion}
+
+\bibliographystyle{iso690.bst}
+\bibliography{ref}
+
+\appendix
+
+% \printglossaries
+
+\chapter{Contents of CD}\label{app:CDcontent}
+
+Visualise the contents of enclosed media. Use of \verb|dirtree| is recommended. Note that directories src and text with appropriate contents are mandatory.
+
+
+\begin{figure}
+	\dirtree{%
+		.1 readme.txt\DTcomment{the file with CD contents description}.
+		.1 data\DTcomment{the data files directory}.
+		.2 graphs\DTcomment{the directory of graphs of experiments}.
+		.3 *.eps\DTcomment{the B/W graphs}.
+		.3 *.png\DTcomment{the color graphs}.
+		.3 *.dat\DTcomment{the graphs data files}.
+		.1 exe\DTcomment{the directory with executable WBDCM program}.
+		.2 wbdcm\DTcomment{the WBDCM program executable (UNIX)}.
+		.2 wbdcm.exe\DTcomment{the WBDCM program executable (Windows)}.
+		.1 src\DTcomment{the directory of source codes}.
+		.2 wbdcm\DTcomment{the directory of WBDCM program}.
+		.3 Makefile\DTcomment{the makefile of WBDCM program (UNIX)}.
+		.2 thesis\DTcomment{the directory of \LaTeX{} source codes of the thesis}.
+		.3 figures\DTcomment{the thesis figures directory}.
+		.3 *.tex\DTcomment{the \LaTeX{} source code files of the thesis}.
+		.1 text\DTcomment{the thesis text directory}.
+		.2 thesis.pdf\DTcomment{the Diploma thesis in PDF format}.
+		.2 thesis.ps\DTcomment{the Diploma thesis in PS format}.
+	}
+\end{figure}
+
+
+\end{document}
