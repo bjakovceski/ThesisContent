@@ -9,7 +9,7 @@
 % english thesis in English language
 % hidelinks remove colour boxes around hyperlinks
 
-\documentclass[thesis=M,english]{FITthesis}[2012/10/20]
+\documentclass[thesis=M,english]{FITthesis}[2018/05/30]
 
 \usepackage{graphicx} %graphics files inclusion
 % \usepackage{subfig} %subfigures
@@ -140,23 +140,23 @@ Make it like experiment - discussion
 		\caption{All 3 Domains Coarse BBC Coarse}\label{}
 	\end{figure}
 
+\subsection{Top 10 Links}
 	In this experiment we get the model that is trained with all 3 domains together with coarse grained and we make an experiment with the text that is trained, that means text from all 3 domains annotated with coarse grained. 
-	Here we have for every domain 10 abstracts, in total 30 annotated abstracts. This is our smallest model. 
-
+	Here we have for every domain 10 abstracts, so in total 30 annotated abstracts. This is our smallest model.
+	How we can see from the picture in politics domain F1 value is lower than in sport and transportation. This results with lower F1 value in total, but still that is very satisfying value, because we have only 1 false positive and 2 false negative words.  
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
 		\caption{All 3 Domains Coarse Top 10 Links}\label{}
 	\end{figure}
-
-	TEXT
-
+	
+	
+	In this experiment we get the previous trained model and test with politics coarse grained text. Result is not satisfying, because we have a very low recall, so that results with bad F1 value and very big false negative words. We can clearly say that this is not the model that we want to use in annotating. With those results we can say that all 3 domains together with all text perform better results than all 3 domain model tested with specified domain.  
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
 		\caption{All 3 Domains Coarse Top 10 Links Politics}\label{}
 	\end{figure}	
 
-	TEXT	
-
+	Then we get the same model, and like previous, we tested with sport coarse grained text. So how we can see from the picture, we have perfect result, there is no false positive or false negative words, there are only true positive which results with F1 value of 1.000 (no lost words).
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
 		\caption{All 3 Domains Coarse Top 10 Links Sport}\label{}
@@ -227,7 +227,7 @@ Make it like experiment - discussion
 	\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	TEXT
+\subsection{Top 20 Links}
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
@@ -313,7 +313,7 @@ Make it like experiment - discussion
 	\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	TEXT
+\subsection{Top 40 Links}
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top40Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
@@ -399,7 +399,7 @@ Make it like experiment - discussion
 	\end{figure}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	TEXT
+\subsection{Top 100 Links}
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top100Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
@@ -485,7 +485,7 @@ Make it like experiment - discussion
 	\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	TEXT
+\subsection{Top 300 Links}
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top300Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
@@ -571,7 +571,7 @@ Make it like experiment - discussion
 	\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	TEXT
+\subsection{Top 400 Links}
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top400Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
@@ -657,7 +657,7 @@ Make it like experiment - discussion
 	\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	TEXT
+\subsection{Top 500 Links}
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top500Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
