@@ -504,7 +504,20 @@ sp\^ osobom, ktor\'y nezni\v zuje hodnotu Diela (vr\'atane komer\v cn\'eho vyu\v
 
 \AfterEndPreamble{
 	\thispagestyle{empty}
-	\if\@lang1{Sem vlo{\v z}te zad{\' a}n{\' i} Va{\v s}{\' i} pr{\' a}ce.}\else\if\@lang2{Sem vlo{\v z}te zadanie Va{\v s}ej pr{\' a}ce.}\else{Insert here your thesis' task.}\fi\fi
+	\if\@lang1{Sem vlo{\v z}te zad{\' a}n{\' i} Va{\v s}{\' i} pr{\' a}ce.}\else\if\@lang2{Sem vlo{\v z}te zadanie Va{\v s}ej pr{\' a}ce.}\else{Title (EN): Domain-Specific NER Adaptation
+	%Title (CZ): Doménově-specifická adaptace NER
+
+%Description:
+In the past years, the Named Entity Recognition (NER) technology has been under an active development and enjoy a significant increase in popularity and usage in the academic and industrial sphere. Nevertheless, vast majority of the developed NER systems have been developed as general-purpose systems. While they can perform well on multiple domains (macro level), on specific domains (micro level) their performance quality might be low. The ultimate goal of the thesis is to develop domain-specific NER models.
+Guidelines:
+\begin{itemize}
+\item Get familiar with the NER technology and available NER frameworks.
+\item Investigate possible datasets for domain-specific training of NER.
+\item Develop NER training datasets for several selected domains (e.g. sports, politics, music, etc.). 
+\item Train a domain-specific NER model using existing frameworks, such as DBpedia Spotlight or StanfordNER.
+\item Validate and evaluate the developed domain-specific NER models.
+\end{itemize}
+}\fi\fi
 
 	\frontmatter
 	\pagestyle{plain}

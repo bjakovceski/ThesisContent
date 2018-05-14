@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  14 MAY 2018 18:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  14 MAY 2018 18:16
 entering extended mode
 **./Thesis2.tex
 (Thesis2.tex
@@ -1112,12 +1112,28 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-) [1
+)
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 50.
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd
+"
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 50.
+
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.f
+d"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 50.
+ [1
 
 {C:/Users/Jakovcheski/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-<cvut-logo-bw-en.pdf, id=105, 591.64943pt x 193.23091pt>
+<cvut-logo-bw-en.pdf, id=106, 591.64943pt x 193.23091pt>
 File: cvut-logo-bw-en.pdf Graphic file (type pdf)
 <use cvut-logo-bw-en.pdf>
 Package pdftex.def Info: cvut-logo-bw-en.pdf  used on input line 50.
@@ -1146,23 +1162,7 @@ LaTeX Font Warning: Font shape `OT1/lmss/bx/sc' undefined
 
 ] [4
 
-] [5]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 50.
-
-("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd
-"
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 50.
-
-
-("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.f
-d"
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 50.
- [6
+] [5] [6
 
 ] [7
 
@@ -3364,20 +3364,10 @@ ed on input line 1023.
 oarseGrainedRunnedWithAll3DomainsCoarseGrained-tsvF1.png>] [46
 
 ]
-
-LaTeX Warning: Citation `Po01' undefined on input line 1041.
-
 No file Thesis2.bbl.
 [47] [48
 
-]
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 105
-3.
-
-("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmtt.f
-d"
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [49]
+] [49]
 \tf@toc=\write5
 \openout5 = `Thesis2.toc'.
 
@@ -3405,33 +3395,30 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1080.
  ) 
 Here is how much of TeX's memory you used:
- 13804 strings out of 493305
- 289966 string characters out of 3127192
+ 13709 strings out of 493305
+ 288622 string characters out of 3127192
  350499 words of memory out of 3000000
- 16922 multiletter control sequences out of 15000+200000
- 58530 words of font info for 41 fonts, out of 3000000 for 9000
+ 16831 multiletter control sequences out of 15000+200000
+ 58219 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,11n,29p,1096b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm
--rm.enc}{C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-rmtt.enc}{C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-rmsc.enc}{C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9
-/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Users/Jakovcheski/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Jakovcheski/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Jakovcheski/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Jako
-vcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:
-/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr1
-0.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmr12.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr8.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/lm/lmri10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Jakovcheski/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Jakovcheski/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Thesis2.pdf (67 pages, 2502545 bytes).
+-rmsc.enc}{C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
+ps/lm/lm-rm.enc}{C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathsy.enc}<C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Jakovcheski/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Jakovcheski/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Jakovcheski/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/J
+akovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C
+:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr
+12.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmri10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmssbx10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/lm/lmsy10.pfb>
+Output written on Thesis2.pdf (67 pages, 2460880 bytes).
 PDF statistics:
- 1112 PDF objects out of 1200 (max. 8388607)
+ 1102 PDF objects out of 1200 (max. 8388607)
  239 named destinations out of 1000 (max. 500000)
  865 words of extra memory for PDF output out of 10000 (max. 10000000)
 
