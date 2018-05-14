@@ -32,7 +32,7 @@
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
-\department{Department of theoretical computer science}
+\department{Department of software engineering}
 \title{Domain-specific Name Entity Recognition}
 \authorGN{Bogoljub} %author's given name/names
 \authorFN{Jakovcheski} %author's surname
@@ -162,36 +162,32 @@ Make it like experiment - discussion
 		\caption{All 3 Domains Coarse Top 10 Links Sport}\label{}
 	\end{figure}
 	
-		TEXT	
-
+	Finally we tested this model with our last domain, transportation domain with coarse grained text.	Because of very small annotated words we have again perfect results without any false positive or false negative words, same as previous test, there are only true positive matches, which is what we want.
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGrained-tsv".png}
 		\caption{All 3 Domains Coarse Top 10 Links Transportation}\label{}	
 	\end{figure}
 		
-		TEXT	
-
+	
+	After we finish testing of all 3 domains trained with coarse grained texts, we move on with new type of experiment, model that contains all our domains and is trained with fine grained texts. We run the same experiment like in coarse grained, but now text is annotated with fine grained. So, in such small trained model is not surprising that we get the same results as in experiment with coarse grained annotated text.
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-tsv".png}
 		\caption{All 3 Domains Fine Top 10 Links }\label{}	
 	\end{figure}
 	
-	TEXT
-
+	We have repeated the same experiments from previous, but now with fine grained annotation. So we tested our model with politics domain annotated in fine grained and we get exactly the same results like in coarse grained. In this case there is no difference if we use coarse or fine grained trained model, because the results are same.
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
 		\caption{All 3 Domains Fine Top 10 Links Politics}\label{}
 	\end{figure}	
 
-	TEXT	
-
+	The sport domain text annotated in fine grained provide also same result as coarse grained annotated domain. 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png}
 		\caption{All 3 Domains Fine Top 10 Links Sport}\label{}
 	\end{figure}
 	
-		TEXT	
-
+	Same as sport domain, the transportation domain text annotated with fina grained, provide also same results.
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained-tsv".png}
 		\caption{All 3 Domains Fine Top 10 Links Transportation}\label{}	
