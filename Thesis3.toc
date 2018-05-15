@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {1.4}DBpedia ontology}{3}{section.1.4}
 \contentsline {section}{\numberline {1.5}Evaluation/training datasets}{3}{section.1.5}
 \contentsline {section}{\numberline {1.6}Domain specific NER}{3}{section.1.6}
-\contentsline {section}{\numberline {1.7}Stanford NER}{4}{section.1.7}
+\contentsline {section}{\numberline {1.7}Stanford NER}{3}{section.1.7}
 \contentsline {chapter}{\chapternumberline {2}Domain specific NER}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Data pre-processing}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Types retrieval}{5}{section.2.2}
@@ -22,16 +22,16 @@
 \contentsline {section}{\numberline {3.1}Goals of the experiments}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}List of experiments}{7}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Top 10 Links}{8}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Top 20 Links}{8}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Top 40 Links}{8}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Top 100 Links}{8}{subsection.3.2.4}
-\protect \begingroup \let 
-\protect \begingroup \let 
-\protect \begingroup \let 
-\protect \begingroup \let 
-\contentsline {subsection}{\numberline {3.2.9}With lower links on model}{9}{subsection.3.2.9}
-\contentsline {subsection}{\numberline {3.2.10}With higher links on model}{9}{subsection.3.2.10}
-\contentsline {section}{\numberline {3.3}Summary of results}{21}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Graphs}{21}{subsection.3.3.1}
-\contentsline {chapter}{Conclusion}{23}{chapter*.9}
-\contentsline {appendix}{\chapternumberline {A}Contents of CD}{25}{appendix.A}
+\contentsline {subsection}{\numberline {3.2.2}Top 20 Links}{13}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Top 40 Links}{16}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Top 100 Links}{19}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Top 300 Links}{19}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Top 400 Links}{19}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Top 500 Links}{19}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}MIXED}{19}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.9}With lower links on model}{19}{subsection.3.2.9}
+\contentsline {subsection}{\numberline {3.2.10}With higher links on model}{19}{subsection.3.2.10}
+\contentsline {section}{\numberline {3.3}Summary of results}{19}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Graphs}{19}{subsection.3.3.1}
+\contentsline {chapter}{Conclusion}{21}{chapter*.9}
+\contentsline {appendix}{\chapternumberline {A}Contents of CD}{23}{appendix.A}
