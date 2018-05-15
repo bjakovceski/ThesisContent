@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  14 MAY 2018 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  15 MAY 2018 17:06
 entering extended mode
 **./Thesis2.tex
 (Thesis2.tex
@@ -1019,21 +1019,6 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
 )
 \openout1 = `Thesis2.aux'.
 
@@ -1225,7 +1210,7 @@ Underfull \vbox (badness 1057) has occurred while \output is active []
 [6]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/500All3DomainsCoarseGrainedRunnedWithAll3DomainsBBCCoarseGrained-tsv
-".png, id=554, 572.73975pt x 98.16675pt>
+".png, id=558, 572.73975pt x 98.16675pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/500All3DomainsCoarseGrainedRunnedWithAll3DomainsBBCCoarseGraine
 d-tsv".png Graphic file (type png)
@@ -1238,7 +1223,7 @@ ainsBBCCoarseGrained-tsv".png  used on input line 139.
 (pdftex.def)             Requested size: 369.0pt x 63.2474pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top10Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGraine
-d-tsv".png, id=556, 574.5465pt x 96.96225pt>
+d-tsv".png, id=560, 574.5465pt x 96.96225pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseG
 rained-tsv".png Graphic file (type png)
@@ -1256,7 +1241,7 @@ ageRank//500All3DomainsCoarseGrainedRunnedWithAll3DomainsBBCCoarseGrained-tsv.p
 ng>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top10Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-t
-sv".png, id=563, 572.73975pt x 77.088pt>
+sv".png, id=567, 572.73975pt x 77.088pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrai
 ned-tsv".png Graphic file (type png)
@@ -1269,7 +1254,7 @@ hPoliticsCoarseGrained-tsv".png  used on input line 155.
 (pdftex.def)             Requested size: 369.0pt x 49.66667pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top10Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv"
-.png, id=564, 572.1375pt x 76.48575pt>
+.png, id=568, 572.1375pt x 76.48575pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained
 -tsv".png Graphic file (type png)
@@ -1282,7 +1267,7 @@ hSportCoarseGrained-tsv".png  used on input line 161.
 (pdftex.def)             Requested size: 369.0pt x 49.32999pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top10Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGra
-ined-tsv".png, id=565, 573.94424pt x 77.088pt>
+ined-tsv".png, id=569, 573.94424pt x 77.088pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/All3DomainsCoarseGrainedRunnedWithTransportationCoar
 seGrained-tsv".png Graphic file (type png)
@@ -1302,7 +1287,7 @@ nAbstractBaseOnPageRank//Top10Links/All3DomainsCoarseGrainedRunnedWithSportCoar
 seGrained-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top10Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-ts
-v".png, id=574, 576.9555pt x 172.2435pt>
+v".png, id=578, 576.9555pt x 172.2435pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrain
 ed-tsv".png Graphic file (type png)
@@ -1315,7 +1300,7 @@ ll3DomainsFineGrained-tsv".png  used on input line 174.
 (pdftex.def)             Requested size: 369.0pt x 110.16187pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top10Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".
-png, id=575, 576.35326pt x 96.36pt>
+png, id=579, 576.35326pt x 96.36pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-
 tsv".png Graphic file (type png)
@@ -1328,7 +1313,7 @@ oliticsFineGrained-tsv".png  used on input line 180.
 (pdftex.def)             Requested size: 369.0pt x 61.69223pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top10Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png
-, id=576, 576.35326pt x 125.87025pt>
+, id=580, 576.35326pt x 125.87025pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv
 ".png Graphic file (type png)
@@ -1341,7 +1326,7 @@ portFineGrained-tsv".png  used on input line 186.
 (pdftex.def)             Requested size: 369.0pt x 80.58548pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top10Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained
--tsv".png, id=577, 576.9555pt x 96.96225pt>
+-tsv".png, id=582, 576.9555pt x 96.96225pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/All3DomainsFineGrainedRunnedWithTransportationFineGr
 ained-tsv".png Graphic file (type png)
@@ -1354,7 +1339,7 @@ ransportationFineGrained-tsv".png  used on input line 192.
 (pdftex.def)             Requested size: 369.0pt x 62.01419pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top10Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv"
-.png, id=578, 575.751pt x 77.088pt>
+.png, id=584, 575.751pt x 77.088pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained
 -tsv".png Graphic file (type png)
@@ -1374,7 +1359,7 @@ ionAbstractBaseOnPageRank//Top10Links/All3DomainsFineGrainedRunnedWithPoliticsF
 ineGrained-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top10Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png
-, id=586, 576.35326pt x 95.75775pt>
+, id=594, 576.35326pt x 95.75775pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv
 ".png Graphic file (type png)
@@ -1383,11 +1368,11 @@ eOnPageRank/""/Top10Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv"
 .png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top10Links/PoliticsFineGrainedRunnedWithPoli
-ticsFineGrained-tsv".png  used on input line 206.
+ticsFineGrained-tsv".png  used on input line 205.
 (pdftex.def)             Requested size: 369.0pt x 61.30666pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top10Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png, 
-id=587, 573.94424pt x 77.088pt>
+id=597, 573.94424pt x 77.088pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".
 png Graphic file (type png)
@@ -1398,9 +1383,16 @@ Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top10Links/SportCoarseGrainedRunnedWithSport
 CoarseGrained-tsv".png  used on input line 214.
 (pdftex.def)             Requested size: 369.0pt x 49.5608pt.
+ [10 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank//Top10Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv.pn
+g> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseO
+nPageRank//Top10Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained
+-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstra
+ctBaseOnPageRank//Top10Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrain
+ed-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
-ageRank/""/Top10Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png, id=5
-88, 576.35326pt x 124.66576pt>
+ageRank/""/Top10Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png, id=6
+05, 576.35326pt x 124.66576pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top10Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png 
 Graphic file (type png)
@@ -1408,11 +1400,49 @@ Graphic file (type png)
 eOnPageRank/""/Top10Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top10Links/SportFineGrainedRunnedWithSportFi
-neGrained-tsv".png  used on input line 221.
+neGrained-tsv".png  used on input line 219.
 (pdftex.def)             Requested size: 369.0pt x 79.81433pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
+ageRank/""/Top10Links/TransportationCoarseGrainedRunnedWithTransportationCoarse
+Grained-tsv".png, id=609, 573.94424pt x 77.69025pt>
+File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
+seOnPageRank/""/Top10Links/TransportationCoarseGrainedRunnedWithTransportationC
+oarseGrained-tsv".png Graphic file (type png)
+<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank/""/Top10Links/TransportationCoarseGrainedRunnedWithTransportationCo
+arseGrained-tsv".png>
+Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
+nnotationAbstractBaseOnPageRank/""/Top10Links/TransportationCoarseGrainedRunned
+WithTransportationCoarseGrained-tsv".png  used on input line 226.
+(pdftex.def)             Requested size: 369.0pt x 49.94798pt.
+<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
+ageRank/""/Top10Links/TransportationFineGrainedRunnedWithTransportationFineGrai
+ned-tsv".png, id=610, 578.16pt x 95.75775pt>
+File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
+seOnPageRank/""/Top10Links/TransportationFineGrainedRunnedWithTransportationFin
+eGrained-tsv".png Graphic file (type png)
+<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank/""/Top10Links/TransportationFineGrainedRunnedWithTransportationFine
+Grained-tsv".png>
+Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
+nnotationAbstractBaseOnPageRank/""/Top10Links/TransportationFineGrainedRunnedWi
+thTransportationFineGrained-tsv".png  used on input line 231.
+(pdftex.def)             Requested size: 369.0pt x 61.11525pt.
+
+Underfull \vbox (badness 5622) has occurred while \output is active []
+
+ [11 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank//Top10Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv.pn
+g> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseO
+nPageRank//Top10Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv.png> <
+C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPag
+eRank//Top10Links/SportFineGrainedRunnedWithSportFineGrained-tsv.png> <C:/Users
+/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//T
+op10Links/TransportationCoarseGrainedRunnedWithTransportationCoarseGrained-tsv.
+png>]
+<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGraine
-d-tsv".png, id=589, 575.14874pt x 96.96225pt>
+d-tsv".png, id=620, 575.14874pt x 96.96225pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseG
 rained-tsv".png Graphic file (type png)
@@ -1421,11 +1451,11 @@ eOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGr
 ained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWit
-hAll3DomainsCoarseGrained-tsv".png  used on input line 229.
+hAll3DomainsCoarseGrained-tsv".png  used on input line 241.
 (pdftex.def)             Requested size: 369.0pt x 62.20949pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-t
-sv".png, id=590, 573.94424pt x 78.89474pt>
+sv".png, id=621, 573.94424pt x 78.89474pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrai
 ned-tsv".png Graphic file (type png)
@@ -1434,11 +1464,11 @@ eOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrain
 ed-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWit
-hPoliticsCoarseGrained-tsv".png  used on input line 236.
+hPoliticsCoarseGrained-tsv".png  used on input line 246.
 (pdftex.def)             Requested size: 369.0pt x 50.72238pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv"
-.png, id=591, 575.14874pt x 78.2925pt>
+.png, id=622, 575.14874pt x 78.2925pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained
 -tsv".png Graphic file (type png)
@@ -1447,11 +1477,11 @@ eOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-
 tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWit
-hSportCoarseGrained-tsv".png  used on input line 243.
+hSportCoarseGrained-tsv".png  used on input line 251.
 (pdftex.def)             Requested size: 369.0pt x 50.23126pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGra
-ined-tsv".png, id=592, 573.342pt x 110.21175pt>
+ined-tsv".png, id=623, 573.342pt x 110.21175pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithTransportationCoar
 seGrained-tsv".png Graphic file (type png)
@@ -1460,11 +1490,11 @@ eOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWithTransportationCoars
 eGrained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/All3DomainsCoarseGrainedRunnedWit
-hTransportationCoarseGrained-tsv".png  used on input line 250.
+hTransportationCoarseGrained-tsv".png  used on input line 256.
 (pdftex.def)             Requested size: 369.0pt x 70.93382pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-ts
-v".png, id=593, 576.9555pt x 192.72pt>
+v".png, id=624, 576.9555pt x 192.72pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrain
 ed-tsv".png Graphic file (type png)
@@ -1473,11 +1503,11 @@ eOnPageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGraine
 d-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithA
-ll3DomainsFineGrained-tsv".png  used on input line 257.
+ll3DomainsFineGrained-tsv".png  used on input line 261.
 (pdftex.def)             Requested size: 369.0pt x 123.25803pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".
-png, id=594, 575.14874pt x 97.5645pt>
+png, id=625, 575.14874pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-
 tsv".png Graphic file (type png)
@@ -1486,11 +1516,11 @@ eOnPageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-t
 sv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithP
-oliticsFineGrained-tsv".png  used on input line 264.
+oliticsFineGrained-tsv".png  used on input line 266.
 (pdftex.def)             Requested size: 369.0pt x 62.59587pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png
-, id=595, 576.9555pt x 125.268pt>
+, id=626, 576.9555pt x 125.268pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv
 ".png Graphic file (type png)
@@ -1501,30 +1531,9 @@ Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithS
 portFineGrained-tsv".png  used on input line 271.
 (pdftex.def)             Requested size: 369.0pt x 80.11772pt.
- [10 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank//Top10Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv.pn
-g> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseO
-nPageRank//Top10Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained
--tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstra
-ctBaseOnPageRank//Top10Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrain
-ed-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbst
-ractBaseOnPageRank//Top10Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained
--tsv.png>] [11 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationA
-bstractBaseOnPageRank//Top10Links/SportCoarseGrainedRunnedWithSportCoarseGraine
-d-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstr
-actBaseOnPageRank//Top10Links/SportFineGrainedRunnedWithSportFineGrained-tsv.pn
-g> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseO
-nPageRank//Top20Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGraine
-d-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstr
-actBaseOnPageRank//Top20Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseG
-rained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotation
-AbstractBaseOnPageRank//Top20Links/All3DomainsCoarseGrainedRunnedWithSportCoars
-eGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotati
-onAbstractBaseOnPageRank//Top20Links/All3DomainsCoarseGrainedRunnedWithTranspor
-tationCoarseGrained-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained
--tsv".png, id=615, 576.35326pt x 125.87025pt>
+-tsv".png, id=627, 576.35326pt x 125.87025pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithTransportationFineGr
 ained-tsv".png Graphic file (type png)
@@ -1533,11 +1542,11 @@ eOnPageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithTransportationFineGra
 ined-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/All3DomainsFineGrainedRunnedWithT
-ransportationFineGrained-tsv".png  used on input line 278.
+ransportationFineGrained-tsv".png  used on input line 276.
 (pdftex.def)             Requested size: 369.0pt x 80.58548pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv"
-.png, id=616, 573.94424pt x 78.2925pt>
+.png, id=628, 573.94424pt x 78.2925pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained
 -tsv".png Graphic file (type png)
@@ -1546,11 +1555,11 @@ eOnPageRank/""/Top20Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-
 tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/PoliticsCoarseGrainedRunnedWithPo
-liticsCoarseGrained-tsv".png  used on input line 285.
+liticsCoarseGrained-tsv".png  used on input line 281.
 (pdftex.def)             Requested size: 369.0pt x 50.33519pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png
-, id=617, 578.16pt x 96.36pt>
+, id=629, 578.16pt x 96.36pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv
 ".png Graphic file (type png)
@@ -1559,11 +1568,11 @@ eOnPageRank/""/Top20Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv"
 .png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/PoliticsFineGrainedRunnedWithPoli
-ticsFineGrained-tsv".png  used on input line 292.
+ticsFineGrained-tsv".png  used on input line 286.
 (pdftex.def)             Requested size: 369.0pt x 61.4996pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png, 
-id=618, 574.5465pt x 77.69025pt>
+id=630, 574.5465pt x 77.69025pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".
 png Graphic file (type png)
@@ -1572,11 +1581,11 @@ eOnPageRank/""/Top20Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".p
 ng>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/SportCoarseGrainedRunnedWithSport
-CoarseGrained-tsv".png  used on input line 300.
+CoarseGrained-tsv".png  used on input line 291.
 (pdftex.def)             Requested size: 369.0pt x 49.89702pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top20Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png, id=6
-19, 579.3645pt x 127.07475pt>
+31, 579.3645pt x 127.07475pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top20Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png 
 Graphic file (type png)
@@ -1584,21 +1593,37 @@ Graphic file (type png)
 eOnPageRank/""/Top20Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top20Links/SportFineGrainedRunnedWithSportFi
-neGrained-tsv".png  used on input line 307.
+neGrained-tsv".png  used on input line 296.
 (pdftex.def)             Requested size: 369.0pt x 80.93587pt.
-
-[12 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
-OnPageRank//Top20Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-t
-sv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstract
-BaseOnPageRank//Top20Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-
-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
-tBaseOnPageRank//Top20Links/All3DomainsFineGrainedRunnedWithSportFineGrained-ts
-v.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractB
-aseOnPageRank//Top20Links/All3DomainsFineGrainedRunnedWithTransportationFineGra
-ined-tsv.png>]
+<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
+ageRank/""/Top20Links/TransportationCoarseGrainedRunnedWithTransportationCoarse
+Grained-tsv".png, id=632, 575.14874pt x 78.2925pt>
+File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
+seOnPageRank/""/Top20Links/TransportationCoarseGrainedRunnedWithTransportationC
+oarseGrained-tsv".png Graphic file (type png)
+<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank/""/Top20Links/TransportationCoarseGrainedRunnedWithTransportationCo
+arseGrained-tsv".png>
+Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
+nnotationAbstractBaseOnPageRank/""/Top20Links/TransportationCoarseGrainedRunned
+WithTransportationCoarseGrained-tsv".png  used on input line 301.
+(pdftex.def)             Requested size: 369.0pt x 50.23126pt.
+<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
+ageRank/""/Top20Links/TransportationFineGrainedRunnedWithTransportationFineGrai
+ned-tsv".png, id=633, 578.76225pt x 116.23425pt>
+File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
+seOnPageRank/""/Top20Links/TransportationFineGrainedRunnedWithTransportationFin
+eGrained-tsv".png Graphic file (type png)
+<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank/""/Top20Links/TransportationFineGrainedRunnedWithTransportationFine
+Grained-tsv".png>
+Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
+nnotationAbstractBaseOnPageRank/""/Top20Links/TransportationFineGrainedRunnedWi
+thTransportationFineGrained-tsv".png  used on input line 306.
+(pdftex.def)             Requested size: 369.0pt x 74.10765pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGraine
-d-tsv".png, id=628, 575.751pt x 98.769pt>
+d-tsv".png, id=634, 575.751pt x 98.769pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseG
 rained-tsv".png Graphic file (type png)
@@ -1607,11 +1632,11 @@ eOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGr
 ained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWit
-hAll3DomainsCoarseGrained-tsv".png  used on input line 315.
+hAll3DomainsCoarseGrained-tsv".png  used on input line 314.
 (pdftex.def)             Requested size: 369.0pt x 63.30386pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-t
-sv".png, id=629, 574.5465pt x 78.2925pt>
+sv".png, id=635, 574.5465pt x 78.2925pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrai
 ned-tsv".png Graphic file (type png)
@@ -1620,11 +1645,11 @@ eOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrain
 ed-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWit
-hPoliticsCoarseGrained-tsv".png  used on input line 322.
+hPoliticsCoarseGrained-tsv".png  used on input line 321.
 (pdftex.def)             Requested size: 369.0pt x 50.28383pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv"
-.png, id=630, 573.342pt x 78.89474pt>
+.png, id=636, 573.342pt x 78.89474pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained
 -tsv".png Graphic file (type png)
@@ -1633,11 +1658,11 @@ eOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-
 tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWit
-hSportCoarseGrained-tsv".png  used on input line 329.
+hSportCoarseGrained-tsv".png  used on input line 328.
 (pdftex.def)             Requested size: 369.0pt x 50.77776pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGra
-ined-tsv".png, id=631, 573.94424pt x 88.53075pt>
+ined-tsv".png, id=637, 573.94424pt x 88.53075pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithTransportationCoar
 seGrained-tsv".png Graphic file (type png)
@@ -1646,11 +1671,11 @@ eOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWithTransportationCoars
 eGrained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top40Links/All3DomainsCoarseGrainedRunnedWit
-hTransportationCoarseGrained-tsv".png  used on input line 336.
+hTransportationCoarseGrained-tsv".png  used on input line 335.
 (pdftex.def)             Requested size: 369.0pt x 56.91748pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-ts
-v".png, id=632, 578.16pt x 204.16275pt>
+v".png, id=638, 578.16pt x 204.16275pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrain
 ed-tsv".png Graphic file (type png)
@@ -1659,11 +1684,11 @@ eOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGraine
 d-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithA
-ll3DomainsFineGrained-tsv".png  used on input line 343.
+ll3DomainsFineGrained-tsv".png  used on input line 342.
 (pdftex.def)             Requested size: 369.0pt x 130.30234pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".
-png, id=633, 576.35326pt x 98.16675pt>
+png, id=639, 576.35326pt x 98.16675pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-
 tsv".png Graphic file (type png)
@@ -1672,11 +1697,11 @@ eOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-t
 sv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithP
-oliticsFineGrained-tsv".png  used on input line 350.
+oliticsFineGrained-tsv".png  used on input line 349.
 (pdftex.def)             Requested size: 369.0pt x 62.84897pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png
-, id=634, 575.751pt x 127.677pt>
+, id=640, 575.751pt x 127.677pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv
 ".png Graphic file (type png)
@@ -1685,68 +1710,40 @@ eOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv"
 .png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithS
-portFineGrained-tsv".png  used on input line 357.
+portFineGrained-tsv".png  used on input line 356.
 (pdftex.def)             Requested size: 369.0pt x 81.83183pt.
-<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
-ageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained
--tsv".png, id=635, 575.751pt x 145.14224pt>
-File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
-seOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithTransportationFineGr
-ained-tsv".png Graphic file (type png)
-<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithTransportationFineGra
-ined-tsv".png>
-Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
-nnotationAbstractBaseOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithT
-ransportationFineGrained-tsv".png  used on input line 364.
-(pdftex.def)             Requested size: 369.0pt x 93.0258pt.
-<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
-ageRank/""/Top40Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv"
-.png, id=636, 573.94424pt x 77.088pt>
-File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
-seOnPageRank/""/Top40Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained
--tsv".png Graphic file (type png)
-<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank/""/Top40Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-
-tsv".png>
-Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
-nnotationAbstractBaseOnPageRank/""/Top40Links/PoliticsCoarseGrainedRunnedWithPo
-liticsCoarseGrained-tsv".png  used on input line 371.
-(pdftex.def)             Requested size: 369.0pt x 49.5608pt.
-<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
-ageRank/""/Top40Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png
-, id=637, 579.3645pt x 96.36pt>
-File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
-seOnPageRank/""/Top40Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv
-".png Graphic file (type png)
-<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank/""/Top40Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv"
-.png>
-Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
-nnotationAbstractBaseOnPageRank/""/Top40Links/PoliticsFineGrainedRunnedWithPoli
-ticsFineGrained-tsv".png  used on input line 378.
-(pdftex.def)             Requested size: 369.0pt x 61.37315pt.
-<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
-ageRank/""/Top40Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png, 
-id=638, 574.5465pt x 77.088pt>
-File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
-seOnPageRank/""/Top40Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".
-png Graphic file (type png)
-<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank/""/Top40Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".p
-ng>
-Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
-nnotationAbstractBaseOnPageRank/""/Top40Links/SportCoarseGrainedRunnedWithSport
-CoarseGrained-tsv".png  used on input line 386.
-(pdftex.def)             Requested size: 369.0pt x 49.51022pt.
- [13 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank//Top20Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-ts
-v.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractB
-aseOnPageRank//Top20Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv.
-png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank//Top20Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv.png>
- <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
-ageRank//Top20Links/SportFineGrainedRunnedWithSportFineGrained-tsv.png>] [14 <C
+
+[12 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Top10Links/TransportationFineGrainedRunnedWithTransportationFineGra
+ined-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAb
+stractBaseOnPageRank//Top20Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsC
+oarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnno
+tationAbstractBaseOnPageRank//Top20Links/All3DomainsCoarseGrainedRunnedWithPoli
+ticsCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/On
+eAnnotationAbstractBaseOnPageRank//Top20Links/All3DomainsCoarseGrainedRunnedWit
+hSportCoarseGrained-tsv.png>] [13 <C:/Users/Jakovcheski/Desktop/Stanford NER ou
+tput/OneAnnotationAbstractBaseOnPageRank//Top20Links/All3DomainsCoarseGrainedRu
+nnedWithTransportationCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stan
+ford NER output/OneAnnotationAbstractBaseOnPageRank//Top20Links/All3DomainsFine
+GrainedRunnedWithAll3DomainsFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/
+Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top20Links/All3Domains
+FineGrainedRunnedWithPoliticsFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop
+/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top20Links/All3Domain
+sFineGrainedRunnedWithSportFineGrained-tsv.png>] [14 <C:/Users/Jakovcheski/Desk
+top/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top20Links/All3Dom
+ainsFineGrainedRunnedWithTransportationFineGrained-tsv.png> <C:/Users/Jakovches
+ki/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top20Links/
+PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv.png> <C:/Users/Jakovch
+eski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top20Link
+s/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv.png> <C:/Users/Jakovches
+ki/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top20Links/
+SportCoarseGrainedRunnedWithSportCoarseGrained-tsv.png> <C:/Users/Jakovcheski/D
+esktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top20Links/Spor
+tFineGrainedRunnedWithSportFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/S
+tanford NER output/OneAnnotationAbstractBaseOnPageRank//Top20Links/Transportati
+onCoarseGrainedRunnedWithTransportationCoarseGrained-tsv.png>] [15 <C:/Users/Ja
+kovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top2
+0Links/TransportationFineGrainedRunnedWithTransportationFineGrained-tsv.png> <C
 :/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPage
 Rank//Top40Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv
 .png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
@@ -1755,22 +1752,62 @@ d-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstr
 actBaseOnPageRank//Top40Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrai
 ned-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbs
 tractBaseOnPageRank//Top40Links/All3DomainsCoarseGrainedRunnedWithTransportatio
-nCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAn
-notationAbstractBaseOnPageRank//Top40Links/All3DomainsFineGrainedRunnedWithAll3
-DomainsFineGrained-tsv.png>] [15 <C:/Users/Jakovcheski/Desktop/Stanford NER out
-put/OneAnnotationAbstractBaseOnPageRank//Top40Links/All3DomainsFineGrainedRunne
-dWithPoliticsFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER ou
-tput/OneAnnotationAbstractBaseOnPageRank//Top40Links/All3DomainsFineGrainedRunn
-edWithSportFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER outp
-ut/OneAnnotationAbstractBaseOnPageRank//Top40Links/All3DomainsFineGrainedRunned
-WithTransportationFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford N
-ER output/OneAnnotationAbstractBaseOnPageRank//Top40Links/PoliticsCoarseGrained
-RunnedWithPoliticsCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford
- NER output/OneAnnotationAbstractBaseOnPageRank//Top40Links/PoliticsFineGrained
-RunnedWithPoliticsFineGrained-tsv.png>]
+nCoarseGrained-tsv.png>]
+<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
+ageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained
+-tsv".png, id=679, 575.751pt x 145.14224pt>
+File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
+seOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithTransportationFineGr
+ained-tsv".png Graphic file (type png)
+<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithTransportationFineGra
+ined-tsv".png>
+Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
+nnotationAbstractBaseOnPageRank/""/Top40Links/All3DomainsFineGrainedRunnedWithT
+ransportationFineGrained-tsv".png  used on input line 363.
+(pdftex.def)             Requested size: 369.0pt x 93.0258pt.
+<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
+ageRank/""/Top40Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv"
+.png, id=680, 573.94424pt x 77.088pt>
+File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
+seOnPageRank/""/Top40Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained
+-tsv".png Graphic file (type png)
+<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank/""/Top40Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-
+tsv".png>
+Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
+nnotationAbstractBaseOnPageRank/""/Top40Links/PoliticsCoarseGrainedRunnedWithPo
+liticsCoarseGrained-tsv".png  used on input line 370.
+(pdftex.def)             Requested size: 369.0pt x 49.5608pt.
+<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
+ageRank/""/Top40Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png
+, id=681, 579.3645pt x 96.36pt>
+File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
+seOnPageRank/""/Top40Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv
+".png Graphic file (type png)
+<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank/""/Top40Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv"
+.png>
+Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
+nnotationAbstractBaseOnPageRank/""/Top40Links/PoliticsFineGrainedRunnedWithPoli
+ticsFineGrained-tsv".png  used on input line 377.
+(pdftex.def)             Requested size: 369.0pt x 61.37315pt.
+<"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
+ageRank/""/Top40Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png, 
+id=682, 574.5465pt x 77.088pt>
+File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
+seOnPageRank/""/Top40Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".
+png Graphic file (type png)
+<use "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank/""/Top40Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".p
+ng>
+Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
+nnotationAbstractBaseOnPageRank/""/Top40Links/SportCoarseGrainedRunnedWithSport
+CoarseGrained-tsv".png  used on input line 385.
+(pdftex.def)             Requested size: 369.0pt x 49.51022pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top40Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png, id=6
-67, 576.9555pt x 126.4725pt>
+83, 576.9555pt x 126.4725pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top40Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png 
 Graphic file (type png)
@@ -1778,11 +1815,11 @@ Graphic file (type png)
 eOnPageRank/""/Top40Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top40Links/SportFineGrainedRunnedWithSportFi
-neGrained-tsv".png  used on input line 393.
+neGrained-tsv".png  used on input line 392.
 (pdftex.def)             Requested size: 369.0pt x 80.88808pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrain
-ed-tsv".png, id=668, 573.342pt x 98.769pt>
+ed-tsv".png, id=684, 573.342pt x 98.769pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarse
 Grained-tsv".png Graphic file (type png)
@@ -1791,11 +1828,11 @@ eOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseG
 rained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWi
-thAll3DomainsCoarseGrained-tsv".png  used on input line 401.
+thAll3DomainsCoarseGrained-tsv".png  used on input line 400.
 (pdftex.def)             Requested size: 369.0pt x 63.5691pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-
-tsv".png, id=669, 570.933pt x 77.69025pt>
+tsv".png, id=685, 570.933pt x 77.69025pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGra
 ined-tsv".png Graphic file (type png)
@@ -1804,11 +1841,11 @@ eOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrai
 ned-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWi
-thPoliticsCoarseGrained-tsv".png  used on input line 408.
+thPoliticsCoarseGrained-tsv".png  used on input line 407.
 (pdftex.def)             Requested size: 369.0pt x 50.21353pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv
-".png, id=670, 573.342pt x 77.69025pt>
+".png, id=686, 573.342pt x 77.69025pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGraine
 d-tsv".png Graphic file (type png)
@@ -1817,11 +1854,11 @@ eOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained
 -tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWi
-thSportCoarseGrained-tsv".png  used on input line 415.
+thSportCoarseGrained-tsv".png  used on input line 414.
 (pdftex.def)             Requested size: 369.0pt x 50.00252pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGr
-ained-tsv".png, id=671, 574.5465pt x 87.9285pt>
+ained-tsv".png, id=687, 574.5465pt x 87.9285pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithTransportationCoa
 rseGrained-tsv".png Graphic file (type png)
@@ -1830,11 +1867,11 @@ eOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWithTransportationCoar
 seGrained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/All3DomainsCoarseGrainedRunnedWi
-thTransportationCoarseGrained-tsv".png  used on input line 422.
+thTransportationCoarseGrained-tsv".png  used on input line 421.
 (pdftex.def)             Requested size: 369.0pt x 56.4726pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-t
-sv".png, id=672, 577.55775pt x 232.4685pt>
+sv".png, id=688, 577.55775pt x 232.4685pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrai
 ned-tsv".png Graphic file (type png)
@@ -1843,11 +1880,11 @@ eOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrain
 ed-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWith
-All3DomainsFineGrained-tsv".png  used on input line 429.
+All3DomainsFineGrained-tsv".png  used on input line 428.
 (pdftex.def)             Requested size: 369.0pt x 148.52747pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv"
-.png, id=673, 575.751pt x 106.59825pt>
+.png, id=689, 575.751pt x 106.59825pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained
 -tsv".png Graphic file (type png)
@@ -1856,11 +1893,11 @@ eOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-
 tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWith
-PoliticsFineGrained-tsv".png  used on input line 436.
+PoliticsFineGrained-tsv".png  used on input line 435.
 (pdftex.def)             Requested size: 369.0pt x 68.32185pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".pn
-g, id=674, 576.35326pt x 136.71075pt>
+g, id=690, 576.35326pt x 136.71075pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithSportFineGrained-ts
 v".png Graphic file (type png)
@@ -1869,11 +1906,38 @@ eOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv
 ".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWith
-SportFineGrained-tsv".png  used on input line 443.
+SportFineGrained-tsv".png  used on input line 442.
 (pdftex.def)             Requested size: 369.0pt x 87.52586pt.
+ [16 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank//Top40Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-
+tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
+tBaseOnPageRank//Top40Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained
+-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstra
+ctBaseOnPageRank//Top40Links/All3DomainsFineGrainedRunnedWithSportFineGrained-t
+sv.png>] [17 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbs
+tractBaseOnPageRank//Top40Links/All3DomainsFineGrainedRunnedWithTransportationF
+ineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnota
+tionAbstractBaseOnPageRank//Top40Links/PoliticsCoarseGrainedRunnedWithPoliticsC
+oarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnno
+tationAbstractBaseOnPageRank//Top40Links/PoliticsFineGrainedRunnedWithPoliticsF
+ineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnota
+tionAbstractBaseOnPageRank//Top40Links/SportCoarseGrainedRunnedWithSportCoarseG
+rained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotation
+AbstractBaseOnPageRank//Top40Links/SportFineGrainedRunnedWithSportFineGrained-t
+sv.png>] [18 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbs
+tractBaseOnPageRank//Top100Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsC
+oarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnno
+tationAbstractBaseOnPageRank//Top100Links/All3DomainsCoarseGrainedRunnedWithPol
+iticsCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/O
+neAnnotationAbstractBaseOnPageRank//Top100Links/All3DomainsCoarseGrainedRunnedW
+ithSportCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER outpu
+t/OneAnnotationAbstractBaseOnPageRank//Top100Links/All3DomainsCoarseGrainedRunn
+edWithTransportationCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanfo
+rd NER output/OneAnnotationAbstractBaseOnPageRank//Top100Links/All3DomainsFineG
+rainedRunnedWithAll3DomainsFineGrained-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithTransportationFineGraine
-d-tsv".png, id=675, 573.94424pt x 163.812pt>
+d-tsv".png, id=717, 573.94424pt x 163.812pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithTransportationFineG
 rained-tsv".png Graphic file (type png)
@@ -1882,11 +1946,11 @@ eOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWithTransportationFineGr
 ained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/All3DomainsFineGrainedRunnedWith
-TransportationFineGrained-tsv".png  used on input line 450.
+TransportationFineGrained-tsv".png  used on input line 449.
 (pdftex.def)             Requested size: 369.0pt x 105.31673pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv
-".png, id=676, 573.94424pt x 78.89474pt>
+".png, id=718, 573.94424pt x 78.89474pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGraine
 d-tsv".png Graphic file (type png)
@@ -1895,11 +1959,11 @@ eOnPageRank/""/Top100Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained
 -tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/PoliticsCoarseGrainedRunnedWithP
-oliticsCoarseGrained-tsv".png  used on input line 457.
+oliticsCoarseGrained-tsv".png  used on input line 456.
 (pdftex.def)             Requested size: 369.0pt x 50.72238pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".pn
-g, id=677, 576.9555pt x 96.36pt>
+g, id=719, 576.9555pt x 96.36pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-ts
 v".png Graphic file (type png)
@@ -1908,30 +1972,11 @@ eOnPageRank/""/Top100Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv
 ".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/PoliticsFineGrainedRunnedWithPol
-iticsFineGrained-tsv".png  used on input line 464.
+iticsFineGrained-tsv".png  used on input line 463.
 (pdftex.def)             Requested size: 369.0pt x 61.629pt.
- [16 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank//Top40Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv.png>
- <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
-ageRank//Top40Links/SportFineGrainedRunnedWithSportFineGrained-tsv.png> <C:/Use
-rs/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank/
-/Top100Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv.png
-> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOn
-PageRank//Top100Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-t
-sv.png>] [17 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbs
-tractBaseOnPageRank//Top100Links/All3DomainsCoarseGrainedRunnedWithSportCoarseG
-rained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotation
-AbstractBaseOnPageRank//Top100Links/All3DomainsCoarseGrainedRunnedWithTransport
-ationCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/O
-neAnnotationAbstractBaseOnPageRank//Top100Links/All3DomainsFineGrainedRunnedWit
-hAll3DomainsFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER out
-put/OneAnnotationAbstractBaseOnPageRank//Top100Links/All3DomainsFineGrainedRunn
-edWithPoliticsFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER o
-utput/OneAnnotationAbstractBaseOnPageRank//Top100Links/All3DomainsFineGrainedRu
-nnedWithSportFineGrained-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png,
- id=696, 572.73975pt x 78.89474pt>
+ id=720, 572.73975pt x 78.89474pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv"
 .png Graphic file (type png)
@@ -1940,11 +1985,11 @@ eOnPageRank/""/Top100Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".
 png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/SportCoarseGrainedRunnedWithSpor
-tCoarseGrained-tsv".png  used on input line 472.
+tCoarseGrained-tsv".png  used on input line 471.
 (pdftex.def)             Requested size: 369.0pt x 50.83072pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top100Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png, id=
-697, 575.14874pt x 135.50626pt>
+721, 575.14874pt x 135.50626pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top100Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png
  Graphic file (type png)
@@ -1953,11 +1998,11 @@ eOnPageRank/""/Top100Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png>
 
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top100Links/SportFineGrainedRunnedWithSportF
-ineGrained-tsv".png  used on input line 479.
+ineGrained-tsv".png  used on input line 478.
 (pdftex.def)             Requested size: 369.0pt x 86.93872pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrain
-ed-tsv".png, id=698, 573.94424pt x 97.5645pt>
+ed-tsv".png, id=722, 573.94424pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarse
 Grained-tsv".png Graphic file (type png)
@@ -1966,11 +2011,21 @@ eOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseG
 rained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWi
-thAll3DomainsCoarseGrained-tsv".png  used on input line 487.
+thAll3DomainsCoarseGrained-tsv".png  used on input line 486.
 (pdftex.def)             Requested size: 369.0pt x 62.72539pt.
+
+[19 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Top100Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv
+.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
+seOnPageRank//Top100Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv.
+png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank//Top100Links/All3DomainsFineGrainedRunnedWithTransportationFineGrai
+ned-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbs
+tractBaseOnPageRank//Top100Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseG
+rained-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-
-tsv".png, id=699, 572.73975pt x 87.9285pt>
+tsv".png, id=732, 572.73975pt x 87.9285pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGra
 ined-tsv".png Graphic file (type png)
@@ -1979,11 +2034,11 @@ eOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrai
 ned-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWi
-thPoliticsCoarseGrained-tsv".png  used on input line 494.
+thPoliticsCoarseGrained-tsv".png  used on input line 493.
 (pdftex.def)             Requested size: 369.0pt x 56.65105pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv
-".png, id=700, 573.342pt x 97.5645pt>
+".png, id=733, 573.342pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGraine
 d-tsv".png Graphic file (type png)
@@ -1992,11 +2047,11 @@ eOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained
 -tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWi
-thSportCoarseGrained-tsv".png  used on input line 501.
+thSportCoarseGrained-tsv".png  used on input line 500.
 (pdftex.def)             Requested size: 369.0pt x 62.79387pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGr
-ained-tsv".png, id=701, 571.53525pt x 89.133pt>
+ained-tsv".png, id=734, 571.53525pt x 89.133pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithTransportationCoa
 rseGrained-tsv".png Graphic file (type png)
@@ -2005,11 +2060,11 @@ eOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWithTransportationCoar
 seGrained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/All3DomainsCoarseGrainedRunnedWi
-thTransportationCoarseGrained-tsv".png  used on input line 508.
+thTransportationCoarseGrained-tsv".png  used on input line 507.
 (pdftex.def)             Requested size: 369.0pt x 57.54677pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-t
-sv".png, id=702, 577.55775pt x 233.07076pt>
+sv".png, id=735, 577.55775pt x 233.07076pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrai
 ned-tsv".png Graphic file (type png)
@@ -2018,11 +2073,11 @@ eOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrain
 ed-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWith
-All3DomainsFineGrained-tsv".png  used on input line 515.
+All3DomainsFineGrained-tsv".png  used on input line 514.
 (pdftex.def)             Requested size: 369.0pt x 148.91226pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv"
-.png, id=703, 576.35326pt x 127.07475pt>
+.png, id=736, 576.35326pt x 127.07475pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained
 -tsv".png Graphic file (type png)
@@ -2031,11 +2086,11 @@ eOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-
 tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWith
-PoliticsFineGrained-tsv".png  used on input line 522.
+PoliticsFineGrained-tsv".png  used on input line 521.
 (pdftex.def)             Requested size: 369.0pt x 81.35664pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".pn
-g, id=704, 576.35326pt x 155.3805pt>
+g, id=737, 576.35326pt x 155.3805pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithSportFineGrained-ts
 v".png Graphic file (type png)
@@ -2044,30 +2099,11 @@ eOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv
 ".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWith
-SportFineGrained-tsv".png  used on input line 529.
+SportFineGrained-tsv".png  used on input line 528.
 (pdftex.def)             Requested size: 369.0pt x 99.47873pt.
- [18 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank//Top100Links/All3DomainsFineGrainedRunnedWithTransportationFineGrai
-ned-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbs
-tractBaseOnPageRank//Top100Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseG
-rained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotation
-AbstractBaseOnPageRank//Top100Links/PoliticsFineGrainedRunnedWithPoliticsFineGr
-ained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationA
-bstractBaseOnPageRank//Top100Links/SportCoarseGrainedRunnedWithSportCoarseGrain
-ed-tsv.png>] [19 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotatio
-nAbstractBaseOnPageRank//Top100Links/SportFineGrainedRunnedWithSportFineGrained
--tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstra
-ctBaseOnPageRank//Top300Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoar
-seGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotat
-ionAbstractBaseOnPageRank//Top300Links/All3DomainsCoarseGrainedRunnedWithPoliti
-csCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
-nnotationAbstractBaseOnPageRank//Top300Links/All3DomainsCoarseGrainedRunnedWith
-SportCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/O
-neAnnotationAbstractBaseOnPageRank//Top300Links/All3DomainsCoarseGrainedRunnedW
-ithTransportationCoarseGrained-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithTransportationFineGraine
-d-tsv".png, id=724, 577.55775pt x 174.6525pt>
+d-tsv".png, id=738, 577.55775pt x 174.6525pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithTransportationFineG
 rained-tsv".png Graphic file (type png)
@@ -2076,11 +2112,11 @@ eOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWithTransportationFineGr
 ained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/All3DomainsFineGrainedRunnedWith
-TransportationFineGrained-tsv".png  used on input line 536.
+TransportationFineGrained-tsv".png  used on input line 535.
 (pdftex.def)             Requested size: 369.0pt x 111.588pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv
-".png, id=725, 575.14874pt x 78.89474pt>
+".png, id=739, 575.14874pt x 78.89474pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGraine
 d-tsv".png Graphic file (type png)
@@ -2089,11 +2125,11 @@ eOnPageRank/""/Top300Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained
 -tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/PoliticsCoarseGrainedRunnedWithP
-oliticsCoarseGrained-tsv".png  used on input line 543.
+oliticsCoarseGrained-tsv".png  used on input line 542.
 (pdftex.def)             Requested size: 369.0pt x 50.61765pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".pn
-g, id=726, 575.751pt x 98.16675pt>
+g, id=740, 575.751pt x 98.16675pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-ts
 v".png Graphic file (type png)
@@ -2102,11 +2138,11 @@ eOnPageRank/""/Top300Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv
 ".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/PoliticsFineGrainedRunnedWithPol
-iticsFineGrained-tsv".png  used on input line 550.
+iticsFineGrained-tsv".png  used on input line 549.
 (pdftex.def)             Requested size: 369.0pt x 62.91786pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png,
- id=727, 573.94424pt x 78.2925pt>
+ id=741, 573.94424pt x 78.2925pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv"
 .png Graphic file (type png)
@@ -2115,11 +2151,38 @@ eOnPageRank/""/Top300Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".
 png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/SportCoarseGrainedRunnedWithSpor
-tCoarseGrained-tsv".png  used on input line 558.
+tCoarseGrained-tsv".png  used on input line 557.
 (pdftex.def)             Requested size: 369.0pt x 50.33519pt.
+ [20 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank//Top100Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv.p
+ng> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Top100Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv.png>
+ <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
+ageRank//Top100Links/SportFineGrainedRunnedWithSportFineGrained-tsv.png> <C:/Us
+ers/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank
+//Top300Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv.pn
+g>] [21 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstract
+BaseOnPageRank//Top300Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGra
+ined-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAb
+stractBaseOnPageRank//Top300Links/All3DomainsCoarseGrainedRunnedWithSportCoarse
+Grained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotatio
+nAbstractBaseOnPageRank//Top300Links/All3DomainsCoarseGrainedRunnedWithTranspor
+tationCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/
+OneAnnotationAbstractBaseOnPageRank//Top300Links/All3DomainsFineGrainedRunnedWi
+thAll3DomainsFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER ou
+tput/OneAnnotationAbstractBaseOnPageRank//Top300Links/All3DomainsFineGrainedRun
+nedWithPoliticsFineGrained-tsv.png>] [22 <C:/Users/Jakovcheski/Desktop/Stanford
+ NER output/OneAnnotationAbstractBaseOnPageRank//Top300Links/All3DomainsFineGra
+inedRunnedWithSportFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford 
+NER output/OneAnnotationAbstractBaseOnPageRank//Top300Links/All3DomainsFineGrai
+nedRunnedWithTransportationFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/S
+tanford NER output/OneAnnotationAbstractBaseOnPageRank//Top300Links/PoliticsCoa
+rseGrainedRunnedWithPoliticsCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Deskto
+p/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top300Links/Politics
+FineGrainedRunnedWithPoliticsFineGrained-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top300Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png, id=
-728, 577.55775pt x 135.50626pt>
+768, 577.55775pt x 135.50626pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top300Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png
  Graphic file (type png)
@@ -2128,11 +2191,11 @@ eOnPageRank/""/Top300Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png>
 
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top300Links/SportFineGrainedRunnedWithSportF
-ineGrained-tsv".png  used on input line 565.
+ineGrained-tsv".png  used on input line 564.
 (pdftex.def)             Requested size: 369.0pt x 86.57689pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrain
-ed-tsv".png, id=729, 585.98924pt x 96.96225pt>
+ed-tsv".png, id=769, 585.98924pt x 96.96225pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarse
 Grained-tsv".png Graphic file (type png)
@@ -2141,11 +2204,11 @@ eOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseG
 rained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWi
-thAll3DomainsCoarseGrained-tsv".png  used on input line 573.
+thAll3DomainsCoarseGrained-tsv".png  used on input line 572.
 (pdftex.def)             Requested size: 369.0pt x 61.05843pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-
-tsv".png, id=730, 586.5915pt x 98.769pt>
+tsv".png, id=770, 586.5915pt x 98.769pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGra
 ined-tsv".png Graphic file (type png)
@@ -2154,11 +2217,11 @@ eOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrai
 ned-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWi
-thPoliticsCoarseGrained-tsv".png  used on input line 580.
+thPoliticsCoarseGrained-tsv".png  used on input line 579.
 (pdftex.def)             Requested size: 369.0pt x 62.13284pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv
-".png, id=731, 586.5915pt x 98.16675pt>
+".png, id=771, 586.5915pt x 98.16675pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGraine
 d-tsv".png Graphic file (type png)
@@ -2167,28 +2230,11 @@ eOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained
 -tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWi
-thSportCoarseGrained-tsv".png  used on input line 587.
+thSportCoarseGrained-tsv".png  used on input line 586.
 (pdftex.def)             Requested size: 369.0pt x 61.754pt.
- [20 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank//Top300Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained
--tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstra
-ctBaseOnPageRank//Top300Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrain
-ed-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbst
-ractBaseOnPageRank//Top300Links/All3DomainsFineGrainedRunnedWithSportFineGraine
-d-tsv.png>] [21 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotation
-AbstractBaseOnPageRank//Top300Links/All3DomainsFineGrainedRunnedWithTransportat
-ionFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAn
-notationAbstractBaseOnPageRank//Top300Links/PoliticsCoarseGrainedRunnedWithPoli
-ticsCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/On
-eAnnotationAbstractBaseOnPageRank//Top300Links/PoliticsFineGrainedRunnedWithPol
-iticsFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/One
-AnnotationAbstractBaseOnPageRank//Top300Links/SportCoarseGrainedRunnedWithSport
-CoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnn
-otationAbstractBaseOnPageRank//Top300Links/SportFineGrainedRunnedWithSportFineG
-rained-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGr
-ained-tsv".png, id=749, 585.387pt x 97.5645pt>
+ained-tsv".png, id=772, 585.387pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithTransportationCoa
 rseGrained-tsv".png Graphic file (type png)
@@ -2197,11 +2243,11 @@ eOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWithTransportationCoar
 seGrained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/All3DomainsCoarseGrainedRunnedWi
-thTransportationCoarseGrained-tsv".png  used on input line 594.
+thTransportationCoarseGrained-tsv".png  used on input line 593.
 (pdftex.def)             Requested size: 369.0pt x 61.50018pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-t
-sv".png, id=750, 577.55775pt x 232.4685pt>
+sv".png, id=773, 577.55775pt x 232.4685pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrai
 ned-tsv".png Graphic file (type png)
@@ -2210,11 +2256,11 @@ eOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrain
 ed-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWith
-All3DomainsFineGrained-tsv".png  used on input line 601.
+All3DomainsFineGrained-tsv".png  used on input line 600.
 (pdftex.def)             Requested size: 369.0pt x 148.52747pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv"
-.png, id=751, 576.9555pt x 145.7445pt>
+.png, id=774, 576.9555pt x 145.7445pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained
 -tsv".png Graphic file (type png)
@@ -2223,11 +2269,11 @@ eOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-
 tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWith
-PoliticsFineGrained-tsv".png  used on input line 608.
+PoliticsFineGrained-tsv".png  used on input line 607.
 (pdftex.def)             Requested size: 369.0pt x 93.21388pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".pn
-g, id=752, 576.9555pt x 174.6525pt>
+g, id=775, 576.9555pt x 174.6525pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithSportFineGrained-ts
 v".png Graphic file (type png)
@@ -2236,11 +2282,11 @@ eOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv
 ".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWith
-SportFineGrained-tsv".png  used on input line 615.
+SportFineGrained-tsv".png  used on input line 614.
 (pdftex.def)             Requested size: 369.0pt x 111.70259pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithTransportationFineGraine
-d-tsv".png, id=753, 575.14874pt x 183.68625pt>
+d-tsv".png, id=776, 575.14874pt x 183.68625pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithTransportationFineG
 rained-tsv".png Graphic file (type png)
@@ -2249,11 +2295,29 @@ eOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWithTransportationFineGr
 ained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/All3DomainsFineGrainedRunnedWith
-TransportationFineGrained-tsv".png  used on input line 622.
+TransportationFineGrained-tsv".png  used on input line 621.
 (pdftex.def)             Requested size: 369.0pt x 117.85027pt.
+ [23 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank//Top300Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv.png
+> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOn
+PageRank//Top300Links/SportFineGrainedRunnedWithSportFineGrained-tsv.png> <C:/U
+sers/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRan
+k//Top400Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv.p
+ng> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Top400Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained
+-tsv.png>]
+[24 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Top400Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-ts
+v.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractB
+aseOnPageRank//Top400Links/All3DomainsCoarseGrainedRunnedWithTransportationCoar
+seGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotat
+ionAbstractBaseOnPageRank//Top400Links/All3DomainsFineGrainedRunnedWithAll3Doma
+insFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAn
+notationAbstractBaseOnPageRank//Top400Links/All3DomainsFineGrainedRunnedWithPol
+iticsFineGrained-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv
-".png, id=754, 587.796pt x 78.89474pt>
+".png, id=794, 587.796pt x 78.89474pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGraine
 d-tsv".png Graphic file (type png)
@@ -2262,11 +2326,11 @@ eOnPageRank/""/Top400Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained
 -tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/PoliticsCoarseGrainedRunnedWithP
-oliticsCoarseGrained-tsv".png  used on input line 629.
+oliticsCoarseGrained-tsv".png  used on input line 628.
 (pdftex.def)             Requested size: 369.0pt x 49.52817pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".pn
-g, id=755, 576.35326pt x 96.96225pt>
+g, id=795, 576.35326pt x 96.96225pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-ts
 v".png Graphic file (type png)
@@ -2275,11 +2339,11 @@ eOnPageRank/""/Top400Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv
 ".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/PoliticsFineGrainedRunnedWithPol
-iticsFineGrained-tsv".png  used on input line 636.
+iticsFineGrained-tsv".png  used on input line 635.
 (pdftex.def)             Requested size: 369.0pt x 62.0778pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png,
- id=756, 587.19376pt x 78.2925pt>
+ id=796, 587.19376pt x 78.2925pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv"
 .png Graphic file (type png)
@@ -2288,11 +2352,11 @@ eOnPageRank/""/Top400Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".
 png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/SportCoarseGrainedRunnedWithSpor
-tCoarseGrained-tsv".png  used on input line 644.
+tCoarseGrained-tsv".png  used on input line 643.
 (pdftex.def)             Requested size: 369.0pt x 49.20027pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top400Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png, id=
-757, 576.35326pt x 135.50626pt>
+797, 576.35326pt x 135.50626pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top400Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png
  Graphic file (type png)
@@ -2301,11 +2365,11 @@ eOnPageRank/""/Top400Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png>
 
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top400Links/SportFineGrainedRunnedWithSportF
-ineGrained-tsv".png  used on input line 651.
+ineGrained-tsv".png  used on input line 650.
 (pdftex.def)             Requested size: 369.0pt x 86.7547pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrain
-ed-tsv".png, id=758, 586.5915pt x 98.769pt>
+ed-tsv".png, id=798, 586.5915pt x 98.769pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarse
 Grained-tsv".png Graphic file (type png)
@@ -2314,36 +2378,20 @@ eOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseG
 rained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWi
-thAll3DomainsCoarseGrained-tsv".png  used on input line 659.
+thAll3DomainsCoarseGrained-tsv".png  used on input line 658.
 (pdftex.def)             Requested size: 369.0pt x 62.13284pt.
- [22 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank//Top400Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGra
-ined-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAb
-stractBaseOnPageRank//Top400Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoa
-rseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnota
-tionAbstractBaseOnPageRank//Top400Links/All3DomainsCoarseGrainedRunnedWithSport
-CoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnn
-otationAbstractBaseOnPageRank//Top400Links/All3DomainsCoarseGrainedRunnedWithTr
-ansportationCoarseGrained-tsv.png>] [23 <C:/Users/Jakovcheski/Desktop/Stanford 
-NER output/OneAnnotationAbstractBaseOnPageRank//Top400Links/All3DomainsFineGrai
-nedRunnedWithAll3DomainsFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stan
-ford NER output/OneAnnotationAbstractBaseOnPageRank//Top400Links/All3DomainsFin
-eGrainedRunnedWithPoliticsFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/St
-anford NER output/OneAnnotationAbstractBaseOnPageRank//Top400Links/All3DomainsF
-ineGrainedRunnedWithSportFineGrained-tsv.png>] [24 <C:/Users/Jakovcheski/Deskto
-p/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top400Links/All3Doma
-insFineGrainedRunnedWithTransportationFineGrained-tsv.png> <C:/Users/Jakovchesk
-i/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top400Links/
-PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv.png> <C:/Users/Jakovch
-eski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top400Lin
-ks/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv.png> <C:/Users/Jakovche
-ski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top400Link
-s/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv.png> <C:/Users/Jakovcheski
-/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Top400Links/S
-portFineGrainedRunnedWithSportFineGrained-tsv.png>]
+ [25 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank//Top400Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv.p
+ng> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Top400Links/All3DomainsFineGrainedRunnedWithTransportationFineGrain
+ed-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbst
+ractBaseOnPageRank//Top400Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGr
+ained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationA
+bstractBaseOnPageRank//Top400Links/PoliticsFineGrainedRunnedWithPoliticsFineGra
+ined-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-
-tsv".png, id=783, 586.5915pt x 96.36pt>
+tsv".png, id=808, 586.5915pt x 96.36pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGra
 ined-tsv".png Graphic file (type png)
@@ -2352,11 +2400,11 @@ eOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrai
 ned-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWi
-thPoliticsCoarseGrained-tsv".png  used on input line 666.
+thPoliticsCoarseGrained-tsv".png  used on input line 665.
 (pdftex.def)             Requested size: 369.0pt x 60.61742pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv
-".png, id=784, 587.19376pt x 97.5645pt>
+".png, id=809, 587.19376pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGraine
 d-tsv".png Graphic file (type png)
@@ -2365,11 +2413,11 @@ eOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained
 -tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWi
-thSportCoarseGrained-tsv".png  used on input line 673.
+thSportCoarseGrained-tsv".png  used on input line 672.
 (pdftex.def)             Requested size: 369.0pt x 61.31111pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGr
-ained-tsv".png, id=785, 586.5915pt x 97.5645pt>
+ained-tsv".png, id=810, 586.5915pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithTransportationCoa
 rseGrained-tsv".png Graphic file (type png)
@@ -2378,11 +2426,11 @@ eOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWithTransportationCoar
 seGrained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/All3DomainsCoarseGrainedRunnedWi
-thTransportationCoarseGrained-tsv".png  used on input line 680.
+thTransportationCoarseGrained-tsv".png  used on input line 679.
 (pdftex.def)             Requested size: 369.0pt x 61.37512pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-t
-sv".png, id=786, 587.796pt x 231.86626pt>
+sv".png, id=811, 587.796pt x 231.86626pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrai
 ned-tsv".png Graphic file (type png)
@@ -2391,11 +2439,11 @@ eOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrain
 ed-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWith
-All3DomainsFineGrained-tsv".png  used on input line 687.
+All3DomainsFineGrained-tsv".png  used on input line 686.
 (pdftex.def)             Requested size: 369.0pt x 145.55995pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv"
-.png, id=787, 586.5915pt x 154.77824pt>
+.png, id=812, 586.5915pt x 154.77824pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained
 -tsv".png Graphic file (type png)
@@ -2404,11 +2452,11 @@ eOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-
 tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWith
-PoliticsFineGrained-tsv".png  used on input line 694.
+PoliticsFineGrained-tsv".png  used on input line 693.
 (pdftex.def)             Requested size: 369.0pt x 97.36673pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".pn
-g, id=788, 587.19376pt x 174.6525pt>
+g, id=813, 587.19376pt x 174.6525pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithSportFineGrained-ts
 v".png Graphic file (type png)
@@ -2417,11 +2465,11 @@ eOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv
 ".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWith
-SportFineGrained-tsv".png  used on input line 701.
+SportFineGrained-tsv".png  used on input line 700.
 (pdftex.def)             Requested size: 369.0pt x 109.75449pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithTransportationFineGraine
-d-tsv".png, id=789, 585.387pt x 184.89075pt>
+d-tsv".png, id=814, 585.387pt x 184.89075pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithTransportationFineG
 rained-tsv".png Graphic file (type png)
@@ -2430,11 +2478,11 @@ eOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWithTransportationFineGr
 ained-tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/All3DomainsFineGrainedRunnedWith
-TransportationFineGrained-tsv".png  used on input line 708.
+TransportationFineGrained-tsv".png  used on input line 707.
 (pdftex.def)             Requested size: 369.0pt x 116.54666pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv
-".png, id=790, 585.387pt x 77.69025pt>
+".png, id=815, 585.387pt x 77.69025pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGraine
 d-tsv".png Graphic file (type png)
@@ -2443,11 +2491,11 @@ eOnPageRank/""/Top500Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained
 -tsv".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/PoliticsCoarseGrainedRunnedWithP
-oliticsCoarseGrained-tsv".png  used on input line 715.
+oliticsCoarseGrained-tsv".png  used on input line 714.
 (pdftex.def)             Requested size: 369.0pt x 48.97235pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".pn
-g, id=791, 581.17125pt x 98.16675pt>
+g, id=816, 581.17125pt x 98.16675pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-ts
 v".png Graphic file (type png)
@@ -2456,11 +2504,11 @@ eOnPageRank/""/Top500Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv
 ".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/PoliticsFineGrainedRunnedWithPol
-iticsFineGrained-tsv".png  used on input line 722.
+iticsFineGrained-tsv".png  used on input line 721.
 (pdftex.def)             Requested size: 369.0pt x 62.3292pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png,
- id=792, 585.98924pt x 78.2925pt>
+ id=817, 585.98924pt x 78.2925pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv"
 .png Graphic file (type png)
@@ -2469,11 +2517,11 @@ eOnPageRank/""/Top500Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".
 png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/SportCoarseGrainedRunnedWithSpor
-tCoarseGrained-tsv".png  used on input line 730.
+tCoarseGrained-tsv".png  used on input line 729.
 (pdftex.def)             Requested size: 369.0pt x 49.30182pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Top500Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png, id=
-793, 582.37575pt x 136.71075pt>
+818, 582.37575pt x 136.71075pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Top500Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png
  Graphic file (type png)
@@ -2482,12 +2530,40 @@ eOnPageRank/""/Top500Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png>
 
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Top500Links/SportFineGrainedRunnedWithSportF
-ineGrained-tsv".png  used on input line 737.
+ineGrained-tsv".png  used on input line 736.
 (pdftex.def)             Requested size: 369.0pt x 86.6247pt.
+ [26 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank//Top400Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv.png
+> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOn
+PageRank//Top400Links/SportFineGrainedRunnedWithSportFineGrained-tsv.png> <C:/U
+sers/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRan
+k//Top500Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv.p
+ng> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Top500Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained
+-tsv.png>] [27 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationA
+bstractBaseOnPageRank//Top500Links/All3DomainsCoarseGrainedRunnedWithSportCoars
+eGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotati
+onAbstractBaseOnPageRank//Top500Links/All3DomainsCoarseGrainedRunnedWithTranspo
+rtationCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output
+/OneAnnotationAbstractBaseOnPageRank//Top500Links/All3DomainsFineGrainedRunnedW
+ithAll3DomainsFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER o
+utput/OneAnnotationAbstractBaseOnPageRank//Top500Links/All3DomainsFineGrainedRu
+nnedWithPoliticsFineGrained-tsv.png>]
+[28 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Top500Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv.pn
+g> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseO
+nPageRank//Top500Links/All3DomainsFineGrainedRunnedWithTransportationFineGraine
+d-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstr
+actBaseOnPageRank//Top500Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGra
+ined-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAb
+stractBaseOnPageRank//Top500Links/PoliticsFineGrainedRunnedWithPoliticsFineGrai
+ned-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbs
+tractBaseOnPageRank//Top500Links/SportCoarseGrainedRunnedWithSportCoarseGrained
+-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrai
-nedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=79
-4, 586.5915pt x 283.65974pt>
+nedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=84
+5, 586.5915pt x 283.65974pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFin
 eGrainedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png G
@@ -2498,38 +2574,12 @@ GrainedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/All3DomainsFineGrainedTop300LinksRunne
 dWithAll3DomainsFineGrainedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithL
-owerPageRank".png  used on input line 744.
+owerPageRank".png  used on input line 743.
 (pdftex.def)             Requested size: 369.0pt x 178.44255pt.
- [25 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank//Top500Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGra
-ined-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAb
-stractBaseOnPageRank//Top500Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoa
-rseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnota
-tionAbstractBaseOnPageRank//Top500Links/All3DomainsCoarseGrainedRunnedWithSport
-CoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnn
-otationAbstractBaseOnPageRank//Top500Links/All3DomainsCoarseGrainedRunnedWithTr
-ansportationCoarseGrained-tsv.png>]
-[26 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
-OnPageRank//Top500Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-
-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
-tBaseOnPageRank//Top500Links/All3DomainsFineGrainedRunnedWithPoliticsFineGraine
-d-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstr
-actBaseOnPageRank//Top500Links/All3DomainsFineGrainedRunnedWithSportFineGrained
--tsv.png>] [27 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationA
-bstractBaseOnPageRank//Top500Links/All3DomainsFineGrainedRunnedWithTransportati
-onFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnn
-otationAbstractBaseOnPageRank//Top500Links/PoliticsCoarseGrainedRunnedWithPolit
-icsCoarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/One
-AnnotationAbstractBaseOnPageRank//Top500Links/PoliticsFineGrainedRunnedWithPoli
-ticsFineGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
-nnotationAbstractBaseOnPageRank//Top500Links/SportCoarseGrainedRunnedWithSportC
-oarseGrained-tsv.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnno
-tationAbstractBaseOnPageRank//Top500Links/SportFineGrainedRunnedWithSportFineGr
-ained-tsv.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrai
-nedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=82
-1, 587.796pt x 282.45525pt>
+nedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=84
+6, 587.796pt x 282.45525pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFin
 eGrainedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png G
@@ -2540,11 +2590,11 @@ GrainedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/All3DomainsFineGrainedTop500LinksRunne
 dWithAll3DomainsFineGrainedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithL
-owerPageRank".png  used on input line 749.
+owerPageRank".png  used on input line 748.
 (pdftex.def)             Requested size: 369.0pt x 177.31848pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrai
-nedTop500LinksWithLowerPageRank".png, id=822, 587.19376pt x 271.61475pt>
+nedTop500LinksWithLowerPageRank".png, id=847, 587.19376pt x 271.61475pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFin
 eGrainedTop500LinksWithLowerPageRank".png Graphic file (type png)
@@ -2554,11 +2604,11 @@ GrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/All3DomainsFineGrainedTop500LinksRunne
 dWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png  used on input lin
-e 753.
+e 752.
 (pdftex.def)             Requested size: 369.0pt x 170.68716pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/TransportationFineGrainedTop500LinksRunnedWithAll3DomainsFineG
-rainedTop300LinksAndTransportationFineGrainedTop300Links".png, id=823, 587.1937
+rainedTop300LinksAndTransportationFineGrainedTop300Links".png, id=848, 587.1937
 6pt x 240.9pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/TransportationFineGrainedTop500LinksRunnedWithAll3Domains
@@ -2570,11 +2620,11 @@ ineGrainedTop300LinksAndTransportationFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/TransportationFineGrainedTop500LinksRu
 nnedWithAll3DomainsFineGrainedTop300LinksAndTransportationFineGrainedTop300Link
-s".png  used on input line 758.
+s".png  used on input line 757.
 (pdftex.def)             Requested size: 369.0pt x 151.3855pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedW
-ithAll3DomainsFineGrainedTop100Links".png, id=824, 582.37575pt x 231.86626pt>
+ithAll3DomainsFineGrainedTop100Links".png, id=849, 582.37575pt x 231.86626pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRu
 nnedWithAll3DomainsFineGrainedTop100Links".png Graphic file (type png)
@@ -2584,11 +2634,11 @@ nedWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on inpu
-t line 764.
+t line 763.
 (pdftex.def)             Requested size: 369.0pt x 146.91855pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedW
-ithAll3DomainsFineGrainedTop300Links".png, id=825, 582.37575pt x 233.07076pt>
+ithAll3DomainsFineGrainedTop300Links".png, id=850, 582.37575pt x 233.07076pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRu
 nnedWithAll3DomainsFineGrainedTop300Links".png Graphic file (type png)
@@ -2598,11 +2648,11 @@ nedWithAll3DomainsFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop300Links".png  used on inpu
-t line 769.
+t line 768.
 (pdftex.def)             Requested size: 369.0pt x 147.68176pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedW
-ithAll3DomainsFineGrainedTop500Links".png, id=826, 583.58025pt x 232.4685pt>
+ithAll3DomainsFineGrainedTop500Links".png, id=851, 583.58025pt x 232.4685pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRu
 nnedWithAll3DomainsFineGrainedTop500Links".png Graphic file (type png)
@@ -2612,11 +2662,11 @@ nedWithAll3DomainsFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop500Links".png  used on inpu
-t line 774.
+t line 773.
 (pdftex.def)             Requested size: 369.0pt x 146.99155pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedW
-ithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=827, 587.19376pt
+ithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=852, 587.19376pt
  x 271.0125pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRu
@@ -2628,11 +2678,11 @@ nedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".
-png  used on input line 779.
+png  used on input line 778.
 (pdftex.def)             Requested size: 369.0pt x 170.3087pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithAll3DomainsFineGrainedTop500Links".png, id=828, 585.98924pt x 231.264pt>
+WithAll3DomainsFineGrainedTop500Links".png, id=853, 585.98924pt x 231.264pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
 unnedWithAll3DomainsFineGrainedTop500Links".png Graphic file (type png)
@@ -2642,11 +2692,11 @@ nnedWithAll3DomainsFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithAll3DomainsFineGrainedTop500Links".png  used on inp
-ut line 784.
+ut line 783.
 (pdftex.def)             Requested size: 369.0pt x 145.63004pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=829, 586.5915pt
+WithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=854, 586.5915pt
  x 272.81924pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
@@ -2658,11 +2708,11 @@ nnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank"
-.png  used on input line 789.
+.png  used on input line 788.
 (pdftex.def)             Requested size: 369.0pt x 171.6231pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithPoliticsFineGrainedTop500Links".png, id=830, 587.19376pt x 116.8365pt>
+WithPoliticsFineGrainedTop500Links".png, id=855, 587.19376pt x 116.8365pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
 unnedWithPoliticsFineGrainedTop500Links".png Graphic file (type png)
@@ -2672,11 +2722,11 @@ nnedWithPoliticsFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithPoliticsFineGrainedTop500Links".png  used on input 
-line 794.
+line 793.
 (pdftex.def)             Requested size: 369.0pt x 73.42197pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithPoliticsFineGrainedTop500LinksWithLowerPageRank".png, id=831, 586.5915pt x 
+WithPoliticsFineGrainedTop500LinksWithLowerPageRank".png, id=856, 586.5915pt x 
 136.1085pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
@@ -2688,11 +2738,11 @@ nnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank".pn
-g  used on input line 799.
+g  used on input line 798.
 (pdftex.def)             Requested size: 369.0pt x 85.6221pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithSportFineGrainedTop500Links".png, id=832, 585.387pt x 165.61874pt>
+WithSportFineGrainedTop500Links".png, id=857, 585.387pt x 165.61874pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
 unnedWithSportFineGrainedTop500Links".png Graphic file (type png)
@@ -2702,11 +2752,11 @@ nnedWithSportFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithSportFineGrainedTop500Links".png  used on input lin
-e 804.
+e 803.
 (pdftex.def)             Requested size: 369.0pt x 104.39847pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithSportFineGrainedTop500LinksWithLowerPageRank".png, id=833, 588.39825pt x 16
+WithSportFineGrainedTop500LinksWithLowerPageRank".png, id=858, 588.39825pt x 16
 4.41425pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
@@ -2718,11 +2768,11 @@ nnedWithSportFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithSportFineGrainedTop500LinksWithLowerPageRank".png  
-used on input line 809.
+used on input line 808.
 (pdftex.def)             Requested size: 369.0pt x 103.10986pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithTransportationFineGrainedTop500Links".png, id=834, 586.5915pt x 173.448pt>
+WithTransportationFineGrainedTop500Links".png, id=859, 586.5915pt x 173.448pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
 unnedWithTransportationFineGrainedTop500Links".png Graphic file (type png)
@@ -2732,11 +2782,11 @@ nnedWithTransportationFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithTransportationFineGrainedTop500Links".png  used on 
-input line 814.
+input line 813.
 (pdftex.def)             Requested size: 369.0pt x 109.11137pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithTransportationFineGrainedTop500LinksWithLowerPageRank".png, id=835, 587.796
+WithTransportationFineGrainedTop500LinksWithLowerPageRank".png, id=860, 587.796
 pt x 204.765pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
@@ -2748,11 +2798,11 @@ nnedWithTransportationFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithTransportationFineGrainedTop500LinksWithLowerPageRa
-nk".png  used on input line 819.
+nk".png  used on input line 818.
 (pdftex.def)             Requested size: 369.0pt x 128.54645pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithAll3DomainsFineGrainedTop500Links".png, id=836, 585.98924pt x 233.07076pt>
+WithAll3DomainsFineGrainedTop500Links".png, id=861, 585.98924pt x 233.07076pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
 unnedWithAll3DomainsFineGrainedTop500Links".png Graphic file (type png)
@@ -2762,11 +2812,11 @@ nnedWithAll3DomainsFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop500Links".png  used on inp
-ut line 824.
+ut line 823.
 (pdftex.def)             Requested size: 369.0pt x 146.76778pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=837, 587.796pt 
+WithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=862, 587.796pt 
 x 273.4215pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
@@ -2778,11 +2828,11 @@ nnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank"
-.png  used on input line 829.
+.png  used on input line 828.
 (pdftex.def)             Requested size: 369.0pt x 171.64731pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithPoliticsFineGrainedTop500Links".png, id=838, 586.5915pt x 154.176pt>
+WithPoliticsFineGrainedTop500Links".png, id=863, 586.5915pt x 154.176pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
 unnedWithPoliticsFineGrainedTop500Links".png Graphic file (type png)
@@ -2792,11 +2842,11 @@ nnedWithPoliticsFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithPoliticsFineGrainedTop500Links".png  used on input 
-line 834.
+line 833.
 (pdftex.def)             Requested size: 369.0pt x 96.98787pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithPoliticsFineGrainedTop500LinksWithLowerPageRank".png, id=839, 587.19376pt x
+WithPoliticsFineGrainedTop500LinksWithLowerPageRank".png, id=864, 587.19376pt x
  145.7445pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
@@ -2808,11 +2858,11 @@ nnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank".pn
-g  used on input line 839.
+g  used on input line 838.
 (pdftex.def)             Requested size: 369.0pt x 91.58823pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithSportFineGrainedTop500Links".png, id=840, 585.98924pt x 183.68625pt>
+WithSportFineGrainedTop500Links".png, id=865, 585.98924pt x 183.68625pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
 unnedWithSportFineGrainedTop500Links".png Graphic file (type png)
@@ -2822,11 +2872,11 @@ nnedWithSportFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithSportFineGrainedTop500Links".png  used on input lin
-e 844.
+e 843.
 (pdftex.def)             Requested size: 369.0pt x 115.66968pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithSportFineGrainedTop500LinksWithLowerPageRank".png, id=841, 584.78474pt x 16
+WithSportFineGrainedTop500LinksWithLowerPageRank".png, id=866, 584.78474pt x 16
 4.41425pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
@@ -2838,11 +2888,11 @@ nnedWithSportFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithSportFineGrainedTop500LinksWithLowerPageRank".png  
-used on input line 849.
+used on input line 848.
 (pdftex.def)             Requested size: 369.0pt x 103.74458pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithTransportationFineGrainedTop500Links".png, id=842, 585.98924pt x 175.25475p
+WithTransportationFineGrainedTop500Links".png, id=867, 585.98924pt x 175.25475p
 t>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
@@ -2853,11 +2903,11 @@ nnedWithTransportationFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithTransportationFineGrainedTop500Links".png  used on 
-input line 854.
+input line 853.
 (pdftex.def)             Requested size: 369.0pt x 110.36024pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithTransportationFineGrainedTop500LinksWithLowerPageRank".png, id=843, 585.989
+WithTransportationFineGrainedTop500LinksWithLowerPageRank".png, id=868, 585.989
 24pt x 212.59425pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
@@ -2869,11 +2919,11 @@ nnedWithTransportationFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithTransportationFineGrainedTop500LinksWithLowerPageRa
-nk".png  used on input line 859.
+nk".png  used on input line 858.
 (pdftex.def)             Requested size: 369.0pt x 133.87344pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithAll3DomainsFineGrainedTop10Links".png, id=844, 585.387pt x 174.6525pt>
+dWithAll3DomainsFineGrainedTop10Links".png, id=869, 585.387pt x 174.6525pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithAll3DomainsFineGrainedTop10Links".png Graphic file (type png)
@@ -2883,11 +2933,11 @@ unnedWithAll3DomainsFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop10Links".png  used on inp
-ut line 865.
+ut line 864.
 (pdftex.def)             Requested size: 369.0pt x 110.09294pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithAll3DomainsFineGrainedTop100Links".png, id=845, 587.19376pt x 231.86626pt>
+dWithAll3DomainsFineGrainedTop100Links".png, id=870, 587.19376pt x 231.86626pt>
 
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
@@ -2898,11 +2948,11 @@ unnedWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on in
-put line 870.
+put line 869.
 (pdftex.def)             Requested size: 369.0pt x 145.70856pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithPoliticsFineGrainedTop10Links".png, id=846, 586.5915pt x 97.5645pt>
+dWithPoliticsFineGrainedTop10Links".png, id=871, 586.5915pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithPoliticsFineGrainedTop10Links".png Graphic file (type png)
@@ -2912,11 +2962,11 @@ unnedWithPoliticsFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithPoliticsFineGrainedTop10Links".png  used on input 
-line 875.
+line 874.
 (pdftex.def)             Requested size: 369.0pt x 61.37512pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithPoliticsFineGrainedTop100Links".png, id=847, 585.98924pt x 97.5645pt>
+dWithPoliticsFineGrainedTop100Links".png, id=872, 585.98924pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithPoliticsFineGrainedTop100Links".png Graphic file (type png)
@@ -2926,11 +2976,11 @@ unnedWithPoliticsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithPoliticsFineGrainedTop100Links".png  used on input
- line 880.
+ line 879.
 (pdftex.def)             Requested size: 369.0pt x 61.43765pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithSportFineGrainedTop10Links".png, id=848, 585.387pt x 125.268pt>
+dWithSportFineGrainedTop10Links".png, id=873, 585.387pt x 125.268pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithSportFineGrainedTop10Links".png Graphic file (type png)
@@ -2940,11 +2990,11 @@ unnedWithSportFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithSportFineGrainedTop10Links".png  used on input lin
-e 885.
+e 884.
 (pdftex.def)             Requested size: 369.0pt x 78.96321pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithSportFineGrainedTop100Links".png, id=849, 587.19376pt x 134.30174pt>
+dWithSportFineGrainedTop100Links".png, id=874, 587.19376pt x 134.30174pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithSportFineGrainedTop100Links".png Graphic file (type png)
@@ -2954,11 +3004,11 @@ unnedWithSportFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithSportFineGrainedTop100Links".png  used on input li
-ne 890.
+ne 889.
 (pdftex.def)             Requested size: 369.0pt x 84.39742pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithTransportationFineGrainedTop10Links".png, id=850, 586.5915pt x 97.5645pt>
+dWithTransportationFineGrainedTop10Links".png, id=875, 586.5915pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithTransportationFineGrainedTop10Links".png Graphic file (type png)
@@ -2968,11 +3018,11 @@ unnedWithTransportationFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithTransportationFineGrainedTop10Links".png  used on 
-input line 895.
+input line 894.
 (pdftex.def)             Requested size: 369.0pt x 61.37512pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithTransportationFineGrainedTop100Links".png, id=851, 585.98924pt x 164.41425
+dWithTransportationFineGrainedTop100Links".png, id=876, 585.98924pt x 164.41425
 pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
@@ -2983,11 +3033,11 @@ unnedWithTransportationFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithTransportationFineGrainedTop100Links".png  used on
- input line 900.
+ input line 899.
 (pdftex.def)             Requested size: 369.0pt x 103.53384pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithAll3DomainsFineGrainedTop10Links".png, id=852, 585.98924pt x 174.05025pt>
+dWithAll3DomainsFineGrainedTop10Links".png, id=877, 585.98924pt x 174.05025pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithAll3DomainsFineGrainedTop10Links".png Graphic file (type png)
@@ -2997,11 +3047,11 @@ unnedWithAll3DomainsFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop10Links".png  used on inp
-ut line 905.
+ut line 904.
 (pdftex.def)             Requested size: 369.0pt x 109.60176pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithAll3DomainsFineGrainedTop100Links".png, id=853, 586.5915pt x 232.4685pt>
+dWithAll3DomainsFineGrainedTop100Links".png, id=878, 586.5915pt x 232.4685pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithAll3DomainsFineGrainedTop100Links".png Graphic file (type png)
@@ -3011,11 +3061,11 @@ unnedWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on in
-put line 910.
+put line 909.
 (pdftex.def)             Requested size: 369.0pt x 146.23955pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithAll3DomainsFineGrainedTop300Links".png, id=854, 587.19376pt x 231.86626pt>
+dWithAll3DomainsFineGrainedTop300Links".png, id=879, 587.19376pt x 231.86626pt>
 
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
@@ -3026,11 +3076,11 @@ unnedWithAll3DomainsFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links".png  used on in
-put line 915.
+put line 914.
 (pdftex.def)             Requested size: 369.0pt x 145.70856pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithPoliticsFineGrainedTop10Links".png, id=855, 585.387pt x 96.36pt>
+dWithPoliticsFineGrainedTop10Links".png, id=880, 585.387pt x 96.36pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithPoliticsFineGrainedTop10Links".png Graphic file (type png)
@@ -3040,11 +3090,11 @@ unnedWithPoliticsFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithPoliticsFineGrainedTop10Links".png  used on input 
-line 920.
+line 919.
 (pdftex.def)             Requested size: 369.0pt x 60.74092pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithPoliticsFineGrainedTop100Links".png, id=856, 585.98924pt x 97.5645pt>
+dWithPoliticsFineGrainedTop100Links".png, id=881, 585.98924pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithPoliticsFineGrainedTop100Links".png Graphic file (type png)
@@ -3054,11 +3104,11 @@ unnedWithPoliticsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithPoliticsFineGrainedTop100Links".png  used on input
- line 925.
+ line 924.
 (pdftex.def)             Requested size: 369.0pt x 61.43765pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithPoliticsFineGrainedTop300Links".png, id=857, 585.98924pt x 125.87025pt>
+dWithPoliticsFineGrainedTop300Links".png, id=882, 585.98924pt x 125.87025pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithPoliticsFineGrainedTop300Links".png Graphic file (type png)
@@ -3068,11 +3118,11 @@ unnedWithPoliticsFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithPoliticsFineGrainedTop300Links".png  used on input
- line 930.
+ line 929.
 (pdftex.def)             Requested size: 369.0pt x 79.26218pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithSportFineGrainedTop10Links".png, id=858, 584.78474pt x 125.87025pt>
+dWithSportFineGrainedTop10Links".png, id=883, 584.78474pt x 125.87025pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithSportFineGrainedTop10Links".png Graphic file (type png)
@@ -3082,11 +3132,11 @@ unnedWithSportFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithSportFineGrainedTop10Links".png  used on input lin
-e 935.
+e 934.
 (pdftex.def)             Requested size: 369.0pt x 79.42351pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithSportFineGrainedTop100Links".png, id=859, 583.58025pt x 135.50626pt>
+dWithSportFineGrainedTop100Links".png, id=884, 583.58025pt x 135.50626pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithSportFineGrainedTop100Links".png Graphic file (type png)
@@ -3096,11 +3146,11 @@ unnedWithSportFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithSportFineGrainedTop100Links".png  used on input li
-ne 940.
+ne 939.
 (pdftex.def)             Requested size: 369.0pt x 85.6816pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithSportFineGrainedTop300Links".png, id=860, 585.387pt x 154.176pt>
+dWithSportFineGrainedTop300Links".png, id=885, 585.387pt x 154.176pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithSportFineGrainedTop300Links".png Graphic file (type png)
@@ -3110,11 +3160,11 @@ unnedWithSportFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithSportFineGrainedTop300Links".png  used on input li
-ne 945.
+ne 944.
 (pdftex.def)             Requested size: 369.0pt x 97.18549pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithTransportationFineGrainedTop10Links".png, id=861, 585.387pt x 96.36pt>
+dWithTransportationFineGrainedTop10Links".png, id=886, 585.387pt x 96.36pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithTransportationFineGrainedTop10Links".png Graphic file (type png)
@@ -3124,11 +3174,11 @@ unnedWithTransportationFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithTransportationFineGrainedTop10Links".png  used on 
-input line 950.
+input line 949.
 (pdftex.def)             Requested size: 369.0pt x 60.74092pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithTransportationFineGrainedTop100Links".png, id=862, 585.98924pt x 165.0165p
+dWithTransportationFineGrainedTop100Links".png, id=887, 585.98924pt x 165.0165p
 t>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
@@ -3139,11 +3189,11 @@ unnedWithTransportationFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithTransportationFineGrainedTop100Links".png  used on
- input line 955.
+ input line 954.
 (pdftex.def)             Requested size: 369.0pt x 103.91309pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithTransportationFineGrainedTop300Links".png, id=863, 587.19376pt x 175.25475
+dWithTransportationFineGrainedTop300Links".png, id=888, 587.19376pt x 175.25475
 pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
@@ -3154,11 +3204,11 @@ unnedWithTransportationFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithTransportationFineGrainedTop300Links".png  used on
- input line 960.
+ input line 959.
 (pdftex.def)             Requested size: 369.0pt x 110.13295pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop300LinksRunnedWi
-thAll3DomainsFineGrainedTop100Links".png, id=864, 586.5915pt x 242.1045pt>
+thAll3DomainsFineGrainedTop100Links".png, id=889, 586.5915pt x 242.1045pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop300LinksRun
 nedWithAll3DomainsFineGrainedTop100Links".png Graphic file (type png)
@@ -3168,11 +3218,11 @@ edWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGr
 ainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on input
- line 965.
+ line 964.
 (pdftex.def)             Requested size: 369.0pt x 152.30128pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRunnedWi
-thAll3DomainsFineGrainedTop100Links".png, id=865, 587.796pt x 240.9pt>
+thAll3DomainsFineGrainedTop100Links".png, id=890, 587.796pt x 240.9pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRun
 nedWithAll3DomainsFineGrainedTop100Links".png Graphic file (type png)
@@ -3182,11 +3232,11 @@ edWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGr
 ainedTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on input
- line 970.
+ line 969.
 (pdftex.def)             Requested size: 369.0pt x 151.23112pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRunnedWi
-thAll3DomainsFineGrainedTop300Links".png, id=866, 584.78474pt x 240.9pt>
+thAll3DomainsFineGrainedTop300Links".png, id=891, 584.78474pt x 240.9pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRun
 nedWithAll3DomainsFineGrainedTop300Links".png Graphic file (type png)
@@ -3196,11 +3246,11 @@ edWithAll3DomainsFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGr
 ainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links".png  used on input
- line 975.
+ line 974.
 (pdftex.def)             Requested size: 369.0pt x 152.00671pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrainedTop300LinksRunnedWithA
-ll3DomainsFineGrainedTop100Links".png, id=867, 586.5915pt x 233.07076pt>
+ll3DomainsFineGrainedTop100Links".png, id=892, 586.5915pt x 233.07076pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrainedTop300LinksRunned
 WithAll3DomainsFineGrainedTop100Links".png Graphic file (type png)
@@ -3210,144 +3260,146 @@ ithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrain
 edTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on input li
-ne 980.
+ne 979.
 (pdftex.def)             Requested size: 369.0pt x 146.61841pt.
- [28 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
-eOnPageRank//Mixed/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGr
-ainedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank.png> <C:/
-Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRa
-nk//Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop5
-00LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank.png>] [29 <C:/User
-s/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//
-Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop500Li
-nksWithLowerPageRank.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/One
-AnnotationAbstractBaseOnPageRank//Mixed/TransportationFineGrainedTop500LinksRun
-nedWithAll3DomainsFineGrainedTop300LinksAndTransportationFineGrainedTop300Links
-.png>] [30 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstr
-actBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10Link
-sRunnedWithAll3DomainsFineGrainedTop100Links.png> <C:/Users/Jakovcheski/Desktop
-/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksO
-nModels/All3DomainsFineGrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop300L
-inks.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstra
-ctBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10Links
-RunnedWithAll3DomainsFineGrainedTop500Links.png>] [31 <C:/Users/Jakovcheski/Des
-ktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLi
-nksOnModels/All3DomainsFineGrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop
-500LinksWithLowerPageRank.png> <C:/Users/Jakovcheski/Desktop/Stanford NER outpu
-t/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3Domains
-FineGrainedTop100LinksRunnedWithAll3DomainsFineGrainedTop500Links.png>] [32 <C:
-/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageR
-ank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithAl
-l3DomainsFineGrainedTop500LinksWithLowerPageRank.png> <C:/Users/Jakovcheski/Des
-ktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLi
-nksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithPoliticsFineGrainedTop50
-0Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbst
-ractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100Li
-nksRunnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank.png>] [33 <C:/User
-s/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//
-Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithSportFi
-neGrainedTop500Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/One
-AnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineG
-rainedTop100LinksRunnedWithSportFineGrainedTop500LinksWithLowerPageRank.png> <C
+ [29 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBas
+eOnPageRank//Top500Links/SportFineGrainedRunnedWithSportFineGrained-tsv.png> <C
 :/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPage
-Rank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithT
-ransportationFineGrainedTop500Links.png>] [34 <C:/Users/Jakovcheski/Desktop/Sta
-nford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnMod
-els/All3DomainsFineGrainedTop100LinksRunnedWithTransportationFineGrainedTop500L
-inksWithLowerPageRank.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/On
-eAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFine
-GrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop500Links.png> <C:/Users/Ja
-kovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixe
-d/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithAll3Domains
-FineGrainedTop500LinksWithLowerPageRank.png>] [35 <C:/Users/Jakovcheski/Desktop
-/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksO
-nModels/All3DomainsFineGrainedTop300LinksRunnedWithPoliticsFineGrainedTop500Lin
-ks.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstract
-BaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
-unnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank.png> <C:/Users/Jakovch
+Rank//Mixed/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTo
+p500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank.png>]
+[30 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGra
+inedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank.png> <C:/U
+sers/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRan
+k//Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop50
+0LinksWithLowerPageRank.png>] [31 <C:/Users/Jakovcheski/Desktop/Stanford NER ou
+tput/OneAnnotationAbstractBaseOnPageRank//Mixed/TransportationFineGrainedTop500
+LinksRunnedWithAll3DomainsFineGrainedTop300LinksAndTransportationFineGrainedTop
+300Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAb
+stractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10L
+inksRunnedWithAll3DomainsFineGrainedTop100Links.png>] [32 <C:/Users/Jakovcheski
+/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLow
+erLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedWithAll3DomainsFineGraine
+dTop300Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotati
+onAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTo
+p10LinksRunnedWithAll3DomainsFineGrainedTop500Links.png>] [33 <C:/Users/Jakovch
 eski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/Wit
-hLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithSportFineGrained
-Top500Links.png>] [36 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnno
-tationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrain
-edTop300LinksRunnedWithSportFineGrainedTop500LinksWithLowerPageRank.png> <C:/Us
-ers/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank
-//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithTrans
-portationFineGrainedTop500Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER
- output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3D
-omainsFineGrainedTop300LinksRunnedWithTransportationFineGrainedTop500LinksWithL
-owerPageRank.png>] [37 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnn
-otationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGra
-inedTop300LinksRunnedWithAll3DomainsFineGrainedTop10Links.png> <C:/Users/Jakovc
-heski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/Wi
-thHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFin
-eGrainedTop100Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
-nnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineG
-rainedTop300LinksRunnedWithPoliticsFineGrainedTop10Links.png> <C:/Users/Jakovch
+hLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedWithAll3DomainsFineGr
+ainedTop500LinksWithLowerPageRank.png> <C:/Users/Jakovcheski/Desktop/Stanford N
+ER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All
+3DomainsFineGrainedTop100LinksRunnedWithAll3DomainsFineGrainedTop500Links.png>]
+[34 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunne
+dWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank.png> <C:/Users/Jakovche
+ski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/With
+LowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithPoliticsFineGrain
+edTop500Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotat
+ionAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedT
+op100LinksRunnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank.png>]
+[35 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunne
+dWithSportFineGrainedTop500Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NE
+R output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3
+DomainsFineGrainedTop100LinksRunnedWithSportFineGrainedTop500LinksWithLowerPage
+Rank.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstra
+ctBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100Link
+sRunnedWithTransportationFineGrainedTop500Links.png>] [36 <C:/Users/Jakovcheski
+/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLow
+erLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithTransportationFineGr
+ainedTop500LinksWithLowerPageRank.png> <C:/Users/Jakovcheski/Desktop/Stanford N
+ER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All
+3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop500Links.png> 
+<C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPa
+geRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWit
+hAll3DomainsFineGrainedTop500LinksWithLowerPageRank.png>] [37 <C:/Users/Jakovch
 eski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/Wit
-hHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithPoliticsFineGra
-inedTop100Links.png>] [38 <C:/Users/Jakovcheski/Desktop/Stanford NER output/One
-AnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFine
-GrainedTop300LinksRunnedWithSportFineGrainedTop10Links.png> <C:/Users/Jakovches
-ki/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithH
-igherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithSportFineGrainedT
-op100Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotation
-AbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop
-300LinksRunnedWithTransportationFineGrainedTop10Links.png> <C:/Users/Jakovchesk
-i/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHi
-gherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithTransportationFine
-GrainedTop100Links.png>] [39 <C:/Users/Jakovcheski/Desktop/Stanford NER output/
-OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsF
-ineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop10Links.png> <C:/Users/
-Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mi
-xed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithAll3Doma
-insFineGrainedTop100Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER outpu
-t/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3Domain
-sFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links.png>] [40 <C
-:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPage
-Rank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWith
-PoliticsFineGrainedTop10Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER o
+hLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithPoliticsFineGrai
+nedTop500Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnota
+tionAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrained
+Top300LinksRunnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank.png> <C:/U
+sers/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRan
+k//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithSpor
+tFineGrainedTop500Links.png>] [38 <C:/Users/Jakovcheski/Desktop/Stanford NER ou
+tput/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3Doma
+insFineGrainedTop300LinksRunnedWithSportFineGrainedTop500LinksWithLowerPageRank
+.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
+seOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRun
+nedWithTransportationFineGrainedTop500Links.png> <C:/Users/Jakovcheski/Desktop/
+Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithLowerLinksOn
+Models/All3DomainsFineGrainedTop300LinksRunnedWithTransportationFineGrainedTop5
+00LinksWithLowerPageRank.png>] [39 <C:/Users/Jakovcheski/Desktop/Stanford NER o
 utput/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3Do
-mainsFineGrainedTop500LinksRunnedWithPoliticsFineGrainedTop100Links.png> <C:/Us
-ers/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank
-//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithPoli
-ticsFineGrainedTop300Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER outp
-ut/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3Domai
-nsFineGrainedTop500LinksRunnedWithSportFineGrainedTop10Links.png>] [41 <C:/User
-s/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//
-Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithSportF
-ineGrainedTop100Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/On
-eAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFin
-eGrainedTop500LinksRunnedWithSportFineGrainedTop300Links.png> <C:/Users/Jakovch
-eski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/Wit
-hHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithTransportationF
-ineGrainedTop10Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/One
-AnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFine
-GrainedTop500LinksRunnedWithTransportationFineGrainedTop100Links.png>] [42 <C:/
+mainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop10Links.png> <C:/
 Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRa
-nk//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithTr
-ansportationFineGrainedTop300Links.png> <C:/Users/Jakovcheski/Desktop/Stanford 
-NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/P
-oliticsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links.png> <
-C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPag
-eRank//Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRunnedWithAl
-l3DomainsFineGrainedTop100Links.png>] [43 <C:/Users/Jakovcheski/Desktop/Stanfor
-d NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels
-/PoliticsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links.png>
- <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
-ageRank//Mixed/WithHigherLinksOnModels/SportFineGrainedTop300LinksRunnedWithAll
-3DomainsFineGrainedTop100Links.png>]
+nk//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithAl
+l3DomainsFineGrainedTop100Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER
+ output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3
+DomainsFineGrainedTop300LinksRunnedWithPoliticsFineGrainedTop10Links.png> <C:/U
+sers/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRan
+k//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithPol
+iticsFineGrainedTop100Links.png>] [40 <C:/Users/Jakovcheski/Desktop/Stanford NE
+R output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All
+3DomainsFineGrainedTop300LinksRunnedWithSportFineGrainedTop10Links.png> <C:/Use
+rs/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank/
+/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithSport
+FineGrainedTop100Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/O
+neAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFi
+neGrainedTop300LinksRunnedWithTransportationFineGrainedTop10Links.png> <C:/User
+s/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//
+Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithTransp
+ortationFineGrainedTop100Links.png>] [41 <C:/Users/Jakovcheski/Desktop/Stanford
+ NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/
+All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop10Links.png
+> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOn
+PageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunned
+WithAll3DomainsFineGrainedTop100Links.png> <C:/Users/Jakovcheski/Desktop/Stanfo
+rd NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModel
+s/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links.
+png>] [42 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstra
+ctBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Lin
+ksRunnedWithPoliticsFineGrainedTop10Links.png> <C:/Users/Jakovcheski/Desktop/St
+anford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnM
+odels/All3DomainsFineGrainedTop500LinksRunnedWithPoliticsFineGrainedTop100Links
+.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
+seOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRu
+nnedWithPoliticsFineGrainedTop300Links.png> <C:/Users/Jakovcheski/Desktop/Stanf
+ord NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnMode
+ls/All3DomainsFineGrainedTop500LinksRunnedWithSportFineGrainedTop10Links.png>]
+[43 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBase
+OnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunn
+edWithSportFineGrainedTop100Links.png> <C:/Users/Jakovcheski/Desktop/Stanford N
+ER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/Al
+l3DomainsFineGrainedTop500LinksRunnedWithSportFineGrainedTop300Links.png> <C:/U
+sers/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRan
+k//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunnedWithTra
+nsportationFineGrainedTop10Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NE
+R output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All
+3DomainsFineGrainedTop500LinksRunnedWithTransportationFineGrainedTop100Links.pn
+g>] [44 <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstract
+BaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
+RunnedWithTransportationFineGrainedTop300Links.png> <C:/Users/Jakovcheski/Deskt
+op/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLin
+ksOnModels/PoliticsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100
+Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstr
+actBaseOnPageRank//Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500Links
+RunnedWithAll3DomainsFineGrainedTop100Links.png>] [45 <C:/Users/Jakovcheski/Des
+ktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherL
+inksOnModels/PoliticsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop3
+00Links.png> <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbs
+tractBaseOnPageRank//Mixed/WithHigherLinksOnModels/SportFineGrainedTop300LinksR
+unnedWithAll3DomainsFineGrainedTop100Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Experiments Graphs/Top500Links/Top500LinksF1".pn
-g, id=986, 398.08725pt x 293.898pt>
+g, id=1016, 398.08725pt x 293.898pt>
 File: "C:/Users/Jakovcheski/Desktop/Experiments Graphs/Top500Links/Top500LinksF
 1".png Graphic file (type png)
 <use "C:/Users/Jakovcheski/Desktop/Experiments Graphs/Top500Links/Top500LinksF1
 ".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Experiments Graphs/Top50
-0Links/Top500LinksF1".png  used on input line 1014.
+0Links/Top500LinksF1".png  used on input line 1013.
 (pdftex.def)             Requested size: 369.0pt x 272.43884pt.
 <"C:/Users/Jakovcheski/Desktop/Experiments Graphs/Total/TotalAll3DomainsCoarseG
-rainedRunnedWithAll3DomainsCoarseGrained-tsvF1".png, id=987, 400.49625pt x 262.
-581pt>
+rainedRunnedWithAll3DomainsCoarseGrained-tsvF1".png, id=1017, 400.49625pt x 262
+.581pt>
 File: "C:/Users/Jakovcheski/Desktop/Experiments Graphs/Total/TotalAll3DomainsCo
 arseGrainedRunnedWithAll3DomainsCoarseGrained-tsvF1".png Graphic file (type png
 )
@@ -3355,30 +3407,30 @@ arseGrainedRunnedWithAll3DomainsCoarseGrained-tsvF1".png Graphic file (type png
 rseGrainedRunnedWithAll3DomainsCoarseGrained-tsvF1".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Experiments Graphs/Total
 /TotalAll3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsvF1".png  us
-ed on input line 1019.
+ed on input line 1018.
 (pdftex.def)             Requested size: 369.0pt x 241.94604pt.
- [44
+ [46
 
  <C:/Users/Jakovcheski/Desktop/Experiments Graphs/Top500Links/Top500LinksF1.png
->] [45 <C:/Users/Jakovcheski/Desktop/Experiments Graphs/Total/TotalAll3DomainsC
-oarseGrainedRunnedWithAll3DomainsCoarseGrained-tsvF1.png>] [46
+>] [47 <C:/Users/Jakovcheski/Desktop/Experiments Graphs/Total/TotalAll3DomainsC
+oarseGrainedRunnedWithAll3DomainsCoarseGrained-tsvF1.png>] [48
 
 ]
 No file Thesis2.bbl.
-[47] [48
+[49] [50
 
-] [49]
+] [51]
 \tf@toc=\write5
 \openout5 = `Thesis2.toc'.
 
 \tf@lof=\write6
 \openout6 = `Thesis2.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1076.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1076.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1075.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1075.
  (Thesis2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1076.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1076.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1075.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1075.
 
 Package rerunfilecheck Info: File `Thesis2.out' has not changed.
 (rerunfilecheck)             Checksum: 426BC3F67FA75B72275C3BA1450EB9A5;3291.
@@ -3392,13 +3444,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1076.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1075.
  ) 
 Here is how much of TeX's memory you used:
- 13709 strings out of 493305
- 288622 string characters out of 3127192
- 350491 words of memory out of 3000000
- 16831 multiletter control sequences out of 15000+200000
+ 13756 strings out of 493305
+ 292479 string characters out of 3127192
+ 352938 words of memory out of 3000000
+ 16870 multiletter control sequences out of 15000+200000
  58219 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,11n,29p,1096b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3416,9 +3468,9 @@ akovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C
 ic/lm/lmri10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/lm/lmssbx10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Thesis2.pdf (67 pages, 2462109 bytes).
+Output written on Thesis2.pdf (69 pages, 2512209 bytes).
 PDF statistics:
- 1102 PDF objects out of 1200 (max. 8388607)
- 239 named destinations out of 1000 (max. 500000)
- 865 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1135 PDF objects out of 1200 (max. 8388607)
+ 245 named destinations out of 1000 (max. 500000)
+ 885 words of extra memory for PDF output out of 10000 (max. 10000000)
 

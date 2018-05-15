@@ -22,16 +22,16 @@
 \contentsline {section}{\numberline {3.1}Goals of the experiments}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}List of experiments}{7}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Top 10 Links}{8}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Top 20 Links}{10}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Top 40 Links}{13}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.2}Top 20 Links}{12}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Top 40 Links}{12}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Top 100 Links}{16}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Top 300 Links}{18}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Top 400 Links}{20}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Top 500 Links}{25}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}MIXED}{28}{subsection.3.2.8}
-\contentsline {subsection}{\numberline {3.2.9}With lower links on model}{28}{subsection.3.2.9}
-\contentsline {subsection}{\numberline {3.2.10}With higher links on model}{28}{subsection.3.2.10}
-\contentsline {section}{\numberline {3.3}Summary of results}{44}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Graphs}{44}{subsection.3.3.1}
-\contentsline {chapter}{Conclusion}{47}{chapter*.9}
-\contentsline {appendix}{\chapternumberline {A}Contents of CD}{49}{appendix.A}
+\contentsline {subsection}{\numberline {3.2.5}Top 300 Links}{20}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Top 400 Links}{23}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Top 500 Links}{26}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}MIXED}{29}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.9}With lower links on model}{29}{subsection.3.2.9}
+\contentsline {subsection}{\numberline {3.2.10}With higher links on model}{29}{subsection.3.2.10}
+\contentsline {section}{\numberline {3.3}Summary of results}{46}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Graphs}{46}{subsection.3.3.1}
+\contentsline {chapter}{Conclusion}{49}{chapter*.9}
+\contentsline {appendix}{\chapternumberline {A}Contents of CD}{51}{appendix.A}

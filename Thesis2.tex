@@ -140,7 +140,7 @@ Make it like experiment - discussion
 		\caption{All 3 Domains Coarse BBC Coarse}\label{}
 	\end{figure}
 
-\subsection{Top 10 Links}
+\subsection{Top 10 Links}\label{subsec:Top10}
 	In this experiment we get the model that is trained with all 3 domains together with coarse grained and we make an experiment with the text that is trained, that means text from all 3 domains annotated with coarse grained. 
 	Here we have for every domain 10 abstracts, so in total 30 annotated abstracts. This is our smallest model.
 	How we can see from the picture in politics domain F1 value is lower than in sport and transportation. This results with lower F1 value in total, but still that is very satisfying value, because we have only 1 false positive and 2 false negative words.  
@@ -187,125 +187,124 @@ Make it like experiment - discussion
 		\caption{All 3 Domains Fine Top 10 Links Sport}\label{}
 	\end{figure}
 	
-	Same as sport domain, the transportation domain text annotated with fina grained, provide also same results.
+	Same as sport domain, the transportation domain Figure ~\ref{img:all3DomainWithTransportationFineTop10} text annotated with fine grained, provide also same results.
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained-tsv".png}
-		\caption{All 3 Domains Fine Top 10 Links Transportation}\label{}	
+		\caption{All 3 Domains Fine Top 10 Links Transportation}\label{img:all3DomainWithTransportationFineTop10}	
 	\end{figure}
 	
-	TEXT
-
+	After experimenting with models that are trained with all domains together, we move on with experiments where we create specific models, both coarse and fine grained.
+	First we tested the model that is created with politics text annotated in coarse grained. How we can see from Figure !\ref{img:PoliticsWithPoliticsCoarseTop10} we have a better results than that experiment that we provide in all 3 domains. The F1 value is very big which is the results of low false positive and false negative annotated words.        
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
-		\caption{Politics Coarse Top 10 Links Politics}\label{}
+		\caption{Politics Coarse Top 10 Links Politics}\label{img:PoliticsWithPoliticsCoarseTop10}
 	\end{figure}	
 
-	TEXT	
-
+	We also provide the same experiment like previous, but now the model is annotated in fine grained. From Figure ~\ref{img:PoliticsWithPoliticsFineTop10} is clearly that we have improve our model, here the F1 value is bigger that in coarse grained (see Figure ~\ref{img:PoliticsWithPoliticsCoarseTop10}) and also false positive annotated words are decreased by 1. That means even we have a complete review of our entities and can see the precision of each entity, this domain, in total, is more precise that coarse grained model and all 3 domains in coarse and fine grained.
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
-		\caption{Politics Fine Top 10 Links Politics}\label{}
+		\caption{Politics Fine Top 10 Links Politics}\label{img:PoliticsWithPoliticsFineTop10}
 	\end{figure}
-
+	From here, with this small amount of data we can say that it's better to use a politics specific domain, in fine grained, than a global domain, because in global domain we have 28 words annotated as true positive, but in a politics specific coarse grained domain we have 74 words annotated as true positive, which is very big difference, if we want to be precise.
 	
-	TEXT
-
+	
+	
+	We repeated the experiment for sport specific domain, but in this case the results are exactly the same in coarse and fine grained (see Figure ~\ref{img:SportWithSportCoarseTop10} and Figure \ref{img:SportWithSportFineTop10} as well as in all 3 domains also in coarse and fine grained
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
-		\caption{Politics Coarse Top 10 Links Politics}\label{}
+		\caption{Sport Coarse Top 10 Links Sport}\label{img:SportWithSportCoarseTop10}
 	\end{figure}		
 	
-		TEXT	
-
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top10Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png}
-		\caption{Sport Fine Top 10 Links Sport}\label{}	
+		\caption{Sport Fine Top 10 Links Sport}\label{img:SportWithSportFineTop10}	
+	\end{figure}
+	This model in really small, only 15 annotated words, that's because we cannot make a conclusion which model is better to use. But if we speak about performance, of coarse the better solution is specified domain.	
+	
+	The transportation model, like a sport domain, is also a very small, only 9 annotated words. We provide the experiments for coarse grained (see Figure \ref{img:TransportationtWithTransportationCoarseTop10}) and we get same results as in all 3 domains (see Figure \ref{img:all3DomainWithTransportationFineTop10}). Same is happening for the fine grained domain (see Figure \ref{img:TransportationWithTransportationFineTop10}). In such a small trained domain, we cannot clearly say which model is better to use.
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/TransportationCoarseGrainedRunnedWithTransportationCoarseGrained-tsv".png}
+		\caption{Transportation Coarse Top 10 Links Transportation}\label{img:TransportationtWithTransportationCoarseTop10}
+	\end{figure}		
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top10Links/TransportationFineGrainedRunnedWithTransportationFineGrained-tsv".png}
+		\caption{Transportation Fine Top 10 Links Transportation}\label{img:TransportationWithTransportationFineTop10}	
 	\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Top 20 Links}
+\subsection{Top 20 Links}\label{subsec:Top20}
+	In subsection ~\ref{subsec:Top10} we provide various experiments with different models. Now in this subsection we will repeat those experiments, but now we doubled the number of text to every domain, so we have 20 abstracts for every domain, in total 60 abstract. Those models, like previous, are trained in both coarse grained and fine grained.
+  
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsCoarseGrainedRunnedWithAll3DomainsCoarseGrained-tsv".png}
-		\caption{All 3 Domains Coarse Top 20 Links}\label{}
+		\caption{All 3 Domains Coarse Top 20 Links}\label{img:All3DomainWithAll3DomainCoarseTop20}
 	\end{figure}
-
-	TEXT
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
-		\caption{All 3 Domains Coarse Top 20 Links Politics}\label{}
+		\caption{All 3 Domains Coarse Top 20 Links Politics}\label{img:All3DomainWithPoliticstCoarseTop20}
 	\end{figure}	
-
-	TEXT	
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
-		\caption{All 3 Domains Coarse Top 20 Links Sport}\label{}
+		\caption{All 3 Domains Coarse Top 20 Links Sport}\label{img:All3DomainWithSportCoarseTop20}
 	\end{figure}
-	
-		TEXT	
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsCoarseGrainedRunnedWithTransportationCoarseGrained-tsv".png}
-		\caption{All 3 Domains Coarse Top 20 Links Transportation}\label{}	
+		\caption{All 3 Domains Coarse Top 20 Links Transportation}\label{All3DomainWithTransportationCoarseTop20}	
 	\end{figure}
-		
-		TEXT	
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsFineGrainedRunnedWithAll3DomainsFineGrained-tsv".png}
-		\caption{All 3 Domains Fine Top 20 Links }\label{}	
+		\caption{All 3 Domains Fine Top 20 Links }\label{img:All3DomainWithAll3DomainFineTop20}	
 	\end{figure}
-	
-	TEXT
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
-		\caption{All 3 Domains Fine Top 20 Links Politics}\label{}
+		\caption{All 3 Domains Fine Top 20 Links Politics}\label{All3DomainWithPoliticsFineTop20}
 	\end{figure}	
-
-	TEXT	
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsFineGrainedRunnedWithSportFineGrained-tsv".png}
-		\caption{All 3 Domains Fine Top 20 Links Sport}\label{}
+		\caption{All 3 Domains Fine Top 20 Links Sport}\label{img:All3DomainWithSportFineTop20}
 	\end{figure}
-	
-		TEXT	
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/All3DomainsFineGrainedRunnedWithTransportationFineGrained-tsv".png}
-		\caption{All 3 Domains Fine Top 20 Links Transportation}\label{}	
+		\caption{All 3 Domains Fine Top 20 Links Transportation}\label{img:All3DomainWithTransportationFineTop20}	
 	\end{figure}
-	
-	TEXT
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/PoliticsCoarseGrainedRunnedWithPoliticsCoarseGrained-tsv".png}
-		\caption{Politics Coarse Top 20 Links Politics}\label{}
+		\caption{Politics Coarse Top 20 Links Politics}\label{img:PoliticsWithPoliticsCoarseTop20}
 	\end{figure}	
-
-	TEXT	
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/PoliticsFineGrainedRunnedWithPoliticsFineGrained-tsv".png}
-		\caption{Politics Fine Top 20 Links Politics}\label{}
+		\caption{Politics Fine Top 20 Links Politics}\label{img:PoliticsWithPoliticsFineTop20}
 	\end{figure}
-
-	
-	TEXT
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/SportCoarseGrainedRunnedWithSportCoarseGrained-tsv".png}
-		\caption{Politics Coarse Top 20 Links Politics}\label{}
+		\caption{Politics Coarse Top 20 Links Politics}\label{img:SportWithSportCoarseTop20}
 	\end{figure}		
-	
-		TEXT	
 
 	\begin{figure}\centering
 		\includegraphics[width=\textwidth]{"/Top20Links/SportFineGrainedRunnedWithSportFineGrained-tsv".png}
-		\caption{Sport Fine Top 20 Links Sport}\label{}	
+		\caption{Sport Fine Top 20 Links Sport}\label{img:SportWithSportFineTop20}	
+	\end{figure}
+	
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/TransportationCoarseGrainedRunnedWithTransportationCoarseGrained-tsv".png}
+		\caption{Politics Coarse Top 20 Links Politics}\label{img:TransportationWithTransportationCoarseTop20}
+	\end{figure}		
+
+	\begin{figure}\centering
+		\includegraphics[width=\textwidth]{"/Top20Links/TransportationFineGrainedRunnedWithTransportationFineGrained-tsv".png}
+		\caption{Sport Fine Top 20 Links Sport}\label{img:TransportationWithTransportationFineTop20}	
 	\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
