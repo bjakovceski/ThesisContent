@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  15 MAY 2018 18:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  17 MAY 2018 20:52
 entering extended mode
 **./Thesis2.tex
 (Thesis2.tex
@@ -646,30 +646,30 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (Thesis2.aux)
 \openout1 = `Thesis2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 55.
 
 ("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
 "
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 50.
+Package hyperref Info: Link coloring OFF on input line 55.
 
 ("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nam
 eref.sty"
@@ -683,10 +683,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 50.
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \nameref on input line 55.
+LaTeX Info: Redefining \ref on input line 55.
+LaTeX Info: Redefining \pageref on input line 55.
+LaTeX Info: Redefining \nameref on input line 55.
 (Thesis2.out) (Thesis2.out)
 \@outlinefile=\write4
 \openout4 = `Thesis2.out'.
@@ -722,13 +722,13 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 50.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 55.
 
 ("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd
 "
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 50.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 55.
 
 
 ("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.f
@@ -736,7 +736,7 @@ d"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 50.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 55.
  [1
 
 {C:/Users/Jakovcheski/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
@@ -745,7 +745,7 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 <cvut-logo-bw-en.pdf, id=14, 591.64943pt x 193.23091pt>
 File: cvut-logo-bw-en.pdf Graphic file (type pdf)
 <use cvut-logo-bw-en.pdf>
-Package pdftex.def Info: cvut-logo-bw-en.pdf  used on input line 50.
+Package pdftex.def Info: cvut-logo-bw-en.pdf  used on input line 55.
 (pdftex.def)             Requested size: 184.5pt x 60.25772pt.
  [1
 
@@ -754,9 +754,9 @@ Package pdftex.def Info: cvut-logo-bw-en.pdf  used on input line 50.
 ]
 
 LaTeX Font Warning: Font shape `OT1/lmr/bx/sc' undefined
-(Font)              using `OT1/lmr/bx/n' instead on input line 50.
+(Font)              using `OT1/lmr/bx/n' instead on input line 55.
 
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 50.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 55.
 
 
 ("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmss.f
@@ -765,7 +765,7 @@ File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `OT1/lmss/bx/sc' undefined
-(Font)              using `OT1/lmss/bx/n' instead on input line 50.
+(Font)              using `OT1/lmss/bx/n' instead on input line 55.
 
 [3
 
@@ -778,24 +778,24 @@ LaTeX Font Warning: Font shape `OT1/lmss/bx/sc' undefined
 ] [8
 
 ] (Thesis2.toc
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 4.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 3.
 
 ("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
 "
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 4.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 3.
 
 ("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.f
 d"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 4.
+(Font)              <10.95> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 4.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 4.
+(Font)              <6> on input line 3.
 
 ! Extra }, or forgotten \endgroup.
 l.32 \contentsline {subsection}
@@ -821,7 +821,7 @@ and I'll forget about whatever was undefined.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.50 \begin{document}
+l.55 \begin{document}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -832,7 +832,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.50 \begin{document}
+l.55 \begin{document}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -843,7 +843,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.50 \begin{document}
+l.55 \begin{document}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -854,7 +854,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.50 \begin{document}
+l.55 \begin{document}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -865,7 +865,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.50 \begin{document}
+l.55 \begin{document}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -874,25 +874,23 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (178.27707pt too wide) in paragraph at lines 32--50
+Overfull \hbox (178.27707pt too wide) in paragraph at lines 32--55
 \OT1/lmr/m/n/10.95 section[]Summary of re-sults21section.3.3 subsection[]Graphs
 21subsection.3.3.1
  []
 
 
-Overfull \hbox (59.43602pt too wide) in paragraph at lines 32--50
+Overfull \hbox (59.43602pt too wide) in paragraph at lines 32--55
 \OT1/lmr/m/n/10.95 chap-ter-Con-clu-sion23chapter*.9 appendix[]Contents of CD25
 appendix.A
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--50
+Underfull \hbox (badness 10000) in paragraph at lines 32--55
 
  []
 
-[9] [10
-
-] (Thesis2.lof
+[9] [10] (Thesis2.lof
 ! Extra }, or forgotten \endgroup.
 l.19 \contentsline {figure}
                            {\numberline {3.90}{\ignorespaces All 3 Domains F...
@@ -927,133 +925,133 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 )
-Overfull \hbox (46.11304pt too wide) in paragraph at lines 19--50
+Overfull \hbox (46.11304pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 3 Do-mains Coarse Top 10 Links Trans-porta-tion10figure.3.5 
 figure[]All
  []
 
 
-Overfull \hbox (47.9081pt too wide) in paragraph at lines 19--50
+Overfull \hbox (47.9081pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Do-mains Fine Top 10 Links Trans-porta-tion10figure.3.9 figu
 re[]Politics
  []
 
 
-Overfull \hbox (1.21866pt too wide) in paragraph at lines 19--50
+Overfull \hbox (1.21866pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 10 Links Trans-porta-tion10figure.3.14 figure[]Transportatio
 n
  []
 
 
-Overfull \hbox (6.17618pt too wide) in paragraph at lines 19--50
+Overfull \hbox (6.17618pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 3 Do-mains Coarse Top 20 Links Sport11figure.3.18 figure[]Al
 l
  []
 
 
-Overfull \hbox (51.58803pt too wide) in paragraph at lines 19--50
+Overfull \hbox (51.58803pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 3 Do-mains Coarse Top 20 Links Trans-porta-tion11figure.3.19
  figure[]All
  []
 
 
-Overfull \hbox (53.38309pt too wide) in paragraph at lines 19--50
+Overfull \hbox (53.38309pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Do-mains Fine Top 20 Links Trans-porta-tion12figure.3.23 fig
 ure[]Politics
  []
 
 
-Overfull \hbox (7.11986pt too wide) in paragraph at lines 19--50
+Overfull \hbox (7.11986pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Fine Top 20 Links Pol-i-tics12figure.3.25 figure[]Politics C
 oarse
  []
 
 
-Overfull \hbox (66.43138pt too wide) in paragraph at lines 19--50
+Overfull \hbox (66.43138pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Sport13figure.3.29 figure[]All 3 Do-mains Coarse Top 40 Link
 s13figure.3.30
  []
 
 
-Overfull \hbox (14.87546pt too wide) in paragraph at lines 19--50
+Overfull \hbox (14.87546pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 figure[]All 3 Do-mains Coarse Top 40 Links Pol-i-tics13figur
 e.3.31
  []
 
 
-Overfull \hbox (6.17618pt too wide) in paragraph at lines 19--50
+Overfull \hbox (6.17618pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 figure[]All 3 Do-mains Coarse Top 40 Links Sport14figure.3.3
 2
  []
 
 
-Overfull \hbox (0.85435pt too wide) in paragraph at lines 19--50
+Overfull \hbox (0.85435pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Links Pol-i-tics15figure.3.38 figure[]Politics Fine Top 40 L
 inks
  []
 
 
-Overfull \hbox (52.83589pt too wide) in paragraph at lines 19--50
+Overfull \hbox (52.83589pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Pol-i-tics15figure.3.40 figure[]Sport Fine Top 40 Links Spor
 t15figure.3.41
  []
 
 
-Overfull \hbox (20.35045pt too wide) in paragraph at lines 19--50
+Overfull \hbox (20.35045pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 figure[]All 3 Do-mains Coarse Top 100 Links Pol-i-tics16figu
 re.3.43
  []
 
 
-Overfull \hbox (11.65117pt too wide) in paragraph at lines 19--50
+Overfull \hbox (11.65117pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 figure[]All 3 Do-mains Coarse Top 100 Links Sport16figure.3.
 44
  []
 
 
-Overfull \hbox (0.45819pt too wide) in paragraph at lines 19--50
+Overfull \hbox (0.45819pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Sport17figure.3.48 figure[]All 3 Do-mains Fine Top 100 Links
 
  []
 
 
-Overfull \hbox (6.32935pt too wide) in paragraph at lines 19--50
+Overfull \hbox (6.32935pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Links Pol-i-tics17figure.3.50 figure[]Politics Fine Top 100 
 Links
  []
 
 
-Overfull \hbox (58.31088pt too wide) in paragraph at lines 19--50
+Overfull \hbox (58.31088pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Pol-i-tics18figure.3.52 figure[]Sport Fine Top 100 Links Spo
 rt18figure.3.53
  []
 
 
-Overfull \hbox (20.35045pt too wide) in paragraph at lines 19--50
+Overfull \hbox (20.35045pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 figure[]All 3 Do-mains Coarse Top 300 Links Pol-i-tics18figu
 re.3.55
  []
 
 
-Overfull \hbox (11.65117pt too wide) in paragraph at lines 19--50
+Overfull \hbox (11.65117pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 figure[]All 3 Do-mains Coarse Top 300 Links Sport18figure.3.
 56
  []
 
 
-Overfull \hbox (0.45819pt too wide) in paragraph at lines 19--50
+Overfull \hbox (0.45819pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Sport19figure.3.60 figure[]All 3 Do-mains Fine Top 300 Links
 
  []
 
 
-Overfull \hbox (6.32935pt too wide) in paragraph at lines 19--50
+Overfull \hbox (6.32935pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Links Pol-i-tics20figure.3.62 figure[]Politics Fine Top 300 
 Links
  []
 
 
-Overfull \hbox (58.31088pt too wide) in paragraph at lines 19--50
+Overfull \hbox (58.31088pt too wide) in paragraph at lines 19--55
 \OT1/lmr/m/n/10.95 Pol-i-tics20figure.3.64 figure[]Sport Fine Top 300 Links Spo
 rt20figure.3.65
  []
@@ -1061,23 +1059,25 @@ rt20figure.3.65
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
+ [11
+
+]
 [12]
 ! TeX capacity exceeded, sorry [grouping levels=255].
 \@x@protect #1\fi #2#3->\fi \protect 
                                      #1
-l.54 \begin{introduction}
+l.59 \begin{introduction}
                          
 If you really absolutely need more capacity,
 you can ask a wizard to enlarge me.
 
  
 Here is how much of TeX's memory you used:
- 12892 strings out of 493305
- 182930 string characters out of 3127192
+ 12896 strings out of 493305
+ 182994 string characters out of 3127192
  310869 words of memory out of 3000000
  16300 multiletter control sequences out of 15000+200000
  55471 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,10n,25p,1096b,716s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,10n,29p,1096b,716s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

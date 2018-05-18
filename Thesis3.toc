@@ -17,26 +17,21 @@
 \contentsline {section}{\numberline {2.1}Data pre-processing}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Types retrieval}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Domain specification}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}Data transformation/output for Stanford}{6}{section.2.4}
+\contentsline {section}{\numberline {2.4}Data transformation/output for Stanford}{5}{section.2.4}
 \contentsline {chapter}{\chapternumberline {3}Experiments}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Goals of the experiments}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}List of experiments}{7}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Top 10 Links}{8}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Top 20 Links}{13}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Top 40 Links}{18}{subsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.3.1}All 3 domains model annotated with coarse grained texts}{18}{subsubsection.3.2.3.1}
-\contentsline {subsubsection}{\numberline {3.2.3.2}All 3 domains model annotated with fine grained texts}{19}{subsubsection.3.2.3.2}
-\contentsline {subsubsection}{\numberline {3.2.3.3}Politics specific domain}{20}{subsubsection.3.2.3.3}
-\contentsline {subsubsection}{\numberline {3.2.3.4}Sport specific domain}{20}{subsubsection.3.2.3.4}
-\contentsline {subsubsection}{\numberline {3.2.3.5}Transportation specific domain}{21}{subsubsection.3.2.3.5}
-\contentsline {subsection}{\numberline {3.2.4}Top 100 Links}{22}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Top 300 Links}{22}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Top 400 Links}{22}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Top 500 Links}{22}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}MIXED}{22}{subsection.3.2.8}
-\contentsline {subsection}{\numberline {3.2.9}With lower links on model}{22}{subsection.3.2.9}
-\contentsline {subsection}{\numberline {3.2.10}With higher links on model}{22}{subsection.3.2.10}
-\contentsline {section}{\numberline {3.3}Summary of results}{22}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Graphs}{22}{subsection.3.3.1}
-\contentsline {chapter}{Conclusion}{23}{chapter*.9}
-\contentsline {appendix}{\chapternumberline {A}Contents of CD}{25}{appendix.A}
+\contentsline {subsection}{\numberline {3.2.1}Top 10 Links}{7}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Top 20 Links}{12}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Top 40 Links}{17}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Top 100 Links}{20}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Top 300 Links}{24}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Top 400 Links}{28}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Top 500 Links}{32}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}MIXED}{36}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.9}With lower links on model}{38}{subsection.3.2.9}
+\contentsline {subsection}{\numberline {3.2.10}With higher links on model}{46}{subsection.3.2.10}
+\contentsline {section}{\numberline {3.3}Summary of results}{56}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Graphs}{56}{subsection.3.3.1}
+\contentsline {chapter}{Conclusion}{57}{chapter*.9}
+\contentsline {appendix}{\chapternumberline {A}Contents of CD}{59}{appendix.A}
