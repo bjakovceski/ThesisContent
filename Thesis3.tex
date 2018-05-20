@@ -77,7 +77,11 @@
 	%\end{figure}
 
 \section{Information extraction}
-information extraction, that is, automatically building a relational database from information contained in unstructured text. Unlike linear-chain models, general CRFs can capture long distance dependencies between labels. 
+Information extraction (IE) is the task of automatically extracting structured information from unstructured and/or semi-structured machine-readable documents. In most of the cases this activity concerns processing human language texts by means of natural language processing (NLP). Recent activities in multimedia document processing like automatic annotation and content extraction out of images/audio/video could be seen as information extraction.%[https://en.wikipedia.org/wiki/Information_extraction]
+
+Information extraction, that is, automatically building a relational database from information contained in unstructured text. Unlike linear-chain models, general CRFs can capture long distance dependencies between labels. %[http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf]
+
+PICTURE!!!!
 %http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf
 %https://web.stanford.edu/~jurafsky/slp3/21.pdf
 %https://en.wikipedia.org/wiki/Information_extraction
@@ -85,7 +89,32 @@ information extraction, that is, automatically building a relational database fr
 
 \section{NER}
 NER is the problem of identifying and classifying proper names in text, including locations, such as China; people, such as George Bush; and organizations, such as the United Nations. The named-entity recognition task is, given a sentence, first to segment which words are part of entities, and then to classify each entity by type (person, organization, location, and so on). The challenge of this problem is that many named entities are too rare to appear even in a large training set, and therefore the system must identify them based only on context
+EVALUATION OF NER
+	Precision, recall, F1 measurement
 %http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf section 1.2.2.2
+The first step in most IE tasks is to find the proper names or named entities
+mentioned in a text. The task of named entity recognition (NER) is to find each mention of a named entity in the text and label its type. What constitutes a named entity type is application specific; these commonly include people, places, and organizations but also more specific entities from the names of genes and proteins(Cohen and Demner-Fushman, 2014) to the names of college courses (McCallum,2005).%[https://web.stanford.edu/~jurafsky/slp3/21.pdf]
+
+Named-entity recognition (NER) (also known as entity identification, entity chunking and entity extraction) is a subtask of information extraction that seeks to locate and classify named entities in text into pre-defined categories such as the names of persons, organizations, locations, expressions of times, quantities, monetary values, percentages, etc.
+
+Most research on NER systems has been structured as taking an unannotated block of text, such as this one:
+
+Jim bought 300 shares of Acme Corp. in 2006.
+
+And producing an annotated block of text that highlights the names of entities:
+
+[Jim]Person bought 300 shares of [Acme Corp.]Organization in [2006]Time.
+
+In this example, a person name consisting of one token, a two-token company name and a temporal expression have been detected and classified.
+
+State-of-the-art NER systems for English produce near-human performance. For example, the best system entering MUC-7 scored 93.39\% of F-measure while human annotators scored 97.60\% and 96.95\%. %[https://en.wikipedia.org/wiki/Named-entity_recognition]
+PICTURE FROM Stanford NER GUI!!!!
+
+\subsection{Stanford NER}
+Stanford NER is a Java implementation of a Named Entity Recognizer. Named Entity Recognition (NER) labels sequences of words in a text which are the names of things, such as person and company names, or gene and protein names. It comes with well-engineered feature extractors for Named Entity Recognition, and many options for defining feature extractors. Included with the download are good named entity recognizers for English, particularly for the 3 classes (PERSON, ORGANIZATION, LOCATION), and we also make available on this page various other models for different languages and circumstances, including models trained on just the CoNLL 2003 English training data.
+
+Stanford NER is also known as CRFClassifier. The software provides a general implementation of (arbitrary order) linear chain Conditional Random Field (CRF) sequence models. That is, by training your own models on labeled data, you can actually use this code to build sequence models for NER or any other task. (CRF models were pioneered by Lafferty, McCallum, and Pereira (2001); see Sutton and McCallum (2006) or Sutton and McCallum (2010) for more comprehensible introductions.) %[https://nlp.stanford.edu/software/CRF-NER.html]
+
 \section{RDF/NIF}
 %http://wiki.dbpedia.org/dbpedia-nif-dataset
 %http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.html
@@ -93,17 +122,27 @@ NER is the problem of identifying and classifying proper names in text, includin
 %http://lov.okfn.org/dataset/lov/vocabs/nif
 %http://aksw.org/Projects/NIF.html
 
-\section{DBpedia ontology}
-%http://wiki.dbpedia.org/services-resources/ontology
-%http://mappings.dbpedia.org/server/ontology/classes
-
-\section{Evaluation/training datasets}
-
 \section{Domain specific NER}
 %https://arxiv.org/pdf/1612.00148.pdf
 
-\section{Stanford NER}
+\section{DBpedia ontology}
+%http://wiki.dbpedia.org/services-resources/ontology
+%http://mappings.dbpedia.org/server/ontology/classes
+The DBpedia Ontology is a shallow, cross-domain ontology, which has been manually created based on the most commonly used infoboxes within Wikipedia. The ontology currently covers 685 classes which form a subsumption hierarchy and are described by 2,795 different properties.
 
+With the DBpedia 3.2 release, we introduced a new infobox extraction method based on hand-generated mappings of Wikipedia infoboxes to the DBpedia ontology. The mappings defined fine-granular rules on how to parse infobox values. The mappings also addressed weaknesses in the Wikipedia infobox system, like having different infoboxes for the same class, using different property names for the same property, and not having clearly defined datatypes for property values. Therefore, the instance data within the infobox ontology is much cleaner and better structured than the infobox data within the DBpedia infobox dataset which was generated using the old infobox extraction code.
+
+With the DBpedia 3.5 release, we introduced a public wiki for writing infobox mappings, editing existing ones as well as editing the DBpedia ontology. This allows external contributors to define mappings for the infoboxes they are interested in and to extend the existing DBpedia ontology with additional classes and properties.
+
+Since the DBpedia 3.7 release, the ontology is a directed-acyclic graph, not a tree. Classes may have multiple superclasses, which was important for the mappings to schema.org. A taxonomy can still be constructed by ignoring all superclasses except the one that is specified first in the list and is considered the most important. %[http://wiki.dbpedia.org/services-resources/ontology]
+
+\section{Evaluation/training datasets}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%NEW CHAPER%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Domain specific NER}\label{}
 
 There are parameters of the computer used for tests shown in Table \ref{tab:PCparam}.
@@ -128,7 +167,7 @@ There are parameters of the computer used for tests shown in Table \ref{tab:PCpa
 At the main file where we write text we retrieve all types that are available for that text. After that, that text is processed with coarse and fine grained types. In coarse grained we have politics, sport and transportation specific domains. In fine grained in politics domain we retrieve in total 26 types (write them all), which we sort in 11 more specific types like for example Ambassador, Mayor, Deputy etc. are fused in one specific domain Politician. We do the same for sport domain where we retrieve in total 171 types, so those types, same as politics domain, are specified in 8 types, like SportClub, SportsLeague, SportsTeam, Athlete, Coach, OrganizationMember, SportsManager, SportsEvent. We also do the same for transportation domain, where we retrieve in total 78 types and minimized in 14 more specific types like Aircraft, Automobile, Locomotive, MilitaryVehicle, Motorcycle, On-SiteTransportation, Rocket, Ship, SpaceShuttle, SpaceStation, Spacecraft, Train, PublicTransitSystem and Infrastructure.  
 
 \section{Domain specification}
-
+How I choose the domains?
 
 \section{Data transformation/output for Stanford}
 How we process data to be ready to use on Stanford NER system?
@@ -960,8 +999,9 @@ Make it like experiment - discussion
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Top 300 Links}
-MAIN EXPERIMENT
-	This is our main experiment where other experiments will be 
+\textbf{MAIN EXPERIMENT}
+	This is our main experiment where other experiments will be compared with this one. This model is trained with top 300 Wikipedia abstracts based on PageRank. The text is annotated in coarse grained and has around 2300 annotated words in total.
+	First experiment that we do with this model is that we run it with the same text that model is created. Results are not bad at all, we are above 95\%, which is great number for such middle weight model. 		   
 	\begin{table}[H]\centering
 		\caption{All 3 domain model with top 300 abstracts, tested with all 3 domain texts}
 		\label{}
@@ -1914,6 +1954,8 @@ MAIN EXPERIMENT
 
 \bibliographystyle{iso690.bst}
 \bibliography{ref}
+
+
 
 \appendix
 
