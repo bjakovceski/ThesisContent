@@ -2,60 +2,63 @@
 \babel@toc {english}{}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Information extraction, downloaded from https://www.slideshare.net/rubenizquierdobevia/information-extraction-45392844}}{4}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Stanford NER GUI with 3 classes model (Location, Person, Organization)}}{5}{figure.1.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Dbpedia Ontology - Instances per class}}{7}{figure.1.3}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower Page Rank}}{38}{figure.3.2}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces All 3 Domains Fine Grained Top 300 With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{38}{figure.3.1}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{39}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links And Transportation Fine Grained Top 300 Links}}{39}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{40}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 300 Links}}{40}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 500 Links}}{41}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{41}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With All 3 Domains Fine Grained Top 500 Links}}{42}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{42}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Politics Fine Grained Top 500 Links}}{43}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Politics Fine Grained Top 500 Links With Lower PageRank}}{43}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Sport Fine Grained Top 500 Links}}{43}{figure.3.13}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Sport Fine Grained Top 500 Links With Lower PageRank}}{44}{figure.3.14}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Transportation Fine Grained Top 500 Links}}{44}{figure.3.15}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Transportation Fine Grained Top 500 Links With Lower PageRank}}{44}{figure.3.16}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 500 Links}}{45}{figure.3.17}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{45}{figure.3.18}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 500 Links}}{46}{figure.3.19}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 500 Links With Lower PageRank}}{46}{figure.3.20}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 500 Links}}{46}{figure.3.21}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 500 Links With Lower PageRank}}{47}{figure.3.22}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links}}{47}{figure.3.23}
-\contentsline {figure}{\numberline {3.24}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links With Lower PageRank}}{47}{figure.3.24}
-\contentsline {figure}{\numberline {3.25}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 10 Links}}{48}{figure.3.25}
-\contentsline {figure}{\numberline {3.26}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{48}{figure.3.26}
-\contentsline {figure}{\numberline {3.27}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 10 Links}}{48}{figure.3.27}
-\contentsline {figure}{\numberline {3.28}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 100 Links}}{49}{figure.3.28}
-\contentsline {figure}{\numberline {3.29}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 10 Links}}{49}{figure.3.29}
-\contentsline {figure}{\numberline {3.30}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 100 Links}}{49}{figure.3.30}
-\contentsline {figure}{\numberline {3.31}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 10 Links}}{49}{figure.3.31}
-\contentsline {figure}{\numberline {3.32}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 100 Links}}{50}{figure.3.32}
-\contentsline {figure}{\numberline {3.33}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 10 Links}}{50}{figure.3.33}
-\contentsline {figure}{\numberline {3.34}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{50}{figure.3.34}
-\contentsline {figure}{\numberline {3.35}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}}{51}{figure.3.35}
-\contentsline {figure}{\numberline {3.36}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Politics Fine Grained Top 10 Links}}{51}{figure.3.36}
-\contentsline {figure}{\numberline {3.37}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Politics Fine Grained Top 100 Links}}{51}{figure.3.37}
-\contentsline {figure}{\numberline {3.38}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Politics Fine Grained Top 300 Links}}{52}{figure.3.38}
-\contentsline {figure}{\numberline {3.39}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Sport Fine Grained Top 10 Links}}{52}{figure.3.39}
-\contentsline {figure}{\numberline {3.40}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Sport Fine Grained Top 100 Links}}{52}{figure.3.40}
-\contentsline {figure}{\numberline {3.41}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Sport Fine Grained Top 300 Links}}{53}{figure.3.41}
-\contentsline {figure}{\numberline {3.42}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Transportation Fine Grained Top 10 Links}}{53}{figure.3.42}
-\contentsline {figure}{\numberline {3.43}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Transportation Fine Grained Top 100 Links}}{53}{figure.3.43}
-\contentsline {figure}{\numberline {3.44}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Transportation Fine Grained Top 300 Links}}{54}{figure.3.44}
-\contentsline {figure}{\numberline {3.45}{\ignorespaces Politics Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{54}{figure.3.45}
-\contentsline {figure}{\numberline {3.46}{\ignorespaces Politics Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{55}{figure.3.46}
-\contentsline {figure}{\numberline {3.47}{\ignorespaces Politics Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}}{55}{figure.3.47}
-\contentsline {figure}{\numberline {3.48}{\ignorespaces Sport Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{56}{figure.3.48}
-\contentsline {figure}{\numberline {3.49}{\ignorespaces Sport Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{56}{figure.3.49}
-\contentsline {figure}{\numberline {3.50}{\ignorespaces Sport Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}}{57}{figure.3.50}
-\contentsline {figure}{\numberline {3.51}{\ignorespaces Transportation Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{57}{figure.3.51}
-\contentsline {figure}{\numberline {3.52}{\ignorespaces Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{58}{figure.3.52}
-\contentsline {figure}{\numberline {3.53}{\ignorespaces Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}}{58}{figure.3.53}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower Page Rank}}{42}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces All 3 Domains Fine Grained Top 300 With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{42}{figure.3.1}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{43}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links And Transportation Fine Grained Top 300 Links}}{43}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{44}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 300 Links}}{44}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 500 Links}}{45}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{45}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With All 3 Domains Fine Grained Top 500 Links}}{46}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{46}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Politics Fine Grained Top 500 Links}}{47}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Politics Fine Grained Top 500 Links With Lower PageRank}}{47}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Sport Fine Grained Top 500 Links}}{47}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Sport Fine Grained Top 500 Links With Lower PageRank}}{48}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Transportation Fine Grained Top 500 Links}}{48}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces All 3 Domains Fine Grained Top 100 Links Runned With Transportation Fine Grained Top 500 Links With Lower PageRank}}{48}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 500 Links}}{49}{figure.3.17}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{49}{figure.3.18}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 500 Links}}{50}{figure.3.19}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 500 Links With Lower PageRank}}{50}{figure.3.20}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 500 Links}}{50}{figure.3.21}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 500 Links With Lower PageRank}}{51}{figure.3.22}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links}}{51}{figure.3.23}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links With Lower PageRank}}{51}{figure.3.24}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 10 Links}}{52}{figure.3.25}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{52}{figure.3.26}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 10 Links}}{52}{figure.3.27}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Politics Fine Grained Top 100 Links}}{53}{figure.3.28}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 10 Links}}{53}{figure.3.29}
+\contentsline {figure}{\numberline {3.30}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Sport Fine Grained Top 100 Links}}{53}{figure.3.30}
+\contentsline {figure}{\numberline {3.31}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 10 Links}}{53}{figure.3.31}
+\contentsline {figure}{\numberline {3.32}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 100 Links}}{54}{figure.3.32}
+\contentsline {figure}{\numberline {3.33}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 10 Links}}{54}{figure.3.33}
+\contentsline {figure}{\numberline {3.34}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{54}{figure.3.34}
+\contentsline {figure}{\numberline {3.35}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}}{55}{figure.3.35}
+\contentsline {figure}{\numberline {3.36}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Politics Fine Grained Top 10 Links}}{55}{figure.3.36}
+\contentsline {figure}{\numberline {3.37}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Politics Fine Grained Top 100 Links}}{55}{figure.3.37}
+\contentsline {figure}{\numberline {3.38}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Politics Fine Grained Top 300 Links}}{56}{figure.3.38}
+\contentsline {figure}{\numberline {3.39}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Sport Fine Grained Top 10 Links}}{56}{figure.3.39}
+\contentsline {figure}{\numberline {3.40}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Sport Fine Grained Top 100 Links}}{56}{figure.3.40}
+\contentsline {figure}{\numberline {3.41}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Sport Fine Grained Top 300 Links}}{57}{figure.3.41}
+\contentsline {figure}{\numberline {3.42}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Transportation Fine Grained Top 10 Links}}{57}{figure.3.42}
+\contentsline {figure}{\numberline {3.43}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Transportation Fine Grained Top 100 Links}}{57}{figure.3.43}
+\contentsline {figure}{\numberline {3.44}{\ignorespaces All 3 Domains Fine Grained Top 500 Links Runned With Transportation Fine Grained Top 300 Links}}{58}{figure.3.44}
+\contentsline {figure}{\numberline {3.45}{\ignorespaces Politics Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{58}{figure.3.45}
+\contentsline {figure}{\numberline {3.46}{\ignorespaces Politics Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{59}{figure.3.46}
+\contentsline {figure}{\numberline {3.47}{\ignorespaces Politics Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}}{59}{figure.3.47}
+\contentsline {figure}{\numberline {3.48}{\ignorespaces Sport Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{60}{figure.3.48}
+\contentsline {figure}{\numberline {3.49}{\ignorespaces Sport Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{60}{figure.3.49}
+\contentsline {figure}{\numberline {3.50}{\ignorespaces Sport Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}}{61}{figure.3.50}
+\contentsline {figure}{\numberline {3.51}{\ignorespaces Transportation Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{61}{figure.3.51}
+\contentsline {figure}{\numberline {3.52}{\ignorespaces Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{62}{figure.3.52}
+\contentsline {figure}{\numberline {3.53}{\ignorespaces Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links}}{62}{figure.3.53}
 \addvspace {10pt}
 \addvspace {10pt}
