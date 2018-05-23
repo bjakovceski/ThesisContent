@@ -14,25 +14,26 @@
 \contentsline {section}{\numberline {1.4}Domain specific Named Entity Recognition}{6}{section.1.4}
 \contentsline {section}{\numberline {1.5}DBpedia ontology}{7}{section.1.5}
 \contentsline {section}{\numberline {1.6}Evaluation/training datasets}{7}{section.1.6}
+\contentsline {section}{\numberline {1.7}HDT}{8}{section.1.7}
 \contentsline {chapter}{\chapternumberline {2}Domain specific named entity recognition}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Data pre-processing}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Types retrieval}{10}{section.2.2}
-\contentsline {section}{\numberline {2.3}Domain specification}{11}{section.2.3}
-\contentsline {section}{\numberline {2.4}Data transformation/output for Stanford}{11}{section.2.4}
-\contentsline {chapter}{\chapternumberline {3}Experiments}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Goals of the experiments}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}List of experiments}{13}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Top 10 Links}{13}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Top 20 Links}{18}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Top 40 Links}{23}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Top 100 Links}{26}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Top 300 Links}{29}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Top 400 Links}{34}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Top 500 Links}{38}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}MIXED}{42}{subsection.3.2.8}
-\contentsline {subsection}{\numberline {3.2.9}With lower links on model}{44}{subsection.3.2.9}
-\contentsline {subsection}{\numberline {3.2.10}With higher links on model}{52}{subsection.3.2.10}
-\contentsline {section}{\numberline {3.3}Summary of results}{62}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Graphs}{62}{subsection.3.3.1}
-\contentsline {chapter}{Conclusion}{63}{chapter*.9}
-\contentsline {appendix}{\chapternumberline {A}Contents of CD}{65}{appendix.A}
+\contentsline {section}{\numberline {2.2}Domain specification}{10}{section.2.2}
+\contentsline {section}{\numberline {2.3}Types retrieval}{11}{section.2.3}
+\contentsline {section}{\numberline {2.4}Data transformation/output for Stanford}{14}{section.2.4}
+\contentsline {chapter}{\chapternumberline {3}Experiments}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Goals of the experiments}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}List of experiments}{15}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Top 10 Links}{15}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Top 20 Links}{20}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Top 40 Links}{25}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Top 100 Links}{28}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Top 300 Links}{31}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Top 400 Links}{36}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Top 500 Links}{40}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}MIXED}{44}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.9}With lower links on model}{46}{subsection.3.2.9}
+\contentsline {subsection}{\numberline {3.2.10}With higher links on model}{54}{subsection.3.2.10}
+\contentsline {section}{\numberline {3.3}Summary of results}{64}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Graphs}{64}{subsection.3.3.1}
+\contentsline {chapter}{Conclusion}{65}{chapter*.9}
+\contentsline {appendix}{\chapternumberline {A}Contents of CD}{67}{appendix.A}
