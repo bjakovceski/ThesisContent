@@ -23,17 +23,13 @@
 \contentsline {chapter}{\chapternumberline {3}Experiments}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Goals of the experiments}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}List of experiments}{15}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Top 10 Links}{15}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Top 20 Links}{20}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Top 40 Links}{25}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Top 100 Links}{28}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Top 300 Links}{31}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Top 400 Links}{36}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Top 500 Links}{40}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}MIXED}{44}{subsection.3.2.8}
-\contentsline {subsection}{\numberline {3.2.9}With lower links on model}{46}{subsection.3.2.9}
-\contentsline {subsection}{\numberline {3.2.10}With higher links on model}{54}{subsection.3.2.10}
-\contentsline {section}{\numberline {3.3}Summary of results}{64}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Graphs}{64}{subsection.3.3.1}
-\contentsline {chapter}{Conclusion}{65}{chapter*.9}
-\contentsline {appendix}{\chapternumberline {A}Contents of CD}{67}{appendix.A}
+\contentsline {subsection}{\numberline {3.2.1}Main experiment}{15}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Experiments that have lower number of traning abstracts in model}{21}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Experiments that have lower number of traning abstracts in model}{36}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}MIXED}{45}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{48}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{56}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Summary of results}{67}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Graphs}{67}{subsection.3.3.1}
+\contentsline {chapter}{Conclusion}{69}{chapter*.9}
+\contentsline {appendix}{\chapternumberline {A}Contents of CD}{71}{appendix.A}

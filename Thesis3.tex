@@ -59,7 +59,7 @@
 \begin{introduction}
 
 \section{Motivation}
-	Nowadays Named Entity Recognition (NER) is far away from perfectly matching entities in text. State-of-the-art NER systems for English produce near-human performance. For example, the best system entering MUC-7 scored 93.39\% of F-measure while human annotators scored 97.60\% and 96.95\%. %[https://en.wikipedia.org/wiki/Named-entity_recognition]
+	Nowadays Named Entity Recognition (NER) is very close to perfectly matching entities in text. State-of-the-art NER systems for English produce near-human performance. For example, the best system entering MUC-7 scored 93.39\% of F-measure while human annotators scored 97.60\% and 96.95\%. %[https://en.wikipedia.org/wiki/Named-entity_recognition]
 	  
 \section{Goals of the thesis}	
 	%The main goal of the thesis is to show (test) does extracting information from a global domain gives us better results that extracting information from a specific domain, for example politics domain or any other domain.
@@ -228,7 +228,7 @@ At the end we repeat the process for "TRANSPORTATION" domain, where we retrieve 
 \section{Data transformation/output for Stanford}\label{StanfordNERoutput}
 We define domains also their types that we will retrieve and process, now we should put everything together and prepare data for Stanford NER application[~\ref{Stanford NER}]. In Data pre-processing section~\ref{dataPreProcessing} we explain how we handled the data downloaded from web and we briefly touch how those data will be prepared for training in Stanford NER application. 
 
-We waned to get those links based in their PageRank\cite{wiki:PageRank}.  
+We waned to get those links based in their PageRank\cite{wiki:PageRank}. In Java there is a framework called Apache Jena\cite{ApacheJena} that is used for working with RDF data and SPARQL queries. With a prepared and tested SPARQL queries on www.dbpedia.com/sparql we implemented retrieving link, on Java, on this endpoint. After retrieving those data, based on their order we search does retrieved link is contained on our abstract file.  
 
  
 \begin{itemize}
@@ -237,7 +237,9 @@ We waned to get those links based in their PageRank\cite{wiki:PageRank}.
 	\item fine grained
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%NEW CHAPTER%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%NEW CHAPTER%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Experiments}
 We have provide various types of experiments. In next sections we will discuss more about every provided experiment.
 
@@ -245,7 +247,9 @@ We have provide various types of experiments. In next sections we will discuss m
 We set a few goals of the experiments. First of all we waned to test does we will get better results if we run the model of all domains in coarse grained, against the model of all domains in fine grained. In this test we run the models also with all domains texts. Then we get those models and we run it with specific domain texts, in both fine and coarse grained. Also we make experiments with specific domain model runned with domain specific texts, for example, politics domain model in coarse grained is runned with politics domain text also annotated in coarse grained, politics domain model in fine grained is runned with politics domain text also annotated in fine grained, and the same for sport and transportation domains.
 
 \section{List of experiments}
-Make it like experiment - discussion
+With our trained models we made a few experiments. First one is the model that has 300 abstract on every domain(900 abstract in total). This is our main model and other experiments that we will provide like models that has lower or higher number of abstracts or experiments where model has more abstracts that a test file or vice-verse, all those results will be compared with the results obtained from main experiment. 
+%
+%Make it like experiment - discussion
 
 %	\begin{figure}[H]\centering
 %		\includegraphics[width=\textwidth]{"/500All3DomainsCoarseGrainedRunnedWithAll3DomainsBBCCoarseGrained-tsv".png}
@@ -263,8 +267,241 @@ Make it like experiment - discussion
 %				Totals & 0,9811 & 0,9630 & 0,9720\\\hline
 %		\end{tabular}
 %	\end{table}
+\subsection{Main experiment}\label{MainExperiment}\
+This is our main experiment where other experiments will be compared with this one. This model is trained with top 300 Wikipedia abstracts, for every domain, based on PageRank\cite{PageRank}. The text is annotated in coarse grained and has around 2300 annotated words in total.
+	First experiment that we do with this model is that we run it with the same text that model is created in coarse grained. Results are not bad at all, we are above 95\% (see Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}), which is great number for such middle weight model. But let see how model will behaves when we tested with abstracts for every domain.
+	
+	Table~\ref{table:All3domainsWithPoliticsTop300Coarse} shows the output of model when is tested with abstracts from a "POLITICS" domain. As we said in Section~\ref{StanfordNERoutput} this type of abstract has the biggest word annotation. In this experiment, trained model annotated words with a "TRANSPORTATION" domain. 
+	
+	Table~\ref{table:All3domainsWithSportTop300Coarse} gives us results from abstracts from "SPORT" domain. From the table we can see that our trained model annotated some words with a "POLITICS" or "TRANSPORTATION", even those that our test file contains only abstracts from "SPORT" domains and words has only "SPORT" type.
+	
+	Table~\ref{table:All3domainsWithTransportationTop300Coarse} provide outcome with testing with abstracts only from "TRANSPORTATION" domain. Also here the trained model annotated words with a "SPORT" type. 
+	
+	In conclusion with this kind of experiments we can say that it is not a good idea to train a model with all chosen domains and then use texts from every domain separately to perform NER.  
+			   
+	\begin{table}[H]\centering
+		\label{table:All3domainsWithAll3DomiansTop300Coarse}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				POLITICS & 0,9872 & 0,9462 & 0,9662\\
+				SPORT & 0,9846 & 0,9629 & 0,9736\\
+				TRANSPORTATION & 0,9940 & 0,9823 & 0,9881\\\hline
+				\textbf{Totals} & \textbf{0,9875} & \textbf{0,9625} & \textbf{0,9748}\\\hline
+		\end{tabular}
+		\caption{All 3 domain model with top 300 abstracts, tested with all 3 domain texts}
+	\end{table}
 
-\subsection{Top 10 Links}\label{subsec:Top10}
+	\begin{table}[H]\centering
+		\label{table:All3domainsWithPoliticsTop300Coarse}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				POLITICS & 0,9839 & 0,4025 & 0,5713\\
+				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
+				\textbf{Totals} & \textbf{0,9792} & \textbf{0,4025} & \textbf{0,5705}\\\hline
+		\end{tabular}
+		\caption{All 3 domain model with top 300 abstracts, tested with Politics abstracts (test file)}
+	\end{table}
+
+	\begin{table}[H]\centering
+		\label{table:All3domainsWithSportTop300Coarse}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				POLITICS & 0,0000 & 1,0000 & 0,0000\\
+				SPORT & 0,9846 & 0,9628 & 0,9736\\
+				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
+				\textbf{Totals} & \textbf{0,9819} & \textbf{0,9628} & \textbf{0,9722}\\\hline
+		\end{tabular}
+		\caption{All 3 domain model with top 300 abstracts, tested with Sport abstracts (test file)}
+	\end{table}	
+
+	\begin{table}[H]\centering
+		\label{table:All3domainsWithTransportationTop300Coarse}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				SPORT & 0,0000 & 1,0000 & 0,0000\\
+				TRANSPORTATION & 0,9940 & 0,9822 & 0,9880\\\hline
+				\textbf{Totals} & \textbf{0,9861} & \textbf{0,9822} & \textbf{0,9841}\\\hline
+		\end{tabular}
+	\caption{All 3 domain model with top 300 abstracts, tested with Transportation abstracts (test file)}
+	\end{table}	
+		
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+After we finish the experiments with model that is trained with all abstracts from every domain in coarse grained, we waned to see the impact of model that is trained with same abstracts, but now annotated in fine grained. Table~\ref{table:All3domainsWithAll3DomainsTop300Fine} shows the results of provided experiment where we can see that we have a little bit more better results than experiment in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}.
+
+	Then we tested our model with abstracts from "POLITICS" domain. How we can see from Table~\ref{table:All3domainsWithPoliticsTop300Fine} there is some improvements on results, but no satisfying at all. Also table shows that some words are annotated with types from "SPORT" and "TRANSPORTATION" domain.
+
+    After that we rerun the experiment, but now with abstracts from "SPORT" domain. In Table~\ref{table:All3domainsWithSportTop300Fine} we can see minor growth of the results unlike experiment in Table~\ref{table:All3domainsWithSportTop300Coarse}, but this improvements are so small that are almost unimportant. Also our model annotated some words with types from "POLITICS" and "TRANSPORTATION" domain which the test file don't have those types at all.
+    
+    Finally the last experiment with this model are the abstracts from "TRANSPORTATION" domain. Table~\ref{table:All3domainsWithTransportationTop300Fine} shows the output of the provided experiment, where like in previous 2 experiments we can notice a very little improvements on results, from experiment in Table~\ref{table:All3domainsWithTransportationTop300Coarse}, who again can be unimportant.
+    
+    Provided experiments with the model who is trained with all abstracts from every domain annotated in fine grained, overall provide a very little improvements on results on every experiment. With that observation trained model annotated in fine grained is better to use instead of the model that is annotated in coarse grained. Another benefit of this type of model is that we can see which types are annotated and their results. 
+
+\begin{table}[H]\centering
+		\label{table:All3domainsWithAll3DomainsTop300Fine}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				Aircraft & 1,0000 & 1,0000 & 1,0000\\
+				Athlete & 1,0000 & 0,9802 & 0,9900\\
+				Automobile & 1,0000 & 1,0000 & 1,0000\\ 
+				Coach & 1,0000 & 1,0000 & 1,0000\\
+				Infrastructure & 1,0000 & 0,9820 & 0,9909\\
+				PoliticalParty & 0,9860 & 0,9628 & 0,9743\\
+				Politician & 1,0000 & 0,9353 & 0,9665\\
+				PublicTransitSystem & 0,9919 & 0,9839 & 0,9879\\
+				Ship & 1,0000 & 1,0000 & 1,0000\\
+				SpaceShuttle & 1,0000 & 1,0000 & 1,0000\\
+				SpaceStation & 1,0000 & 1,0000 & 1,0000\\ 
+				SportsClub & 0,9796 & 0,9683 & 0,9739\\
+				SportsEvent & 1,0000 & 0,9242 & 0,9606\\
+				SportsLeague & 0,9647 & 0,9805 & 0,9725\\
+				SportsManager & 1,0000 & 0,9423 & 0,9703\\
+				SportsTeam & 1,0000 & 0,9805 & 0,9902\\
+				Train & 1,0000 & 1,0000 & 1,0000\\\hline
+				\textbf{Totals} & \textbf{0,9880} & \textbf{0,9712} & \textbf{0,9795}\\\hline
+		\end{tabular}
+		\caption{All 3 domain model with top 300 abstracts, tested with all 3 domain texts}
+	\end{table}
+
+	\begin{table}[H]\centering
+		\label{table:All3domainsWithPoliticsTop300Fine}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				Election & 0,0000 & 0,0000 & 0,0000\\
+				PoliticalParty & 0,9860 & 0,9628 & 0,9743\\
+				Politician & 1,0000 & 0,1849 & 0,3120\\
+				PublicTransitSystem & 0,0000 & 1,0000 & 0,0000\\
+				Ship & 0,0000 & 1,0000 & 0,0000\\
+				SportsLeague & 0,0000 & 1,0000 & 0,0000\\\hline
+				\textbf{Totals} & \textbf{0,9825} & \textbf{0,4072} & \textbf{0,5758}\\\hline
+		\end{tabular}
+		\caption{All 3 domain model with top 300 abstracts, tested with Politics abstracts (test file)}
+	\end{table}	
+
+	\begin{table}[H]\centering
+		\label{table:All3domainsWithSportTop300Fine}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				Athlete & 1,0000 & 0,9802 & 0,9900\\
+				Coach & 1,0000 & 1,0000 & 1,0000\\
+				Politician & 0,0000 & 1,0000 & 0,0000\\
+				SportsClub & 0,9794 & 0,9680 & 0,9737\\
+				SportsEvent & 1,0000 & 0,9242 & 0,9606\\
+				SportsLeague & 0,9678 & 0,9805 & 0,9741\\
+				SportsManager & 1,0000 & 0,9423 & 0,9703\\				
+				SportsTeam & 1,0000 & 0,9804 & 0,9901\\
+				Train & 0,0000 & 1,0000 & 0,0000\\\hline
+				\textbf{Totals} & \textbf{0,9821} & \textbf{0,9716} & \textbf{0,9768}\\\hline
+		\end{tabular}
+		\caption{All 3 domain model with top 300 abstracts, tested with Sport abstracts (test file)}
+	\end{table}	
+
+	\begin{table}[H]\centering
+		\label{table:All3domainsWithTransportationTop300Fine}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				Aircraft & 1,0000 & 1,0000 & 1,0000\\
+				Automobile & 1,0000 & 1,0000 & 1,0000\\				
+				Infrastructure & 1,0000 & 0,9820 & 0,9909\\
+				Politician & 0,0000 & 1,0000 & 0,0000\\				
+				PublicTransitSystem & 0,9918 & 0,9837 & 0,9878\\
+				Ship & 1,0000 & 1,0000 & 1,0000\\				
+				SpaceShuttle & 1,0000 & 1,0000 & 1,0000\\
+				SpaceStation & 1,0000 & 1,0000 & 1,0000\\
+				SportsClub & 0,0000 & 1,0000 & 0,0000\\
+				SportsTeam & 0,0000 & 1,0000 & 0,0000\\
+				Train & 1,0000 & 1,0000 & 1,0000\\\hline
+				\textbf{Totals} & \textbf{0,9862} & \textbf{0,9881} & \textbf{0,9871}\\\hline
+		\end{tabular}
+		\caption{All 3 domain model with top 300 abstracts, tested with Transportation abstracts (test file)}
+	\end{table}		
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+	\begin{table}[H]\centering
+		\caption{Politics domain model with top 300 abstracts, tested with Politics abstracts (test file) in coarse grained}
+		\label{}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				POLITICS & 0,8039 & 0,6779 & 0,7355\\\hline
+				\textbf{Totals} & \textbf{0,8039} & \textbf{0,6779} & \textbf{0,7355}\\\hline
+		\end{tabular}
+	\end{table}
+
+	\begin{table}[H]\centering
+		\caption{Politics domain model with top 300 abstracts, tested with Politics abstracts (test file) in fine grained}
+		\label{}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				Election & 0,8240 & 0,6398 & 0,7203\\
+				PoliticalParty & 0,8100 & 0,7006 & 0,7513\\
+				Politician & 0,8599 & 0,7234 & 0,7858\\\hline
+				\textbf{Totals} & \textbf{0,8354} & \textbf{0,6980} & \textbf{0,7606}\\\hline
+		\end{tabular}
+	\end{table}	
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{table}[H]\centering
+		\caption{Sport domain model with top 300 abstracts, tested with Sport abstracts (test file) in coarse grained}
+		\label{}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				SPORT & 0,9432 & 0,8839 & 0,9126\\\hline
+				\textbf{Totals} & \textbf{0,9432} & \textbf{0,8839} & \textbf{0,9126}\\\hline
+		\end{tabular}
+	\end{table}
+
+	\begin{table}[H]\centering
+		\caption{Sport domain model with top 300 abstracts, tested with Sport abstracts (test file) in fine grained}
+		\label{}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				Athlete & 0,9713 & 0,8366 & 0,8989\\
+				Coach & 1,0000 & 0,7500 & 0,8571\\
+				SportsClub & 0,9453 & 0,9041 & 0,9242\\
+				SportsEvent & 1,0000 & 0,7879 & 0,8814\\
+				SportsLeague & 0,9418 & 0,8958 & 0,9182\\
+				SportsManager & 1,0000 & 0,9615 & 0,9804\\				
+				SportsTeam & 0,9845 & 0,8301 & 0,9007\\\hline
+				\textbf{Totals} & \textbf{0,9592} & \textbf{0,8750} & \textbf{0,9152}\\\hline
+		\end{tabular}
+	\end{table}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{table}[H]\centering
+		\caption{Transportation domain model with top 300 abstracts, tested with Transportation abstracts (test file) in fine grained}
+		\label{}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				TRANSPORTATION & 0,9583 & 0,9109 & 0,9340\\\hline
+				\textbf{Totals} & \textbf{0,9583} & \textbf{0,9109} & \textbf{0,9340}\\\hline
+		\end{tabular}
+	\end{table}
+	
+	
+	\begin{table}[H]\centering
+		\caption{Transportation domain model with top 300 abstracts, tested with Transportation abstracts (test file) in fine grained}
+		\label{}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				Aircraft & 0,9659 & 0,8333 & 0,8947\\
+				Automobile & 1,0000 & 0,8000 & 0,8889\\				
+				Infrastructure & 0,9550 & 0,9550 & 0,9550\\
+				PublicTransitSystem & 0,9662 & 0,9309 & 0,9482\\
+				Ship & 1,0000 & 0,6429 & 0,7826\\				
+				SpaceShuttle & 1,0000 & 0,8333 & 0,9091\\
+				SpaceStation & 0,0000 & 1,0000 & 0,0000\\
+				Train & 1,0000 & 1,0000 & 1,0000\\\hline
+				\textbf{Totals} & \textbf{0,9660} & \textbf{0,9010} & \textbf{0,9324}\\\hline
+		\end{tabular}
+	\end{table}	
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Experiments that have lower number of traning abstracts in model}\label{}
 	In this experiment we get the model that is trained with all 3 domains together with coarse grained and we make an experiment with the text that is trained, that means text from all 3 domains annotated with coarse grained. 
 	Here we have for every domain 10 abstracts, so in total 30 annotated abstracts. This is our smallest model.
 	How we can see from the picture in politics domain F1 value is lower than in sport and transportation. This results with lower F1 value in total, but still that is very satisfying value, because we have only 1 false positive and 2 false negative words.  
@@ -460,7 +697,7 @@ Make it like experiment - discussion
 	In conclusion of this subsection, we can say that our strategy for creating a specific domain pays off, because in those domains we have a better results that in global domains. But let see in subsection ~\ref{subsec:Top20} how domains will behave with a bigger data(text).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Top 20 Links}\label{subsec:Top20}
+%\subsection{Top 20 Links}\label{subsec:Top20}
 	In subsection ~\ref{subsec:Top10} we provide various experiments with different models. Now in this subsection we will repeat those experiments, but now we doubled the number of text to every domain, so we have 20 abstracts for every domain, in total 60 abstract. Those models, like previous, are trained in both coarse and fine grained.
 	The first experiment in Figure~\ref{img:All3DomainWithAll3DomainCoarseTop10} is now rerunned with a bigger model and text. From Figure~\ref{img:All3DomainWithAll3DomainCoarseTop20} we can see that there are more annotated words and surprisingly better results than in previous domain.
 	Then we tested the model with politics domain text in coarse grained annotation. Again the results are quite better than previous experiment (see Figure~\ref{img:All3DomainWithPoliticsCoarseTop10}), also now there is no false positive words, but this is still not satisfying.
@@ -662,7 +899,7 @@ Make it like experiment - discussion
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Top 40 Links}
+%\subsection{Top 40 Links}
 	
 	\begin{table}[H]\centering
 		\caption{TABLE}
@@ -856,7 +1093,7 @@ Make it like experiment - discussion
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Top 100 Links}
+%\subsection{Top 100 Links}
 
 
 	\begin{table}[H]\centering
@@ -1062,222 +1299,7 @@ Make it like experiment - discussion
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Top 300 Links}
-\textbf{MAIN EXPERIMENT}
-	This is our main experiment where other experiments will be compared with this one. This model is trained with top 300 Wikipedia abstracts based on PageRank. The text is annotated in coarse grained and has around 2300 annotated words in total.
-	First experiment that we do with this model is that we run it with the same text that model is created. Results are not bad at all, we are above 95\%, which is great number for such middle weight model. 		   
-	\begin{table}[H]\centering
-		\caption{All 3 domain model with top 300 abstracts, tested with all 3 domain texts}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				POLITICS & 0,9872 & 0,9462 & 0,9662\\
-				SPORT & 0,9846 & 0,9629 & 0,9736\\
-				TRANSPORTATION & 0,9940 & 0,9823 & 0,9881\\\hline
-				\textbf{Totals} & \textbf{0,9875} & \textbf{0,9625} & \textbf{0,9748}\\\hline
-		\end{tabular}
-	\end{table}
-
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				POLITICS & 0,9839 & 0,4025 & 0,5713\\
-				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
-				\textbf{Totals} & \textbf{0,9792} & \textbf{0,4025} & \textbf{0,5705}\\\hline
-		\end{tabular}
-	\end{table}
-
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				POLITICS & 0,0000 & 1,0000 & 0,0000\\
-				SPORT & 0,9846 & 0,9628 & 0,9736\\
-				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
-				\textbf{Totals} & \textbf{0,9819} & \textbf{0,9628} & \textbf{0,9722}\\\hline
-		\end{tabular}
-	\end{table}	
-
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				SPORT & 0,0000 & 1,0000 & 0,0000\\
-				TRANSPORTATION & 0,9940 & 0,9822 & 0,9880\\\hline
-				\textbf{Totals} & \textbf{0,9861} & \textbf{0,9822} & \textbf{0,9841}\\\hline
-		\end{tabular}
-	\end{table}	
-		
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				Aircraft & 1,0000 & 1,0000 & 1,0000\\
-				Athlete & 1,0000 & 0,9802 & 0,9900\\
-				Automobile & 1,0000 & 1,0000 & 1,0000\\ 
-				Coach & 1,0000 & 1,0000 & 1,0000\\
-				Infrastructure & 1,0000 & 0,9820 & 0,9909\\
-				PoliticalParty & 0,9860 & 0,9628 & 0,9743\\
-				Politician & 1,0000 & 0,9353 & 0,9665\\
-				PublicTransitSystem & 0,9919 & 0,9839 & 0,9879\\
-				Ship & 1,0000 & 1,0000 & 1,0000\\
-				SpaceShuttle & 1,0000 & 1,0000 & 1,0000\\
-				SpaceStation & 1,0000 & 1,0000 & 1,0000\\ 
-				SportsClub & 0,9796 & 0,9683 & 0,9739\\
-				SportsEvent & 1,0000 & 0,9242 & 0,9606\\
-				SportsLeague & 0,9647 & 0,9805 & 0,9725\\
-				SportsManager & 1,0000 & 0,9423 & 0,9703\\
-				SportsTeam & 1,0000 & 0,9805 & 0,9902\\
-				Train & 1,0000 & 1,0000 & 1,0000\\\hline
-				\textbf{Totals} & \textbf{0,9880} & \textbf{0,9712} & \textbf{0,9795}\\\hline
-		\end{tabular}
-	\end{table}
-
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				Election & 0,0000 & 0,0000 & 0,0000\\
-				PoliticalParty & 0,9860 & 0,9628 & 0,9743\\
-				Politician & 1,0000 & 0,1849 & 0,3120\\
-				PublicTransitSystem & 0,0000 & 1,0000 & 0,0000\\
-				Ship & 0,0000 & 1,0000 & 0,0000\\
-				SportsLeague & 0,0000 & 1,0000 & 0,0000\\\hline
-				\textbf{Totals} & \textbf{0,9825} & \textbf{0,4072} & \textbf{0,5758}\\\hline
-		\end{tabular}
-	\end{table}	
-
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				Athlete & 1,0000 & 0,9802 & 0,9900\\
-				Coach & 1,0000 & 1,0000 & 1,0000\\
-				Politician & 0,0000 & 1,0000 & 0,0000\\
-				SportsClub & 0,9794 & 0,9680 & 0,9737\\
-				SportsEvent & 1,0000 & 0,9242 & 0,9606\\
-				SportsLeague & 0,9678 & 0,9805 & 0,9741\\
-				SportsManager & 1,0000 & 0,9423 & 0,9703\\				
-				SportsTeam & 1,0000 & 0,9804 & 0,9901\\
-				Train & 0,0000 & 1,0000 & 0,0000\\\hline
-				\textbf{Totals} & \textbf{0,9821} & \textbf{0,9716} & \textbf{0,9768}\\\hline
-		\end{tabular}
-	\end{table}	
-
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				Aircraft & 1,0000 & 1,0000 & 1,0000\\
-				Automobile & 1,0000 & 1,0000 & 1,0000\\				
-				Infrastructure & 1,0000 & 0,9820 & 0,9909\\
-				Politician & 0,0000 & 1,0000 & 0,0000\\				
-				PublicTransitSystem & 0,9918 & 0,9837 & 0,9878\\
-				Ship & 1,0000 & 1,0000 & 1,0000\\				
-				SpaceShuttle & 1,0000 & 1,0000 & 1,0000\\
-				SpaceStation & 1,0000 & 1,0000 & 1,0000\\
-				SportsClub & 0,0000 & 1,0000 & 0,0000\\
-				SportsTeam & 0,0000 & 1,0000 & 0,0000\\
-				Train & 1,0000 & 1,0000 & 1,0000\\\hline
-				\textbf{Totals} & \textbf{0,9862} & \textbf{0,9881} & \textbf{0,9871}\\\hline
-		\end{tabular}
-	\end{table}		
-	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				POLITICS & 0,8039 & 0,6779 & 0,7355\\\hline
-				\textbf{Totals} & \textbf{0,8039} & \textbf{0,6779} & \textbf{0,7355}\\\hline
-		\end{tabular}
-	\end{table}
-
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				Election & 0,8240 & 0,6398 & 0,7203\\
-				PoliticalParty & 0,8100 & 0,7006 & 0,7513\\
-				Politician & 0,8599 & 0,7234 & 0,7858\\\hline
-				\textbf{Totals} & \textbf{0,8354} & \textbf{0,6980} & \textbf{0,7606}\\\hline
-		\end{tabular}
-	\end{table}	
-	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				SPORT & 0,9432 & 0,8839 & 0,9126\\\hline
-				\textbf{Totals} & \textbf{0,9432} & \textbf{0,8839} & \textbf{0,9126}\\\hline
-		\end{tabular}
-	\end{table}
-
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				Athlete & 0,9713 & 0,8366 & 0,8989\\
-				Coach & 1,0000 & 0,7500 & 0,8571\\
-				SportsClub & 0,9453 & 0,9041 & 0,9242\\
-				SportsEvent & 1,0000 & 0,7879 & 0,8814\\
-				SportsLeague & 0,9418 & 0,8958 & 0,9182\\
-				SportsManager & 1,0000 & 0,9615 & 0,9804\\				
-				SportsTeam & 0,9845 & 0,8301 & 0,9007\\\hline
-				\textbf{Totals} & \textbf{0,9592} & \textbf{0,8750} & \textbf{0,9152}\\\hline
-		\end{tabular}
-	\end{table}	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				TRANSPORTATION & 0,9583 & 0,9109 & 0,9340\\\hline
-				\textbf{Totals} & \textbf{0,9583} & \textbf{0,9109} & \textbf{0,9340}\\\hline
-		\end{tabular}
-	\end{table}
-	
-	
-	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
-		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
-				Aircraft & 0,9659 & 0,8333 & 0,8947\\
-				Automobile & 1,0000 & 0,8000 & 0,8889\\				
-				Infrastructure & 0,9550 & 0,9550 & 0,9550\\
-				PublicTransitSystem & 0,9662 & 0,9309 & 0,9482\\
-				Ship & 1,0000 & 0,6429 & 0,7826\\				
-				SpaceShuttle & 1,0000 & 0,8333 & 0,9091\\
-				SpaceStation & 0,0000 & 1,0000 & 0,0000\\
-				Train & 1,0000 & 1,0000 & 1,0000\\\hline
-				\textbf{Totals} & \textbf{0,9660} & \textbf{0,9010} & \textbf{0,9324}\\\hline
-		\end{tabular}
-	\end{table}	
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Top 400 Links}
+\subsection{Experiments that have lower number of traning abstracts in model}
 
 	\begin{table}[H]\centering
 		\caption{TABLE}
@@ -1497,7 +1519,7 @@ Make it like experiment - discussion
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Top 500 Links}
+%\subsection{Top 500 Links}
 
 
 	\begin{table}[H]\centering
@@ -1717,28 +1739,126 @@ Make it like experiment - discussion
 	\end{table}	
 		
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-	\subsection{MIXED}
-		
-	\begin{figure}[H]\centering
-		\includegraphics[width=\textwidth]{"/Mixed/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png}
-		\caption{All 3 Domains Fine Grained Top 300 With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower PageRank}\label{}
-	\end{figure}
-	
-	\begin{figure}
-		\includegraphics[width=\textwidth]{"/Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop500LinksAndAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png}		\caption{All 3 Domains Fine Grained Top 500 Links  With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower Page Rank}
-	\end{figure}
+\subsection{MIXED}
+\begin{table}[H]\centering
+		\label{}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				Aircraft & 0,9242 & 0,5755 & 0,7093\\
+				Athlete & 0,8182 & 0,3778 & 0,5169\\
+				Automobile & 0,9565 & 0,3607 & 0,5238\\ 
+				Coach & 1,0000 & 0,2000 & 0,3333\\
+				Infrastructure & 1,0000 & 0,9896 & 0,9948\\
+				Locomotive & 0,0000 & 0,0000 & 0,0000\\
+				Motorcycle & 0,0000 & 0,0000 & 0,0000\\
+				OrganisationMember & 0,0000 & 0,0000 & 0,0000\\				
+				PoliticalParty & 0,7656 & 0,5819 & 0,6613\\
+				Politician & 0,8925 & 0,4099 & 0,5618\\
+				PublicTransitSystem & 0,8291 & 0,6178 & 0,7080\\
+				Ship & 0,9375 & 0,3409 & 0,5000\\
+				SpaceShuttle & 1,0000 & 0,3750 & 0,5455\\
+				SpaceStation & 1,0000 & 0,3333 & 0,5000\\ 
+				SportsClub & 0,8009 & 0,4276 & 0,5575\\
+				SportsEvent & 0,9559 & 0,3171 & 0,4762\\
+				SportsLeague & 0,8071 & 0,5912 & 0,6824\\
+				SportsManager & 0,9643 & 0,2903 & 0,4463\\
+				SportsTeam & 0,8856 & 0,5838 & 0,7037\\
+				Train & 1,0000 & 0,5455 & 0,7059\\\hline
+				\textbf{Totals} & \textbf{0,8206} & \textbf{0,4837} & \textbf{0,6087}\\\hline
+		\end{tabular}
+		\caption{All 3 Domains Fine Grained Top 300 With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower PageRank}
+	\end{table}
 
-	\begin{figure}
-		\includegraphics[width=\textwidth]{"/Mixed/All3DomainsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png}		
+
+\begin{table}[H]\centering
+		\label{}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				Aircraft & 0,9735 & 0,6934 & 0,8099\\
+				Athlete & 0,9101 & 0,6222 & 0,7391\\
+				Automobile & 1,0000 & 0,4098 & 0,5814\\ 
+				Coach & 1,0000 & 0,3000 & 0,4615\\
+				Infrastructure & 0,8885 & 0,5218 & 0,6575\\
+				Locomotive & 0,0000 & 0,0000 & 0,0000\\
+				Motorcycle & 0,0000 & 0,0000 & 0,0000\\
+				OrganisationMember & 0,0000 & 0,0000 & 0,0000\\				
+				PoliticalParty & 0,8393 & 0,7403 & 0,7876\\
+				Politician & 0,9271 & 0,6593 & 0,7706\\
+				PublicTransitSystem & 0,9027 & 0,7389 & 0,8126\\
+				Rocket & 0,0000 & 0,0000 & 0,0000\\				
+				Ship & 0,9615 & 0,5682 & 0,7143\\
+				SpaceShuttle & 1,0000 & 0,4375 & 0,6087\\
+				SpaceStation & 1,0000 & 0,6667 & 0,8000\\ 
+				SportsClub & 0,8722 & 0,6071 & 0,7159\\
+				SportsEvent & 0,9000 & 0,4829 & 0,6286\\
+				SportsLeague & 0,8622 & 0,7357 & 0,7939\\
+				SportsManager & 0,9787 & 0,4946 & 0,6571\\
+				SportsTeam & 0,9276 & 0,7514 & 0,8302\\
+				Train & 1,0000 & 0,5455 & 0,7059\\\hline
+				\textbf{Totals} & \textbf{0,8844} & \textbf{0,6592} & \textbf{0,7553}\\\hline
+		\end{tabular}
+		\caption{All 3 Domains Fine Grained Top 500 Links  With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower Page Rank}
+	\end{table}
+
+
+\begin{table}[H]\centering
+		\label{}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				Aircraft & 0,6667 & 0,1111 & 0,1905\\
+				Athlete & 0,4675 & 0,1268 & 0,1994\\
+				Automobile & 0,0000 & 0,0000 & 0,0000\\ 
+				Coach & 0,0000 & 0,0000 & 0,0000\\
+				Infrastructure & 0,5352 & 0,1387 & 0,2203\\
+				Locomotive & 0,0000 & 0,0000 & 0,0000\\
+				Motorcycle & 0,0000 & 0,0000 & 0,0000\\
+				OrganisationMember & 0,0000 & 0,0000 & 0,0000\\				
+				PoliticalParty & 0,5462 & 0,4097 & 0,4682\\
+				Politician & 0,5962 & 0,1867 & 0,2844\\
+				PublicTransitSystem & 0,6943 & 0,4098 & 0,5154\\
+				Rocket & 0,0000 & 0,0000 & 0,0000\\				
+				Ship & 0,0000 & 0,0000 & 0,0000\\
+				SpaceShuttle & 0,0000 & 0,0000 & 0,0000\\
+				SpaceStation & 0,0000 & 0,0000 & 0,0000\\ 
+				SportsClub & 0,6370 & 0,2675 & 0,3768\\
+				SportsEvent & 0,2667 & 0,0412 & 0,0714\\
+				SportsLeague & 0,6395 & 0,4125 & 0,5015\\
+				SportsManager & 0,6000 & 0,0316 & 0,0600\\
+				SportsTeam & 0,6316 & 0,2975 & 0,4045\\
+				Train & 0,0000 & 0,0000 & 0,0000\\\hline
+				\textbf{Totals} & \textbf{0,5983} & \textbf{0,2670} & \textbf{0,3692}\\\hline
+		\end{tabular}
 		\caption{All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}
-	\end{figure}
+	\end{table}
 
-	\begin{figure}
-		\includegraphics[width=\textwidth]{"/Mixed/TransportationFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300LinksAndTransportationFineGrainedTop300Links".png}		
+\begin{table}[H]\centering
+		\label{}
+		\begin{tabular}{|l|l|l|l|}
+			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+				Aircraft & 0,9950 & 0,9706 & 0,9826\\
+				Athlete & 0,0000 & 0,0000 & 0,0000\\
+				Automobile & 1,0000 & 0,8500 & 0,9189\\ 
+				Coach & 0,0000 & 0,0000 & 0,0000\\
+				Infrastructure & 1,0000 & 0,9820 & 0,9909\\
+				PoliticalParty & 0,0000 & 0,0000 & 0,0000\\
+				Politician & 0,0000 & 0,0000 & 0,0000\\
+				PublicTransitSystem & 0,9835 & 0,9676 & 0,9755\\
+				Ship & 1,0000 & 0,9655 & 0,9825\\
+				SpaceShuttle & 1,0000 & 0,6667 & 0,8000\\
+				SpaceStation & 1,0000 & 1,0000 & 1,0000\\ 
+				SportsClub & 0,0000 & 0,0000 & 0,0000\\
+				SportsEvent & 0,0000 & 0,0000 & 0,0000\\
+				SportsLeague & 0,0000 & 0,0000 & 0,0000\\
+				SportsManager & 0,0000 & 0,0000 & 0,0000\\
+				SportsTeam & 0,0000 & 0,0000 & 0,0000\\
+				Train & 1,0000 & 0,9091 & 0,9524\\\hline
+				\textbf{Totals} & \textbf{0,9909} & \textbf{0,3491} & \textbf{0,5163}\\\hline
+		\end{tabular}
 		\caption{Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links And Transportation Fine Grained Top 300 Links}
-	\end{figure}	
+	\end{table}
+	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{With lower links on model}	
+\subsection{Experiments with lower training abstracts on model, but higher abstracts on test file}	
 	\begin{figure}[H]\centering
 		\includegraphics[width=\textwidth]{"/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop100Links".png}
 		\caption{All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 100 Links}\label{}
@@ -1839,8 +1959,9 @@ Make it like experiment - discussion
 		\caption{All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links With Lower PageRank}\label{}
 	\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{With higher links on model}	
-	\begin{figure}[!htb]\centering
+
+\subsection{Experiments with higher training abstracts on model, but lower abstracts on test file}	
+	\begin{figure}[H]\centering
 		\includegraphics[width=\textwidth]{"/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop10Links".png}
 		\caption{All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 10 Links}\label{}
 	\end{figure}
