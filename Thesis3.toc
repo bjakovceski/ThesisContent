@@ -17,7 +17,7 @@
 \contentsline {section}{\numberline {1.7}HDT}{8}{section.1.7}
 \contentsline {chapter}{\chapternumberline {2}Domain specific named entity recognition}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Data pre-processing}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Domain specification}{10}{section.2.2}
+\contentsline {section}{\numberline {2.2}Domain specification}{11}{section.2.2}
 \contentsline {section}{\numberline {2.3}Types retrieval}{11}{section.2.3}
 \contentsline {section}{\numberline {2.4}Data transformation/output for Stanford}{14}{section.2.4}
 \contentsline {chapter}{\chapternumberline {3}Experiments}{15}{chapter.3}
