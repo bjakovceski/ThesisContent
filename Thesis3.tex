@@ -59,7 +59,14 @@
 \begin{introduction}
 
 \section{Motivation}
-	Nowadays Named Entity Recognition (NER) is very close to perfectly matching entities in text. State-of-the-art NER systems for English produce near-human performance. For example, the best system entering MUC-7 scored 93.39\% of F-measure while human annotators scored 97.60\% and 96.95\%. %[https://en.wikipedia.org/wiki/Named-entity_recognition]
+	%Nowadays Named Entity Recognition (NER) is very close to perfectly matching entities in text. State-of-the-art NER systems for English produce near-human performance. For example, the best system entering MUC-7 scored 93.39\% of F-measure while human annotators scored 97.60\% and 96.95\%. %[https://en.wikipedia.org/wiki/Named-entity_recognition]
+	Most Named Entity Recognition NER applications are trained on a general texts and on a specific domain, the problem is that they are optimized for specific type of data i.e. specific domain. That means that those NER applications can give a nice results on texts or domains that is trained, but bad results for texts on a specific domain for which that NER is not trained.
+	  
+	  Most of the NER applications are trained on small number of types. For example Stanford NER has a model that have maximum 7 types.
+	  
+	  Main goal of this thesis is to research/explore possibilities of training NER models for a specific domain. To achieve this goal it is necessary to create datasets for a certain domains. This research is focused on 3 domains, "POLITICS", "SPORT" and "TRANSPORTATION". Every domain is created with a certain number on types from DBpedia Ontology, then for creating a datasets is used DBpedia NIF who gives and opportunity to approaches to information from Wikipedia abstracts, for example types that annotated words has in those abstracts.
+	  
+	  Thesis research which is the quality of trained domains, the impact of the size of the data and the quality of the defined domains.
 	  
 \section{Goals of the thesis}	
 	The main goal of the thesis is to create a domain specific models and try to get closer, or event better F1-score to the human F1-score. Then creating a smaller and larger models and their impact of scoring based on main model. And finally creating a coarse grained and fine grained models and monitoring their F1-score.   
@@ -81,7 +88,7 @@
 \section{Information extraction}
 
 	Information extraction first appears in late 1970s within NLP field. %[https://www.slideshare.net/rubenizquierdobevia/information-extraction-45392844] 	 
-Based on Wikipedia\cite{Wikipedia}, Information extraction (IE) is the task of automatically extracting structured information from unstructured and/or semi-structured machine-readable documents. In most of the cases this activity concerns processing human language texts by means of natural language processing (NLP). Recent activities in multimedia document processing like automatic annotation and content extraction out of images/audio/video could be seen as information extraction. [https://en.wikipedia.org/wiki/Information\_extraction] \cite{wiki:IE}
+Based on Wikipedia\cite{wiki:IE}, Information extraction (IE) is the task of automatically extracting structured information from unstructured and/or semi-structured machine-readable documents. In most of the cases this activity concerns processing human language texts by means of natural language processing (NLP). Recent activities in multimedia document processing like automatic annotation and content extraction out of images/audio/video could be seen as information extraction. [https://en.wikipedia.org/wiki/Information\_extraction] \cite{wiki:IE}
 \linebreak Another view of that what Information extraction is that automatically building a relational database from information contained in unstructured text. Unlike linear-chain models, general CRFs can capture long distance dependencies between labels. [http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf]
 \linebreak To understand better what IE is we can use example from [https://ontotext.com/knowledgehub/fundamentals/information-extraction/], extracting information for mail message and adding to your Calendar. Millions of people use this on their daily basis and they are not aware of that how that works and what technology is used for that.
 \linebreak Figure~\ref{fig:InformationExtraction} gives us closer look of what Information extraction (IE) is, and how State-of-the-Art algorithms transforms unstructured text to structured sequences understandable for machines. 
@@ -168,6 +175,8 @@ Wired links...
 
 \section{HDT}
 
+\section{Apache Jena}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%NEW CHAPTER%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -226,9 +235,9 @@ At the end we repeat the process for "TRANSPORTATION" domain, where we retrieve 
 
 
 \section{Data transformation/output for Stanford}\label{StanfordNERoutput}
-We define domains also their types that we will retrieve and process, now we should put everything together and prepare data for Stanford NER application[~\ref{Stanford NER}]. In Data pre-processing section~\ref{dataPreProcessing} we explain how we handled the data downloaded from web and we briefly touch how those data will be prepared for training in Stanford NER application. 
+We define domains as well their types that we will retrieve and process, now we should put everything together and prepare data for Stanford NER application[~\ref{Stanford NER}]. In Data pre-processing section~\ref{dataPreProcessing} we explain how we handled the data downloaded from web and we briefly touch how those data will be prepared for training in Stanford NER application. 
 
-We waned to get those links based in their PageRank\cite{wiki:PageRank}. In Java there is a framework called Apache Jena\cite{ApacheJena} that is used for working with RDF data and SPARQL queries. With a prepared and tested SPARQL queries on www.dbpedia.com/sparql we implemented retrieving link, on Java, on this endpoint. After retrieving those data, based on their order we search does retrieved link is contained on our abstract file...................................................................................................
+We waned to get those links based in their PageRank\cite{wiki:PR}. In Java there is a framework called Apache Jena\cite{ApacheJena} that is used for working with RDF data and SPARQL queries. With a prepared and tested SPARQL queries on www.dbpedia.com/sparql we implemented retrieving link, on Java, on this endpoint. After retrieving those data, based on their order we search does retrieved link is contained on our abstract file. If link is found it's written to two files, one file is where are written all abstracts from every domain, and another file is file for that specific domain. Those files are creating in RDF format, with n-triples, that means that there is subject, in our case that is the link of abstract, then predicate who has isString annotation which tells that next triple contains the abstract text and finally object where abstract text is placed. Next think that we need to do is to find all annotated words from abstract and their types. The algorithm of finding types is explained in Section~\ref{dataPreProcessing}. What is not mention on that section is that after finding the types, the abstract is written to file, where on first position is word and on the second position is the type of that word, if there is any, if not the type is O. Final step is to prepare data to be able to train models in Stanford NER [\ref{Stanford NER}] with the types that we define in Section~\ref{typesRetrieval}. Because files contains all types that were found on the abstracts we need to clean and group them, as well to create a coarse grained files. The algorithm is very simple, it reads the files who already has all types and if type is part of our retrieved types (Section~\ref{typesRetrieval}) then either type is leaved as it is, or is grouped to more specific type, for instance if word has type Ambassador, then after filtering that word will have Politician type. The same is for coarse grained annotation, but here proper types after filtering has "POLITICS", "SPORT" or "TRANSPORTATION" type.
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -262,7 +271,7 @@ With our trained models we made a few experiments. First one is the model that h
 %		\end{tabular}
 %	\end{table}
 \subsection{Main experiment}\label{MainExperiment}\
-This is our main experiment where other experiments will be compared with this one. This model is trained with top 300 Wikipedia abstracts, for every domain, based on PageRank\cite{PageRank}. The text is annotated in coarse grained and has around 2300 annotated words in total.
+This is our main experiment where other experiments will be compared with this one. This model is trained with top 300 Wikipedia abstracts, for every domain, based on PageRank\cite{wiki:PR}. The text is annotated in coarse grained and has around 2300 annotated words in total.
 	First experiment that we do with this model is that we run it with the same text that model is created in coarse grained. Results are not bad at all, we are above 95\% (see Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}), which is great number for such middle weight model. But let see how model will behaves when we tested with abstracts for every domain.
 	
 	Table~\ref{table:All3domainsWithPoliticsTop300Coarse} shows the output of model when is tested with abstracts from a "POLITICS" domain. As we said in Section~\ref{StanfordNERoutput} this type of abstract has the biggest word annotation. In this experiment, trained model annotated words with a "TRANSPORTATION" domain. 
@@ -2131,14 +2140,8 @@ After we finish the experiments with model that is trained with all abstracts fr
 %	\nocite{Po01}
 \end{conclusion}
 
-\bibliographystyle{iso690.bst}
+\bibliographystyle{iso690}
 \bibliography{ref}
-%@online{Wikipedia,
-%  author = {Wikipedia},
-%  title = {{Information extraction} IE},
-%  url = {https://en.wikipedia.org/wiki/Information\_extraction},
-%  urldate = {20.05.2018}
-%}
 
 
 \appendix

@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+\providecommand{\biburl}[1]{\url{#1}}
+\providecommand{\urlprefix}{Available from: }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\biburl{#2}}
+
+\bibitem{wiki:IE}
+{Information extraction}. {Information extraction} IE.
+\urlprefix\biburl{https://en.wikipedia.org/wiki/Information\_extraction}
+
+\bibitem{wiki:PR}
+PageRank. {PageRank}.
+\urlprefix\biburl{https://en.wikipedia.org/wiki/PageRank}
+
+\bibitem{ApacheJena}
+{Apache Jena}. {Apache Jena}.
+\urlprefix\biburl{https://jena.apache.org/}
+
+\end{thebibliography}
