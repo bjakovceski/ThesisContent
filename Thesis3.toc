@@ -3,35 +3,49 @@
 \contentsline {subsection}{Citation of this thesis}{vi}{section*.1}
 \contentsline {chapter}{Introduction}{1}{chapter*.5}
 \contentsline {section}{Motivation}{1}{section*.6}
-\contentsline {section}{Goals of the thesis}{1}{section*.7}
+\contentsline {section}{Goals of the thesis}{2}{section*.7}
 \contentsline {section}{Thesis outline}{2}{section*.8}
 \contentsline {chapter}{\chapternumberline {1}Background and related work}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Information extraction}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Named Entity Recognition}{4}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}$F_{1}$ score}{5}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Stanford NER}{5}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}RDF/NIF}{6}{section.1.3}
-\contentsline {section}{\numberline {1.4}Domain specific Named Entity Recognition}{6}{section.1.4}
-\contentsline {section}{\numberline {1.5}DBpedia ontology}{7}{section.1.5}
-\contentsline {section}{\numberline {1.6}Evaluation/training datasets}{7}{section.1.6}
-\contentsline {section}{\numberline {1.7}HDT}{8}{section.1.7}
-\contentsline {section}{\numberline {1.8}Apache Jena}{8}{section.1.8}
-\contentsline {chapter}{\chapternumberline {2}Domain specific named entity recognition}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Data pre-processing}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Domain specification}{11}{section.2.2}
-\contentsline {section}{\numberline {2.3}Types retrieval}{11}{section.2.3}
+\contentsline {section}{\numberline {1.1}Background}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Information extraction}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Named Entity Recognition}{4}{subsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.2.1}Stanford NER}{5}{subsubsection.1.1.2.1}
+\contentsline {subsubsection}{\numberline {1.1.2.2}DBpedia Spotlight}{6}{subsubsection.1.1.2.2}
+\contentsline {subsubsection}{\numberline {1.1.2.3}spaCy}{6}{subsubsection.1.1.2.3}
+\contentsline {subsubsection}{\numberline {1.1.2.4}GATE}{6}{subsubsection.1.1.2.4}
+\contentsline {subsubsection}{\numberline {1.1.2.5}OpenNLP}{6}{subsubsection.1.1.2.5}
+\contentsline {subsubsection}{\numberline {1.1.2.6}Chatbot NER}{7}{subsubsection.1.1.2.6}
+\contentsline {subsection}{\numberline {1.1.3}Domain specific Named Entity Recognition}{7}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}RDF/NIF}{7}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}DBpedia}{8}{subsection.1.1.5}
+\contentsline {subsubsection}{\numberline {1.1.5.1}DBpedia NIF}{8}{subsubsection.1.1.5.1}
+\contentsline {subsubsection}{\numberline {1.1.5.2}DBpedia ontology}{9}{subsubsection.1.1.5.2}
+\contentsline {subsection}{\numberline {1.1.6}Evaluation/training datasets}{9}{subsection.1.1.6}
+\contentsline {subsection}{\numberline {1.1.7}Apache Jena}{10}{subsection.1.1.7}
+\contentsline {subsection}{\numberline {1.1.8}SPARQL}{10}{subsection.1.1.8}
+\contentsline {section}{\numberline {1.2}Related work}{10}{section.1.2}
+\contentsline {chapter}{\chapternumberline {2}Domain specific named entity recognition}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Data pre-processing}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Domain specification}{12}{section.2.2}
+\contentsline {section}{\numberline {2.3}Types retrieval}{13}{section.2.3}
 \contentsline {section}{\numberline {2.4}Data transformation/output for Stanford}{14}{section.2.4}
-\contentsline {chapter}{\chapternumberline {3}Experiments}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Goals of the experiments}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}List of experiments}{15}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Main experiment}{15}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Experiments that have lower number of traning abstracts in model}{21}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Experiments that have lower number of traning abstracts in model}{36}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}MIXED}{45}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{48}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{56}{subsection.3.2.6}
-\contentsline {section}{\numberline {3.3}Summary of results}{67}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Graphs}{67}{subsection.3.3.1}
-\contentsline {chapter}{Conclusion}{69}{chapter*.9}
-\contentsline {chapter}{Bibliography}{71}{chapter*.10}
-\contentsline {appendix}{\chapternumberline {A}Contents of CD}{73}{appendix.A}
+\contentsline {section}{\numberline {2.5}Model generation}{15}{section.2.5}
+\contentsline {chapter}{\chapternumberline {3}Experiments}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}$F_{1}$ score}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Goals of the experiments}{19}{section.3.2}
+\contentsline {section}{\numberline {3.3}List of experiments}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Main experiment}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Experiments that have lower number of traning abstracts in model}{26}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Experiments that have lower number of traning abstracts in model}{41}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}MIXED}{50}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{53}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{61}{subsection.3.3.6}
+\contentsline {section}{\numberline {3.4}Summary of results}{72}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Graphs}{72}{subsection.3.4.1}
+\contentsline {chapter}{Conclusion}{73}{chapter*.9}
+\contentsline {chapter}{Bibliography}{75}{chapter*.10}
+\contentsline {appendix}{\chapternumberline {A}Retrieved types}{77}{appendix.A}
+\contentsline {section}{\numberline {A.1}POLITICS types}{77}{section.A.1}
+\contentsline {section}{\numberline {A.2}SPORT types}{77}{section.A.2}
+\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{78}{section.A.3}
+\contentsline {appendix}{\chapternumberline {B}Contents of CD}{81}{appendix.B}

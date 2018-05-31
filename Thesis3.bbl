@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\biburl}[1]{\url{#1}}
 \providecommand{\urlprefix}{Available from: }
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -7,12 +7,91 @@
   \urlstyle{rm}\Url}\fi
 \providecommand{\eprint}[2][]{\biburl{#2}}
 
+\bibitem{wiki:NER}
+{Named Entity Recognition}. {Named Entity Recognition} NER.
+\urlprefix\biburl{https://en.wikipedia.org/wiki/Named-entity\_recognition}
+
+\bibitem{master:NER}
+{Michal Konkol}. \emph{{Named Entity Recognition}}. Master's thesis,
+  {University of West Bohemia in Pilsen},
+  https://www.kiv.zcu.cz/site/documents/verejne/vyzkum/publikace/technicke-zpravy/2012/tr-2012-04.pdf,
+  2012.
+
 \bibitem{wiki:IE}
-{Information extraction}. {Information extraction} IE.
+{Wikipedia}. {Information extraction} IE.
 \urlprefix\biburl{https://en.wikipedia.org/wiki/Information\_extraction}
 
+\bibitem{article:IE}
+{Charles Sutton and Andrew McCallum}. {An Introduction to Conditional Random
+  Fields for Relational Learning}. \emph{{Introduction to Statistical
+  Relational Learning. Edited by Lise Getoor and Ben Taskar}}, {2006}.
+\urlprefix\biburl{http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf}
+
+\bibitem{article:NER}
+{Charles Sutton and Andrew McCallum}. {An Introduction to Conditional Random
+  Fields for Relational Learning}. \emph{{Introduction to Statistical
+  Relational Learning. Edited by Lise Getoor and Ben Taskar}}, {2006}.
+\urlprefix\biburl{http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf}
+
+\bibitem{article:StanfordNER}
+{Jenny Rose Finkel, Trond Grenager, and Christopher Manning}. {Incorporating
+  Non-local Information into Information Extraction Systems by Gibbs Sampling}.
+  \emph{{Proceedings of the 43nd Annual Meeting of the Association for
+  Computational Linguistics (ACL 2005)}}, 2005: pp. {363--370}.
+\urlprefix\biburl{http://nlp.stanford.edu/~manning/papers/gibbscrf3.pdf}
+
+\bibitem{wiki:DBpediaSpotlight}
+{Wikipedia}. {DBpedia Spotlight}.
+\urlprefix\biburl{https://en.wikipedia.org/wiki/DBpedia\#DBpedia\_Spotlight}
+
+\bibitem{wiki:spaCy}
+{Wikipedia}. {spaCy}.
+\urlprefix\biburl{https://en.wikipedia.org/wiki/SpaCy}
+
+\bibitem{wiki:GATE}
+{Wikipedia}. {GATE}.
+\urlprefix\biburl{https://en.wikipedia.org/wiki/General\_Architecture\_for\_Text\_Engineering}
+
+\bibitem{wiki:RDF}
+{Wikipedia}. {Resource Description Framework} RDF.
+\urlprefix\biburl{https://en.wikipedia.org/wiki/Resource\_Description\_Framework}
+
+\bibitem{master:SPARQL}
+{Usmanov Radmir}. \emph{{NCollection, Transformation, and Integration of Data
+  from the Web Services Domain}}. Master's thesis, {Czech Technical University
+  in Prague, Faculty of Information Technology},
+  https://dspace.cvut.cz/bitstream/handle/10467/72987/F8-DP-2017-Usmanov-Radmir-thesis.pdf,
+  2017.
+
+\bibitem{w3c:RDF}
+{W3C}. {Resource Description Framework} RDF.
+\urlprefix\biburl{https://www.w3.org/RDF/}
+
+\bibitem{w3c:NIF}
+{W3C}. {Natural Language Processing Interchange Format} NIF.
+\urlprefix\biburl{https://www.w3.org/2015/09/bpmlod-reports/nif-based-nlp-webservices/\#natural-language-processing-interchange-format-nif}
+
+\bibitem{dbpedia:core}
+{DBpedia}. {DBpedia Core}.
+\urlprefix\biburl{https://wiki.dbpedia.org/dbpedia-wiki}
+
+\bibitem{dbpedia:NIF}
+{DBpedia}. {DBpedia NIF Dataset}.
+\urlprefix\biburl{http://wiki.dbpedia.org/dbpedia-nif-dataset}
+
+\bibitem{wiki:ApacheJena}
+{Wikipedia}. {Apache Jena}.
+\urlprefix\biburl{https://en.wikipedia.org/wiki/Apache\_Jena}
+
+\bibitem{FMPGPA:13}
+{Javier D. Fernández and Miguel A. Martínez-Prieto and Claudio Gutiérrez and
+  Axel Polleres and Mario Arias}. {Binary RDF Representation for Publication
+  and Exchange (HDT)}. \emph{{Web Semantics: Science, Services and Agents on
+  the World Wide Web}}, volume~19, 2013: pp. {22--41}.
+\urlprefix\biburl{http://www.websemanticsjournal.org/index.php/ps/article/view/328}
+
 \bibitem{wiki:PR}
-PageRank. {PageRank}.
+Wikipedia. {PageRank}.
 \urlprefix\biburl{https://en.wikipedia.org/wiki/PageRank}
 
 \bibitem{ApacheJena}
