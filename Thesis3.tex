@@ -410,6 +410,7 @@ Written in formula, the $F_{1} =2\cdot \frac{precision \cdot recall}{precision +
 %		\end{tabular}
 %	\end{table}
 \subsection{Main experiment}\label{MainExperiment}
+\subsubsection{Global domain models}
 This is our main experiment where other experiments will be compared with this one. This model is trained with top 300 Wikipedia abstracts for every domain. Algorithm for preparing the data for training model explained in section~\ref{StanfordNERoutput}  takes 8622805705290 nanoseconds or 2.40 hours. The model is trained in coarse grained and takes 844.63 seconds in optimization and 873.7 seconds on CRFClassifier training.
 
 	First experiment that we do with this model is that we run it with the same text that model is trained in coarse grained. Results are not bad at all, we are above 95\% as shown in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}, which is great number for such middle weight model. With such a results, someone will say that those are nice results and other experiments will only have a worst results. But let see how model will behaves when we tested with abstracts for every specific domain.
@@ -463,21 +464,18 @@ This is our main experiment where other experiments will be compared with this o
 		\end{tabular}
 	\caption{All 3 domain model with top 300 abstracts, tested with Transportation abstracts (test file) \label{table:All3domainsWithTransportationTop300Coarse}}
 	\end{table}	
-		
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-After we finish the experiments with model that is trained with all abstracts from every domain in coarse grained, we waned to see the impact of model that is trained with same abstracts, but now annotated in fine grained. Table~\ref{table:All3domainsWithAll3DomainsTop300Fine} shows the results of provided experiment where we can see that we have a little bit more better results than experiment in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}.
+	After we finish the experiments with model that is trained with all abstracts from every domain in coarse grained, we waned to see the impact of model that is trained with same abstracts, but now annotated in fine grained. To train this model we needed 3250.9 seconds from which 3207.45 seconds for optimization. Table~\ref{table:All3domainsWithAll3DomainsTop300Fine} shows the results of provided experiment where we can see that we have a little bit more better total result than experiment in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}.
 
-	Then we tested our model with abstracts from "POLITICS" domain. How we can see from Table~\ref{table:All3domainsWithPoliticsTop300Fine} there is some improvements on results, but no satisfying at all. Also table shows that some words are annotated with types from "SPORT" and "TRANSPORTATION" domain.
+Then we tested our model with abstracts from "POLITICS" domain. How we can see from Table~\ref{table:All3domainsWithPoliticsTop300Fine} there is some improvements on overall result unlike the experiment in coarse grained, but no satisfying at all. As well table shows that some words again are annotated with types from "SPORT" and "TRANSPORTATION" domain.
 
     After that we rerun the experiment, but now with abstracts from "SPORT" domain. In Table~\ref{table:All3domainsWithSportTop300Fine} we can see minor growth of the results unlike experiment in Table~\ref{table:All3domainsWithSportTop300Coarse}, but this improvements are so small that are almost unimportant. Also our model annotated some words with types from "POLITICS" and "TRANSPORTATION" domain which the test file don't have those types at all.
     
-    Finally the last experiment with this model are the abstracts from "TRANSPORTATION" domain. Table~\ref{table:All3domainsWithTransportationTop300Fine} shows the output of the provided experiment, where like in previous 2 experiments we can notice a very little improvements on results, from experiment in Table~\ref{table:All3domainsWithTransportationTop300Coarse}, who again can be unimportant.
-    
-    Provided experiments with the model who is trained with all abstracts from every domain annotated in fine grained, overall provide a very little improvements on results on every experiment. With that observation trained model annotated in fine grained is better to use instead of the model that is annotated in coarse grained. Another benefit of this type of model is that we can see which types are annotated and their results. 
+    Finally the last experiment with this model are the abstracts from "TRANSPORTATION" domain. Table~\ref{table:All3domainsWithTransportationTop300Fine} shows the output of the provided experiment, where like in previous 2 experiments we can notice a very little improvements on results, from experiment in Table~\ref{table:All3domainsWithTransportationTop300Coarse}, who again can be unimportant. As in previous experiments similarly here model annotated some words with types from other 2 domains, which test file does not even contains.
+
+	Provided experiments with the model who is trained with all abstracts from every domain annotated in fine grained, overall provide a very little improvement on results on every experiment. With that observation trained model annotated in fine grained is better to use instead of the model that is annotated in coarse grained. Another benefit of this type of model is that we can see which types are annotated and their results. But, because those improvements are small and is needed almost four times more time to train a fine grained model, maybe the better solution will be a models trained in coarse grained, everything depends on us. Does we want to trained models faster or we want to be more precise. 
 
 \begin{table}[H]\centering
-		\label{table:All3domainsWithAll3DomainsTop300Fine}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
@@ -499,11 +497,10 @@ After we finish the experiments with model that is trained with all abstracts fr
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9880} & \textbf{0,9712} & \textbf{0,9795}\\\hline
 		\end{tabular}
-		\caption{All 3 domain model with top 300 abstracts, tested with all 3 domain texts}
+		\caption{All 3 domain model with top 300 abstracts, tested with all 3 domain texts \label{table:All3domainsWithAll3DomainsTop300Fine}}
 	\end{table}
 
 	\begin{table}[H]\centering
-		\label{table:All3domainsWithPoliticsTop300Fine}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Election & 0,0000 & 0,0000 & 0,0000\\
@@ -514,11 +511,10 @@ After we finish the experiments with model that is trained with all abstracts fr
 				SportsLeague & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9825} & \textbf{0,4072} & \textbf{0,5758}\\\hline
 		\end{tabular}
-		\caption{All 3 domain model with top 300 abstracts, tested with Politics abstracts (test file)}
+		\caption{All 3 domain model with top 300 abstracts, tested with Politics abstracts (test file) \label{table:All3domainsWithPoliticsTop300Fine}}
 	\end{table}	
 
 	\begin{table}[H]\centering
-		\label{table:All3domainsWithSportTop300Fine}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Athlete & 1,0000 & 0,9802 & 0,9900\\
@@ -532,11 +528,10 @@ After we finish the experiments with model that is trained with all abstracts fr
 				Train & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9821} & \textbf{0,9716} & \textbf{0,9768}\\\hline
 		\end{tabular}
-		\caption{All 3 domain model with top 300 abstracts, tested with Sport abstracts (test file)}
+		\caption{All 3 domain model with top 300 abstracts, tested with Sport abstracts (test file) \label{table:All3domainsWithSportTop300Fine}}
 	\end{table}	
 
 	\begin{table}[H]\centering
-		\label{table:All3domainsWithTransportationTop300Fine}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
@@ -552,11 +547,11 @@ After we finish the experiments with model that is trained with all abstracts fr
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9862} & \textbf{0,9881} & \textbf{0,9871}\\\hline
 		\end{tabular}
-		\caption{All 3 domain model with top 300 abstracts, tested with Transportation abstracts (test file)}
+		\caption{All 3 domain model with top 300 abstracts, tested with Transportation abstracts (test file) \label{table:All3domainsWithTransportationTop300Fine}}
 	\end{table}		
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\subsubsection{Specific domain models}
 
 
 	\begin{table}[H]\centering

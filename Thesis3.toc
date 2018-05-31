@@ -35,6 +35,8 @@
 \contentsline {section}{\numberline {3.2}Goals of the experiments}{19}{section.3.2}
 \contentsline {section}{\numberline {3.3}List of experiments}{20}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Main experiment}{20}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Global domain models}{20}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Specific domain models}{24}{subsubsection.3.3.1.2}
 \contentsline {subsection}{\numberline {3.3.2}Experiments that have lower number of traning abstracts in model}{26}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Experiments that have lower number of traning abstracts in model}{41}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}MIXED}{50}{subsection.3.3.4}
