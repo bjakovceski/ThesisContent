@@ -410,19 +410,11 @@ Written in formula, the $F_{1} =2\cdot \frac{precision \cdot recall}{precision +
 %		\end{tabular}
 %	\end{table}
 \subsection{Main experiment}\label{MainExperiment}
-\subsubsection{Global domain models}
 This is our main experiment where other experiments will be compared with this one. This model is trained with top 300 Wikipedia abstracts for every domain. Algorithm for preparing the data for training model explained in section~\ref{StanfordNERoutput}  takes 8622805705290 nanoseconds or 2.40 hours. The model is trained in coarse grained and takes 844.63 seconds in optimization and 873.7 seconds on CRFClassifier training.
 
-	First experiment that we do with this model is that we run it with the same text that model is trained in coarse grained. Results are not bad at all, we are above 95\% as shown in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}, which is great number for such middle weight model. With such a results, someone will say that those are nice results and other experiments will only have a worst results. But let see how model will behaves when we tested with abstracts for every specific domain.
-	
-	Table~\ref{table:All3domainsWithPoliticsTop300Coarse} shows the output of model when is tested with abstracts from a "POLITICS" domain. As we said in Section~\ref{StanfordNERoutput} this type of abstract has the biggest word annotation. Result is not even close with the result from previous experiment. Also, trained model annotated words with a "TRANSPORTATION" domain, where the test file don't have any word with that annotation. 
-	
-	Table~\ref{table:All3domainsWithSportTop300Coarse} gives us results from abstracts from "SPORT" domain. Here we have the same results like in first experiment, but because trained model annotated some words with a "POLITICS" or "TRANSPORTATION", even those that our test file contains only abstracts from "SPORT" domains and words has only "SPORT" type, the overall result is only a little bit lower that the first experiment.
-	
-	Table~\ref{table:All3domainsWithTransportationTop300Coarse} provide outcome with testing with abstracts only from "TRANSPORTATION" domain. As in the previous experiment, the result now is almost the same like in first experiment, but even thought that trained model, as in previous 2 experiments, annotated words with a "SPORT" type, the overall results is better that the experiment where test file contains all abstracts from every domain. 
-	
-	In conclusion with this kind of experiments we can say that it is not a good idea to train a model with all chosen domains and then use texts from specific domain to perform NER.  
-			   
+\subsubsection{Global domain models}
+	First experiment that we do with this model is that we run it with the same text that model is trained in coarse grained. Results are not bad at all, we are above 95\% as shown in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}, which is great number for such middle weight model. With such results, someone will say that those are nice results and other experiments will only have a worst results. But let see how model will behaves when we tested with abstracts for every specific domain.
+
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
@@ -431,9 +423,11 @@ This is our main experiment where other experiments will be compared with this o
 				TRANSPORTATION & 0,9940 & 0,9823 & 0,9881\\\hline
 				\textbf{Totals} & \textbf{0,9875} & \textbf{0,9625} & \textbf{0,9748}\\\hline
 		\end{tabular}
-		\caption{All 3 domain model with top 300 abstracts, tested with all 3 domain texts \label{table:All3domainsWithAll3DomiansTop300Coarse}}
-	\end{table}
-
+		\caption{Outcomes of base experiment run to be used as reference for subsequential experiments \label{table:All3domainsWithAll3DomiansTop300Coarse}}
+	\end{table}	
+	
+	Table~\ref{table:All3domainsWithPoliticsTop300Coarse} shows the output of model when is tested with abstracts from a "POLITICS" domain. As we said in Section~\ref{StanfordNERoutput} this type of abstract has the biggest word annotation. Result is not even close with the result from previous experiment. Also, trained model annotated words with a "TRANSPORTATION" domain, where the test file don't have any word with that annotation. 
+	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
@@ -442,7 +436,9 @@ This is our main experiment where other experiments will be compared with this o
 				\textbf{Totals} & \textbf{0,9792} & \textbf{0,4025} & \textbf{0,5705}\\\hline
 		\end{tabular}
 		\caption{All 3 domain model with top 300 abstracts, tested with Politics abstracts (test file)\label{table:All3domainsWithPoliticsTop300Coarse}}
-	\end{table}
+	\end{table}	
+	
+	Table~\ref{table:All3domainsWithSportTop300Coarse} gives us results from abstracts from "SPORT" domain. Here we have the same results like in first experiment, but because trained model annotated some words with a "POLITICS" or "TRANSPORTATION", even those that our test file contains only abstracts from "SPORT" domains and words has only "SPORT" type, the overall result is only a little bit lower that the first experiment.
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
@@ -454,7 +450,9 @@ This is our main experiment where other experiments will be compared with this o
 		\end{tabular}
 		\caption{All 3 domain model with top 300 abstracts, tested with Sport abstracts (test file) \label{table:All3domainsWithSportTop300Coarse}}
 	\end{table}	
-
+	
+	Table~\ref{table:All3domainsWithTransportationTop300Coarse} provide outcome with testing with abstracts only from "TRANSPORTATION" domain. As in the previous experiment, the result now is almost the same like in first experiment, but even thought that trained model, as in previous 2 experiments, annotated words with a "SPORT" type, the overall results is better that the experiment where test file contains all abstracts from every domain. 
+	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
@@ -464,16 +462,11 @@ This is our main experiment where other experiments will be compared with this o
 		\end{tabular}
 	\caption{All 3 domain model with top 300 abstracts, tested with Transportation abstracts (test file) \label{table:All3domainsWithTransportationTop300Coarse}}
 	\end{table}	
+	
+	In conclusion with this kind of experiments we can say that it is not a good idea to train a model with all chosen domains and then use texts from specific domain to perform NER.  
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	After we finish the experiments with model that is trained with all abstracts from every domain in coarse grained, we waned to see the impact of model that is trained with same abstracts, but now annotated in fine grained. To train this model we needed 3250.9 seconds from which 3207.45 seconds for optimization. Table~\ref{table:All3domainsWithAll3DomainsTop300Fine} shows the results of provided experiment where we can see that we have a little bit more better total result than experiment in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}.
-
-Then we tested our model with abstracts from "POLITICS" domain. How we can see from Table~\ref{table:All3domainsWithPoliticsTop300Fine} there is some improvements on overall result unlike the experiment in coarse grained, but no satisfying at all. As well table shows that some words again are annotated with types from "SPORT" and "TRANSPORTATION" domain.
-
-    After that we rerun the experiment, but now with abstracts from "SPORT" domain. In Table~\ref{table:All3domainsWithSportTop300Fine} we can see minor growth of the results unlike experiment in Table~\ref{table:All3domainsWithSportTop300Coarse}, but this improvements are so small that are almost unimportant. Also our model annotated some words with types from "POLITICS" and "TRANSPORTATION" domain which the test file don't have those types at all.
-    
-    Finally the last experiment with this model are the abstracts from "TRANSPORTATION" domain. Table~\ref{table:All3domainsWithTransportationTop300Fine} shows the output of the provided experiment, where like in previous 2 experiments we can notice a very little improvements on results, from experiment in Table~\ref{table:All3domainsWithTransportationTop300Coarse}, who again can be unimportant. As in previous experiments similarly here model annotated some words with types from other 2 domains, which test file does not even contains.
-
-	Provided experiments with the model who is trained with all abstracts from every domain annotated in fine grained, overall provide a very little improvement on results on every experiment. With that observation trained model annotated in fine grained is better to use instead of the model that is annotated in coarse grained. Another benefit of this type of model is that we can see which types are annotated and their results. But, because those improvements are small and is needed almost four times more time to train a fine grained model, maybe the better solution will be a models trained in coarse grained, everything depends on us. Does we want to trained models faster or we want to be more precise. 
 
 \begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
@@ -500,6 +493,8 @@ Then we tested our model with abstracts from "POLITICS" domain. How we can see f
 		\caption{All 3 domain model with top 300 abstracts, tested with all 3 domain texts \label{table:All3domainsWithAll3DomainsTop300Fine}}
 	\end{table}
 
+Then we tested our model with abstracts from "POLITICS" domain. How we can see from Table~\ref{table:All3domainsWithPoliticsTop300Fine} there is some improvements on overall result unlike the experiment in coarse grained, but no satisfying at all. As well table shows that some words again are annotated with types from "SPORT" and "TRANSPORTATION" domain.
+
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
@@ -514,6 +509,8 @@ Then we tested our model with abstracts from "POLITICS" domain. How we can see f
 		\caption{All 3 domain model with top 300 abstracts, tested with Politics abstracts (test file) \label{table:All3domainsWithPoliticsTop300Fine}}
 	\end{table}	
 
+    After that we rerun the experiment, but now with abstracts from "SPORT" domain. In Table~\ref{table:All3domainsWithSportTop300Fine} we can see minor growth of the results unlike experiment in Table~\ref{table:All3domainsWithSportTop300Coarse}, but this improvements are so small that are almost unimportant. Also our model annotated some words with types from "POLITICS" and "TRANSPORTATION" domain which the test file don't have those types at all.
+    
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
@@ -529,7 +526,9 @@ Then we tested our model with abstracts from "POLITICS" domain. How we can see f
 				\textbf{Totals} & \textbf{0,9821} & \textbf{0,9716} & \textbf{0,9768}\\\hline
 		\end{tabular}
 		\caption{All 3 domain model with top 300 abstracts, tested with Sport abstracts (test file) \label{table:All3domainsWithSportTop300Fine}}
-	\end{table}	
+	\end{table}
+	
+    Finally the last experiment with this model are the abstracts from "TRANSPORTATION" domain. Table~\ref{table:All3domainsWithTransportationTop300Fine} shows the output of the provided experiment, where like in previous 2 experiments we can notice a very little improvements on results, from experiment in Table~\ref{table:All3domainsWithTransportationTop300Coarse}, who again can be unimportant. As in previous experiments similarly here model annotated some words with types from other 2 domains, which test file does not even contains.
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
@@ -548,25 +547,25 @@ Then we tested our model with abstracts from "POLITICS" domain. How we can see f
 				\textbf{Totals} & \textbf{0,9862} & \textbf{0,9881} & \textbf{0,9871}\\\hline
 		\end{tabular}
 		\caption{All 3 domain model with top 300 abstracts, tested with Transportation abstracts (test file) \label{table:All3domainsWithTransportationTop300Fine}}
-	\end{table}		
+	\end{table}	
 	
+	Provided experiments with the model who is trained with all abstracts from every domain annotated in fine grained, overall provide a very little improvement on results on every experiment. With that observation trained model annotated in fine grained is better to use instead of the model that is annotated in coarse grained. Another benefit of this type of model is that we can see which types are annotated and their results. But, because those improvements are small and is needed almost four times more time to train a fine grained model, maybe the better solution will be a models trained in coarse grained, everything depends on us. Does we want to trained models faster or we want to be more precise. 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Specific domain models}
 
+	After completing experiments with a global domains in coarse and fine grained, now we will make experiments with models in specific domains.
 
 	\begin{table}[H]\centering
-		\caption{Politics domain model with top 300 abstracts, tested with Politics abstracts (test file) in coarse grained}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,8039 & 0,6779 & 0,7355\\\hline
 				\textbf{Totals} & \textbf{0,8039} & \textbf{0,6779} & \textbf{0,7355}\\\hline
 		\end{tabular}
+		\caption{Politics domain model with top 300 abstracts, tested with Politics abstracts (test file) in coarse grained \label{table:PoliticsdomainsWithPoliticsTop300Coarse}}
 	\end{table}
 
 	\begin{table}[H]\centering
-		\caption{Politics domain model with top 300 abstracts, tested with Politics abstracts (test file) in fine grained}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Election & 0,8240 & 0,6398 & 0,7203\\
@@ -574,6 +573,7 @@ Then we tested our model with abstracts from "POLITICS" domain. How we can see f
 				Politician & 0,8599 & 0,7234 & 0,7858\\\hline
 				\textbf{Totals} & \textbf{0,8354} & \textbf{0,6980} & \textbf{0,7606}\\\hline
 		\end{tabular}
+		\caption{Politics domain model with top 300 abstracts, tested with Politics abstracts (test file) in fine grained \label{table:PoliticsdomainsWithPoliticsTop300Fine}}
 	\end{table}	
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
