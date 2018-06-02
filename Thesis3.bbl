@@ -52,6 +52,12 @@
 {Wikipedia}. {GATE}.
 \urlprefix\biburl{https://en.wikipedia.org/wiki/General\_Architecture\_for\_Text\_Engineering}
 
+\bibitem{article:DomainSpecific}
+{Vivek Kulkarni and Yashar Mehdad and Troy Chevalier}. {Domain Adaptation for
+  Named Entity Recognition in Online Media with Word Embeddings}.
+  \emph{{CoRR}}, volume {abs/1612.00148}, 2016, \eprint{1612.00148}.
+\urlprefix\biburl{{http://arxiv.org/abs/1612.00148}}
+
 \bibitem{wiki:RDF}
 {Wikipedia}. {Resource Description Framework} RDF.
 \urlprefix\biburl{https://en.wikipedia.org/wiki/Resource\_Description\_Framework}
@@ -94,8 +100,8 @@
 Wikipedia. {PageRank}.
 \urlprefix\biburl{https://en.wikipedia.org/wiki/PageRank}
 
-\bibitem{ApacheJena}
-{Apache Jena}. {Apache Jena}.
-\urlprefix\biburl{https://jena.apache.org/}
+\bibitem{wiki:F1}
+{Wikipedia}. {F1 score}.
+\urlprefix\biburl{https://en.wikipedia.org/wiki/F1\_score}
 
 \end{thebibliography}
