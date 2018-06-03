@@ -38,16 +38,16 @@
 \contentsline {subsubsection}{\numberline {3.3.2.1}Global domain models}{20}{subsubsection.3.3.2.1}
 \contentsline {subsubsection}{\numberline {3.3.2.2}Specific domain models}{25}{subsubsection.3.3.2.2}
 \contentsline {subsection}{\numberline {3.3.3}Experiments that has less than 300 abstracts in model}{28}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Experiments that have more than 300 abstracts in model and test files}{41}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}MIXED}{50}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Experiments with lower training abstracts on model, but higher abstracts on test file}{53}{subsection.3.3.6}
-\contentsline {subsection}{\numberline {3.3.7}Experiments with higher training abstracts on model, but lower abstracts on test file}{61}{subsection.3.3.7}
-\contentsline {section}{\numberline {3.4}Summary of results}{72}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Graphs}{72}{subsection.3.4.1}
-\contentsline {chapter}{Conclusion}{73}{chapter*.9}
-\contentsline {chapter}{Bibliography}{75}{chapter*.10}
-\contentsline {appendix}{\chapternumberline {A}Retrieved types}{77}{appendix.A}
-\contentsline {section}{\numberline {A.1}POLITICS types}{77}{section.A.1}
-\contentsline {section}{\numberline {A.2}SPORT types}{77}{section.A.2}
-\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{78}{section.A.3}
-\contentsline {appendix}{\chapternumberline {B}Contents of CD}{81}{appendix.B}
+\contentsline {subsection}{\numberline {3.3.4}Experiments that have more than 300 abstracts in model and test files}{42}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}MIXED}{51}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Experiments with lower training abstracts on model, but higher abstracts on test file}{54}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Experiments with higher training abstracts on model, but lower abstracts on test file}{62}{subsection.3.3.7}
+\contentsline {section}{\numberline {3.4}Summary of results}{73}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Graphs}{73}{subsection.3.4.1}
+\contentsline {chapter}{Conclusion}{75}{chapter*.9}
+\contentsline {chapter}{Bibliography}{77}{chapter*.10}
+\contentsline {appendix}{\chapternumberline {A}Retrieved types}{79}{appendix.A}
+\contentsline {section}{\numberline {A.1}POLITICS types}{79}{section.A.1}
+\contentsline {section}{\numberline {A.2}SPORT types}{79}{section.A.2}
+\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{80}{section.A.3}
+\contentsline {appendix}{\chapternumberline {B}Contents of CD}{83}{appendix.B}

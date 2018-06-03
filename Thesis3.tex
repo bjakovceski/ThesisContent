@@ -555,7 +555,7 @@ Then we tested our model with abstracts from "POLITICS" domain. How we can see f
 
 	After completing experiments with a global domains in coarse and fine grained, now we will make experiments with models for specific domains.
 	
-	To train this model we need 66.7 seconds in total from which 59.53 seconds spend on optimization. In Table~\ref{table:PoliticsdomainsWithPoliticsTop300Coarse} the experiment is provided with model trained only with abstracts from "POLITICS" domain and run with the same texts that model in trained, in coarse grained. The result here is better than experiment in Table~\ref{table:All3domainsWithPoliticsTop300Coarse}, but worse that experiment provided with global domain in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}. This can be cause by the fact that model has  biggest number of annotated words.
+	To train "POLITICS" domain specific model we need 66.7 seconds in total from which 59.53 seconds spend on optimization. In Table~\ref{table:PoliticsdomainsWithPoliticsTop300Coarse} the experiment is provided with model trained only with abstracts from "POLITICS" domain and run with the same texts that model in trained, in coarse grained. The result here is better than experiment in Table~\ref{table:All3domainsWithPoliticsTop300Coarse}, but worse that experiment provided with global domain in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}. This can be cause by the fact that model has  biggest number of annotated words.
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
@@ -722,8 +722,9 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 		\caption{Outcomes of global model in fine grained run with 10 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop10Fine}}	
 	\end{table}
 
-	%We have repeated the same experiments from previous, but now with fine grained annotation. So we tested our model with politics domain annotated in fine grained and we get exactly the same results like in coarse grained. In this case there is no difference if we use coarse or fine grained trained model, because the results are same.
-
+	Then how in previous experiments, we take the global train model and test it with abstracts from every specific domain separately. 
+	The first domain abstracts was from "POLITICS" domain, where from Table~\ref{table:GlobalDomainWithPoliticsTop10Fine} we can see that model perform same result as well as in coarse grained model experiment in Table~\ref{table:GlobalDomainWithPoliticsTop10Coarse}. Also even our model and test files has words with Election ontology type, the model do not recognize any of them. With that misleading we have lower results, if that doesn't happens the model will perform pretty mach good recognition.
+	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
@@ -735,7 +736,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 		\caption{Outcomes of global model in fine grained run with 10 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop10Fine}}		
 	\end{table}	
 
-	%The sport domain text annotated in fine grained provide also same result as coarse grained annotated domain. 
+	Then we test it our model with abstracts from "SPORT" domain. Table~\ref{table:GlobalDomainWithSportTop10Fine} shows that our model recognize all annotated words from test file without any misleading and perform maximum F1 score. In comparing with the main experiment in Table~\ref{table:All3domainsWithSportTop300Fine} where we have some loosing, here that is not the case and it is what we want to reach.
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
@@ -751,8 +752,8 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 		\caption{Outcomes of global model in fine grained run with 10 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop10Fine}}		
 	\end{table}
 	
-	%Same as sport domain, the transportation domain Figure~\ref{img:all3DomainWithTransportationFineTop10} text annotated with fine grained, provide also same results.
-	
+	Final experiment that we do with global train model was with "TRANSPORTATION" domain abstracts. In Table~\ref{table:GlobalDomainWithTransportationTop10Fine} we can see that model, same as in previous experiment with "SPORT" abstracts, perform maximum F1 score result, which in comparing with the main experiment from Table~\ref{table:All3domainsWithTransportationTop300Fine} here we have improvements on result.
+	 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
@@ -763,24 +764,25 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 		\end{tabular}
 		\caption{Outcomes of global model in fine grained run with 10 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop10Fine}}		
 	\end{table}
+	
+	In conclusion from the provided experiments where we had 10 abstracts on every domain, in comparing with the main experiments, we can say that there is an impact on performing a NER with a smallest number of abstracts for training a testing models. Here when we use coarse of fine grained global model and test it with texts from specific domain, except the "POLITICS" domain abstracts, on other two domain, model perform NER without any misleading, which is what we waned to reach. Also training such small models takes way more less time, than training a big models. 
+ 
+	In next 6 experiments trained models has 10 domain specific abstracts per model and also test files have the same specification.
+	
+	First domain that we provide an experiment was "POLITICS" specific domain. To train this model we need 3.8 seconds, from which 2.56 seconds spent in optimization. Table~\ref{table:PoliticsDomainWithPoliticsTop10Coarse} show the outcome of the experiment, where the result here is way better, than with comparing with main experiment in Table~\ref{table:PoliticsdomainsWithPoliticsTop300Coarse} and the experiment with global train model tested with "POLITICS" domain specific text in Table~\ref{table:GlobalDomainWithPoliticsTop10Coarse}.  
 
-	%After experimenting with models that are trained with all domains together, we move on with experiments where we create specific models, both coarse and fine grained.
-	%First we tested the model that is created with politics text annotated in coarse grained. How we can see from Figure~\ref{img:PoliticsWithPoliticsCoarseTop10} we have a better results than that experiment that we provide in all 3 domains. The F1 value is very big which is the results of low false positive and false negative annotated words.        
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9737 & 0,9610 & 0,9673\\\hline
 				\textbf{Totals} & \textbf{0,9737} & \textbf{0,9610} & \textbf{0,9673}\\\hline
 		\end{tabular}
+		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 10 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop10Coarse}}
 	\end{table}	
-
-	%We also provide the same experiment like previous, but now the model is annotated in fine grained. From Figure ~\ref{img:PoliticsWithPoliticsFineTop10} is clearly that we have improve our model, here the F1 value is bigger that in coarse grained (see Figure~\ref{img:PoliticsWithPoliticsCoarseTop10}) and also false positive annotated words are decreased by 1. That means even we have a complete review of our entities and can see the precision of each entity, this domain, in total, is more precise that coarse grained model and all 3 domains in coarse and fine grained.
+	
+	Because we want to know the impact when model is trained in fine grained, we make an experiment with fine grained model. For training this model we need 8.3 seconds, from which 6.99 seconds spent in optimization. From Table~\ref{table:PoliticsDomainWithPoliticsTop10Fine} we can see that this kind of model provide a higher result than coarse grained model from previous experiment. Also this result is better than result from main experiment in Table~\ref{table:PoliticsdomainsWithPoliticsTop300Fine} and the result from the experiment where we tested the global trained model with domain specific text in Table~\ref{table:GlobalDomainWithPoliticsTop10Fine}.
 	
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Election & 1,0000 & 0,9333 & 0,9655\\
@@ -788,8 +790,10 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Politician & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9867} & \textbf{0,9610} & \textbf{0,9737}\\\hline
 		\end{tabular}
+		\caption{Outcome of "POLITICS" domain specific model in fine grained run with 10 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop10Fine}}		
 	\end{table}	
 
+	From the "POLITICS" domain specific experiments we can say that for this kind of domain with a lower number of abstracts for training a model the application provide NER with better results unlike the same experiments from the main experiment, where we have a worst results than here.
 	%From here, with this small amount of data we can say that it's better to use a politics specific domain, in fine grained, than a global domain, because in global domain we have 28 words annotated as true positive, but in a politics specific coarse grained domain we have 74 words annotated as true positive, which is very big difference, if we want to be precise.
 	
 	
