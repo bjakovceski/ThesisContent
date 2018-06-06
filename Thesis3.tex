@@ -26,16 +26,16 @@
 \graphicspath{ {"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank/"} }
 
 % list of acronyms
-% \usepackage[acronym,nonumberlist,toc,numberedsection=autolabel,nomain]{glossaries}
-%\iflanguage{czech}{\renewcommand*{\acronymname}{Seznam pou{\v z}it{\' y}ch zkratek}}{}
-% \makeglossaries
+ \usepackage[acronym,nonumberlist,toc,numberedsection=autolabel,nomain]{glossaries}
+\iflanguage{czech}{\renewcommand*{\acronymname}{Seznam pou{\v z}it{\' y}ch zkratek}}{}
+\makeglossaries
 
 %\newcommand{\tg}{\mathop{\mathrm{tg}}} %cesky tangens
 %\newcommand{\cotg}{\mathop{\mathrm{cotg}}} %cesky cotangens
 
 
-\setcounter{tocdepth}{4} %define depth of showing in table of content
-\setcounter{secnumdepth}{4} %define depth of showing in table of content
+\setcounter{tocdepth}{2} %define depth of showing in table of content
+\setcounter{secnumdepth}{2} %define depth of showing in table of content
 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
@@ -46,7 +46,7 @@
 \authorFN{Jakovcheski} %author's surname
 \authorWithDegrees{Bc. Bogoljub Jakovcheski} %author's name with academic degrees
 \author{Bogoljub Jakovcheski} %author's name without academic degrees
-\supervisor{Ing. Milan Dojchinovski, Ph.D.}
+\supervisor{Ing. Milan Doj{\v c}inovski}
 \acknowledgements{I would like to thank my family and friends for support during writing this thesis.}
 \abstractCS{}
 \abstractEN{}
@@ -62,29 +62,26 @@
 \begin{introduction}
 
 \section{Motivation}
-	%Nowadays Named Entity Recognition (NER) is very close to perfectly matching entities in text. State-of-the-art NER systems for English produce near-human performance. For example, the best system entering MUC-7 scored 93.39\% of F-measure while human annotators scored 97.60\% and 96.95\%. %[https://en.wikipedia.org/wiki/Named-entity_recognition]
     Named Entity Recognition (NER)\cite{wiki:NER} is locating and classifying named entities in text into some pre-defined categories such as locations, organizations, person name, sport etc. Today NER is used to different areas from full-text search and filtering to preprocessing tool for other NLP tasks \cite{master:NER}.  	
 		
     Most NER applications are trained on a general text and on a specific domain, the problem is that they are optimized for the specific type of data i.e. specific domain. That means that those NER applications can give nice results on texts or domains that are trained, but bad results for texts on a specific domain for which that NER is not trained.
 	  
-    Most of the NER applications are trained on a small number of types. For example, at the moment of writing this thesis, Stanford NER\footnote{http://nlp.stanford.edu:8080/ner/} has a model that have maximum 7 types, Dbpedia Spotlight\footnote{https://www.dbpedia-spotlight.org/demo/} has model with 31 types, spaCy\footnote{https://spacy.io/usage/linguistic-features} build-in model has 18 types and Wikipedia scheme model have 4 types.
+    Most of the NER applications are trained on a small number of types. For example, at the moment of writing this thesis, Stanford NER\footnote{http://nlp.stanford.edu:8080/ner/} has a model that have maximum 7 types, Dbpedia Spotlight\footnote{https://www.dbpedia-spotlight.org/demo/} has model with 31 types, spaCy\footnote{https://spacy.io/usage/linguistic-features} build-in model has 18 types and spaCy Wikipedia scheme model have 4 types.
 	  
-	The main goal of this thesis is to research/explore possibilities of training NER models for a specific domain. To achieve this goal it is necessary to create datasets for certain domains. This research is focused on 3 domains, "POLITICS", "SPORT" and "TRANSPORTATION". Every domain is created with a certain number on types from DBpedia Ontology, then for creating datasets is used DBpedia NIF who gives an opportunity to approaches to information from Wikipedia abstracts, for example, types that annotated words has in those abstracts.
+	The main goal of this thesis is to research possibilities of training NER models for a specific domain. To achieve this goal it is necessary to create datasets for certain domains. This research is focused on 3 domains, "POLITICS", "SPORT" and "TRANSPORTATION". Every domain is created with a certain number on types from DBpedia Ontology, then for creating datasets is used DBpedia NIF who gives an opportunity to approaches to information from Wikipedia abstracts, for example, types that annotated words has in those abstracts.
 	  
 	  Thesis research which is the quality of trained domains, the impact of the size of the data and the quality of the defined domains.
 	  
 	  
 \section{Goals of the thesis}	
-	%The main goal of the thesis is to create a domain specific models and try to get closer, or event better F1-score to the human F1-score. Then creating a smaller and larger models and their impact of scoring based on main model. And finally creating a coarse grained and fine grained models and monitoring their F1-score.  
 	Nevertheless, vast majority of the developed NER systems have been developed as general-purpose systems. While they can perform well on multiple domains (macro level), on specific domains (micro level) their performance quality might be low. The ultimate goal of the thesis is to develop domain-specific NER models. Guidelines:
 \begin{itemize}
-\item Investigate possible datasets for domain-specific training of NER.
-\item Develop NER training datasets for several selected domains (e.g. sports,
+	\item Investigate possible datasets for domain-specific training of NER.
+	\item Develop NER training datasets for several selected domains (e.g. sports,
 politics, music, etc.).
-\item Train a domain-specific NER model using existing frameworks, such as
+	\item Train a domain-specific NER model using existing frameworks, such as
 DBpedia Spotlight or StanfordNER.
-\item Validate and evaluate the developed domain-specific NER models. 
-
+	\item Validate and evaluate the developed domain-specific NER models. 
 \end{itemize}	
 	
 \section{Thesis outline}
@@ -114,9 +111,9 @@ Information extraction (IE) \cite{wiki:IE} is the task of automatically extracti
 
 	\begin{figure}[H]\centering
 		\includegraphics[width=\textwidth]{information-extraction}
-		\caption{Information extraction, downloaded from https://www.slideshare.net/rubenizquierdobevia/information-extraction-45392844}\label{fig:InformationExtraction}
+		\caption[Information extraction example]{Information extraction, downloaded from\footnotemark}
 	\end{figure}
-
+\footnotetext{\url{https://www.slideshare.net/rubenizquierdobevia/information-extraction-45392844}}
 %https://web.stanford.edu/~jurafsky/slp3/21.pdf
 
 
@@ -145,7 +142,8 @@ In this example, a person name consisting of one token, a two-token company name
 		\includegraphics[width=\textwidth]{NER-Stanford}
 		\caption{Stanford NER GUI with 3 classes model (Location, Person, Organization)}\label{fig:StanfordNER}
 	\end{figure}
-	
+
+	There are several applications or frameworks for NER like Stanford NER, DBpedia Spotlight, spaCy, Chatbot NER, GATE, OpenNLP and so on. Here we will take a look only on the mentioned ones.
 
 \subsubsection{Stanford NER}\label{Stanford NER}
 Stanford NER\footnote{https://nlp.stanford.edu/software/CRF-NER.html} is a Java implementation of a Named Entity Recognizer. Named Entity Recognition (NER) labels sequences of words in a text which are the names of things, such as person and company names, or gene and protein names. It comes with well-engineered feature extractors for Named Entity Recognition, and many options for defining feature extractors. Included with the download are good named entity recognizers for English, particularly for the 3 classes (PERSON, ORGANIZATION, LOCATION), and we also make available on this page various other models for different languages and circumstances, including models trained on just the CoNLL 2003 English training data.
@@ -153,10 +151,10 @@ Stanford NER\footnote{https://nlp.stanford.edu/software/CRF-NER.html} is a Java 
 Stanford NER is also known as CRFClassifier. The software provides a general implementation of (arbitrary order) linear chain Conditional Random Field (CRF) sequence models. That is, by training your own models on labeled data, you can actually use this code to build sequence models for NER or any other task \cite{article:StanfordNER}.
 
 \subsubsection{DBpedia Spotlight}\label{DBpedia Spotlight}
-DBpedia Spotlight\footnote{https://www.dbpedia-spotlight.org/}  \cite{wiki:DBpediaSpotlight} is a tool for annotating mentions of DBpedia resources in text. This allows linking unstructured information sources to the Linked Open Data cloud through DBpedia. DBpedia Spotlight performs named entity extraction, including entity detection and name resolution (in other words, disambiguation). It can also be used for named entity recognition, and other information extraction tasks. DBpedia Spotlight aims to be customizable for many use cases. Instead of focusing on a few entity types, the project strives to support the annotation of all 3.5 million entities and concepts from more than 320 classes in DBpedia. The project started in June 2010 at the Web Based Systems Group at the Free University of Berlin.
+DBpedia Spotlight\footnote{https://www.dbpedia-spotlight.org/} \cite{wiki:DBpediaSpotlight} is a tool for annotating mentions of DBpedia resources in text. This allows linking unstructured information sources to the Linked Open Data cloud through DBpedia. DBpedia Spotlight performs named entity extraction, including entity detection and name resolution (in other words, disambiguation). It can also be used for named entity recognition, and other information extraction tasks. DBpedia Spotlight aims to be customizable for many use cases. Instead of focusing on a few entity types, the project strives to support the annotation of all 3.5 million entities and concepts from more than 320 classes in DBpedia. The project started in June 2010 at the Web Based Systems Group at the Free University of Berlin.
 
 \subsubsection{spaCy}\label{spaCy}
-spaCy\footnote{https://spacy.io/} \cite{wiki:spaCy} is an open-source software library for advanced Natural Language Processing, written in the programming languages Python and Cython. It offers the fastest syntactic parser in the world.[2][3][4] The library is published under the MIT license and currently offers statistical neural network models for English, German, Spanish, Portuguese, French, Italian, Dutch and multi-language NER, as well as tokenization for various other languages.
+spaCy\footnote{https://spacy.io/} \cite{wiki:spaCy} is an open-source software library for advanced Natural Language Processing, written in the programming languages Python and Cython. It offers the fastest syntactic parser in the world. The library is published under the MIT license and currently offers statistical neural network models for English, German, Spanish, Portuguese, French, Italian, Dutch and multi-language NER, as well as tokenization for various other languages.
 
 \subsubsection{GATE}\label{GATE}
 General Architecture for Text Engineering or GATE\footnote{https://gate.ac.uk/} \cite{wiki:GATE} is a Java suite of tools originally developed at the University of Sheffield beginning in 1995 and now used worldwide by a wide community of scientists, companies, teachers and students for many natural language processing tasks, including information extraction in many languages.
@@ -171,52 +169,90 @@ The goal of the OpenNLP project will be to create a mature toolkit for the above
 \subsubsection{Chatbot NER}\label{Chatbot NER}
 Chatbot NER\footnote{https://haptik.ai/tech/open-sourcing-chatbot-ner/} is heuristic based that uses several NLP techniques to extract necessary entities from chat interface. In Chatbot, there are several entities that need to be identified and each entity has to be distinguished based on its type as a different entity has different detection logic. 
 
-\subsection{Domain specific Named Entity Recognition}
-Traditionally Named Entity Recognition (NER)\cite{article:DomainSpecific} systems have been built using available annotated datasets (like CoNLL, MUC) and demonstrate excellent performance. However, these models fail to generalize onto other domains like Sports and Finance where conventions and language use can differ significantly. Furthermore, several domains do not have large amounts of annotated labeled data for training robust Named Entity Recognition models.
-With specifying the domain we can create a bigger model with more annotated words and reading the whole text will be same or even faster that reading text with a global domain.  
 
-NEED MORE!!!! AT LEAST ONE PAGE!!!!!!!
 
 \subsection{RDF/NIF}
 	The Resource Description Framework (RDF)\cite{wiki:RDF} is a family of World Wide Web Consortium (W3C) specifications originally designed as a metadata data model.  It is a framework for describing resources on the web; it is designed to be read and understood by computers.
 	
 	The information in RDF is represented by subject-predicate-object, known as triples. Triples are written in one of RDF notations: RDF/XML, RDFa, N-Triples, Turtle, JSON-LD and stored in a triplestore \cite{master:SPARQL}.
 	
-	%RDF is often used to represent, among other things, personal information, social networks, metadata about digital artifacts, as well as to provide a means of integration over disparate sources of information .
-	
 	RDF \cite{w3c:RDF} has features that facilitate data merging even if the underlying schemas differ, and it specifically supports the evolution of schemas over time without requiring all the data consumers to be changed.
 
 	Natural Language Processing Interchange Format (NIF)\footnote{http://aksw.org/Projects/NIF.html} \cite{w3c:NIF} is an RDF-based format. The classes to represent linguistic data are defined in the NIF Core Ontology. All ontology classes are derived from the main class nif:String which respresents strings of Unicode characters.
-%http://wiki.dbpedia.org/dbpedia-nif-dataset
-%http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.html
-%https://www.w3.org/2015/09/bpmlod-reports/nif-based-nlp-webservices/#natural-language-%processing-interchange-format-nif
-%http://lov.okfn.org/dataset/lov/vocabs/nif
-%http://aksw.org/Projects/NIF.html
+	
+%	\begin{lstlisting}[language=java]
+%https://2018.eswc-conferences.org/wp-content/uploads/2018/02/ESWC2018_paper_136.pdf
+%1 @ prefix rdf : <http :// www .w3.org /1999/02/22 - rdf - syntax -ns#> .
+%2 @ prefix xsd : <http :// www .w3.org /2001/ XMLSchema #> .
+%3 @ prefix itsrdf : <http :// www .w3. org /2005/11/ its / rdf #> .
+%4 @ prefix nif : <> .
+%5 @ prefix ex: <http :// nif . dbpedia . org/ wiki /en/> .
+%6
+%7 ex : United_States ? dbpv =2016 -10& nif = context
+%8 a nif : Context ;
+%9 nif : beginIndex "0"^^ xsd : nonNegativeInteger ;
+%10 nif : endIndex " 104211 "^^ xsd : nonNegativeInteger ;
+%11 nif : firstSection ex : United_States ? dbpv =2016 -10& char =0 ,4241 ;
+%12 nif : lastSection ex : United_States ? dbpv =2016 -10& char =103211 ,104211 ;
+%13 nif : hasSection ex : World_War_II ? dbpv =2016 -10& char =0 ,5001 ;
+%14 nif : sourceUrl ex : United_States ? oldid =745182619 ;
+%15 nif : predLang < http :// lexvo . org / id / iso639 -3/ eng > ;
+%16 nif : isString " ... The first inhabitants of North America migrated from
+%Siberia by way of the Bering land bridge ... " .
+%17
+%18 ex : United_States ? dbpv =2016 -10& char =7745 ,9418
+%19 a nif : Section ;
+%20 nif : beginIndex " 7745 "^^ xsd : nonNegativeInteger ;
+%21 nif : endIndex " 9418 "^^ xsd : nonNegativeInteger ;
+%22 nif : hasParagraph ex : United_States ? dbpv =2016 -10& char =7860 ,8740 ;
+%23 nif : lastParagraph ex : United_States ? dbpv =2016 -10& char =8741 ,9418 ;
+%24 nif : nextSection ex : United_States ? dbpv =2016 -10& char =9420 ,12898 ;
+%25 nif : referenceContext ex : United_States ? dbpv =2016 -10& nif = context ;
+%26 nif : superString ex : United_States ? dbpv =2016 -10& char =7548 ,7743 .
+%27
+%28 ex : United_States ? dbpv =2016 -10& nif = paragraph & char =7860 ,8740
+%29 a nif : Paragraph ;
+%30 nif : beginIndex " 7860 "^^ xsd : nonNegativeInteger ;
+%31 nif : endIndex " 8740 "^^ xsd : nonNegativeInteger ;
+%32 nif : nextParagraph ex : United_States ? dbpv =2016 -10& char =8741 ,9418 ;
+%33 nif : referenceContext ex : United_States ? dbpv =2016 -10& nif = context ;
+%34 nif : superString ex : United_States ? dbpv =2016 -10& char =7745 ,9418 .
+%35
+%36 ex : United_States ? dbpv =2016 -10& char =7913 ,7920
+%37 a nif: Word ;
+%38 nif : anchorOf " Siberia " ;
+%39 nif : beginIndex " 7913 "^^ xsd : nonNegativeInteger ;
+%40 nif : endIndex " 7920 "^^ xsd : nonNegativeInteger ;
+%41 nif : referenceContext ex : United_States ? dbpv =2016 -10& nif = context ;
+%42 nif : superString ex : United_States ? dbpv =2016 -10& char =7860 ,8740 ;
+%43 itsrdf : taIdentRef < http :// dbpedia . org / resource / Siberia > .
+%	\end{lstlisting}
 
 \subsection{DBpedia}
-DBpedia \cite{dbpedia:core} is a crowd-sourced community effort to extract structured content from the information created in various Wikimedia projects. This structured information resembles an open knowledge graph (OKG) which is available for everyone on the Web. A knowledge graph is a special kind of database which stores knowledge in a machine-readable form and provides a means for information to be collected, organised, shared, searched and utilised. Google uses a similar approach to create those knowledge cards during search. We hope that this work will make it easier for the huge amount of information in Wikimedia projects to be used in some new interesting ways. 
+DBpedia \cite{dbpedia:core} is a crowd-sourced community effort to extract structured content from the information created in various Wikimedia projects. This structured information resembles an open knowledge graph (OKG) which is available for everyone on the Web. A knowledge graph is a special kind of database which stores knowledge in a machine-readable form and provides a means for information to be collected, organised, shared, searched and utilised. Google uses a similar approach to create those knowledge cards during search.
 
 	DBpedia data is served as Linked Data, which is revolutionizing the way applications interact with the Web. One can navigate this Web of facts with standard Web browsers, automated crawlers or pose complex queries with SQL-like query languages (e.g. SPARQL).
 
+	At the time of writing this thesis the last version of DBpedia is 3.7.
 \subsubsection{DBpedia NIF}\label{DBpediaNIF}
-DBpedia \cite{dbpedia:NIF} currently primarily focus on representing factual knowledge as contained in Wikipedia infoboxes. A vast amount of information, however, is contained in the unstructured Wikipedia article texts. In order to broaden and deepen the amount of structured DBpedia data, we are going a step further.
-With the representation of wiki pages in the NLP Interchange Format (NIF) we provide all information directly extractable from the HTML source code divided into three datasets:
-\begin{itemize}
-\item nif-context: the full text of a page as context (including begin and end index)
-\item nif-page-structure: the structure of the page in sections and paragraphs (titles, subsections etc.)
-\item nif-text-links: all in-text links to other DBpedia resources as well as external references
-\end{itemize}
-These datasets will serve as the groundwork for further NLP fact extraction tasks to enrich the gathered knowledge of DBpedia.
+	DBpedia \cite{dbpedia:NIF} currently primarily focus on representing factual knowledge as contained in Wikipedia infoboxes. A vast amount of information, however, is contained in the unstructured Wikipedia article texts. In order to broaden and deepen the amount of structured DBpedia data, we are going a step further.
 
+	With the representation of wiki pages in the NLP Interchange Format (NIF) we provide all information directly extractable from the HTML source code divided into three datasets:
+	\begin{itemize}
+		\item nif-context: the full text of a page as context (including begin and end index)
+		\item nif-page-structure: the structure of the page in sections and paragraphs (titles, subsections etc.)
+		\item nif-text-links: all in-text links to other DBpedia resources as well as external references
+	\end{itemize}
+	These datasets will serve as the groundwork for further NLP fact extraction tasks to enrich the gathered knowledge of DBpedia.
+
+For the purposes of this thesis we will use DBpedia NIF dataset version 2016-04 (dbpv=2016-04).
 
 \subsubsection{DBpedia ontology}\label{DBpediaOntology}
-%http://wiki.dbpedia.org/services-resources/ontology
-%http://mappings.dbpedia.org/server/ontology/classes
-The DBpedia Ontology is a shallow, cross-domain ontology, which has been manually created based on the most commonly used infoboxes within Wikipedia. The ontology currently covers 685 classes which form a subsumption hierarchy and are described by 2,795 different properties.
+	The DBpedia Ontology is a shallow, cross-domain ontology, which has been manually created based on the most commonly used infoboxes within Wikipedia. The ontology currently covers 685 classes which form a subsumption hierarchy and are described by 2,795 different properties.
 
-Since the DBpedia 3.7 release, the ontology is a directed-acyclic graph, not a tree. Classes may have multiple superclasses, which was important for the mappings to schema.org. A taxonomy can still be constructed by ignoring all superclasses except the one that is specified first in the list and is considered the most important. [http://wiki.dbpedia.org/services-resources/ontology]
+	Since the DBpedia 3.7 release, the ontology is a directed-acyclic graph, not a tree. Classes may have multiple superclasses, which was important for the mappings to schema.org. A taxonomy can still be constructed by ignoring all superclasses except the one that is specified first in the list and is considered the most important \cite{dbpedia:Ontology}. 
 
-Dbpedia ontology classes can be found here [http://mappings.dbpedia.org/server/ontology/classes/]
+Dbpedia ontology classes can be found here \footnote{\url{http://mappings.dbpedia.org/server/ontology/classes/}}
 
 The DBpedia Ontology currently contains about 4,233,000 instances. Figure~\ref{fig:Dbpedia-ontology} shows the number of instances for several classes within the ontology. [http://wiki.dbpedia.org/services-resources/ontology]
 
@@ -226,29 +262,53 @@ The DBpedia Ontology currently contains about 4,233,000 instances. Figure~\ref{f
 	\end{figure}
 
 \subsection{Apache Jena}\label{ApacheJena}
-Apache Jena\footnote{https://jena.apache.org/index.html} \cite{wiki:ApacheJena} is an open source Semantic Web framework for Java. It provides an API to extract data from and write to RDF graphs. The graphs are represented as an abstract "model". A model can be sourced with data from files, databases, URLs or a combination of these. A Model can also be queried through SPARQL 1.1.
+	Apache Jena\footnote{\url{https://jena.apache.org/index.html}} \cite{wiki:ApacheJena} is an open source Semantic Web framework for Java. It provides an API to extract data from and write to RDF graphs. The graphs are represented as an abstract "model". A model can be sourced with data from files, databases, URLs or a combination of these. A Model can also be queried through SPARQL 1.1.
 
 \subsection{SPARQL}\label{SPARQL}
-SPARQL \cite{master:SPARQL} is an RDF query language, that is, a semantic query language for databases, able to retrieve and manipulate data stored in Resource Description Framework (RDF) format. SPARQL works for any data source that can be mapped to RDF.
+	SPARQL \cite{master:SPARQL} is an RDF query language, that is, a semantic query language for databases, able to retrieve and manipulate data stored in Resource Description Framework (RDF) format. SPARQL works for any data source that can be mapped to RDF.
 
-SPARQL allows users to write queries against key-value data or, more specifically, data that can be mapped to RDF. The entire database is thus a set of subject-predicate-object triples.
+	SPARQL allows users to write queries against key-value data or, more specifically, data that can be mapped to RDF. The entire database is thus a set of subject-predicate-object triples.
+	
+	The SPARQL standard \footnote{\url{https://ontotext.com/knowledgehub/fundamentals/what-is-sparql/}} is designed and endorsed by the W3C and helps users and developers focus on what they would like to know instead of how a database is organized.
 
+	In Listing~\ref{SPARQLexample} is an example of SPARQL query where we are selecting 10 abstracts from DBpedia NIF who has ontology type PoliticalParty and their PageRank and sort descending by PageRank.   
+\begin{lstlisting}[caption=SPARQL example \label{SPARQLexample}]
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo:<http://dbpedia.org/ontology/>
+PREFIX vrank:<http://purl.org/voc/vrank#>
+
+SELECT DISTINCT ?s ?v
+FROM <http://dbpedia.org>
+FROM <http://people.aifb.kit.edu/ath/#DBpedia_PageRank>
+WHERE{
+	?s rdf:type dbo:PoliticalParty .
+	?s vrank:hasRank/vrank:rankValue ?v.
+}
+ORDER BY DESC(?v) LIMIT 10
+\end{lstlisting}
 
 \section{Related work}
-NER Discussion???
+In this section we will compare our approach and our chosen domains.
+
+\subsection{Domain specific Named Entity Recognition}
+Traditionally Named Entity Recognition (NER)\cite{article:DomainSpecific} systems have been built using available annotated datasets (like CoNLL, MUC) and demonstrate excellent performance. However, these models fail to generalize onto other domains like Sports and Finance where conventions and language use can differ significantly. Furthermore, several domains do not have large amounts of annotated labeled data for training robust Named Entity Recognition models.
+With specifying the domain we can create a bigger model with more annotated words and reading the whole text will be same or even faster that reading text with a global domain.  
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%NEW CHAPTER%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%CHAPTER 2%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Domain specific named entity recognition}\label{}
+	In this chapter we will go through the whole process of transforming raw DBpedia datasets to datasets that are ready for training a model with Stanford NER and how to train a model with Stanford NER. Section~\ref{dataPreProcessing} explains the process of cleaning the data from DBpedia NIF datasets and preparing them for processing. In Section~\ref{domainSpecification} we explain how we choose "POLITICS", "SPORT" and "TRANSPORTATION" domains. Section~\ref{typesRetrieval} shows all ontology types that we retrieve for every domain and grouping them to more specific ontology type. In Section~\ref{StanfordNERoutput} is explained the process of preparing datasets for training in Stanford NER. And finally in Section~\ref{modelGeneration} is shown how to train a datasets with Stanford NER.  
 
 \section{Data pre-processing}\label{dataPreProcessing}
-	First of all, we downloaded 2 datasets from Dbpedia NIF Datasets~\ref{DBpediaNIF} for the English language in .ttl format. We needed only 2 datasets, and that nif-context (or nif-abstract-context) and nif-text-links.
+	First of all, we downloaded 2 datasets from DBpedia NIF Datasets (for more information about DBpedia NIF see Section~\ref{DBpediaNIF}) for the English language in .ttl format. We needed only 2 datasets, and that nif-context (or nif-abstract-context) and nif-text-links.
 
 	Another dataset that we needed was DBpedia instance types dataset, found at DBpedia download page\footnote{http://wiki.dbpedia.org/downloads-2016-04} also in .ttl format. This dataset contains all types of nif-text-links that occurrence at nif-abstract-context file.
 
 	So how all this dataset are connected between themselves? Let say that we have abstract for Alexander the Great. In nif-text-links file we have all words from the abstract that has annotation, but we still don't know their type. So here comes instance types file where based on link from nif-text-link (eg.http://dbpedia.org/resource/Philip\_II\_of\_Macedon) we can find the type of annotated word (word Philip II has ontology type Monarch), but of course, there can be a case that some words cannot be found on instance types file and automatically have no type, or in our case ontology type O (O stands for OTHER).
 
-	But know, let us explain deeply how we process and clean data from the dataset. First, we define small test dataset to check how fast we can process data. Running that dataset on downloaded files without any cleaning on data takes too long. So we said that converting the datasets from RDF format to binary format (.ttl to .hdt) with RDF/HDT tool\footnote{http://www.rdfhdt.org/} will be faster. HDT (Header, Dictionary, Triples)\cite{FMPGPA:13} is a compact data structure and binary serialization format for RDF that keeps big datasets compressed to save space while maintaining search and browse operations without prior decompression. So we converted the datasets and reran the algorithm again. There were some improvements, but not satisfying for our purposes. Our next solution was to clean datasets from unused data for our aims. The final result after cleaning was a smaller datasets, for instance, nif-abstract-context file from 7.78GB now has 2.99GB, another big improvement was nif-text-links file who is reduced to 10.5GB from 44.6GB and at the end we also clean instance-types file, but here we don't record any mayor memory improvements. Again we rerun the algorithm, of course, there were improvements, but as well as previous the time that algorithm runs, was not acceptable for us. To give an illustration, the time needed to find all types from one abstract in a worst case, to read nif-text-links and instance type files until the end was around 3.5 minutes. Therefore once more we converted our cleaned datasets from RDF format(.ttl) to binary format(.hdt). And how in previous running there were again improvements, but those improvements don't fulfill our expectations. The final thing that we have to save us was creating a dataset tree only for nif-text-links and instance-types files. For nif-text-links file we created a tree where we have folders from "a-z", also special characters folders and other folder(this folder contains data that have a lower occurrence, let say \& character or letters that are not part of the English alphabet) and folders from "a-z" has subfolders also from "a-z". 
+	But now, let us explain deeply how we process and clean data from the datasets. First, we define small test dataset to check how fast we can process data. Running that dataset on downloaded files without any cleaning on data takes too long. So we said that converting the datasets from RDF format to binary format (.ttl to .hdt) with RDF/HDT tool\footnote{http://www.rdfhdt.org/} will be faster. HDT (Header, Dictionary, Triples)\cite{FMPGPA:13} is a compact data structure and binary serialization format for RDF that keeps big datasets compressed to save space while maintaining search and browse operations without prior decompression. So we converted the datasets and reran the algorithm again. There were some improvements, but not satisfying for our purposes. Our next solution was to clean datasets from unused data for our aims. The final result after cleaning was a smaller datasets, for instance, nif-abstract-context file from 7.78GB now has 2.99GB, another big improvement was nif-text-links file who is reduced to 10.5GB from 44.6GB and at the end we also clean instance-types file, but here we don't record any mayor memory improvements. Again we rerun the algorithm, of course, there were improvements, but as well as previous the time that algorithm runs, was not acceptable for us. To give an illustration, the time needed to find all types from one abstract in a worst case, to read nif-text-links and instance type files until the end was around 3.5 minutes. Therefore once more we converted our cleaned datasets from RDF format(.ttl) to binary format(.hdt). And how in previous running there were again improvements, but those improvements don't fulfill our expectations. The final thing that we have to save us was creating a dataset tree only for nif-text-links and instance-types files. For nif-text-links file we created a tree where we have folders from "a-z", also special characters folders and other folder(this folder contains data that have a lower occurrence, let say \& character or letters that are not part of the English alphabet) and folders from "a-z" has subfolders also from "a-z". 
 
 	To give a closer look how we create that tree, let say that we have an abstract for Volkswagen Golf MK3, so the link for that abstract would be http://dbpedia.org/resource/Volkswagen\_Golf\_Mk3 and this link will be stored to "v" folder and "o" subfolder, because the title of the abstract is Volkswagen Golf MK3, where we need only first 2 letters from the first word, in this case word Volkswagen. With this, we have a smaller dataset where we can read the whole one very fast.
 
@@ -281,13 +341,13 @@ At the end we repeat the process for "TRANSPORTATION" domain, where we retrieve 
 
 
 
-\section{Data transformation/output for Stanford}\label{StanfordNERoutput}
+\section{Data transformation}\label{StanfordNERoutput}
 	We define domains as well their types that we will retrieve and process, now we should put everything together and prepare data for Stanford NER application[~\ref{Stanford NER}]. In Data pre-processing section~\ref{dataPreProcessing} we explain how we handled the data downloaded from web and we briefly touch how those data will be prepared for training in Stanford NER application. 
 
 	The final thing that is missing is how we will choose which abstracts will be part of our models. Because our goal is to create models with different number of abstracts we need some strict order of retrieved links from DBpedia dataset. The solution that we choose who fits to our requirements is PageRank. PageRank \cite{wiki:PR} is an algorithm used by Google Search to rank websites in their search engine results. So with a prepared and tested SPARQL queries on www.dbpedia.com/sparql and  with help of Apache Jena framework (Subsection~\ref{ApacheJena}) we implemented retrieving links, on Java, on DBpedia endpoint\footnote{www.dbpedia.com/sparql}. After retrieving those data, based on their PageRank we search does retrieved link is part on our abstract file. If link is found it's written to two files, one file is where are written all abstracts from every domain, and another file is file for that specific domain. Those files are creating in RDF format, with n-triples, that means that there is subject, in our case that is the link of abstract, then predicate who has isString annotation which tells that next triple contains the abstract text and finally object where abstract text is placed. Next thing that we need to do is to find all annotated words from abstract and their types. The algorithm of finding types is explained in Section~\ref{dataPreProcessing}. What is not mention on that section is that after finding the types, the abstract is written to file, where on first position is word and on the second position is the type of that word, if there is any, if not the type is O. Final step is to prepare data to be able to train models in Stanford NER [\ref{Stanford NER}] with the types that we define in Section~\ref{typesRetrieval}. Because files contains all types that were found on the abstracts we need to clean and group them, as well to create a coarse grained files. The algorithm is very simple, it reads the files who already has all types and if type is part of our retrieved types then either type is leaved as it is, or is grouped to more specific type, for instance if word has type Ambassador, then after filtering that word will have Politician type. The same is for coarse grained annotation, but here proper types after filtering are "POLITICS", "SPORT" or "TRANSPORTATION" type. 
 	
 	
-\section{Model generation}
+\section{Model generation}\label{modelGeneration}
 	With the created files from Section~\ref{StanfordNERoutput} now we can start training models. At Stanford NER CRF FAQ webpage\footnote{https://nlp.stanford.edu/software/crf-faq.html} is a very nice explanation of that how to train own model with Stanford NER. We have used pretty much the same NER properties file with a small correction where we had to add 2 more flags to be able to train big models. Those two flags are saveFeatureIndexToDisk=true, which is used on every properties file and for creating a models in fine grained we use useObservedSequencesOnly=true.Flag saveFeatureIndexToDisk\footnote{https://nlp.stanford.edu/software/crf-faq.html\#d} stands for saving the feature name's to disk that aren't actually needed while the core model estimation (optimization) code is run. More interesting is useObservedSequencesOnly\footnote{https://nlp.stanford.edu/software/crf-faq.html\#d} flag. It's stands for labeling only adjacent words with label sequences that were seen next to each other in the training data. For some kinds of data this actually gives better accuracy, for other kinds it is worse. After testing on a small model with only 40 abstracts and model with 300 abstracts we find out that for creating a fine grained model with 40 and more abstract this flag gives us better results, while on coarse grained models this flag gives worst results, the exception are models with 500 abstracts where we should use this flag to reduce memory usage. 
 	
 	Here is the example of one of the properties file that we use for creating model with all used flags:
@@ -794,8 +854,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	\end{table}	
 
 	From the "POLITICS" domain specific experiments we can say that for this kind of domain with a lower number of abstracts for training a model the application provide NER with better results unlike the same experiments from the main experiment, where we have a worst results than here.
-	%From here, with this small amount of data we can say that it's better to use a politics specific domain, in fine grained, than a global domain, because in global domain we have 28 words annotated as true positive, but in a politics specific coarse grained domain we have 74 words annotated as true positive, which is very big difference, if we want to be precise.
-	
+		
 	
 	
 	%We repeated the experiment for sport specific domain, but in this case the results are exactly the same in coarse and fine grained (see Figure~\ref{img:SportWithSportCoarseTop10} and Figure \ref{img:SportWithSportFineTop10} as well as in all 3 domains also in coarse and fine grained

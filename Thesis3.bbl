@@ -52,12 +52,6 @@
 {Wikipedia}. {GATE}.
 \urlprefix\biburl{https://en.wikipedia.org/wiki/General\_Architecture\_for\_Text\_Engineering}
 
-\bibitem{article:DomainSpecific}
-{Vivek Kulkarni and Yashar Mehdad and Troy Chevalier}. {Domain Adaptation for
-  Named Entity Recognition in Online Media with Word Embeddings}.
-  \emph{{CoRR}}, volume {abs/1612.00148}, 2016, \eprint{1612.00148}.
-\urlprefix\biburl{{http://arxiv.org/abs/1612.00148}}
-
 \bibitem{wiki:RDF}
 {Wikipedia}. {Resource Description Framework} RDF.
 \urlprefix\biburl{https://en.wikipedia.org/wiki/Resource\_Description\_Framework}
@@ -85,9 +79,19 @@
 {DBpedia}. {DBpedia NIF Dataset}.
 \urlprefix\biburl{http://wiki.dbpedia.org/dbpedia-nif-dataset}
 
+\bibitem{dbpedia:Ontology}
+{DBpedia}. {DBpedia Ontology}.
+\urlprefix\biburl{http://wiki.dbpedia.org/services-resources/ontology}
+
 \bibitem{wiki:ApacheJena}
 {Wikipedia}. {Apache Jena}.
 \urlprefix\biburl{https://en.wikipedia.org/wiki/Apache\_Jena}
+
+\bibitem{article:DomainSpecific}
+{Vivek Kulkarni and Yashar Mehdad and Troy Chevalier}. {Domain Adaptation for
+  Named Entity Recognition in Online Media with Word Embeddings}.
+  \emph{{CoRR}}, volume {abs/1612.00148}, 2016, \eprint{1612.00148}.
+\urlprefix\biburl{{http://arxiv.org/abs/1612.00148}}
 
 \bibitem{FMPGPA:13}
 {Javier D. Fernández and Miguel A. Martínez-Prieto and Claudio Gutiérrez and

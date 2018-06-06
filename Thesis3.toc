@@ -15,19 +15,19 @@
 \contentsline {subsubsection}{\numberline {1.1.2.4}GATE}{6}{subsubsection.1.1.2.4}
 \contentsline {subsubsection}{\numberline {1.1.2.5}OpenNLP}{6}{subsubsection.1.1.2.5}
 \contentsline {subsubsection}{\numberline {1.1.2.6}Chatbot NER}{7}{subsubsection.1.1.2.6}
-\contentsline {subsection}{\numberline {1.1.3}Domain specific Named Entity Recognition}{7}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}RDF/NIF}{7}{subsection.1.1.4}
-\contentsline {subsection}{\numberline {1.1.5}DBpedia}{8}{subsection.1.1.5}
-\contentsline {subsubsection}{\numberline {1.1.5.1}DBpedia NIF}{8}{subsubsection.1.1.5.1}
-\contentsline {subsubsection}{\numberline {1.1.5.2}DBpedia ontology}{9}{subsubsection.1.1.5.2}
-\contentsline {subsection}{\numberline {1.1.6}Apache Jena}{9}{subsection.1.1.6}
-\contentsline {subsection}{\numberline {1.1.7}SPARQL}{10}{subsection.1.1.7}
+\contentsline {subsection}{\numberline {1.1.3}RDF/NIF}{7}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}DBpedia}{7}{subsection.1.1.4}
+\contentsline {subsubsection}{\numberline {1.1.4.1}DBpedia NIF}{8}{subsubsection.1.1.4.1}
+\contentsline {subsubsection}{\numberline {1.1.4.2}DBpedia ontology}{8}{subsubsection.1.1.4.2}
+\contentsline {subsection}{\numberline {1.1.5}Apache Jena}{9}{subsection.1.1.5}
+\contentsline {subsection}{\numberline {1.1.6}SPARQL}{9}{subsection.1.1.6}
 \contentsline {section}{\numberline {1.2}Related work}{10}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Domain specific Named Entity Recognition}{10}{subsection.1.2.1}
 \contentsline {chapter}{\chapternumberline {2}Domain specific named entity recognition}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Data pre-processing}{11}{section.2.1}
-\contentsline {section}{\numberline {2.2}Domain specification}{12}{section.2.2}
+\contentsline {section}{\numberline {2.2}Domain specification}{13}{section.2.2}
 \contentsline {section}{\numberline {2.3}Types retrieval}{13}{section.2.3}
-\contentsline {section}{\numberline {2.4}Data transformation/output for Stanford}{14}{section.2.4}
+\contentsline {section}{\numberline {2.4}Data transformation}{14}{section.2.4}
 \contentsline {section}{\numberline {2.5}Model generation}{15}{section.2.5}
 \contentsline {chapter}{\chapternumberline {3}Experiments}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}$F_{1}$ score}{19}{section.3.1}
@@ -46,8 +46,8 @@
 \contentsline {subsection}{\numberline {3.4.1}Graphs}{73}{subsection.3.4.1}
 \contentsline {chapter}{Conclusion}{75}{chapter*.9}
 \contentsline {chapter}{Bibliography}{77}{chapter*.10}
-\contentsline {appendix}{\chapternumberline {A}Retrieved types}{79}{appendix.A}
-\contentsline {section}{\numberline {A.1}POLITICS types}{79}{section.A.1}
-\contentsline {section}{\numberline {A.2}SPORT types}{79}{section.A.2}
-\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{80}{section.A.3}
-\contentsline {appendix}{\chapternumberline {B}Contents of CD}{83}{appendix.B}
+\contentsline {appendix}{\chapternumberline {A}Retrieved types}{81}{appendix.A}
+\contentsline {section}{\numberline {A.1}POLITICS types}{81}{section.A.1}
+\contentsline {section}{\numberline {A.2}SPORT types}{81}{section.A.2}
+\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{82}{section.A.3}
+\contentsline {appendix}{\chapternumberline {B}Contents of CD}{85}{appendix.B}

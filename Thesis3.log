@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  3 JUN 2018 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  5 JUN 2018 22:37
 entering extended mode
 **./Thesis3.tex
 (Thesis3.tex
@@ -747,7 +747,231 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box33
 \@float@everytoks=\toks30
 \@floatcapt=\box34
-) (Thesis3.aux
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\b
+ase\glossaries.sty"
+Package: glossaries 2018/05/23 v4.39 (NLCT)
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.
+sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkey
+val.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xk
+eyval.tex"
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xk
+vutils.tex"
+\XKV@toks=\toks31
+\XKV@tempa@toks=\toks32
+)
+\XKV@depth=\count177
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mfirstuc\mfi
+rstuc.sty"
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+\@glsmfirst=\toks33
+\@glsmrest=\toks34
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textcase\tex
+tcase.sty"
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+LaTeX Info: Redefining \MakeTextUppercase on input line 47.
+LaTeX Info: Redefining \MakeTextLowercase on input line 50.
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xfor\xfor.st
+y"
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\dat
+atool-base.sty"
+Package: datatool-base 2018/04/16 v2.30 (NLCT)
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\substr\subst
+r.sty"
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count178
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\dat
+atool-fp.sty"
+Package: datatool-fp 2018/04/16 v2.30 (NLCT)
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp.sty"
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\defpatter
+n.sty"
+Package: defpattern 1994/10/12
+\actioncount=\count179
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-basic.
+sty"
+Package: fp-basic 1996/05/13
+\FP@xs=\count180
+\FP@xia=\count181
+\FP@xib=\count182
+\FP@xfa=\count183
+\FP@xfb=\count184
+\FP@rega=\count185
+\FP@regb=\count186
+\FP@regs=\count187
+\FP@times=\count188
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-addons
+.sty"
+Package: fp-addons 1995/03/15
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-snap.s
+ty"
+Package: fp-snap 1995/04/05
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-exp.st
+y"
+Package: fp-exp 1995/04/03
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-trigo.
+sty"
+Package: fp-trigo 1995/04/14
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-pas.st
+y"
+Package: fp-pas 1994/08/29
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-random
+.sty"
+Package: fp-random 1995/02/23
+\FPseed=\count189
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eqn.st
+y"
+Package: fp-eqn 1995/04/03
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-upn.st
+y"
+Package: fp-upn 1996/10/21
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eval.s
+ty"
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks35
+\@dtl@tmpcount=\count190
+\dtl@tmplength=\skip189
+\dtl@sortresult=\count191
+\@dtl@numgrpsepcount=\count192
+\@dtl@datatype=\count193
+\dtl@codeA=\count194
+\dtl@codeB=\count266
+\@dtl@foreach@level=\count267
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\b
+ase\glossaries-compatible-307.sty"
+Package: glossaries-compatible-307 2018/05/23 v4.39 (NLCT)
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tracklang\tr
+acklang.sty"
+Package: tracklang 2018/05/13 v1.3.6 (NLCT) Track Languages
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tracklang\
+tracklang.tex"))
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\t
+ranslator.sty"
+Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-e
+nglish\glossaries-english.ldf"
+File: glossaries-english.ldf 2014/11/23 v1.0
+)
+\gls@level=\count268
+\@gls@tmpb=\toks36
+\gls@tmplen=\skip190
+
+
+Package glossaries Warning: Overriding \printglossary on input line 5688.
+
+
+Package glossaries Warning: Overriding `theglossary' environment on input line 
+6276.
+
+\glskeylisttok=\toks37
+\glslabeltok=\toks38
+\glsshorttok=\toks39
+\glslongtok=\toks40
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\s
+tyles\glossary-hypernav.sty"
+Package: glossary-hypernav 2018/05/23 v4.39 (NLCT)
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\s
+tyles\glossary-list.sty"
+Package: glossary-list 2018/05/23 v4.39 (NLCT)
+\glslistdottedwidth=\skip191
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\s
+tyles\glossary-long.sty"
+Package: glossary-long 2018/05/23 v4.39 (NLCT)
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longta
+ble.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip192
+\LTright=\skip193
+\LTpre=\skip194
+\LTpost=\skip256
+\LTchunksize=\count269
+\LTcapwidth=\dimen177
+\LT@head=\box35
+\LT@firsthead=\box36
+\LT@foot=\box37
+\LT@lastfoot=\box38
+\LT@cols=\count270
+\LT@rows=\count271
+\c@LT@tables=\count272
+\c@LT@chunks=\count273
+\LT@p@ftn=\toks41
+)
+\glsdescwidth=\skip257
+\glspagelistwidth=\skip258
+)
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\s
+tyles\glossary-super.sty"
+Package: glossary-super 2018/05/23 v4.39 (NLCT)
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabular
+\supertabular.sty"
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count274
+\ST@wd=\dimen178
+\ST@rightskip=\skip259
+\ST@leftskip=\skip260
+\ST@parfillskip=\skip261
+\ST@pageleft=\dimen179
+\ST@headht=\dimen180
+\ST@tailht=\dimen181
+\ST@pagesofar=\dimen182
+\ST@pboxht=\dimen183
+\ST@lineht=\dimen184
+\ST@stretchht=\dimen185
+\ST@prevht=\dimen186
+\ST@toadd=\dimen187
+\ST@dimen=\dimen188
+\ST@pbox=\box39
+))
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\s
+tyles\glossary-tree.sty"
+Package: glossary-tree 2018/05/23 v4.39 (NLCT)
+\glstreeindent=\skip262
+))
+\glswrite=\write4
+\glo@acronym@file=\write5
+\openout5 = `Thesis3.acn'.
+
+Package glossaries Info: Writing glossary file Thesis3.acn on input line 31.
+ (Thesis3.aux
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -1160,7 +1384,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmr on input line 58.
 "
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box35
+\AtBeginShipoutBox=\box40
 Package hyperref Info: Link coloring OFF on input line 58.
 
 ("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nam
@@ -1171,7 +1395,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count177
+\c@section@level=\count275
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1180,24 +1404,24 @@ LaTeX Info: Redefining \ref on input line 58.
 LaTeX Info: Redefining \pageref on input line 58.
 LaTeX Info: Redefining \nameref on input line 58.
 (Thesis3.out) (Thesis3.out)
-\@outlinefile=\write4
-\openout4 = `Thesis3.out'.
+\@outlinefile=\write6
+\openout6 = `Thesis3.out'.
 
 
 ("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-
 pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count178
-\scratchdimen=\dimen177
-\scratchbox=\box36
-\nofMPsegments=\count179
-\nofMParguments=\count180
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count181
-\MPscratchDim=\dimen178
-\MPnumerator=\count182
-\makeMPintoPDFobject=\count183
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count276
+\scratchdimen=\dimen189
+\scratchbox=\box41
+\nofMPsegments=\count277
+\nofMParguments=\count278
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen190
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
+\everyMPtoPDFconversion=\toks43
 )
 ("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\eps
 topdf-base.sty"
@@ -1214,7 +1438,12 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count184
+\c@lstlisting=\count282
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-e
+nglish\glossaries-dictionary-English.dict"
+Dictionary: glossaries-dictionary, Language: English 
+)
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 58.
 
 ("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd
@@ -1232,10 +1461,12 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 58.
  [1
 
+\openout4 = `Thesis3.ist'.
+
 {C:/Users/Jakovcheski/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-<cvut-logo-bw-en.pdf, id=218, 591.64943pt x 193.23091pt>
+<cvut-logo-bw-en.pdf, id=178, 591.64943pt x 193.23091pt>
 File: cvut-logo-bw-en.pdf Graphic file (type pdf)
 <use cvut-logo-bw-en.pdf>
 Package pdftex.def Info: cvut-logo-bw-en.pdf  used on input line 58.
@@ -1307,13 +1538,7 @@ model
  []
 
 ) [10] (Thesis3.lof
-Overfull \hbox (177.7981pt too wide) in paragraph at lines 5--5
- [][] [][]\OT1/lmr/m/n/10.95 Information ex-trac-tion, down-loaded from https:/
-/www.slideshare.net/rubenizquierdobevia/information- 
- []
-
-
-Underfull \vbox (badness 2626) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11
 
@@ -1332,18 +1557,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [15]
 [16] [17]) [18]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 70.
+(Font)              <9> on input line 69.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 70.
-
-Underfull \vbox (badness 2735) has occurred while \output is active []
-
+(Font)              <5> on input line 69.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 \item
-           Investigate possible datasets for domain-specific training of NER.
+l.79 	\item
+            Investigate possible datasets for domain-specific training of NER.
 [1
 
 
@@ -1351,27 +1573,33 @@ l.81 \item
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.95 \chapter
+l.92 \chapter
              {Background and related work}\label{} [2]
-Underfull \hbox (badness 10000) in paragraph at lines 106--106
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
 [][] [][][]\OT1/lmr/m/n/9 https://www.slideshare.net/rubenizquierdobevia/inform
 ation-extraction-45392844
  []
 
-<information-extraction.jpg, id=777, 413.29407pt x 225.84375pt>
+
+LaTeX Warning: Reference `fig:InformationExtraction' on page 3 undefined on inp
+ut line 110.
+
+<information-extraction.jpg, id=725, 413.29407pt x 225.84375pt>
 File: information-extraction.jpg Graphic file (type jpg)
 <use information-extraction.jpg>
-Package pdftex.def Info: information-extraction.jpg  used on input line 116.
+Package pdftex.def Info: information-extraction.jpg  used on input line 113.
 (pdftex.def)             Requested size: 369.0pt x 201.64471pt.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 116
+.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
-[]\OT1/lmr/m/n/10.95 Figure 1.1: []Information ex-trac-tion, down-loaded from
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
-\OT1/lmr/m/n/10.95 https://www.slideshare.net/rubenizquierdobevia/information-e
-xtraction-
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmtt.f
+d"
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[][] [][][][]$\OT1/lmtt/m/n/9 https : / / www\OML/lmm/m/it/9 :\OT1/lmtt/m/n/9 s
+lideshare\OML/lmm/m/it/9 :\OT1/lmtt/m/n/9 net / rubenizquierdobevia / informati
+on -[] extraction -[]
  []
 
 
@@ -1385,125 +1613,121 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.142 	F
-        igure~\ref{fig:StanfordNER} shows how one NER application can look l...
- <./information-extraction.jpg>]
-<NER-Stanford.png, id=795, 395.076pt x 128.8815pt>
+l.138 
+       <./information-extraction.jpg>]
+<NER-Stanford.png, id=749, 395.076pt x 128.8815pt>
 File: NER-Stanford.png Graphic file (type png)
 <use NER-Stanford.png>
-Package pdftex.def Info: NER-Stanford.png  used on input line 145.
+Package pdftex.def Info: NER-Stanford.png  used on input line 142.
 (pdftex.def)             Requested size: 369.0pt x 120.37772pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.157 
+l.155 
        <./NER-Stanford.png>] [6] [7]
-Overfull \hbox (7.83096pt too wide) in paragraph at lines 215--216
+Overfull \hbox (7.83096pt too wide) in paragraph at lines 251--252
 \OT1/lmr/m/n/10.95 man-u-ally cre-ated based on the most com-monly used in-fobo
 xes within Wikipedia.
  []
 
 [8]
-Overfull \hbox (119.61017pt too wide) in paragraph at lines 219--220
-[]\OT1/lmr/m/n/10.95 Dbpedia on-tol-ogy classes can be found here [http://mappi
-ngs.dbpedia.org/server/ontology/classes/] 
- []
-
-<Dbpedia-ontology.png, id=855, 302.3295pt x 153.57375pt>
+<Dbpedia-ontology.png, id=820, 302.3295pt x 153.57375pt>
 File: Dbpedia-ontology.png Graphic file (type png)
 <use Dbpedia-ontology.png>
-Package pdftex.def Info: Dbpedia-ontology.png  used on input line 224.
+Package pdftex.def Info: Dbpedia-ontology.png  used on input line 260.
 (pdftex.def)             Requested size: 369.0pt x 187.44873pt.
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}
-) has been already used, duplicate ignored
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.233 
-       <./Dbpedia-ontology.png>] [10] [11
+l.275 ...ion=SPARQL example \label{SPARQLexample}]
+                                                   <./Dbpedia-ontology.png>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 275.
+LaTeX Font Info:    Try loading font information for OML+lmr on input line 276.
+
+
+("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmr.fd
+"
+File: omllmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OML/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/lmm/m/it' tried instead on input line 276.
+ [10] [11
 
 ]
-Overfull \hbox (2.19557pt too wide) in paragraph at lines 253--254
+Overfull \hbox (2.19557pt too wide) in paragraph at lines 313--314
 \OT1/lmr/m/n/10.95 http://dbpedia.org/resource/Volkswagen[]Golf[]Mk3 and this l
 ink will be stored
  []
 
 [12]
-Overfull \hbox (32.23187pt too wide) in paragraph at lines 264--265
+Overfull \hbox (32.23187pt too wide) in paragraph at lines 324--325
 []\OT1/lmr/m/n/10.95 TODO MISS-ING EX-PLA-NA-TION OF SPORT DO-MAIN!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!! 
  []
 
 [13]
-Overfull \hbox (5.45062pt too wide) in paragraph at lines 276--277
+Overfull \hbox (5.45062pt too wide) in paragraph at lines 336--337
 []\OT1/lmr/m/n/10.95 In "POL-I-TICS" do-main we re-trieve in to-tal 26 types, f
 ound at ap-pendix []A.1[],
  []
 
 
-Overfull \hbox (29.82428pt too wide) in paragraph at lines 280--281
+Overfull \hbox (29.82428pt too wide) in paragraph at lines 340--341
 \OT1/lmr/m/n/10.95 craft, Au-to-mo-bile, Lo-co-mo-tive, Mil-i-taryVe-hi-cle, Mo
 -tor-cy-cle, On-SiteTransportation,
  []
 
-[14] [15]
-Underfull \vbox (badness 1622) has occurred while \output is active []
-
- [16]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 348.
-
-[17] [18
+[14] [15] [16] [17] [18
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 374.
+(Font)              <14.4> on input line 434.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 374.
+(Font)              <10> on input line 434.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 374.
+(Font)              <7> on input line 434.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 374.
+(hyperref)                removing `math shift' on input line 434.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 374.
+(hyperref)                removing `subscript' on input line 434.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 374.
+(hyperref)                removing `math shift' on input line 434.
 
 [19pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.382 
+l.442 
       ] [20] [21pdfTeX warning (ext4): destination with the same identifier (na
 me{table.3.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.453 	
+l.513 	
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.453 	
+l.513 	
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.453 	
+l.513 	
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1512,21 +1736,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.494 
+l.554 
       ] [23pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.3.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.512 
+l.572 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 .7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.512 
+l.572 
       ]
-Overfull \hbox (4.54109pt too wide) in paragraph at lines 530--531
+Overfull \hbox (4.54109pt too wide) in paragraph at lines 590--591
 []\OT1/lmr/m/n/10.95 Finally the last ex-per-i-ment with this model are the ab-
 stracts from "TRANS-
  []
@@ -1536,159 +1760,159 @@ stracts from "TRANS-
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.552 
+l.612 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 .9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.552 
+l.612 
       ] [25pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.3.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.584 
+l.644 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 .11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.584 
+l.644 
       ] [26pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.3.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.624 	\end{table}
+l.684 	\end{table}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{table.3.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.624 	\end{table}
+l.684 	\end{table}
                   ] [27pdfTeX warning (ext4): destination with the same identif
 ier (name{table.3.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.647 \subsection
+l.707 \subsection
                  {Experiments that has less than 300 abstracts in model}\lab...
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.15}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.647 \subsection
+l.707 \subsection
                  {Experiments that has less than 300 abstracts in model}\lab...
 ] [28pdfTeX warning (ext4): destination with the same identifier (name{table.3.
 16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.675 
+l.735 
       ] [29pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.3.17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.705 	  	
+l.765 	  	
           pdfTeX warning (ext4): destination with the same identifier (name{tab
 le.3.18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.705 	  	
+l.765 	  	
           pdfTeX warning (ext4): destination with the same identifier (name{tab
 le.3.19}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.705 	  	
+l.765 	  	
           ] [30pdfTeX warning (ext4): destination with the same identifier (nam
 e{table.3.20}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.754 	
+l.814 	
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.21}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.754 	
+l.814 	
        ] [31pdfTeX warning (ext4): destination with the same identifier (name{t
 able.3.22}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.782 	
+l.842 	
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.23}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.782 	
+l.842 	
        ] [32pdfTeX warning (ext4): destination with the same identifier (name{t
 able.3.24}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.841 
+l.900 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 .25}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.841 
+l.900 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 .26}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.841 
+l.900 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 .27}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.841 
+l.900 
       ] [33pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.3.28}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.934 
+l.993 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 .29}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.934 
+l.993 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 .30}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.934 
+l.993 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 .31}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.934 
+l.993 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 .32}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.934 
+l.993 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 .33}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.934 
+l.993 
       ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1697,85 +1921,85 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.976 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-.35}) has been already used, duplicate ignored
+l.1035 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+3.35}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.976 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-.36}) has been already used, duplicate ignored
+l.1035 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+3.36}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.976 
-      ] [35pdfTeX warning (ext4): destination with the same identifier (name{ta
-ble.3.37}) has been already used, duplicate ignored
+l.1035 
+       ] [35pdfTeX warning (ext4): destination with the same identifier (name{t
+able.3.37}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1042 	
+l.1101 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.38}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1042 	
+l.1101 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.39}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1042 	
+l.1101 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.40}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1042 	
+l.1101 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.41}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1042 	
+l.1101 	
         ] [36pdfTeX warning (ext4): destination with the same identifier (name{
 table.3.42}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1129 
+l.1188 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.43}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1129 
+l.1188 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.44}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1129 
+l.1188 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.45}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1129 
+l.1188 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.46}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1129 
+l.1188 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.47}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1129 
+l.1188 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1784,85 +2008,85 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1172 	
+l.1231 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.49}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1172 	
+l.1231 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.50}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1172 	
+l.1231 	
         ] [38pdfTeX warning (ext4): destination with the same identifier (name{
 table.3.51}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1235 
+l.1294 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.52}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1235 
+l.1294 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.53}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1235 
+l.1294 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.54}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1235 
+l.1294 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.55}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1235 
+l.1294 
        ] [39pdfTeX warning (ext4): destination with the same identifier (name{t
 able.3.56}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1328 
+l.1387 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.57}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1328 
+l.1387 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.58}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1328 
+l.1387 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.59}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1328 
+l.1387 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.60}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1328 
+l.1387 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.61}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1328 
+l.1387 
        ]
 Underfull \vbox (badness 2134) has occurred while \output is active []
 
@@ -1871,19 +2095,19 @@ Underfull \vbox (badness 2134) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1376 	
+l.1435 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.63}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1376 	
+l.1435 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.64}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1376 	
+l.1435 	
         ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1892,49 +2116,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1429 
+l.1488 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.66}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1429 
+l.1488 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.67}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1429 
+l.1488 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.68}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1429 
+l.1488 
        ] [42pdfTeX warning (ext4): destination with the same identifier (name{t
 able.3.69}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1485 
+l.1544 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.70}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1485 
+l.1544 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.71}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1485 
+l.1544 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.72}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1485 
+l.1544 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1943,19 +2167,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1538 
+l.1597 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.74}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1538 
+l.1597 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.75}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1538 
+l.1597 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1964,13 +2188,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1575 
+l.1634 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.77}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1575 
+l.1634 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1979,49 +2203,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1620 	
+l.1679 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.79}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1620 	
+l.1679 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.80}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1620 	
+l.1679 	
         ] [46pdfTeX warning (ext4): destination with the same identifier (name{
 table.3.81}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1694 
+l.1753 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.82}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1694 
+l.1753 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.83}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1694 
+l.1753 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.84}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1694 
+l.1753 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.85}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1694 
+l.1753 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2030,25 +2254,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1759 
+l.1818 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.87}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1759 
+l.1818 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.88}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1759 
+l.1818 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.89}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1759 
+l.1818 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2057,13 +2281,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1796 
+l.1855 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.91}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1796 
+l.1855 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2072,49 +2296,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1841 	
+l.1900 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.93}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1841 	
+l.1900 	
         pdfTeX warning (ext4): destination with the same identifier (name{table
 .3.94}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1841 	
+l.1900 	
         ] [50pdfTeX warning (ext4): destination with the same identifier (name{
 table.3.95}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1929 
+l.1988 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.96}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1929 
+l.1988 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.97}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1929 
+l.1988 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.98}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1929 
+l.1988 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 3.99}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1929 
+l.1988 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2123,7 +2347,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1960 
+l.2019 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2132,7 +2356,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1991 
+l.2050 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2141,11 +2365,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2017 	
+l.2076 	
         ]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedW
-ithAll3DomainsFineGrainedTop100Links".png, id=1203, 582.37575pt x 231.86626pt>
+ithAll3DomainsFineGrainedTop100Links".png, id=1195, 582.37575pt x 231.86626pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRu
 nnedWithAll3DomainsFineGrainedTop100Links".png Graphic file (type png)
@@ -2155,11 +2379,11 @@ nedWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on inpu
-t line 2021.
+t line 2080.
 (pdftex.def)             Requested size: 369.0pt x 146.91855pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedW
-ithAll3DomainsFineGrainedTop300Links".png, id=1204, 582.37575pt x 233.07076pt>
+ithAll3DomainsFineGrainedTop300Links".png, id=1196, 582.37575pt x 233.07076pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRu
 nnedWithAll3DomainsFineGrainedTop300Links".png Graphic file (type png)
@@ -2169,7 +2393,7 @@ nedWithAll3DomainsFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop300Links".png  used on inpu
-t line 2026.
+t line 2085.
 (pdftex.def)             Requested size: 369.0pt x 147.68176pt.
 
 Underfull \vbox (badness 6220) has occurred while \output is active []
@@ -2179,19 +2403,19 @@ Underfull \vbox (badness 6220) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2029 	
+l.2088 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2029 	
+l.2088 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksR
 unnedWithAll3DomainsFineGrainedTop100Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedW
-ithAll3DomainsFineGrainedTop500Links".png, id=1210, 583.58025pt x 232.4685pt>
+ithAll3DomainsFineGrainedTop500Links".png, id=1202, 583.58025pt x 232.4685pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRu
 nnedWithAll3DomainsFineGrainedTop500Links".png Graphic file (type png)
@@ -2201,11 +2425,11 @@ nedWithAll3DomainsFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop500Links".png  used on inpu
-t line 2031.
+t line 2090.
 (pdftex.def)             Requested size: 369.0pt x 146.99155pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRunnedW
-ithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=1211, 587.19376p
+ithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=1203, 587.19376p
 t x 271.0125pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksRu
@@ -2217,7 +2441,7 @@ nedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".
-png  used on input line 2036.
+png  used on input line 2095.
 (pdftex.def)             Requested size: 369.0pt x 170.3087pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2227,13 +2451,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2039 	
+l.2098 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2039 	
+l.2098 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksR
 unnedWithAll3DomainsFineGrainedTop300Links.png> <C:/Users/Jakovcheski/Desktop/S
@@ -2242,7 +2466,7 @@ odels/All3DomainsFineGrainedTop10LinksRunnedWithAll3DomainsFineGrainedTop500Lin
 ks.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithAll3DomainsFineGrainedTop500Links".png, id=1218, 585.98924pt x 231.264pt>
+WithAll3DomainsFineGrainedTop500Links".png, id=1210, 585.98924pt x 231.264pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
 unnedWithAll3DomainsFineGrainedTop500Links".png Graphic file (type png)
@@ -2252,11 +2476,11 @@ nnedWithAll3DomainsFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithAll3DomainsFineGrainedTop500Links".png  used on inp
-ut line 2041.
+ut line 2100.
 (pdftex.def)             Requested size: 369.0pt x 145.63004pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=1219, 586.5915p
+WithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=1211, 586.5915p
 t x 272.81924pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
@@ -2268,7 +2492,7 @@ nnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank"
-.png  used on input line 2046.
+.png  used on input line 2105.
 (pdftex.def)             Requested size: 369.0pt x 171.6231pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2278,13 +2502,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2049 	
+l.2108 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2049 	
+l.2108 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10LinksR
 unnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank.png> <C:/Users/Jako
@@ -2293,7 +2517,7 @@ WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunnedWithAll3DomainsFi
 neGrainedTop500Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithPoliticsFineGrainedTop500Links".png, id=1226, 587.19376pt x 116.8365pt>
+WithPoliticsFineGrainedTop500Links".png, id=1218, 587.19376pt x 116.8365pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
 unnedWithPoliticsFineGrainedTop500Links".png Graphic file (type png)
@@ -2303,11 +2527,11 @@ nnedWithPoliticsFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithPoliticsFineGrainedTop500Links".png  used on input 
-line 2051.
+line 2110.
 (pdftex.def)             Requested size: 369.0pt x 73.42197pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithPoliticsFineGrainedTop500LinksWithLowerPageRank".png, id=1227, 586.5915pt x
+WithPoliticsFineGrainedTop500LinksWithLowerPageRank".png, id=1219, 586.5915pt x
  136.1085pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
@@ -2319,11 +2543,11 @@ nnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank".pn
-g  used on input line 2056.
+g  used on input line 2115.
 (pdftex.def)             Requested size: 369.0pt x 85.6221pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithSportFineGrainedTop500Links".png, id=1228, 585.387pt x 165.61874pt>
+WithSportFineGrainedTop500Links".png, id=1220, 585.387pt x 165.61874pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
 unnedWithSportFineGrainedTop500Links".png Graphic file (type png)
@@ -2333,7 +2557,7 @@ nnedWithSportFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithSportFineGrainedTop500Links".png  used on input lin
-e 2061.
+e 2120.
 (pdftex.def)             Requested size: 369.0pt x 104.39847pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2343,19 +2567,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2064 	
+l.2123 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2064 	
+l.2123 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2064 	
+l.2123 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100Links
 RunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank.png> <C:/Users/Jak
@@ -2366,7 +2590,7 @@ notationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGra
 inedTop100LinksRunnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithSportFineGrainedTop500LinksWithLowerPageRank".png, id=1236, 588.39825pt x 1
+WithSportFineGrainedTop500LinksWithLowerPageRank".png, id=1228, 588.39825pt x 1
 64.41425pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
@@ -2378,11 +2602,11 @@ nnedWithSportFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithSportFineGrainedTop500LinksWithLowerPageRank".png  
-used on input line 2066.
+used on input line 2125.
 (pdftex.def)             Requested size: 369.0pt x 103.10986pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithTransportationFineGrainedTop500Links".png, id=1237, 586.5915pt x 173.448pt>
+WithTransportationFineGrainedTop500Links".png, id=1229, 586.5915pt x 173.448pt>
 
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
@@ -2393,11 +2617,11 @@ nnedWithTransportationFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithTransportationFineGrainedTop500Links".png  used on 
-input line 2071.
+input line 2130.
 (pdftex.def)             Requested size: 369.0pt x 109.11137pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksRunned
-WithTransportationFineGrainedTop500LinksWithLowerPageRank".png, id=1238, 587.79
+WithTransportationFineGrainedTop500LinksWithLowerPageRank".png, id=1230, 587.79
 6pt x 204.765pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100LinksR
@@ -2409,7 +2633,7 @@ nnedWithTransportationFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop100LinksRunnedWithTransportationFineGrainedTop500LinksWithLowerPageRa
-nk".png  used on input line 2076.
+nk".png  used on input line 2135.
 (pdftex.def)             Requested size: 369.0pt x 128.54645pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2419,19 +2643,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2079 	
+l.2138 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2079 	
+l.2138 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2079 	
+l.2138 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100Links
 RunnedWithSportFineGrainedTop500Links.png> <C:/Users/Jakovcheski/Desktop/Stanfo
@@ -2442,7 +2666,7 @@ bstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop10
 0LinksRunnedWithTransportationFineGrainedTop500Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithAll3DomainsFineGrainedTop500Links".png, id=1246, 585.98924pt x 233.07076pt>
+WithAll3DomainsFineGrainedTop500Links".png, id=1238, 585.98924pt x 233.07076pt>
 
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
@@ -2453,11 +2677,11 @@ nnedWithAll3DomainsFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop500Links".png  used on inp
-ut line 2081.
+ut line 2140.
 (pdftex.def)             Requested size: 369.0pt x 146.76778pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=1247, 587.796pt
+WithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png, id=1239, 587.796pt
  x 273.4215pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
@@ -2469,7 +2693,7 @@ nnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank"
-.png  used on input line 2086.
+.png  used on input line 2145.
 (pdftex.def)             Requested size: 369.0pt x 171.64731pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2479,13 +2703,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2089 	
+l.2148 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2089 	
+l.2148 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop100Links
 RunnedWithTransportationFineGrainedTop500LinksWithLowerPageRank.png> <C:/Users/
@@ -2494,7 +2718,7 @@ xed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithAll3Domai
 nsFineGrainedTop500Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithPoliticsFineGrainedTop500Links".png, id=1255, 586.5915pt x 154.176pt>
+WithPoliticsFineGrainedTop500Links".png, id=1247, 586.5915pt x 154.176pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
 unnedWithPoliticsFineGrainedTop500Links".png Graphic file (type png)
@@ -2504,11 +2728,11 @@ nnedWithPoliticsFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithPoliticsFineGrainedTop500Links".png  used on input 
-line 2091.
+line 2150.
 (pdftex.def)             Requested size: 369.0pt x 96.98787pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithPoliticsFineGrainedTop500LinksWithLowerPageRank".png, id=1256, 587.19376pt 
+WithPoliticsFineGrainedTop500LinksWithLowerPageRank".png, id=1248, 587.19376pt 
 x 145.7445pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
@@ -2520,11 +2744,11 @@ nnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank".pn
-g  used on input line 2096.
+g  used on input line 2155.
 (pdftex.def)             Requested size: 369.0pt x 91.58823pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithSportFineGrainedTop500Links".png, id=1257, 585.98924pt x 183.68625pt>
+WithSportFineGrainedTop500Links".png, id=1249, 585.98924pt x 183.68625pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
 unnedWithSportFineGrainedTop500Links".png Graphic file (type png)
@@ -2534,26 +2758,26 @@ nnedWithSportFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithSportFineGrainedTop500Links".png  used on input lin
-e 2101.
+e 2160.
 (pdftex.def)             Requested size: 369.0pt x 115.66968pt.
  [60pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2104 	
+l.2163 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2104 	
+l.2163 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2104 	
+l.2163 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithAll3DomainsFineGrainedTop500LinksWithLowerPageRank.png> <C:/Users/Jak
@@ -2564,7 +2788,7 @@ notationAbstractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGra
 inedTop300LinksRunnedWithPoliticsFineGrainedTop500LinksWithLowerPageRank.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithSportFineGrainedTop500LinksWithLowerPageRank".png, id=1265, 584.78474pt x 1
+WithSportFineGrainedTop500LinksWithLowerPageRank".png, id=1257, 584.78474pt x 1
 64.41425pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
@@ -2576,11 +2800,11 @@ nnedWithSportFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithSportFineGrainedTop500LinksWithLowerPageRank".png  
-used on input line 2106.
+used on input line 2165.
 (pdftex.def)             Requested size: 369.0pt x 103.74458pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithTransportationFineGrainedTop500Links".png, id=1266, 585.98924pt x 175.25475
+WithTransportationFineGrainedTop500Links".png, id=1258, 585.98924pt x 175.25475
 pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
@@ -2591,11 +2815,11 @@ nnedWithTransportationFineGrainedTop500Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithTransportationFineGrainedTop500Links".png  used on 
-input line 2111.
+input line 2170.
 (pdftex.def)             Requested size: 369.0pt x 110.36024pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksRunned
-WithTransportationFineGrainedTop500LinksWithLowerPageRank".png, id=1267, 585.98
+WithTransportationFineGrainedTop500LinksWithLowerPageRank".png, id=1259, 585.98
 924pt x 212.59425pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
@@ -2607,7 +2831,7 @@ nnedWithTransportationFineGrainedTop500LinksWithLowerPageRank".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithLowerLinksOnModels/All3DomainsFine
 GrainedTop300LinksRunnedWithTransportationFineGrainedTop500LinksWithLowerPageRa
-nk".png  used on input line 2116.
+nk".png  used on input line 2175.
 (pdftex.def)             Requested size: 369.0pt x 133.87344pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2617,19 +2841,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2120 
+l.2179 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .3.18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2120 
+l.2179 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .3.19}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2120 
+l.2179 
         <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstract
 BaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300LinksR
 unnedWithSportFineGrainedTop500Links.png> <C:/Users/Jakovcheski/Desktop/Stanfor
@@ -2640,7 +2864,7 @@ stractBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300
 LinksRunnedWithTransportationFineGrainedTop500Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithAll3DomainsFineGrainedTop10Links".png, id=1275, 585.387pt x 174.6525pt>
+dWithAll3DomainsFineGrainedTop10Links".png, id=1267, 585.387pt x 174.6525pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithAll3DomainsFineGrainedTop10Links".png Graphic file (type png)
@@ -2650,11 +2874,11 @@ unnedWithAll3DomainsFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop10Links".png  used on inp
-ut line 2123.
+ut line 2182.
 (pdftex.def)             Requested size: 369.0pt x 110.09294pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithAll3DomainsFineGrainedTop100Links".png, id=1276, 587.19376pt x 231.86626pt
+dWithAll3DomainsFineGrainedTop100Links".png, id=1268, 587.19376pt x 231.86626pt
 >
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
@@ -2665,7 +2889,7 @@ unnedWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on in
-put line 2128.
+put line 2187.
 (pdftex.def)             Requested size: 369.0pt x 145.70856pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2675,13 +2899,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2131 	
+l.2190 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.21}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2131 	
+l.2190 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithLowerLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithTransportationFineGrainedTop500LinksWithLowerPageRank.png> <C:/Users/
@@ -2690,7 +2914,7 @@ xed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWithAll3Doma
 insFineGrainedTop10Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithPoliticsFineGrainedTop10Links".png, id=1283, 586.5915pt x 97.5645pt>
+dWithPoliticsFineGrainedTop10Links".png, id=1275, 586.5915pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithPoliticsFineGrainedTop10Links".png Graphic file (type png)
@@ -2700,11 +2924,11 @@ unnedWithPoliticsFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithPoliticsFineGrainedTop10Links".png  used on input 
-line 2133.
+line 2192.
 (pdftex.def)             Requested size: 369.0pt x 61.37512pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithPoliticsFineGrainedTop100Links".png, id=1284, 585.98924pt x 97.5645pt>
+dWithPoliticsFineGrainedTop100Links".png, id=1276, 585.98924pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithPoliticsFineGrainedTop100Links".png Graphic file (type png)
@@ -2714,11 +2938,11 @@ unnedWithPoliticsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithPoliticsFineGrainedTop100Links".png  used on input
- line 2138.
+ line 2197.
 (pdftex.def)             Requested size: 369.0pt x 61.43765pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithSportFineGrainedTop10Links".png, id=1285, 585.387pt x 125.268pt>
+dWithSportFineGrainedTop10Links".png, id=1277, 585.387pt x 125.268pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithSportFineGrainedTop10Links".png Graphic file (type png)
@@ -2728,7 +2952,7 @@ unnedWithSportFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithSportFineGrainedTop10Links".png  used on input lin
-e 2143.
+e 2202.
 (pdftex.def)             Requested size: 369.0pt x 78.96321pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2738,19 +2962,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2146 				
+l.2205 				
            pdfTeX warning (ext4): destination with the same identifier (name{fi
 gure.3.23}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2146 				
+l.2205 				
            pdfTeX warning (ext4): destination with the same identifier (name{fi
 gure.3.24}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2146 				
+l.2205 				
             <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbst
 ractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300L
 inksRunnedWithAll3DomainsFineGrainedTop100Links.png> <C:/Users/Jakovcheski/Desk
@@ -2761,7 +2985,7 @@ actBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Li
 nksRunnedWithPoliticsFineGrainedTop100Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithSportFineGrainedTop100Links".png, id=1293, 587.19376pt x 134.30174pt>
+dWithSportFineGrainedTop100Links".png, id=1285, 587.19376pt x 134.30174pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
 RunnedWithSportFineGrainedTop100Links".png Graphic file (type png)
@@ -2771,11 +2995,11 @@ unnedWithSportFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithSportFineGrainedTop100Links".png  used on input li
-ne 2148.
+ne 2207.
 (pdftex.def)             Requested size: 369.0pt x 84.39742pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithTransportationFineGrainedTop10Links".png, id=1294, 586.5915pt x 97.5645pt>
+dWithTransportationFineGrainedTop10Links".png, id=1286, 586.5915pt x 97.5645pt>
 
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
@@ -2786,11 +3010,11 @@ unnedWithTransportationFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithTransportationFineGrainedTop10Links".png  used on 
-input line 2153.
+input line 2212.
 (pdftex.def)             Requested size: 369.0pt x 61.37512pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunne
-dWithTransportationFineGrainedTop100Links".png, id=1295, 585.98924pt x 164.4142
+dWithTransportationFineGrainedTop100Links".png, id=1287, 585.98924pt x 164.4142
 5pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Links
@@ -2801,7 +3025,7 @@ unnedWithTransportationFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop300LinksRunnedWithTransportationFineGrainedTop100Links".png  used on
- input line 2158.
+ input line 2217.
 (pdftex.def)             Requested size: 369.0pt x 103.53384pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2811,19 +3035,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2161 	
+l.2220 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.26}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2161 	
+l.2220 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.27}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2161 	
+l.2220 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Link
 sRunnedWithSportFineGrainedTop10Links.png> <C:/Users/Jakovcheski/Desktop/Stanfo
@@ -2834,7 +3058,7 @@ eRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300LinksRunnedWit
 hTransportationFineGrainedTop10Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithAll3DomainsFineGrainedTop10Links".png, id=1303, 585.98924pt x 174.05025pt>
+dWithAll3DomainsFineGrainedTop10Links".png, id=1295, 585.98924pt x 174.05025pt>
 
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
@@ -2845,11 +3069,11 @@ unnedWithAll3DomainsFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop10Links".png  used on inp
-ut line 2163.
+ut line 2222.
 (pdftex.def)             Requested size: 369.0pt x 109.60176pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithAll3DomainsFineGrainedTop100Links".png, id=1304, 586.5915pt x 232.4685pt>
+dWithAll3DomainsFineGrainedTop100Links".png, id=1296, 586.5915pt x 232.4685pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithAll3DomainsFineGrainedTop100Links".png Graphic file (type png)
@@ -2859,11 +3083,11 @@ unnedWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on in
-put line 2168.
+put line 2227.
 (pdftex.def)             Requested size: 369.0pt x 146.23955pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithAll3DomainsFineGrainedTop300Links".png, id=1305, 587.19376pt x 231.86626pt
+dWithAll3DomainsFineGrainedTop300Links".png, id=1297, 587.19376pt x 231.86626pt
 >
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
@@ -2874,26 +3098,26 @@ unnedWithAll3DomainsFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links".png  used on in
-put line 2173.
+put line 2232.
 (pdftex.def)             Requested size: 369.0pt x 145.70856pt.
  [65pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 28}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2176 	
+l.2235 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.29}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2176 	
+l.2235 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.30}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2176 	
+l.2235 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop300Link
 sRunnedWithTransportationFineGrainedTop100Links.png> <C:/Users/Jakovcheski/Desk
@@ -2904,7 +3128,7 @@ stractBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop50
 0LinksRunnedWithAll3DomainsFineGrainedTop100Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithPoliticsFineGrainedTop10Links".png, id=1314, 585.387pt x 96.36pt>
+dWithPoliticsFineGrainedTop10Links".png, id=1306, 585.387pt x 96.36pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithPoliticsFineGrainedTop10Links".png Graphic file (type png)
@@ -2914,11 +3138,11 @@ unnedWithPoliticsFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithPoliticsFineGrainedTop10Links".png  used on input 
-line 2178.
+line 2237.
 (pdftex.def)             Requested size: 369.0pt x 60.74092pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithPoliticsFineGrainedTop100Links".png, id=1315, 585.98924pt x 97.5645pt>
+dWithPoliticsFineGrainedTop100Links".png, id=1307, 585.98924pt x 97.5645pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithPoliticsFineGrainedTop100Links".png Graphic file (type png)
@@ -2928,11 +3152,11 @@ unnedWithPoliticsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithPoliticsFineGrainedTop100Links".png  used on input
- line 2183.
+ line 2242.
 (pdftex.def)             Requested size: 369.0pt x 61.43765pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithPoliticsFineGrainedTop300Links".png, id=1316, 585.98924pt x 125.87025pt>
+dWithPoliticsFineGrainedTop300Links".png, id=1308, 585.98924pt x 125.87025pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithPoliticsFineGrainedTop300Links".png Graphic file (type png)
@@ -2942,7 +3166,7 @@ unnedWithPoliticsFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithPoliticsFineGrainedTop300Links".png  used on input
- line 2188.
+ line 2247.
 (pdftex.def)             Requested size: 369.0pt x 79.26218pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2952,19 +3176,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2191 	
+l.2250 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.32}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2191 	
+l.2250 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.33}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2191 	
+l.2250 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Link
 sRunnedWithAll3DomainsFineGrainedTop300Links.png> <C:/Users/Jakovcheski/Desktop
@@ -2975,7 +3199,7 @@ BaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithPoliticsFineGrainedTop100Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithSportFineGrainedTop10Links".png, id=1324, 584.78474pt x 125.87025pt>
+dWithSportFineGrainedTop10Links".png, id=1316, 584.78474pt x 125.87025pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithSportFineGrainedTop10Links".png Graphic file (type png)
@@ -2985,11 +3209,11 @@ unnedWithSportFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithSportFineGrainedTop10Links".png  used on input lin
-e 2193.
+e 2252.
 (pdftex.def)             Requested size: 369.0pt x 79.42351pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithSportFineGrainedTop100Links".png, id=1325, 583.58025pt x 135.50626pt>
+dWithSportFineGrainedTop100Links".png, id=1317, 583.58025pt x 135.50626pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithSportFineGrainedTop100Links".png Graphic file (type png)
@@ -2999,11 +3223,11 @@ unnedWithSportFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithSportFineGrainedTop100Links".png  used on input li
-ne 2198.
+ne 2257.
 (pdftex.def)             Requested size: 369.0pt x 85.6816pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithSportFineGrainedTop300Links".png, id=1326, 585.387pt x 154.176pt>
+dWithSportFineGrainedTop300Links".png, id=1318, 585.387pt x 154.176pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithSportFineGrainedTop300Links".png Graphic file (type png)
@@ -3013,7 +3237,7 @@ unnedWithSportFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithSportFineGrainedTop300Links".png  used on input li
-ne 2203.
+ne 2262.
 (pdftex.def)             Requested size: 369.0pt x 97.18549pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3023,19 +3247,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2206 	
+l.2265 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.35}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2206 	
+l.2265 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.36}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2206 	
+l.2265 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Link
 sRunnedWithPoliticsFineGrainedTop300Links.png> <C:/Users/Jakovcheski/Desktop/St
@@ -3046,7 +3270,7 @@ PageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunned
 WithSportFineGrainedTop100Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithTransportationFineGrainedTop10Links".png, id=1334, 585.387pt x 96.36pt>
+dWithTransportationFineGrainedTop10Links".png, id=1326, 585.387pt x 96.36pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithTransportationFineGrainedTop10Links".png Graphic file (type png)
@@ -3056,11 +3280,11 @@ unnedWithTransportationFineGrainedTop10Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithTransportationFineGrainedTop10Links".png  used on 
-input line 2208.
+input line 2267.
 (pdftex.def)             Requested size: 369.0pt x 60.74092pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithTransportationFineGrainedTop100Links".png, id=1335, 585.98924pt x 165.0165
+dWithTransportationFineGrainedTop100Links".png, id=1327, 585.98924pt x 165.0165
 pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
@@ -3071,11 +3295,11 @@ unnedWithTransportationFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithTransportationFineGrainedTop100Links".png  used on
- input line 2213.
+ input line 2272.
 (pdftex.def)             Requested size: 369.0pt x 103.91309pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500LinksRunne
-dWithTransportationFineGrainedTop300Links".png, id=1336, 587.19376pt x 175.2547
+dWithTransportationFineGrainedTop300Links".png, id=1328, 587.19376pt x 175.2547
 5pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
@@ -3086,7 +3310,7 @@ unnedWithTransportationFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/All3DomainsFin
 eGrainedTop500LinksRunnedWithTransportationFineGrainedTop300Links".png  used on
- input line 2218.
+ input line 2277.
 (pdftex.def)             Requested size: 369.0pt x 110.13295pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3096,19 +3320,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2221 	
+l.2280 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.38}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2221 	
+l.2280 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.39}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2221 	
+l.2280 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Link
 sRunnedWithSportFineGrainedTop300Links.png> <C:/Users/Jakovcheski/Desktop/Stanf
@@ -3119,7 +3343,7 @@ BaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Links
 RunnedWithTransportationFineGrainedTop100Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop300LinksRunnedWi
-thAll3DomainsFineGrainedTop100Links".png, id=1344, 586.5915pt x 242.1045pt>
+thAll3DomainsFineGrainedTop100Links".png, id=1336, 586.5915pt x 242.1045pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop300LinksRun
 nedWithAll3DomainsFineGrainedTop100Links".png Graphic file (type png)
@@ -3129,11 +3353,11 @@ edWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGr
 ainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on input
- line 2223.
+ line 2282.
 (pdftex.def)             Requested size: 369.0pt x 152.30128pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRunnedWi
-thAll3DomainsFineGrainedTop100Links".png, id=1345, 587.796pt x 240.9pt>
+thAll3DomainsFineGrainedTop100Links".png, id=1337, 587.796pt x 240.9pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRun
 nedWithAll3DomainsFineGrainedTop100Links".png Graphic file (type png)
@@ -3143,7 +3367,7 @@ edWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGr
 ainedTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on input
- line 2228.
+ line 2287.
 (pdftex.def)             Requested size: 369.0pt x 151.23112pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3153,13 +3377,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2231 	
+l.2290 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.41}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2231 	
+l.2290 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithHigherLinksOnModels/All3DomainsFineGrainedTop500Link
 sRunnedWithTransportationFineGrainedTop300Links.png> <C:/Users/Jakovcheski/Desk
@@ -3168,7 +3392,7 @@ nksOnModels/PoliticsFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop10
 0Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRunnedWi
-thAll3DomainsFineGrainedTop300Links".png, id=1352, 584.78474pt x 240.9pt>
+thAll3DomainsFineGrainedTop300Links".png, id=1344, 584.78474pt x 240.9pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRun
 nedWithAll3DomainsFineGrainedTop300Links".png Graphic file (type png)
@@ -3178,11 +3402,11 @@ edWithAll3DomainsFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/PoliticsFineGr
 ainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links".png  used on input
- line 2233.
+ line 2292.
 (pdftex.def)             Requested size: 369.0pt x 152.00671pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrainedTop300LinksRunnedWithA
-ll3DomainsFineGrainedTop100Links".png, id=1353, 586.5915pt x 233.07076pt>
+ll3DomainsFineGrainedTop100Links".png, id=1345, 586.5915pt x 233.07076pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrainedTop300LinksRunned
 WithAll3DomainsFineGrainedTop100Links".png Graphic file (type png)
@@ -3192,7 +3416,7 @@ ithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrain
 edTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on input li
-ne 2238.
+ne 2297.
 (pdftex.def)             Requested size: 369.0pt x 146.61841pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3202,13 +3426,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2241 	
+l.2300 	
         pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.43}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2241 	
+l.2300 	
          <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstrac
 tBaseOnPageRank//Mixed/WithHigherLinksOnModels/PoliticsFineGrainedTop500LinksRu
 nnedWithAll3DomainsFineGrainedTop100Links.png> <C:/Users/Jakovcheski/Desktop/St
@@ -3217,7 +3441,7 @@ odels/PoliticsFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links
 .png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrainedTop500LinksRunnedWithA
-ll3DomainsFineGrainedTop100Links".png, id=1360, 586.5915pt x 233.07076pt>
+ll3DomainsFineGrainedTop100Links".png, id=1352, 586.5915pt x 233.07076pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrainedTop500LinksRunned
 WithAll3DomainsFineGrainedTop100Links".png Graphic file (type png)
@@ -3227,11 +3451,11 @@ ithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrain
 edTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on input li
-ne 2243.
+ne 2302.
 (pdftex.def)             Requested size: 369.0pt x 146.61841pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrainedTop500LinksRunnedWithA
-ll3DomainsFineGrainedTop300Links".png, id=1361, 585.98924pt x 233.673pt>
+ll3DomainsFineGrainedTop300Links".png, id=1353, 585.98924pt x 233.673pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrainedTop500LinksRunned
 WithAll3DomainsFineGrainedTop300Links".png Graphic file (type png)
@@ -3241,7 +3465,7 @@ ithAll3DomainsFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/SportFineGrain
 edTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links".png  used on input li
-ne 2248.
+ne 2307.
 (pdftex.def)             Requested size: 369.0pt x 147.14702pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3251,13 +3475,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2251 
+l.2310 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .3.45}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2251 
+l.2310 
         <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstract
 BaseOnPageRank//Mixed/WithHigherLinksOnModels/SportFineGrainedTop300LinksRunned
 WithAll3DomainsFineGrainedTop100Links.png> <C:/Users/Jakovcheski/Desktop/Stanfo
@@ -3265,7 +3489,7 @@ rd NER output/OneAnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModel
 s/SportFineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/TransportationFineGrainedTop300LinksRu
-nnedWithAll3DomainsFineGrainedTop100Links".png, id=1369, 585.98924pt x 232.4685
+nnedWithAll3DomainsFineGrainedTop100Links".png, id=1361, 585.98924pt x 232.4685
 pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/TransportationFineGrainedTop300Li
@@ -3276,11 +3500,11 @@ ksRunnedWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/Transportation
 FineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on
- input line 2254.
+ input line 2313.
 (pdftex.def)             Requested size: 369.0pt x 146.38852pt.
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/TransportationFineGrainedTop500LinksRu
-nnedWithAll3DomainsFineGrainedTop100Links".png, id=1370, 585.98924pt x 231.264p
+nnedWithAll3DomainsFineGrainedTop100Links".png, id=1362, 585.98924pt x 231.264p
 t>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/TransportationFineGrainedTop500Li
@@ -3291,7 +3515,7 @@ ksRunnedWithAll3DomainsFineGrainedTop100Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/Transportation
 FineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links".png  used on
- input line 2259.
+ input line 2318.
 (pdftex.def)             Requested size: 369.0pt x 145.63004pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3301,13 +3525,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2262 
+l.2321 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .3.47}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2262 
+l.2321 
         <C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstract
 BaseOnPageRank//Mixed/WithHigherLinksOnModels/SportFineGrainedTop500LinksRunned
 WithAll3DomainsFineGrainedTop300Links.png> <C:/Users/Jakovcheski/Desktop/Stanfo
@@ -3316,7 +3540,7 @@ s/TransportationFineGrainedTop300LinksRunnedWithAll3DomainsFineGrainedTop100Lin
 ks.png>]
 <"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnP
 ageRank/""/Mixed/WithHigherLinksOnModels/TransportationFineGrainedTop500LinksRu
-nnedWithAll3DomainsFineGrainedTop300Links".png, id=1377, 586.5915pt x 231.86626
+nnedWithAll3DomainsFineGrainedTop300Links".png, id=1369, 586.5915pt x 231.86626
 pt>
 File: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBa
 seOnPageRank/""/Mixed/WithHigherLinksOnModels/TransportationFineGrainedTop500Li
@@ -3327,20 +3551,20 @@ ksRunnedWithAll3DomainsFineGrainedTop300Links".png>
 Package pdftex.def Info: "C:/Users/Jakovcheski/Desktop/Stanford NER output/OneA
 nnotationAbstractBaseOnPageRank/""/Mixed/WithHigherLinksOnModels/Transportation
 FineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop300Links".png  used on
- input line 2264.
+ input line 2323.
 (pdftex.def)             Requested size: 369.0pt x 145.86069pt.
  [73pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 48}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2283 \begin{conclusion}
+l.2342 \begin{conclusion}
                          pdfTeX warning (ext4): destination with the same ident
 ifier (name{figure.3.49}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2283 \begin{conclusion}
+l.2342 \begin{conclusion}
                           <C:/Users/Jakovcheski/Desktop/Stanford NER output/One
 AnnotationAbstractBaseOnPageRank//Mixed/WithHigherLinksOnModels/TransportationF
 ineGrainedTop500LinksRunnedWithAll3DomainsFineGrainedTop100Links.png> <C:/Users
@@ -3352,13 +3576,7 @@ DomainsFineGrainedTop300Links.png>] [74
 
 ]
 bibitemlist
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 12.
 
-
-("C:\Users\Jakovcheski\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmtt.f
-d"
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 Underfull \hbox (badness 10000) in paragraph at lines 15--19
 []\OT1/lmr/m/n/10.95 Michal Konkol. \OT1/lmr/m/it/10.95 Named En-tity Recog-ni-
 tion\OT1/lmr/m/n/10.95 . Mas-
@@ -3388,208 +3606,223 @@ lmtt/m/n/10.95 https : / /
  []
 
 [77]
-Underfull \hbox (badness 1472) in paragraph at lines 62--64
+Underfull \hbox (badness 1472) in paragraph at lines 56--58
 []\OT1/lmr/m/n/10.95 Wikipedia. Re-source De-scrip-tion Frame-work RDF. Avail-a
 ble from:
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 66--71
+Underfull \hbox (badness 6204) in paragraph at lines 60--65
 []\OT1/lmr/m/n/10.95 Usmanov Rad-mir. \OT1/lmr/m/it/10.95 NCol-lec-tion, Trans-
 for-ma-tion, and In-te-gra-tion
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 66--71
+Underfull \hbox (badness 2302) in paragraph at lines 60--65
 \OT1/lmr/m/it/10.95 of Data from the Web Ser-vices Do-main\OT1/lmr/m/n/10.95 . 
 Mas-ter's the-sis, Czech
  []
 
 
-Underfull \hbox (badness 6792) in paragraph at lines 66--71
+Underfull \hbox (badness 6792) in paragraph at lines 60--65
 \OT1/lmr/m/n/10.95 Tech-ni-cal Uni-ver-sity in Prague, Fac-ulty of In-for-ma-ti
 on Tech-
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 66--71
+Underfull \hbox (badness 2856) in paragraph at lines 60--65
 \OT1/lmr/m/n/10.95 nol-ogy, https://dspace.cvut.cz/bitstream/handle/10467/72987
 /F8-DP-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
 \OT1/lmr/m/n/10.95 from: []$\OT1/lmtt/m/n/10.95 https : / / www\OML/lmm/m/it/10
 .95 :\OT1/lmtt/m/n/10.95 w3\OML/lmm/m/it/10.95 :\OT1/lmtt/m/n/10.95 org / 2015 
 / 09 / bpmlod -[] reports / nif -[] based -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
 \OT1/lmtt/m/n/10.95 nlp -[] webservices / #natural -[] language -[] processing 
 -[] interchange -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
 []\OT1/lmr/m/n/10.95 DBpedia. DB-pe-dia NIF Dataset. Avail-able from: []$\OT1/l
 mtt/m/n/10.95 http :
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+[]\OT1/lmr/m/n/10.95 DBpedia. DB-pe-dia On-tol-ogy. Avail-able from: []$\OT1/lm
+tt/m/n/10.95 http : / /
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 104--106
 []\OT1/lmr/m/n/10.95 Wikipedia. PageR-ank. Avail-able from: []$\OT1/lmtt/m/n/10
 .95 https : / / en\OML/lmm/m/it/10.95 :\OT1/lmtt/m/n/10.95 wikipedia\OML/lmm/m/
 it/10.95 :\OT1/lmtt/m/n/10.95 org /
  []
 
-) [78]
-Overfull \hbox (5.09148pt too wide) in paragraph at lines 2310--2311
+[78]) [79] [80
+
+]
+Overfull \hbox (5.09148pt too wide) in paragraph at lines 2369--2370
 []\OT1/lmr/m/n/10.95 Types: Sport-sLeague, Amer-i-can-Foot-bal-l-League, Aus-tr
 alian-Foot-bal-l-League,
  []
 
 
-Overfull \hbox (11.52734pt too wide) in paragraph at lines 2310--2311
+Overfull \hbox (11.52734pt too wide) in paragraph at lines 2369--2370
 \OT1/lmr/m/n/10.95 gLeague, Field-Hock-eyLeague, For-mu-laOn-eRac-ing, GolfLeag
 ue, Hand-bal-l-League,
  []
 
 
-Overfull \hbox (22.70786pt too wide) in paragraph at lines 2310--2311
+Overfull \hbox (22.70786pt too wide) in paragraph at lines 2369--2370
 \OT1/lmr/m/n/10.95 Ice-Hock-eyLeague, In-line-Hock-eyLeague, Lacrosse-League, M
 ixed-Mar-tialArt-sLeague,
  []
 
 
-Overfull \hbox (12.3894pt too wide) in paragraph at lines 2312--2313
+Overfull \hbox (12.3894pt too wide) in paragraph at lines 2371--2372
 []\OT1/lmr/m/n/10.95 Types: Sport-sTeam, Amer-i-can-Foot-ball-Team, Aus-tralian
 -Foot-ball-Team, Base-
  []
 
 
-Overfull \hbox (12.26935pt too wide) in paragraph at lines 2312--2313
+Overfull \hbox (12.26935pt too wide) in paragraph at lines 2371--2372
 \OT1/lmr/m/n/10.95 ball-Team, Bas-ket-ball-Team, Cana-di-an-Foot-ball-Team, Cri
 ck-et-Team, Cy-clingTeam,
  []
 
 
-Overfull \hbox (12.84807pt too wide) in paragraph at lines 2312--2313
+Overfull \hbox (12.84807pt too wide) in paragraph at lines 2371--2372
 \OT1/lmr/m/n/10.95 For-mu-laOneTeam, Hand-ball-Team, Hock-eyTeam and Speed-wayT
 eam are grouped
  []
 
 
-Overfull \hbox (21.00034pt too wide) in paragraph at lines 2314--2315
+Overfull \hbox (21.00034pt too wide) in paragraph at lines 2373--2374
 []\OT1/lmr/m/n/10.95 Types: Ath-lete, Archer-Player, Ath-let-ic-sPlayer, Aus-tr
 alian-Rules-Foot-ballPlayer,
  []
 
 
-Overfull \hbox (1.13834pt too wide) in paragraph at lines 2314--2315
+Overfull \hbox (1.13834pt too wide) in paragraph at lines 2373--2374
 \OT1/lmr/m/n/10.95 Bad-minton-Player, Base-ballPlayer, Bas-ket-ballPlayer, Body
 -builder, Boxer, Am-
  []
 
 
-Overfull \hbox (9.26186pt too wide) in paragraph at lines 2314--2315
+Overfull \hbox (9.26186pt too wide) in paragraph at lines 2373--2374
 \OT1/lmr/m/n/10.95 a-teur-Boxer, Bull-Fighter, Ca-noeist, Chess-Player, Crick-e
 ter, Cy-clist, Dart-sPlayer,
  []
 
 
-Overfull \hbox (8.18163pt too wide) in paragraph at lines 2314--2315
+Overfull \hbox (8.18163pt too wide) in paragraph at lines 2373--2374
 \OT1/lmr/m/n/10.95 Foot-ballPlayer, Cana-di-an-Foot-ballPlayer, Gym-nast, Hand-
 ballPlayer, High-Diver,
  []
 
 
-Overfull \hbox (14.94745pt too wide) in paragraph at lines 2314--2315
+Overfull \hbox (14.94745pt too wide) in paragraph at lines 2373--2374
 \OT1/lmr/m/n/10.95 Player, Snook-er-Champ, Soc-cer-Player, Squash-Player, Surfe
 r, Swim-mer, TableTen-
  []
 
 
-Overfull \hbox (7.74016pt too wide) in paragraph at lines 2314--2315
+Overfull \hbox (7.74016pt too wide) in paragraph at lines 2373--2374
 \OT1/lmr/m/n/10.95 nis-Player, Team-Mem-ber, Ten-nis-Player, Vol-ley-ballPlayer
 , BeachVol-ley-ballPlayer
  []
 
 
-Overfull \hbox (8.13644pt too wide) in paragraph at lines 2314--2315
+Overfull \hbox (8.13644pt too wide) in paragraph at lines 2373--2374
 \OT1/lmr/m/n/10.95 Coun-trySkier, Curler, Fig-ureSkater, Ice-Hock-ey-Player, No
 rdic-Com-bined, Skater,
  []
 
-[79
-
-]
-Overfull \hbox (3.38655pt too wide) in paragraph at lines 2316--2317
+[81]
+Overfull \hbox (3.38655pt too wide) in paragraph at lines 2375--2376
 []\OT1/lmr/m/n/10.95 Types: Coach, Amer-i-can-Foot-ball-Coach, Col-lege-Coach a
 nd Vol-ley-ball-Coach
  []
 
 
-Overfull \hbox (4.27174pt too wide) in paragraph at lines 2328--2329
+Overfull \hbox (4.27174pt too wide) in paragraph at lines 2387--2388
 \OT1/lmr/m/n/10.95 ginePower, en-gine-Type, gun, pow-er-Type, wingArea, wingspa
 n and Mil-i-taryAir-
  []
 
 
-Overfull \hbox (0.80278pt too wide) in paragraph at lines 2338--2339
+Overfull \hbox (0.80278pt too wide) in paragraph at lines 2397--2398
 []\OT1/lmr/m/n/10.95 Types: Rocket, coun-try-O-ri-gin, fi-nalFlight, low-erEart
 hOr-bit-Pay-load, maid-
  []
 
 
-Overfull \hbox (1.99352pt too wide) in paragraph at lines 2338--2339
+Overfull \hbox (1.99352pt too wide) in paragraph at lines 2397--2398
 \OT1/lmr/m/n/10.95 en-Flight, rock-et-Func-tion, rock-et-Stages and Rock-etEngi
 ne are gruped at Rocket
  []
 
-[80]
-Overfull \hbox (5.50278pt too wide) in paragraph at lines 2346--2347
+[82]
+Overfull \hbox (5.50278pt too wide) in paragraph at lines 2405--2406
 []\OT1/lmr/m/n/10.95 Types: Space-craft, car-go-Fuel, car-goGas, car-goWa-ter a
 nd rocket are grouped
  []
 
-[81] [82
+[83] [84
 
-] [83]
-\tf@toc=\write5
-\openout5 = `Thesis3.toc'.
+]
 
-\tf@lof=\write6
-\openout6 = `Thesis3.lof'.
+Package glossaries Warning: No \printglossary or \printglossaries found. 
+(Remove \makeglossaries if you don't want any glossaries.) 
+This document will not have a glossary.
 
-\tf@lot=\write7
-\openout7 = `Thesis3.lot'.
+[85]
+\tf@toc=\write7
+\openout7 = `Thesis3.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2548.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2548.
+\tf@lof=\write8
+\openout8 = `Thesis3.lof'.
+
+\tf@lot=\write9
+\openout9 = `Thesis3.lot'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2607.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2607.
  (Thesis3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2548.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2548.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2607.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2607.
 
 Package rerunfilecheck Info: File `Thesis3.out' has not changed.
-(rerunfilecheck)             Checksum: AE1AD9A35C9B59F256AA130B7544BE38;8527.
+(rerunfilecheck)             Checksum: 0A0867BF57E930F36DF714E6DDDFF541;7039.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2548.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2607.
  ) 
 Here is how much of TeX's memory you used:
- 15826 strings out of 493305
- 264482 string characters out of 3127192
- 377697 words of memory out of 3000000
- 18740 multiletter control sequences out of 15000+200000
- 76879 words of font info for 71 fonts, out of 3000000 for 9000
+ 21516 strings out of 493305
+ 374985 string characters out of 3127192
+ 517079 words of memory out of 3000000
+ 24282 multiletter control sequences out of 15000+200000
+ 77190 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,11n,32p,2779b,1638s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,11n,37p,2779b,1638s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm
 -rmtt.enc}{C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/lm/lm-mathsy.enc}{C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fon
@@ -3604,20 +3837,22 @@ Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc
 ic/lm/lmmi10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/lm/lmmi12.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Jakovcheski/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Jakovcheski/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Jakovcheski/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Jakovch
-eski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users
-/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><
-C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
-ri10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmssbx10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/lm/lmsy10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Jakovcheski/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Thesis3.pdf (103 pages, 1657177 bytes).
+s/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Jakovcheski/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Jakovcheski/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Jakovc
+heski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/User
+s/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb>
+<C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
+mr9.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmri10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmssbx10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Jakovcheski/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Jakovcheski/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Jakovchesk
+i/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb>
+Output written on Thesis3.pdf (105 pages, 1689833 bytes).
 PDF statistics:
- 1608 PDF objects out of 1728 (max. 8388607)
- 406 named destinations out of 1000 (max. 500000)
- 674 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1619 PDF objects out of 1728 (max. 8388607)
+ 425 named destinations out of 1000 (max. 500000)
+ 594 words of extra memory for PDF output out of 10000 (max. 10000000)
 
