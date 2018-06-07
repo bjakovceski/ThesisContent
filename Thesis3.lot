@@ -5,23 +5,23 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \contentsline {table}{\numberline {3.1}{\ignorespaces Testing computer parameters}}{19}{table.3.1}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Outcomes of base experiment run to be used as reference for subsequential experiments }}{21}{table.3.2}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Outcomes of base experiment run to be used as reference for subsequential experiments }}{20}{table.3.2}
 \contentsline {table}{\numberline {3.3}{\ignorespaces Outcomes of base model in coarse grained run with "POLITICS" abstracts}}{21}{table.3.3}
 \contentsline {table}{\numberline {3.4}{\ignorespaces Outcomes of base model in coarse grained run with "SPORT" abstracts }}{21}{table.3.4}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Outcomes of base model in coarse grained run with "TRANSPORTATION" abstracts }}{22}{table.3.5}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Outcomes of base experiment in fine grained run to be used as reference for subsequential experiments }}{23}{table.3.6}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Outcomes of base model in coarse grained run with "TRANSPORTATION" abstracts }}{21}{table.3.5}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Outcomes of base experiment in fine grained run to be used as reference for subsequential experiments }}{22}{table.3.6}
 \contentsline {table}{\numberline {3.7}{\ignorespaces Outcomes of base model in fine grained run with "POLITICS" abstracts}}{23}{table.3.7}
-\contentsline {table}{\numberline {3.8}{\ignorespaces Outcomes of base model in fine grained run with "SPORT" abstracts }}{24}{table.3.8}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Outcomes of base model in fine grained run with "SPORT" abstracts }}{23}{table.3.8}
 \contentsline {table}{\numberline {3.9}{\ignorespaces Outcomes of base model in fine grained run with "TRANSPORTATION" abstracts}}{24}{table.3.9}
 \contentsline {table}{\numberline {3.10}{\ignorespaces Outcomes of "POLITICS" base model in coarse grained run with "POLITICS" abstracts }}{25}{table.3.10}
 \contentsline {table}{\numberline {3.11}{\ignorespaces Outcomes of "POLITICS" base model in fine grained run with "POLITICS" abstracts }}{25}{table.3.11}
-\contentsline {table}{\numberline {3.12}{\ignorespaces Outcomes of "SPORT" base model in coarse grained run with "SPORT" abstracts }}{26}{table.3.12}
+\contentsline {table}{\numberline {3.12}{\ignorespaces Outcomes of "SPORT" base model in coarse grained run with "SPORT" abstracts }}{25}{table.3.12}
 \contentsline {table}{\numberline {3.13}{\ignorespaces Outcomes of "SPORT" base model in fine grained run with "SPORT" abstracts }}{26}{table.3.13}
-\contentsline {table}{\numberline {3.14}{\ignorespaces Outcomes of "TRANSPORTATION" base model in coarse grained run with "TRANSPORTATION" abstracts }}{27}{table.3.14}
+\contentsline {table}{\numberline {3.14}{\ignorespaces Outcomes of "TRANSPORTATION" base model in coarse grained run with "TRANSPORTATION" abstracts }}{26}{table.3.14}
 \contentsline {table}{\numberline {3.15}{\ignorespaces Outcomes of "TRANSPORTATION" base model in fine grained run with "TRANSPORTATION" abstracts }}{27}{table.3.15}
 \contentsline {table}{\numberline {3.16}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from every domain }}{28}{table.3.16}
-\contentsline {table}{\numberline {3.17}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from "POLITICS" domain }}{29}{table.3.17}
-\contentsline {table}{\numberline {3.18}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from "SPORT" domain }}{29}{table.3.18}
+\contentsline {table}{\numberline {3.17}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from "POLITICS" domain }}{28}{table.3.17}
+\contentsline {table}{\numberline {3.18}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from "SPORT" domain }}{28}{table.3.18}
 \contentsline {table}{\numberline {3.19}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from "TRANSPORTATION" domain }}{29}{table.3.19}
 \contentsline {table}{\numberline {3.20}{\ignorespaces Outcomes of global model in fine grained run with 10 abstracts from every domain }}{30}{table.3.20}
 \contentsline {table}{\numberline {3.21}{\ignorespaces Outcomes of global model in fine grained run with 10 abstracts from "POLITICS" domain }}{30}{table.3.21}
@@ -107,6 +107,7 @@
 \contentsline {table}{\numberline {3.101}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower Page Rank}}{52}{table.3.101}
 \contentsline {table}{\numberline {3.102}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{53}{table.3.102}
 \contentsline {table}{\numberline {3.103}{\ignorespaces Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links And Transportation Fine Grained Top 300 Links}}{54}{table.3.103}
+\addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

@@ -17,6 +17,7 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand \oddpage@label [2]{}
 \providecommand\@newglossary[4]{}
 \@newglossary{acronym}{alg}{acr}{acn}
 \providecommand\@glsorder[1]{}
@@ -31,6 +32,7 @@
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{Introduction}{1}{chapter*.5}}
+\@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{Motivation}{1}{section*.6}}
 \@writefile{toc}{\contentsline {section}{Goals of the thesis}{2}{section*.7}}
 \@writefile{toc}{\contentsline {section}{Thesis outline}{2}{section*.8}}
@@ -39,6 +41,7 @@
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{\chapternumberline {1}Background and related work}{3}{chapter.1}}
+\@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{}{{\M@TitleReference {1}{Background and related work}}{3}{Background and related work}{chapter.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Background}{3}{section.1.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}Information extraction}{3}{subsection.1.1.1}}
@@ -93,6 +96,7 @@
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{\chapternumberline {2}Domain specific named entity recognition}{11}{chapter.2}}
+\@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{}{{\M@TitleReference {2}{Domain specific named entity recognition}}{11}{Domain specific named entity recognition}{chapter.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Data pre-processing}{11}{section.2.1}}
 \newlabel{dataPreProcessing}{{\M@TitleReference {2.1}{Data pre-processing}}{11}{Data pre-processing}{section.2.1}{}}
@@ -101,62 +105,65 @@
 \newlabel{domainSpecification}{{\M@TitleReference {2.2}{Domain specification}}{13}{Domain specification}{section.2.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Types retrieval}{13}{section.2.3}}
 \newlabel{typesRetrieval}{{\M@TitleReference {2.3}{Types retrieval}}{13}{Types retrieval}{section.2.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Data transformation}{14}{section.2.4}}
-\newlabel{StanfordNERoutput}{{\M@TitleReference {2.4}{Data transformation}}{14}{Data transformation}{section.2.4}{}}
 \citation{wiki:PR}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Model generation}{15}{section.2.5}}
-\newlabel{modelGeneration}{{\M@TitleReference {2.5}{Model generation}}{15}{Model generation}{section.2.5}{}}
-\@writefile{lol}{\contentsline {lstlisting}{bash}{17}{lstlisting.2.-2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Data transformation}{15}{section.2.4}}
+\newlabel{StanfordNERoutput}{{\M@TitleReference {2.4}{Data transformation}}{15}{Data transformation}{section.2.4}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Algorithm for preparing datasets ready for training in Stanford NER}}{16}{algocf.1}}
+\newlabel{AlgorithmMain}{{\M@TitleReference {1}{Data transformation}}{16}{Data transformation}{algocf.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Model generation}{17}{section.2.5}}
+\newlabel{modelGeneration}{{\M@TitleReference {2.5}{Model generation}}{17}{Model generation}{section.2.5}{}}
+\@writefile{lol}{\contentsline {lstlisting}{bash}{17}{lstlisting.2.-1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Training datasets}{17}{subsection.2.5.1}}
 \citation{wiki:F1}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{\chapternumberline {3}Experiments}{19}{chapter.3}}
+\@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Testing computer parameters}}{19}{table.3.1}}
 \newlabel{tab:PCparam}{{\M@TitleReference {3.1}{Testing computer parameters}}{19}{Testing computer parameters}{table.3.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}$F_{1}$ score}{19}{section.3.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Goals of the experiments}{19}{section.3.2}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}List of experiments}{20}{section.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Evaluation/training datasets}{20}{subsection.3.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Main experiment}{20}{subsection.3.3.2}}
-\newlabel{MainExperiment}{{\M@TitleReference {3.3.2}{Main experiment}}{20}{Main experiment}{subsection.3.3.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.1}Global domain models}{20}{subsubsection.3.3.2.1}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Outcomes of base experiment run to be used as reference for subsequential experiments }}{21}{table.3.2}}
-\newlabel{table:All3domainsWithAll3DomiansTop300Coarse}{{\M@TitleReference {3.2}{Global domain models}}{21}{Outcomes of base experiment run to be used as reference for subsequential experiments}{table.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Main experiment}{20}{subsection.3.3.1}}
+\newlabel{MainExperiment}{{\M@TitleReference {3.3.1}{Main experiment}}{20}{Main experiment}{subsection.3.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.1}Global domain models}{20}{subsubsection.3.3.1.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Outcomes of base experiment run to be used as reference for subsequential experiments }}{20}{table.3.2}}
+\newlabel{table:All3domainsWithAll3DomiansTop300Coarse}{{\M@TitleReference {3.2}{Global domain models}}{20}{Outcomes of base experiment run to be used as reference for subsequential experiments}{table.3.2}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Outcomes of base model in coarse grained run with "POLITICS" abstracts}}{21}{table.3.3}}
 \newlabel{table:All3domainsWithPoliticsTop300Coarse}{{\M@TitleReference {3.3}{Global domain models}}{21}{Outcomes of base model in coarse grained run with "POLITICS" abstracts}{table.3.3}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Outcomes of base model in coarse grained run with "SPORT" abstracts }}{21}{table.3.4}}
 \newlabel{table:All3domainsWithSportTop300Coarse}{{\M@TitleReference {3.4}{Global domain models}}{21}{Outcomes of base model in coarse grained run with "SPORT" abstracts}{table.3.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Outcomes of base model in coarse grained run with "TRANSPORTATION" abstracts }}{22}{table.3.5}}
-\newlabel{table:All3domainsWithTransportationTop300Coarse}{{\M@TitleReference {3.5}{Global domain models}}{22}{Outcomes of base model in coarse grained run with "TRANSPORTATION" abstracts}{table.3.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Outcomes of base experiment in fine grained run to be used as reference for subsequential experiments }}{23}{table.3.6}}
-\newlabel{table:All3domainsWithAll3DomainsTop300Fine}{{\M@TitleReference {3.6}{Global domain models}}{23}{Outcomes of base experiment in fine grained run to be used as reference for subsequential experiments}{table.3.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Outcomes of base model in coarse grained run with "TRANSPORTATION" abstracts }}{21}{table.3.5}}
+\newlabel{table:All3domainsWithTransportationTop300Coarse}{{\M@TitleReference {3.5}{Global domain models}}{21}{Outcomes of base model in coarse grained run with "TRANSPORTATION" abstracts}{table.3.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Outcomes of base experiment in fine grained run to be used as reference for subsequential experiments }}{22}{table.3.6}}
+\newlabel{table:All3domainsWithAll3DomainsTop300Fine}{{\M@TitleReference {3.6}{Global domain models}}{22}{Outcomes of base experiment in fine grained run to be used as reference for subsequential experiments}{table.3.6}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.7}{\ignorespaces Outcomes of base model in fine grained run with "POLITICS" abstracts}}{23}{table.3.7}}
 \newlabel{table:All3domainsWithPoliticsTop300Fine}{{\M@TitleReference {3.7}{Global domain models}}{23}{Outcomes of base model in fine grained run with "POLITICS" abstracts}{table.3.7}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.8}{\ignorespaces Outcomes of base model in fine grained run with "SPORT" abstracts }}{24}{table.3.8}}
-\newlabel{table:All3domainsWithSportTop300Fine}{{\M@TitleReference {3.8}{Global domain models}}{24}{Outcomes of base model in fine grained run with "SPORT" abstracts}{table.3.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.8}{\ignorespaces Outcomes of base model in fine grained run with "SPORT" abstracts }}{23}{table.3.8}}
+\newlabel{table:All3domainsWithSportTop300Fine}{{\M@TitleReference {3.8}{Global domain models}}{23}{Outcomes of base model in fine grained run with "SPORT" abstracts}{table.3.8}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.9}{\ignorespaces Outcomes of base model in fine grained run with "TRANSPORTATION" abstracts}}{24}{table.3.9}}
 \newlabel{table:All3domainsWithTransportationTop300Fine}{{\M@TitleReference {3.9}{Global domain models}}{24}{Outcomes of base model in fine grained run with "TRANSPORTATION" abstracts}{table.3.9}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2.2}Specific domain models}{25}{subsubsection.3.3.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.2}Specific domain models}{24}{subsubsection.3.3.1.2}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.10}{\ignorespaces Outcomes of "POLITICS" base model in coarse grained run with "POLITICS" abstracts }}{25}{table.3.10}}
 \newlabel{table:PoliticsdomainsWithPoliticsTop300Coarse}{{\M@TitleReference {3.10}{Specific domain models}}{25}{Outcomes of "POLITICS" base model in coarse grained run with "POLITICS" abstracts}{table.3.10}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.11}{\ignorespaces Outcomes of "POLITICS" base model in fine grained run with "POLITICS" abstracts }}{25}{table.3.11}}
 \newlabel{table:PoliticsdomainsWithPoliticsTop300Fine}{{\M@TitleReference {3.11}{Specific domain models}}{25}{Outcomes of "POLITICS" base model in fine grained run with "POLITICS" abstracts}{table.3.11}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.12}{\ignorespaces Outcomes of "SPORT" base model in coarse grained run with "SPORT" abstracts }}{26}{table.3.12}}
-\newlabel{table:SportdomainsWithSportTop300Coarse}{{\M@TitleReference {3.12}{Specific domain models}}{26}{Outcomes of "SPORT" base model in coarse grained run with "SPORT" abstracts}{table.3.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.12}{\ignorespaces Outcomes of "SPORT" base model in coarse grained run with "SPORT" abstracts }}{25}{table.3.12}}
+\newlabel{table:SportdomainsWithSportTop300Coarse}{{\M@TitleReference {3.12}{Specific domain models}}{25}{Outcomes of "SPORT" base model in coarse grained run with "SPORT" abstracts}{table.3.12}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.13}{\ignorespaces Outcomes of "SPORT" base model in fine grained run with "SPORT" abstracts }}{26}{table.3.13}}
 \newlabel{table:SportdomainsWithSportTop300Fine}{{\M@TitleReference {3.13}{Specific domain models}}{26}{Outcomes of "SPORT" base model in fine grained run with "SPORT" abstracts}{table.3.13}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.14}{\ignorespaces Outcomes of "TRANSPORTATION" base model in coarse grained run with "TRANSPORTATION" abstracts }}{27}{table.3.14}}
-\newlabel{table:TransportationDomainsWithTransportationTop300Coarse}{{\M@TitleReference {3.14}{Specific domain models}}{27}{Outcomes of "TRANSPORTATION" base model in coarse grained run with "TRANSPORTATION" abstracts}{table.3.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.14}{\ignorespaces Outcomes of "TRANSPORTATION" base model in coarse grained run with "TRANSPORTATION" abstracts }}{26}{table.3.14}}
+\newlabel{table:TransportationDomainsWithTransportationTop300Coarse}{{\M@TitleReference {3.14}{Specific domain models}}{26}{Outcomes of "TRANSPORTATION" base model in coarse grained run with "TRANSPORTATION" abstracts}{table.3.14}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.15}{\ignorespaces Outcomes of "TRANSPORTATION" base model in fine grained run with "TRANSPORTATION" abstracts }}{27}{table.3.15}}
 \newlabel{table:TransportationDomainsWithTransportationTop300Fine}{{\M@TitleReference {3.15}{Specific domain models}}{27}{Outcomes of "TRANSPORTATION" base model in fine grained run with "TRANSPORTATION" abstracts}{table.3.15}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Experiments that has less than 300 abstracts in model}{28}{subsection.3.3.3}}
-\newlabel{}{{\M@TitleReference {3.3.3}{Experiments that has less than 300 abstracts in model}}{28}{Experiments that has less than 300 abstracts in model}{subsection.3.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Experiments that has less than 300 abstracts in model}{27}{subsection.3.3.2}}
+\newlabel{}{{\M@TitleReference {3.3.2}{Experiments that has less than 300 abstracts in model}}{27}{Experiments that has less than 300 abstracts in model}{subsection.3.3.2}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.16}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from every domain }}{28}{table.3.16}}
 \newlabel{table:GlobalDomainWithAllAbstractsTop10Coarse}{{\M@TitleReference {3.16}{Experiments that has less than 300 abstracts in model}}{28}{Outcomes of global model in coarse grained run with 10 abstracts from every domain}{table.3.16}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.17}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from "POLITICS" domain }}{29}{table.3.17}}
-\newlabel{table:GlobalDomainWithPoliticsTop10Coarse}{{\M@TitleReference {3.17}{Experiments that has less than 300 abstracts in model}}{29}{Outcomes of global model in coarse grained run with 10 abstracts from "POLITICS" domain}{table.3.17}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.18}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from "SPORT" domain }}{29}{table.3.18}}
-\newlabel{table:GlobalDomainWithSportTop10Coarse}{{\M@TitleReference {3.18}{Experiments that has less than 300 abstracts in model}}{29}{Outcomes of global model in coarse grained run with 10 abstracts from "SPORT" domain}{table.3.18}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.17}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from "POLITICS" domain }}{28}{table.3.17}}
+\newlabel{table:GlobalDomainWithPoliticsTop10Coarse}{{\M@TitleReference {3.17}{Experiments that has less than 300 abstracts in model}}{28}{Outcomes of global model in coarse grained run with 10 abstracts from "POLITICS" domain}{table.3.17}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.18}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from "SPORT" domain }}{28}{table.3.18}}
+\newlabel{table:GlobalDomainWithSportTop10Coarse}{{\M@TitleReference {3.18}{Experiments that has less than 300 abstracts in model}}{28}{Outcomes of global model in coarse grained run with 10 abstracts from "SPORT" domain}{table.3.18}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.19}{\ignorespaces Outcomes of global model in coarse grained run with 10 abstracts from "TRANSPORTATION" domain }}{29}{table.3.19}}
 \newlabel{table:GlobalDomainWithTransportationTop10Coarse}{{\M@TitleReference {3.19}{Experiments that has less than 300 abstracts in model}}{29}{Outcomes of global model in coarse grained run with 10 abstracts from "TRANSPORTATION" domain}{table.3.19}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.20}{\ignorespaces Outcomes of global model in fine grained run with 10 abstracts from every domain }}{30}{table.3.20}}
@@ -263,7 +270,7 @@
 \newlabel{}{{\M@TitleReference {3.70}{TABLE}}{42}{TABLE}{table.3.70}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.71}{\ignorespaces TABLE}}{42}{table.3.71}}
 \newlabel{}{{\M@TitleReference {3.71}{TABLE}}{42}{TABLE}{table.3.71}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Experiments that have more than 300 abstracts in model and test files}{42}{subsection.3.3.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Experiments that have more than 300 abstracts in model and test files}{42}{subsection.3.3.3}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.72}{\ignorespaces TABLE}}{42}{table.3.72}}
 \newlabel{}{{\M@TitleReference {3.72}{TABLE}}{42}{TABLE}{table.3.72}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.73}{\ignorespaces TABLE}}{43}{table.3.73}}
@@ -320,16 +327,16 @@
 \newlabel{}{{\M@TitleReference {3.98}{TABLE}}{50}{TABLE}{table.3.98}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.99}{\ignorespaces TABLE}}{50}{table.3.99}}
 \newlabel{}{{\M@TitleReference {3.99}{TABLE}}{50}{TABLE}{table.3.99}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.5}MIXED}{51}{subsection.3.3.5}}
-\newlabel{}{{\M@TitleReference {3.3.5}{MIXED}}{51}{MIXED}{subsection.3.3.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}MIXED}{51}{subsection.3.3.4}}
+\newlabel{}{{\M@TitleReference {3.3.4}{MIXED}}{51}{MIXED}{subsection.3.3.4}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.100}{\ignorespaces All 3 Domains Fine Grained Top 300 With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{51}{table.3.100}}
-\newlabel{}{{\M@TitleReference {3.3.5}{MIXED}}{52}{MIXED}{table.3.100}{}}
+\newlabel{}{{\M@TitleReference {3.3.4}{MIXED}}{52}{MIXED}{table.3.100}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.101}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower Page Rank}}{52}{table.3.101}}
-\newlabel{}{{\M@TitleReference {3.3.5}{MIXED}}{53}{MIXED}{table.3.101}{}}
+\newlabel{}{{\M@TitleReference {3.3.4}{MIXED}}{53}{MIXED}{table.3.101}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.102}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{53}{table.3.102}}
-\newlabel{}{{\M@TitleReference {3.3.5}{MIXED}}{54}{MIXED}{table.3.102}{}}
+\newlabel{}{{\M@TitleReference {3.3.4}{MIXED}}{54}{MIXED}{table.3.102}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.103}{\ignorespaces Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links And Transportation Fine Grained Top 300 Links}}{54}{table.3.103}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.6}Experiments with lower training abstracts on model, but higher abstracts on test file}{54}{subsection.3.3.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{54}{subsection.3.3.5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{54}{figure.3.1}}
 \newlabel{}{{\M@TitleReference {3.1}{All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{54}{All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 100 Links}{figure.3.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces All 3 Domains Fine Grained Top 10 Links Runned With All 3 Domains Fine Grained Top 300 Links}}{55}{figure.3.2}}
@@ -370,7 +377,7 @@
 \newlabel{}{{\M@TitleReference {3.19}{All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links}}{61}{All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links}{figure.3.19}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links With Lower PageRank}}{62}{figure.3.20}}
 \newlabel{}{{\M@TitleReference {3.20}{All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links With Lower PageRank}}{62}{All 3 Domains Fine Grained Top 300 Links Runned With Transportation Fine Grained Top 500 Links With Lower PageRank}{figure.3.20}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.7}Experiments with higher training abstracts on model, but lower abstracts on test file}{62}{subsection.3.3.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{62}{subsection.3.3.6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 10 Links}}{62}{figure.3.21}}
 \newlabel{}{{\M@TitleReference {3.21}{All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 10 Links}}{62}{All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 10 Links}{figure.3.21}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces All 3 Domains Fine Grained Top 300 Links Runned With All 3 Domains Fine Grained Top 100 Links}}{63}{figure.3.22}}
@@ -436,6 +443,7 @@
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{Conclusion}{75}{chapter*.9}}
+\@writefile{loa}{\addvspace {10\p@ }}
 \bibcite{wiki:NER}{1}
 \bibcite{master:NER}{2}
 \bibcite{wiki:IE}{3}
@@ -461,6 +469,7 @@
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {appendix}{\chapternumberline {A}Retrieved types}{81}{appendix.A}}
+\@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {A.1}POLITICS types}{81}{section.A.1}}
 \newlabel{PoliticsTypes}{{\M@TitleReference {A.1}{POLITICS types}}{81}{POLITICS types}{section.A.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {A.2}SPORT types}{81}{section.A.2}}
@@ -469,8 +478,14 @@
 \newlabel{TransportationTypes}{{\M@TitleReference {A.3}{TRANSPORTATION types}}{82}{TRANSPORTATION types}{section.A.3}{}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\@writefile{toc}{\contentsline {appendix}{\chapternumberline {B}Contents of CD}{85}{appendix.B}}
-\newlabel{app:CDcontent}{{\M@TitleReference {B}{Contents of CD}}{85}{Contents of CD}{appendix.B}{}}
-\newlabel{tab:was:used:in:doc}{{\M@TitleReference {B}{Contents of CD}}{85}{Contents of CD}{appendix.B}{}}
-\memsetcounter{lastsheet}{105}
-\memsetcounter{lastpage}{85}
+\@writefile{toc}{\contentsline {appendix}{\chapternumberline {B}Stanford NER properties file}{85}{appendix.B}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{NERpropertiesFile}{{\M@TitleReference {B}{Stanford NER properties file}}{85}{Stanford NER properties file}{appendix.B}{}}
+\@writefile{lof}{\addvspace {10pt}}
+\@writefile{lot}{\addvspace {10pt}}
+\@writefile{toc}{\contentsline {appendix}{\chapternumberline {C}Contents of CD}{87}{appendix.C}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{app:CDcontent}{{\M@TitleReference {C}{Contents of CD}}{87}{Contents of CD}{appendix.C}{}}
+\newlabel{tab:was:used:in:doc}{{\M@TitleReference {C}{Contents of CD}}{87}{Contents of CD}{appendix.C}{}}
+\memsetcounter{lastsheet}{107}
+\memsetcounter{lastpage}{87}
