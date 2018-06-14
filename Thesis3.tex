@@ -910,7 +910,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	"TRANSPORTATION" domain model as well as previous two domain models provide a better NER than the main experiment, but of coarse here we have much less annotated words in model and if we test this model with some other data, the results will be worst than in the main experiment where we have much more data.
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Evaluation of global domain}
+\subsubsection{Evaluation of global domain with 20 abstracts from every domain }
 \textbf{Datasets with 20 abstracts for every domain.} Because we waned to know the impact of train data, we decided to increase retrieved abstract from DBpedia to 20 abstracts per domain. Time need to retrieved those abstracts and prepare datasets for training in Stanford NER was 21.30 minutes.
 
 \textbf{Description of the experiment:} In Table~\ref{table:GlobalDomainWithAllAbstractsTop20Coarse} we provide an experiment where the model was trained with abstracts from every domain, in total 60 abstracts, annotated in coarse grain. We need 36.6 seconds to train the model, from which 32.52 seconds spent in optimization. The model was tested with the same dataset that was trained.    
@@ -1044,9 +1044,8 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 		\caption{Outcomes of global model in fine grained run with 20 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop20Fine}}		
 	\end{table}
 
-	%After we finish the experiments with models that are trained with texts from every domain, we do tests with models that are trained with texts from a particular domain (politics, sport and transportation).
-	%Figure~\ref{img:PoliticsWithPoliticsCoarseTop20} shows the output of politics coarse grain specified domain, where we can see that we have a way more better results than in experiment with a model trained with texts from all 3 domains (see Figure~\ref{img:All3DomainWithAll3DomainCoarseTop20} and Figure~\ref{img:All3DomainWithPoliticstCoarseTop20}). The politics specific domain finds 125 true positive words unlike the experiments with all 3 domains that gives us only 50 true positive annotated words. However we repeated this experiment, but now with model trained in fine grained. Figure~\ref{img:PoliticsWithPoliticsFineTop20} shows the result of experiment, where we can see that there is no false positive annotated word like in previous experiment (see Figure~\ref{img:PoliticsWithPoliticsCoarseTop20}), which result with a better F1 value in total.  
-\subsubsection{Evaluation of domain specific models}
+		 
+\subsubsection{Evaluation of domain specific models with 20 abstracts}
 \textbf{Description of the experiment:}
 
 \textbf{Results of the experiment:}
@@ -1055,7 +1054,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9921 & 0,9766 & 0,9843\\\hline
-				\textbf{Totals} & \textbf{0,9655} & \textbf{0,3636} & \textbf{0,5283}\\\hline
+				\textbf{Totals} & \textbf{0,9655} & \textbf{0,9766} & \textbf{0,9843}\\\hline
 		\end{tabular}
 		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 20 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop20Coarse}}		
 	\end{table}	
