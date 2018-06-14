@@ -26,29 +26,32 @@
 \contentsline {chapter}{\chapternumberline {2}Domain specific named entity recognition}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Data pre-processing}{11}{section.2.1}
 \contentsline {section}{\numberline {2.2}Domain specification}{13}{section.2.2}
-\contentsline {section}{\numberline {2.3}Types retrieval}{13}{section.2.3}
+\contentsline {section}{\numberline {2.3}Types retrieval}{14}{section.2.3}
 \contentsline {section}{\numberline {2.4}Data transformation}{15}{section.2.4}
 \contentsline {section}{\numberline {2.5}Model generation}{18}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Training datasets}{18}{subsection.2.5.1}
 \contentsline {chapter}{\chapternumberline {3}Experiments}{21}{chapter.3}
-\contentsline {section}{\numberline {3.1}$F_{1}$ score}{21}{section.3.1}
-\contentsline {section}{\numberline {3.2}Goals of the experiments}{21}{section.3.2}
+\contentsline {section}{\numberline {3.1}Goals of the experiments}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Evaluation metrics}{22}{section.3.2}
 \contentsline {section}{\numberline {3.3}List of experiments}{22}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Main experiment}{22}{subsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.1.1}Global domain models}{22}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Specific domain models}{26}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Evaluation of domain specific models}{26}{subsubsection.3.3.1.2}
 \contentsline {subsection}{\numberline {3.3.2}Experiments that has less than 300 abstracts in model}{29}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Experiments that have more than 300 abstracts in model and test files}{44}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}MIXED}{53}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{56}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{64}{subsection.3.3.6}
-\contentsline {section}{\numberline {3.4}Summary of results}{75}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Graphs}{75}{subsection.3.4.1}
-\contentsline {chapter}{Conclusion}{77}{chapter*.9}
-\contentsline {chapter}{Bibliography}{79}{chapter*.10}
-\contentsline {appendix}{\chapternumberline {A}Retrieved types}{83}{appendix.A}
-\contentsline {section}{\numberline {A.1}POLITICS types}{83}{section.A.1}
-\contentsline {section}{\numberline {A.2}SPORT types}{83}{section.A.2}
-\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{84}{section.A.3}
-\contentsline {appendix}{\chapternumberline {B}Stanford NER properties file}{87}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Contents of CD}{89}{appendix.C}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Evaluation of domain specific models}{33}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Evaluation of global domain}{36}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Evaluation of domain specific models}{41}{subsubsection.3.3.2.3}
+\contentsline {subsection}{\numberline {3.3.3}Experiments that have more than 300 abstracts in model and test files}{49}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}MIXED}{57}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{60}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{68}{subsection.3.3.6}
+\contentsline {section}{\numberline {3.4}Summary of results}{79}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Graphs}{79}{subsection.3.4.1}
+\contentsline {chapter}{Conclusion}{81}{chapter*.9}
+\contentsline {chapter}{Bibliography}{83}{chapter*.10}
+\contentsline {appendix}{\chapternumberline {A}Retrieved types}{87}{appendix.A}
+\contentsline {section}{\numberline {A.1}POLITICS types}{87}{section.A.1}
+\contentsline {section}{\numberline {A.2}SPORT types}{87}{section.A.2}
+\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{88}{section.A.3}
+\contentsline {appendix}{\chapternumberline {B}Stanford NER properties file}{91}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Contents of CD}{93}{appendix.C}
