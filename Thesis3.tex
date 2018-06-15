@@ -1046,22 +1046,22 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 		 
 \subsubsection{Evaluation of domain specific models with 20 abstracts}
-\textbf{Description of the experiment:}
+\textbf{Description of the experiment:} Experiment in Table~\ref{table:PoliticsDomainWithPoliticsTop20Coarse} was provided with model trained only with abstracts from "POLITICS" domain in coarse grain. To train this model we needed 5.4 seconds, from which 3.81 seconds spent in optimization.
 
-\textbf{Results of the experiment:}
+\textbf{Results of the experiment:} How we can see from Table~\ref{table:PoliticsDomainWithPoliticsTop20Coarse} the result is not bad at all. In comparing with experiment from Table~\ref{table:GlobalDomainWithPoliticsTop20Coarse} the results now are way more better and are more usable. Also referencing to main experiment from Table~\ref{table:PoliticsdomainsWithPoliticsTop300Coarse} where the only difference is the number of abstracts used for training the model, now the result is a little bit better than there.  
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9921 & 0,9766 & 0,9843\\\hline
-				\textbf{Totals} & \textbf{0,9655} & \textbf{0,9766} & \textbf{0,9843}\\\hline
+				\textbf{Totals} & \textbf{0,9921} & \textbf{0,9766} & \textbf{0,9843}\\\hline
 		\end{tabular}
 		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 20 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop20Coarse}}		
 	\end{table}	
 	
-\textbf{Description of the experiment:}
+\textbf{Description of the experiment:} For the purposes of this experiment we have used the same data from the previous one, but now annotated in fine grain. To train this kind of model we needed 12.4 seconds, from which 10.80 seconds spent in optimization.  
 
-\textbf{Results of the experiment:}
+\textbf{Results of the experiment:} We tested the model with the same data that was created and how we can see from Table~\ref{table:PoliticsDomainWithPoliticsTop20Fine} model provides maximum precision on entities, but because of lower recall we have overall a quite lower F1 score. But in comparing with previous experiment the result is slightly better, which we cannot say that about experiment in Table~\ref{table:GlobalDomainWithPoliticsTop20Fine} where result is terrible. Also in comparing with the main experiment from Table~\ref{table:PoliticsdomainsWithPoliticsTop300Fine} now model provides also a little bit better result, but not that significant like in experiment from Table~\ref{table:GlobalDomainWithPoliticsTop20Fine} 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}

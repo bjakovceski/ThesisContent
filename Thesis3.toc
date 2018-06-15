@@ -39,14 +39,14 @@
 \contentsline {subsubsection}{\numberline {3.3.1.2}Evaluation of domain specific models}{26}{subsubsection.3.3.1.2}
 \contentsline {subsection}{\numberline {3.3.2}Experiments that has less than 300 abstracts in model}{29}{subsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.2.1}Evaluation of domain specific models}{33}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Evaluation of global domain}{36}{subsubsection.3.3.2.2}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Evaluation of domain specific models}{41}{subsubsection.3.3.2.3}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Evaluation of global domain with 20 abstracts from every domain }{36}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Evaluation of domain specific models with 20 abstracts}{41}{subsubsection.3.3.2.3}
 \contentsline {subsection}{\numberline {3.3.3}Experiments that have more than 300 abstracts in model and test files}{49}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}MIXED}{57}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{60}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{68}{subsection.3.3.6}
-\contentsline {section}{\numberline {3.4}Summary of results}{79}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Graphs}{79}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.3.4}MIXED}{58}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{61}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{69}{subsection.3.3.6}
+\contentsline {section}{\numberline {3.4}Summary of results}{80}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Graphs}{80}{subsection.3.4.1}
 \contentsline {chapter}{Conclusion}{81}{chapter*.9}
 \contentsline {chapter}{Bibliography}{83}{chapter*.10}
 \contentsline {appendix}{\chapternumberline {A}Retrieved types}{87}{appendix.A}
