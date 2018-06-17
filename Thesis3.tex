@@ -2092,6 +2092,10 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 \subsubsection{Evaluation of domain specific models with 500 abstracts}
 
+	\textbf{Description of the experiment:} In this experiment we train a domain specific coarse grain model with dataset that contains only abstracts from "POLITICS" domain. The time needed to train this model was 165.6 seconds, from which 152.45 seconds spent in optimization. The model is tested with the same dataset that is trained.
+
+	\textbf{Results of the experiment:} As we can see from Table~\ref{table:500PoliticsDomainWithPoliticsTop500Coarse} this model provides a better result than the 2 experiments with the global model in Table~\ref{table:500GlobalDomainWithAllAbstractsTop500Coarse} and and a way more better results than experiment from Table~\ref{table:500GlobalDomainWithPoliticsTop500Coarse}. As well referencing to main experiment in Table~\ref{table:PoliticsdomainsWithPoliticsTop300Coarse}, now model gives better results. 
+
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
@@ -2100,6 +2104,10 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 		\end{tabular}
 		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500PoliticsDomainWithPoliticsTop500Coarse}}
 	\end{table}
+
+textbf{Description of the experiment:} With the same data from the previous experiment, but not annotated in fine grain, we train new model. We needed 479.3 seconds to train this model, from which 465.16 seconds spent in optimization. The model is tested with the same dataset that was trained.
+
+	\textbf{Results of the experiment:} Table~\ref{table:500PoliticsDomainWithPoliticsTop500Fine} shows the outcome of the experiment, where we see that even results on every type are close to maximum, the overall results is a bit better than the previous experiment. But in comparing to the experiment with global domain inTable~\ref{table:500GlobalDomainWithPoliticsTop500Fine}, now results are way more better, we don't have any wrong recognition and also entities from Election ontology type are recognized. Referencing to the main experiment in Table~\ref{table:PoliticsdomainsWithPoliticsTop300Fine}, as well now model provides a better results, which is surprisingly for such big dataset.
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
@@ -2114,6 +2122,10 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+	\textbf{Description of the experiment:} For the purposes of the experiment we train a coarse grain model with dataset that contains only abstracts from "SPORT" domain. Time needed to train this kind of model was 115.0 seconds, from which 103.59 seconds spent in optimization. The model is tested like in previous experiments, with the same dataset that is trained.
+
+	\textbf{Results of the experiment:} From Table~\ref{table:500SportDomainWithSportTop500Coarse} we see that model gives a slightly better results than in experiments with global domain in Table~\ref{table:500GlobalDomainWithAllAbstractsTop500Coarse} and Table~\ref{table:500GlobalDomainWithSportTop500Coarse}. Also referencing to the main experiment in Table~\ref{table:SportdomainsWithSportTop300Coarse}, now model gives again significant better results than there.
+
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
@@ -2122,6 +2134,10 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 		\end{tabular}
 		\caption{Outcome of "SPORT" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500SportDomainWithSportTop500Coarse}}
 	\end{table}
+
+	\textbf{Description of the experiment:} This experiment is provided with a "SPORT" fine grain model. To train this model we needed 1175.1 seconds, from which 1158.90 seconds spent in optimization. Test is the same like previous experiment, where dataset now are annotated in fine grain.
+
+	\textbf{Results of the experiment:} As we see from Table~\ref{table:500GlobalDomainWithSportTop500Fine} the overall results is a bit better than previous experiment, as well better than experiment provided with the global model in Table~\ref{table:500GlobalDomainWithSportTop500Fine}. Also referencing to main experiment in Table~\ref{table:SportdomainsWithSportTop300Fine}, now model was more precise than there, an because of that gives better results.
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
@@ -2139,6 +2155,11 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 	\end{table}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+	\textbf{Description of the experiment:} Experiment in Table~\ref{table:500TransportationDomainWithTransportationTop500Coarse} is provided with a coarse grain model train with dataset from "TRANSPORTATION" domain. To train this model we needed 78.3 seconds in total, from which 67.96 seconds spent in optimization. As previous model is tested with same dataset that is trained.
+
+	\textbf{Results of the experiment:} Table~\ref{table:500TransportationDomainWithTransportationTop500Coarse} shows that model provides very good results on every measurement. Comparably with experiments with global model in Table~\ref{table:500GlobalDomainWithAllAbstractsTop500Coarse} and Table~\ref{table:500GlobalDomainWithTransportationTop500Coarse}, now model gives better overall score than there and it's faster to train and provide experiment. As well referencing to main experiment in Table~\ref{table:TransportationDomainsWithTransportationTop300Coarse} again results from this experiment are significantly better than main experiment results.
+
+
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
@@ -2148,6 +2169,9 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500TransportationDomainWithTransportationTop500Coarse}}
 	\end{table}
 	
+	\textbf{Description of the experiment:} The final experiment with this group of number of abstracts is fine grain model for "TRANSPORTATION" domain. Time taken to train this kind of model was in total 1040.2 seconds, from which 1023.55 seconds, spent in optimization. Testing routine is the same here.
+
+	\textbf{Results of the experiment:} From Table~\ref{table:500TransportationDomainWithTransportationTop500Fine} we again have excellent results. Comparing with the experiment provided with global model in Table~\ref{table:500GlobalDomainWithTransportationTop500Fine} and the main experiment in Table~\ref{table:TransportationDomainsWithTransportationTop300Fine}, model here gives a better results, than in those experiments.
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
@@ -2165,6 +2189,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500TransportationDomainWithTransportationTop500Fine}}
 	\end{table}	
 		
+		CONLUSION!!!!!!!!!!!!!!!!!!!!!!!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 \subsection{MIXED}
 \begin{table}[H]\centering

@@ -50,16 +50,16 @@
 \contentsline {subsubsection}{\numberline {3.3.3.2}Evaluation of domain specific models with 400 abstracts}{63}{subsubsection.3.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3.3}Evaluation of global domain with 500 abstracts from every domain }{66}{subsubsection.3.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.3.4}Evaluation of domain specific models with 500 abstracts}{71}{subsubsection.3.3.3.4}
-\contentsline {subsection}{\numberline {3.3.4}MIXED}{73}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{76}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{84}{subsection.3.3.6}
-\contentsline {section}{\numberline {3.4}Summary of results}{95}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Graphs}{95}{subsection.3.4.1}
-\contentsline {chapter}{Conclusion}{97}{chapter*.9}
-\contentsline {chapter}{Bibliography}{99}{chapter*.10}
-\contentsline {appendix}{\chapternumberline {A}Retrieved types}{103}{appendix.A}
-\contentsline {section}{\numberline {A.1}POLITICS types}{103}{section.A.1}
-\contentsline {section}{\numberline {A.2}SPORT types}{103}{section.A.2}
-\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{104}{section.A.3}
-\contentsline {appendix}{\chapternumberline {B}Stanford NER properties file}{107}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Contents of CD}{109}{appendix.C}
+\contentsline {subsection}{\numberline {3.3.4}MIXED}{75}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{78}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{86}{subsection.3.3.6}
+\contentsline {section}{\numberline {3.4}Summary of results}{97}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Graphs}{97}{subsection.3.4.1}
+\contentsline {chapter}{Conclusion}{99}{chapter*.9}
+\contentsline {chapter}{Bibliography}{101}{chapter*.10}
+\contentsline {appendix}{\chapternumberline {A}Retrieved types}{105}{appendix.A}
+\contentsline {section}{\numberline {A.1}POLITICS types}{105}{section.A.1}
+\contentsline {section}{\numberline {A.2}SPORT types}{105}{section.A.2}
+\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{106}{section.A.3}
+\contentsline {appendix}{\chapternumberline {B}Stanford NER properties file}{109}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Contents of CD}{111}{appendix.C}
