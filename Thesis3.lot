@@ -61,52 +61,52 @@
 \contentsline {table}{\numberline {3.55}{\ignorespaces Outcome of "SPORT" domain specific model in fine grained run with 40 abstracts from the same domain }}{50}{table.3.55}
 \contentsline {table}{\numberline {3.56}{\ignorespaces Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 40 abstracts from the same domain }}{50}{table.3.56}
 \contentsline {table}{\numberline {3.57}{\ignorespaces Outcome of "TRANSPORTATION" domain specific model in fine grained run with 40 abstracts from the same domain }}{51}{table.3.57}
-\contentsline {table}{\numberline {3.58}{\ignorespaces TABLE}}{51}{table.3.58}
-\contentsline {table}{\numberline {3.59}{\ignorespaces TABLE}}{51}{table.3.59}
-\contentsline {table}{\numberline {3.60}{\ignorespaces TABLE}}{51}{table.3.60}
-\contentsline {table}{\numberline {3.61}{\ignorespaces TABLE}}{52}{table.3.61}
-\contentsline {table}{\numberline {3.62}{\ignorespaces TABLE}}{52}{table.3.62}
-\contentsline {table}{\numberline {3.63}{\ignorespaces TABLE}}{52}{table.3.63}
-\contentsline {table}{\numberline {3.64}{\ignorespaces TABLE}}{53}{table.3.64}
-\contentsline {table}{\numberline {3.65}{\ignorespaces TABLE}}{53}{table.3.65}
-\contentsline {table}{\numberline {3.66}{\ignorespaces TABLE}}{53}{table.3.66}
-\contentsline {table}{\numberline {3.67}{\ignorespaces TABLE}}{54}{table.3.67}
-\contentsline {table}{\numberline {3.68}{\ignorespaces TABLE}}{54}{table.3.68}
-\contentsline {table}{\numberline {3.69}{\ignorespaces TABLE}}{54}{table.3.69}
-\contentsline {table}{\numberline {3.70}{\ignorespaces TABLE}}{54}{table.3.70}
-\contentsline {table}{\numberline {3.71}{\ignorespaces TABLE}}{55}{table.3.71}
-\contentsline {table}{\numberline {3.72}{\ignorespaces TABLE}}{55}{table.3.72}
-\contentsline {table}{\numberline {3.73}{\ignorespaces TABLE}}{55}{table.3.73}
-\contentsline {table}{\numberline {3.74}{\ignorespaces TABLE}}{55}{table.3.74}
-\contentsline {table}{\numberline {3.75}{\ignorespaces TABLE}}{56}{table.3.75}
-\contentsline {table}{\numberline {3.76}{\ignorespaces TABLE}}{56}{table.3.76}
-\contentsline {table}{\numberline {3.77}{\ignorespaces TABLE}}{56}{table.3.77}
-\contentsline {table}{\numberline {3.78}{\ignorespaces TABLE}}{57}{table.3.78}
-\contentsline {table}{\numberline {3.79}{\ignorespaces TABLE}}{57}{table.3.79}
-\contentsline {table}{\numberline {3.80}{\ignorespaces TABLE}}{57}{table.3.80}
-\contentsline {table}{\numberline {3.81}{\ignorespaces TABLE}}{58}{table.3.81}
-\contentsline {table}{\numberline {3.82}{\ignorespaces TABLE}}{58}{table.3.82}
-\contentsline {table}{\numberline {3.83}{\ignorespaces TABLE}}{58}{table.3.83}
-\contentsline {table}{\numberline {3.84}{\ignorespaces TABLE}}{58}{table.3.84}
-\contentsline {table}{\numberline {3.85}{\ignorespaces TABLE}}{58}{table.3.85}
-\contentsline {table}{\numberline {3.86}{\ignorespaces TABLE}}{59}{table.3.86}
-\contentsline {table}{\numberline {3.87}{\ignorespaces TABLE}}{59}{table.3.87}
-\contentsline {table}{\numberline {3.88}{\ignorespaces TABLE}}{59}{table.3.88}
-\contentsline {table}{\numberline {3.89}{\ignorespaces TABLE}}{59}{table.3.89}
-\contentsline {table}{\numberline {3.90}{\ignorespaces TABLE}}{60}{table.3.90}
-\contentsline {table}{\numberline {3.91}{\ignorespaces TABLE}}{60}{table.3.91}
-\contentsline {table}{\numberline {3.92}{\ignorespaces TABLE}}{61}{table.3.92}
-\contentsline {table}{\numberline {3.93}{\ignorespaces TABLE}}{61}{table.3.93}
-\contentsline {table}{\numberline {3.94}{\ignorespaces TABLE}}{61}{table.3.94}
-\contentsline {table}{\numberline {3.95}{\ignorespaces TABLE}}{62}{table.3.95}
-\contentsline {table}{\numberline {3.96}{\ignorespaces TABLE}}{62}{table.3.96}
-\contentsline {table}{\numberline {3.97}{\ignorespaces TABLE}}{62}{table.3.97}
-\contentsline {table}{\numberline {3.98}{\ignorespaces TABLE}}{62}{table.3.98}
-\contentsline {table}{\numberline {3.99}{\ignorespaces TABLE}}{62}{table.3.99}
-\contentsline {table}{\numberline {3.100}{\ignorespaces All 3 Domains Fine Grained Top 300 With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{63}{table.3.100}
-\contentsline {table}{\numberline {3.101}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower Page Rank}}{64}{table.3.101}
-\contentsline {table}{\numberline {3.102}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{65}{table.3.102}
-\contentsline {table}{\numberline {3.103}{\ignorespaces Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links And Transportation Fine Grained Top 300 Links}}{66}{table.3.103}
+\contentsline {table}{\numberline {3.58}{\ignorespaces Outcomes of global model in coarse grained run with 100 abstracts from every domain }}{51}{table.3.58}
+\contentsline {table}{\numberline {3.59}{\ignorespaces Outcomes of global model in coarse grained run with 100 abstracts from "POLITICS" domain }}{52}{table.3.59}
+\contentsline {table}{\numberline {3.60}{\ignorespaces Outcomes of global model in coarse grained run with 100 abstracts from "SPORT" domain }}{52}{table.3.60}
+\contentsline {table}{\numberline {3.61}{\ignorespaces Outcomes of global model in coarse grained run with 100 abstracts from "TRANSPORTATION" domain }}{53}{table.3.61}
+\contentsline {table}{\numberline {3.62}{\ignorespaces Outcomes of global model in fine grained run with 100 abstracts from every domain }}{53}{table.3.62}
+\contentsline {table}{\numberline {3.63}{\ignorespaces Outcomes of global model in fine grained run with 100 abstracts from "POLITICS" domain }}{54}{table.3.63}
+\contentsline {table}{\numberline {3.64}{\ignorespaces Outcomes of global model in fine grained run with 100 abstracts from "SPORT" domain }}{54}{table.3.64}
+\contentsline {table}{\numberline {3.65}{\ignorespaces Outcomes of global model in fine grained run with 100 abstracts from "TRANSPORTATION" domain }}{55}{table.3.65}
+\contentsline {table}{\numberline {3.66}{\ignorespaces Outcome of "POLITICS" domain specific model in coarse grained run with 100 abstracts from the same domain }}{55}{table.3.66}
+\contentsline {table}{\numberline {3.67}{\ignorespaces Outcome of "POLITICS" domain specific model in fine grained run with 100 abstracts from the same domain }}{56}{table.3.67}
+\contentsline {table}{\numberline {3.68}{\ignorespaces Outcome of "SPORT" domain specific model in coarse grained run with 100 abstracts from the same domain }}{56}{table.3.68}
+\contentsline {table}{\numberline {3.69}{\ignorespaces Outcome of "SPORT" domain specific model in fine grained run with 100 abstracts from the same domain }}{57}{table.3.69}
+\contentsline {table}{\numberline {3.70}{\ignorespaces Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 100 abstracts from the same domain }}{57}{table.3.70}
+\contentsline {table}{\numberline {3.71}{\ignorespaces Outcome of "TRANSPORTATION" domain specific model in fine grained run with 100 abstracts from the same domain }}{58}{table.3.71}
+\contentsline {table}{\numberline {3.72}{\ignorespaces Outcomes of global model in coarse grained run with 400 abstracts from every domain }}{59}{table.3.72}
+\contentsline {table}{\numberline {3.73}{\ignorespaces Outcomes of global model in coarse grained run with 400 abstracts from "POLITICS" domain }}{59}{table.3.73}
+\contentsline {table}{\numberline {3.74}{\ignorespaces Outcomes of global model in coarse grained run with 400 abstracts from "SPORT" domain }}{60}{table.3.74}
+\contentsline {table}{\numberline {3.75}{\ignorespaces Outcomes of global model in coarse grained run with 400 abstracts from "TRANSPORTATION" domain }}{60}{table.3.75}
+\contentsline {table}{\numberline {3.76}{\ignorespaces Outcomes of global model in fine grained run with 400 abstracts from every domain }}{61}{table.3.76}
+\contentsline {table}{\numberline {3.77}{\ignorespaces Outcomes of global model in fine grained run with 400 abstracts from "POLITICS" domain }}{62}{table.3.77}
+\contentsline {table}{\numberline {3.78}{\ignorespaces Outcomes of global model in fine grained run with 400 abstracts from "SPORT" domain }}{62}{table.3.78}
+\contentsline {table}{\numberline {3.79}{\ignorespaces Outcomes of global model in fine grained run with 400 abstracts from "TRANSPORTATION" domain }}{63}{table.3.79}
+\contentsline {table}{\numberline {3.80}{\ignorespaces Outcome of "POLITICS" domain specific model in coarse grained run with 400 abstracts from the same domain }}{64}{table.3.80}
+\contentsline {table}{\numberline {3.81}{\ignorespaces Outcome of "POLITICS" domain specific model in fine grained run with 400 abstracts from the same domain }}{64}{table.3.81}
+\contentsline {table}{\numberline {3.82}{\ignorespaces Outcome of "SPORT" domain specific model in coarse grained run with 400 abstracts from the same domain }}{64}{table.3.82}
+\contentsline {table}{\numberline {3.83}{\ignorespaces Outcome of "SPORT" domain specific model in fine grained run with 400 abstracts from the same domain }}{65}{table.3.83}
+\contentsline {table}{\numberline {3.84}{\ignorespaces Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 400 abstracts from the same domain }}{66}{table.3.84}
+\contentsline {table}{\numberline {3.85}{\ignorespaces Outcome of "TRANSPORTATION" domain specific model in fine grained run with 400 abstracts from the same domain }}{66}{table.3.85}
+\contentsline {table}{\numberline {3.86}{\ignorespaces Outcomes of global model in coarse grained run with 500 abstracts from every domain }}{67}{table.3.86}
+\contentsline {table}{\numberline {3.87}{\ignorespaces Outcomes of global model in coarse grained run with 500 abstracts from "POLITICS" domain }}{67}{table.3.87}
+\contentsline {table}{\numberline {3.88}{\ignorespaces Outcomes of global model in coarse grained run with 500 abstracts from "SPORT" domain }}{68}{table.3.88}
+\contentsline {table}{\numberline {3.89}{\ignorespaces Outcomes of global model in coarse grained run with 500 abstracts from "TRANSPORTATION" domain }}{68}{table.3.89}
+\contentsline {table}{\numberline {3.90}{\ignorespaces Outcomes of global model in fine grained run with 500 abstracts from every domain }}{69}{table.3.90}
+\contentsline {table}{\numberline {3.91}{\ignorespaces Outcomes of global model in fine grained run with 500 abstracts from "POLITICS" domain }}{70}{table.3.91}
+\contentsline {table}{\numberline {3.92}{\ignorespaces Outcomes of global model in fine grained run with 500 abstracts from "SPORT" domain }}{70}{table.3.92}
+\contentsline {table}{\numberline {3.93}{\ignorespaces Outcomes of global model in fine grained run with 500 abstracts from "TRANSPORTATION" domain }}{71}{table.3.93}
+\contentsline {table}{\numberline {3.94}{\ignorespaces Outcome of "POLITICS" domain specific model in coarse grained run with 500 abstracts from the same domain }}{71}{table.3.94}
+\contentsline {table}{\numberline {3.95}{\ignorespaces Outcome of "POLITICS" domain specific model in fine grained run with 500 abstracts from the same domain }}{71}{table.3.95}
+\contentsline {table}{\numberline {3.96}{\ignorespaces Outcome of "SPORT" domain specific model in coarse grained run with 500 abstracts from the same domain }}{72}{table.3.96}
+\contentsline {table}{\numberline {3.97}{\ignorespaces Outcome of "SPORT" domain specific model in fine grained run with 500 abstracts from the same domain }}{72}{table.3.97}
+\contentsline {table}{\numberline {3.98}{\ignorespaces Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 500 abstracts from the same domain }}{72}{table.3.98}
+\contentsline {table}{\numberline {3.99}{\ignorespaces Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 500 abstracts from the same domain }}{72}{table.3.99}
+\contentsline {table}{\numberline {3.100}{\ignorespaces All 3 Domains Fine Grained Top 300 With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{73}{table.3.100}
+\contentsline {table}{\numberline {3.101}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower Page Rank}}{74}{table.3.101}
+\contentsline {table}{\numberline {3.102}{\ignorespaces All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links With Lower PageRank}}{75}{table.3.102}
+\contentsline {table}{\numberline {3.103}{\ignorespaces Transportation Fine Grained Top 500 Links Runned With All 3 Domains Fine Grained Top 300 Links And Transportation Fine Grained Top 300 Links}}{76}{table.3.103}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

@@ -1044,8 +1044,10 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 		\caption{Outcomes of global model in fine grained run with 20 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop20Fine}}		
 	\end{table}
 
-		 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 	 
+
 \subsubsection{Evaluation of domain specific models with 20 abstracts}
+
 \textbf{Description of the experiment:} Experiment in Table~\ref{table:PoliticsDomainWithPoliticsTop20Coarse} was provided with model trained only with abstracts from "POLITICS" domain in coarse grain. To train this model we needed 5.4 seconds, from which 3.81 seconds spent in optimization.
 
 \textbf{Results of the experiment:} How we can see from Table~\ref{table:PoliticsDomainWithPoliticsTop20Coarse} the result is not bad at all. In comparing with experiment from Table~\ref{table:GlobalDomainWithPoliticsTop20Coarse} the results now are way more better and are more usable. Also referencing to main experiment from Table~\ref{table:PoliticsdomainsWithPoliticsTop300Coarse} where the only difference is the number of abstracts used for training the model, now the result is a little bit better than there.  
@@ -1141,6 +1143,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Evaluation of global domain with 40 abstracts from every domain }
+
 \textbf{Datasets with 40 abstracts for every domain.} Now we have increased number of retrieved links from DBpedia to 40 abstracts. To retrieve links and prepare datasets that contains 40 abstracts to every domain our algorithm needs 30.94 minutes.
 
 	\textbf{Description of the experiment:} In Table~\ref{table:GlobalDomainWithAllAbstractsTop40Coarse} we provide an experiment where the model is trained with all retrieved abstracts (120 abstracts in total) in coarse grain. To train this model with Stanford NER we needed 101.7 seconds, from which 91.52 seconds spent in optimization. We have tested the model with the same dataset that was created. 
@@ -1285,6 +1288,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	\end{table}	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 \subsubsection{Evaluation of domain specific models with 40 abstracts}
 
 	\textbf{Description of the experiment:} The experiment here is provided with coarse grain model that is trained with dataset that contains only abstracts from "POLITICS" domain. To train this model we needed 13.9 seconds, from which 10.36 seconds spent in optimization. It is tested with the same dataset that is trained.
@@ -1386,15 +1390,16 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\subsection{Top 100 Links}
 
-	\textbf{Description of the experiment:} 
+\subsubsection{Evaluation of global domain with 100 abstracts from every domain }
 
-	\textbf{Results of the experiment:}
+\textbf{Datasets with 100 abstracts for every domain.} In this final group of 100 abstracts per domain we will repeat all experiments like in previous groups, to see how model will behaves when is closer to the number of abstracts in main experiment. To retrieve and prepare datasets for training in Stanford NER, our algorithm needs in total 63.71 minutes, which is twice more than when we had 40 abstracts for every domain.  
+
+	\textbf{Description of the experiment:} In Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Coarse} we provide an experiment where the model is trained with, in total, 300 abstracts annotated in coarse grain. To train this kind of model we needed  258.1 seconds, from which 246.28 seconds spent in optimization. The model is tested with the dataset that was trained. 
+
+	\textbf{Results of the experiment:} As we can see from Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Coarse} now model provides maximum result only in precision measurement on "TRANSPORTATION" domain. From here we can see that results are closer to the main experiment from Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}, but still results here are little bit better than there. 
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9920 & 0,9612 & 0,9764\\
@@ -1402,64 +1407,60 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				TRANSPORTATION & 1,0000 & 0,9735 & 0,9865\\\hline
 				\textbf{Totals} & \textbf{0,9952} & \textbf{0,9766} & \textbf{0,9856}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 100 abstracts from every domain \label{table:100GlobalDomainWithAllAbstractsTop100Coarse}}
 	\end{table}
 
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} For purposes of this experiment we have used the model train previously, but now it is tested with the dataset that contains only abstracts from "POLITICS" domain, annotated in coarse grain.
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} From Table~\ref{table:100GlobalDomainWithPoliticsTop100Coarse} we see that even we have a precision close to maximum value, but because of very low recall, the F1 score is lower, which means that model recognize only half of our entities. When we compare with the previous experiment is clearly that there the results for "POLITICS" domain are better. Also comparably with the main experiment from Table~\ref{table:All3domainsWithPoliticsTop300Coarse} results there a quite better than now, although there model recognize some entities from "TRANSPORTATION" domain.
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9920 & 0,3615 & 0,5299\\\hline
 				\textbf{Totals} & \textbf{0,9920} & \textbf{0,3615} & \textbf{0,5299}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 100 abstracts from "POLITICS" domain \label{table:100GlobalDomainWithPoliticsTop100Coarse}}
 	\end{table}
 
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} In this experiment we also used the global trained model, but now it is tested with "SPORT" domain abstracts dataset.
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} Table~\ref{table:100GlobalDomainWithSportTop100Coarse} shows the output of the experiment, from where we see that even the results aren't at their maximum are quite satisfying, but are a little bit lower than in global experiment in Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Coarse}. As well in comparing with the main experiment from Table~\ref{table:All3domainsWithSportTop300Coarse}, now, very importantly, we don't have any wrong entity recognition and even if we compare only results from "SPORT" domain, still result is better now.
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				SPORT & 0,9962 & 0,9888 & 0,9925\\\hline
 				\textbf{Totals} & \textbf{0,9962} & \textbf{0,9888} & \textbf{0,9925}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 100 abstracts from "SPORT" domain \label{table:100GlobalDomainWithSportTop100Coarse}}
 	\end{table}	
 
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} Final experiment with the global domain is that is tested with the dataset that contains only abstracts from "TRANSPORTATION" domain.
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} From Table~\ref{table:100GlobalDomainWithTransportationTop100Coarse} we see that model also recognize some entities from "SPORT" domain, that are not part of the tested dataset. Also if we compare only results for "TRANSPORTATION" domain with the results from global experiment in Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Coarse}, they are the same, but now because of that wrong recognition, overall results is slightly lower. The exact situation is in main experiment from Table~\ref{table:All3domainsWithTransportationTop300Coarse} where model also make a mistake, but there results are better than here.
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				SPORT & 0,0000 & 1,0000 & 0,0000\\
 				TRANSPORTATION & 1,0000 & 0,9735 & 0,9865\\\hline
 				\textbf{Totals} & \textbf{0,9821} & \textbf{0,9735} & \textbf{0,9778}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 100 abstracts from "TRANSPORTATION" domain \label{table:100GlobalDomainWithTransportationTop100Coarse}}
 	\end{table}	
 		
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} For purposes of this and the next 3 experiments we train a fine grain global model with 100 abstracts from every domain. To train this kind of model we needed 857.3 seconds, from which 844.91 seconds spent in optimization. In this experiment we tested the model with the dataset that was trained. 
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} From Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Fine} we can see the results for every particular ontology type. Now model preforms bad results mostly for types from "SPORT" domain. And it happens again that the fine grain model gives worst total results than the coarse grain model (see Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Coarse} for coarse grain results). As well referencing to main experiment in Table~\ref{table:All3domainsWithAll3DomainsTop300Fine} the results there are way more better than here, although there we have more data.
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 1,0000 & 0,6957 & 0,8205\\
@@ -1481,16 +1482,15 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9452} & \textbf{0,7535} & \textbf{0,8385}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 100 abstracts from every domain \label{table:100GlobalDomainWithAllAbstractsTop100Fine}}
 	\end{table}
 
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} In this experiment we tested the global model with dataset that contains only abstracts from "POLITICS" domain, of coarse annotated in fine grain.  
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} Table~\ref{table:100GlobalDomainWithPoliticsTop100Fine} shows the output of the experiment, where model provides terrible results and also recognize entity with SportEvent type which is not part of the dataset, but don't recognize any entity with Election type who is part of the dataset. As well this experiment gives a worst total result than the coarse grain experiment in Table~\ref{table:100GlobalDomainWithPoliticsTop100Coarse} and worst type results than global model from previous experiment. Finally the results now are worse than in main experiment from Table~\ref{table:All3domainsWithPoliticsTop300Fine}.
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Election & 0,0000 & 0,0000 & 0,0000\\
@@ -1499,16 +1499,15 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsEvent & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,8985} & \textbf{0,2580} & \textbf{0,4009}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 100 abstracts from "POLITICS" domain \label{table:100GlobalDomainWithPoliticsTop100Fine}}
 	\end{table}	
 
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} Here we also have the global train model, but for this experiment is tested with dataset abstracts from "SPORT" domain.
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} As we see from Table~\ref{table:100GlobalDomainWithSportTop100Fine} model gives exact the same results for every ontology type like in global experiment in Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Fine}, where because of worst recall the overall result are lower than in comparing with the coarse grain experiment in Table~\ref{table:100GlobalDomainWithSportTop100Coarse}. As well referencing to main experiment in Table~\ref{table:All3domainsWithSportTop300Fine}, now again results are worse than there.  
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Athlete & 1,0000 & 0,4167 & 0,5882\\
@@ -1520,16 +1519,15 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 0,6250 & 0,7692\\\hline
 				\textbf{Totals} & \textbf{0,9683} & \textbf{0,7985} & \textbf{0,8753}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 100 abstracts from "SPORT" domain \label{table:100GlobalDomainWithSportTop100Fine}}
 	\end{table}	
 
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} The final experiment with the global model is with dataset that contains only abstracts from "TRANSPORTATION" domain.
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} Table~\ref{table:100GlobalDomainWithTransportationTop100Fine} shows the outcome of the experiment, where again the results for every individual ontology type aren't increased from the result in global experiment in Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Fine}. Because of worst recall in Aircraft, PublicTransitSystem and Ship types we have a lower total result than in coarse grain experiment in Table~\ref{table:100GlobalDomainWithTransportationTop100Coarse}. Not surprisingly for this group of experiment, the results from here are also worst than in main experiment from Table~\ref{table:All3domainsWithTransportationTop300Fine}.
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 1,0000 & 0,6957 & 0,8205\\
@@ -1544,32 +1542,32 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9677} & \textbf{0,7965} & \textbf{0,8738}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 100 abstracts from "TRANSPORTATION" domain \label{table:100GlobalDomainWithTransportationTop100Fine}}
 	\end{table}		
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\textbf{Description of the experiment:} 
+\subsubsection{Evaluation of domain specific models with 100 abstracts}
 
-	\textbf{Results of the experiment:}
+	\textbf{Description of the experiment:} In this experiment we train a domain specific coarse grain model with dataset that contains only abstracts from "POLITICS" domain. The time needed to train this model was 34.2 seconds, from which 28.45 seconds spent in optimization. The model is tested with the same dataset that is trained.
+
+	\textbf{Results of the experiment:} As we can see from Table~\ref{table:100PoliticsDomainWithPoliticsTop100Coarse} this model provides a better result than the 2 experiments with the global model in Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Coarse} and and a way more better results than experiment from Table~\ref{table:100GlobalDomainWithPoliticsTop100Coarse}. As well referencing to main experiment in Table~\ref{table:PoliticsdomainsWithPoliticsTop300Coarse}, now model gives better results. 
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9956 & 0,9898 & 0,9927\\\hline
 				\textbf{Totals} & \textbf{0,9956} & \textbf{0,9898} & \textbf{0,9927}\\\hline
 		\end{tabular}
+		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 100 abstracts from the same domain \label{table:100PoliticsDomainWithPoliticsTop100Coarse}}
 	\end{table}
 
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} With the same data from the previous experiment, but not annotated in fine grain, we train new model. We needed 89.4 seconds to train this model, from which 83.54 seconds spent in optimization. The model is tested with the same dataset that was trained.
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} Table~\ref{table:100PoliticsDomainWithPoliticsTop100Fine} shows the outcome of the experiment, where we see that even results on every type are close to maximum, the overall results is slightly lower than the previous experiment. But in comparing to the experiments with global domain in Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Fine} and Table~\ref{table:100GlobalDomainWithPoliticsTop100Fine}, now results are better, we don't have any wrong recognition and also entities from Election ontology type are recognized. Referencing to the main experiment in Table~\ref{table:PoliticsdomainsWithPoliticsTop300Fine}, now as well results are way more better and more usable.
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Election & 1,0000 & 0,9878 & 0,9939\\
@@ -1577,32 +1575,30 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Politician & 0,9937 & 0,9906 & 0,9922\\\hline
 				\textbf{Totals} & \textbf{0,9956} & \textbf{0,9883} & \textbf{0,9920}\\\hline
 		\end{tabular}
+		\caption{Outcome of "POLITICS" domain specific model in fine grained run with 100 abstracts from the same domain \label{table:100PoliticsDomainWithPoliticsTop100Fine}}
 	\end{table}	
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} For the purposes of the experiment we train a coarse grain model with dataset that contains only abstracts from "SPORT" domain. Time needed to train this kind of model was 25.3 seconds, from which 20.47 seconds spent in optimization. The model is tested like in previous experiments, with the same dataset that is trained.
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} From Table~\ref{table:100SportDomainWithSportTop100Coarse} we see that model gives a slightly better results than in experiments with global domain in Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Coarse} and Table~\ref{table:100GlobalDomainWithSportTop100Coarse}. Also referencing to the main experiment in Table~\ref{table:SportdomainsWithSportTop300Coarse}, now model gives results that are closer to the maximum values, but we don't have that much data here.
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				SPORT & 0,9963 & 0,9963 & 0,9963\\\hline
 				\textbf{Totals} & \textbf{0,9963} & \textbf{0,9963} & \textbf{0,9963}\\\hline
 		\end{tabular}
+		\caption{Outcome of "SPORT" domain specific model in coarse grained run with 100 abstracts from the same domain \label{table:100SportDomainWithSportTop100Coarse}}
 	\end{table}
 
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} This experiment is provided with a "SPORT" fine grain model. To train this model we needed 194.2 seconds, from which 187.77 seconds spent in optimization. Test is the same like previous experiment, where dataset now are annotated in fine grain.
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} As we see from Table~\ref{table:100GlobalDomainWithSportTop100Fine} the overall results is lower than previous experiment, but way better than experiments provided with the global model in Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Fine} and Table~\ref{table:100GlobalDomainWithSportTop100Fine}. Also referencing to main experiment in Table~\ref{table:SportdomainsWithSportTop300Fine}, now model was more precise than there, an because of that gives better results.
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Athlete & 1,0000 & 0,9722 & 0,9859\\
@@ -1614,31 +1610,29 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9888} & \textbf{0,9944}\\\hline
 		\end{tabular}
+		\caption{Outcome of "SPORT" domain specific model in fine grained run with 100 abstracts from the same domain \label{table:100SportDomainWithSportTop100Fine}}
 	\end{table}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} Experiment in Table~\ref{table:100TransportationDomainWithTransportationTop100Coarse} is provided with a coarse grain model train with dataset from "TRANSPORTATION" domain. To train this model we needed 20.5 seconds in total, from which 14.93 seconds spent in optimization. As previous model is tested with same dataset that is trained.
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} Table~\ref{table:100TransportationDomainWithTransportationTop100Coarse} shows that model provides maximum precision on entities, but slight lower recall which results with lower F1 score. Comparably with experiments with global model in Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Coarse} and Table~\ref{table:100GlobalDomainWithTransportationTop100Coarse}, now model gives better score than there and it's faster to train and provide experiment. As well referencing to main experiment in Table~\ref{table:TransportationDomainsWithTransportationTop300Coarse} again those results are lower than domain specific model. 
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				TRANSPORTATION & 1,0000 & 0,9912 & 0,9956\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9912} & \textbf{0,9956}\\\hline
 		\end{tabular}
+		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 100 abstracts from the same domain \label{table:100TransportationDomainWithTransportationTop100Coarse}}
 	\end{table}
 	
 
-	\textbf{Description of the experiment:} 
+	\textbf{Description of the experiment:} The final experiment with this group of number of abstracts is fine grain model for "TRANSPORTATION" domain. Time taken to train this kind of model was in total 134.6 seconds, from which 126.98 seconds, spent in optimization. Testing routine is the same here.
 
-	\textbf{Results of the experiment:}
+	\textbf{Results of the experiment:} From Table~\ref{table:100TransportationDomainWithTransportationTop100Fine} we again have a lower result than the previous experiment with coarse grain model. But referencing to main experiment in Table~\ref{table:TransportationDomainsWithTransportationTop300Fine}, results now are closer to maximum value. As well the same situation is with experiments provided with global model in Table~\ref{table:100GlobalDomainWithAllAbstractsTop100Fine} and Table~\ref{table:100GlobalDomainWithTransportationTop100Fine} where those results there are lower than domain specific model results.
 	
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
@@ -1651,15 +1645,24 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9735} & \textbf{0,9865}\\\hline
 		\end{tabular}
+		\caption{Outcome of "TRANSPORTATION" domain specific model in fine grained run with 100 abstracts from the same domain \label{table:100TransportationDomainWithTransportationTop100Fine}}
 	\end{table}	
 
+
+In conclusion we can say that models that were trained with lower number of abstracts than in main experiment, mostly provides a better results, of coarse the time needed to train those models and make experiments was faster, but here we don't have that much data unlike in main experiment, which if we try some other dataset who was not used to train the models, the results can we worst here than in models who has more trained data. Except the experiment where we had 100 abstracts to every domain, in most of other experiment, the fine grain model gives more precise recognition than the coarse grain model, which for us was quite surprise. And in the every group of experiment the domain specific models gives same or better results than global models and if we put there the time needed for training or testing domain specific models, then the results for now is that domain specific models are better for usage. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Experiments that have more than 300 abstracts in model and test files}
-%Top 400 links
+In this subsection we have a two groups of number of abstracts retrieved from DBpedia, that are bigger than in the main experiment. One of them is where we have 400 abstracts per domain and the other one is with 500 abstracts per domain, which is the maximum that we succeeded to train.
+
+\subsubsection{Evaluation of global domain with 400 abstracts from every domain }
+\textbf{Datasets with 400 abstracts for every domain.} As well because we waned to know the impact of train data who has more abstracts than the main experiment, we've increased the number of retrieved data to 400 abstracts per domain. Our algorithm needs 184.92 minutes to retrieve data from DBpedia and prepare datasets ready to use in Stanford NER application.
+
+\textbf{Description of the experiment:} In Table~\ref{table:400GlobalDomainWithAllAbstractsTop400Coarse} we provide an experiment where the model was trained with abstracts from every domain, in total 1200 abstracts, annotated in coarse grain. We need 1041.3 seconds to train the model, from which 1008.25 seconds spent in optimization. The model was tested with the same dataset that was trained.    
+
+\textbf{Results of the experiment:} Table~\ref{table:400GlobalDomainWithAllAbstractsTop400Coarse} show the output of the experiment, where the results to every domain are close to the maximum values on every measurement. We can say that for such big model the results are fantastic. Referring to the main experiment from Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}, now this kind of model provide slightly lower results, but we have more trained data here.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9804 & 0,9434 & 0,9615\\
@@ -1667,11 +1670,14 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				TRANSPORTATION & 0,9941 & 0,9754 & 0,9847\\\hline
 				\textbf{Totals} & \textbf{0,9849} & \textbf{0,9584} & \textbf{0,9714}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 400 abstracts from every domain \label{table:400GlobalDomainWithAllAbstractsTop400Coarse}}
 	\end{table}
 
+\textbf{Description of the experiment:} For purposes of the experiment in Table~\ref{table:400GlobalDomainWithPoliticsTop400Coarse} we have use the same global trained model from the previous experiment, but now the test file contains only 400 abstracts from "POLITICS" domain. 
+
+\textbf{Results of the experiment:} From Table~\ref{table:400GlobalDomainWithPoliticsTop400Coarse} we see that the result is way more worst than the previous experiment, also model recognizes entities from other domain which are not part of dataset.If we compare only result of "POLITICS" type with the previous experiment we can see that now results are worst then there. Also in comparing with the main experiment from Table~\ref{table:All3domainsWithPoliticsTop300Coarse}, now model gives a very very little better results, although recognize entities from "SPORT" domain, which is not the case in main experiment.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9754 & 0,4082 & 0,5756\\
@@ -1679,11 +1685,16 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9531} & \textbf{0,4082} & \textbf{0,5716}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 400 abstracts from "POLITICS" domain \label{table:400GlobalDomainWithPoliticsTop400Coarse}}
 	\end{table}
 
+
+\textbf{Description of the experiment:} This experiment is almost identical like previous one, with only difference is test file, where now we tested with abstracts from "SPORT" domain.
+
+\textbf{Results of the experiment:} From Table~\ref{table:400GlobalDomainWithSportTop400Coarse} we see that model despite "SPORT" type, recognize entities from other 2 domain which are not part of dataset, This brings results a little bit lower than the results of "SPORT" type. We have the same situation on the main experiment in Table~\ref{table:All3domainsWithSportTop300Coarse}, but now results there are better for a bit. As well if we get only results for "SPORT" type and compare with the results from global model in Table~\ref{table:400GlobalDomainWithAllAbstractsTop400Coarse} we can see that now results are again a bit better.
+
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,0000 & 1,0000 & 0,0000\\
@@ -1691,11 +1702,14 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9805} & \textbf{0,9588} & \textbf{0,9695}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 400 abstracts from "SPORT" domain \label{table:400GlobalDomainWithSportTop400Coarse}}
 	\end{table}	
 
+\textbf{Description of the experiment:} The final experiment is also the same like previous two, where now test file contains only abstracts from "TRANSPORTATION" domain.
+
+\textbf{Results of the experiment:} Table~\ref{table:400GlobalDomainWithTransportationTop400Coarse} shows that for "TRANSPORTATION" entities we have precision closer to maximum value. But how in previous 2 experiment, also here model recognize entities which are not part of test dataset. Now if we compare only the results of "TRANSPORTATION" type with the results in global model from Table~\ref{table:400GlobalDomainWithAllAbstractsTop400Coarse} we see that global model provides a slight better results. Referring to the main experiment from Table~\ref{table:All3domainsWithTransportationTop300Coarse}, the overall results of the experiments are the same, but now model recognize entities also with "POLITICS" type and the result for "TRANSPORTATION" type are as well a bit lower.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,0000 & 1,0000 & 0,0000\\
@@ -1703,14 +1717,18 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				TRANSPORTATION & 0,9939 & 0,9762 & 0,9806\\\hline
 				\textbf{Totals} & \textbf{0,9861} & \textbf{0,9822} & \textbf{0,9841}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 400 abstracts from "TRANSPORTATION" domain \label{table:400GlobalDomainWithTransportationTop400Coarse}}
 	\end{table}	
 		
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
+\textbf{Description of the experiment:} Experiment in Table~\ref{table:400GlobalDomainWithAllAbstractsTop400Fine} is provided with same data like the experiment in Table~\ref{table:400GlobalDomainWithAllAbstractsTop400Coarse}, but now the model and test data are annotated in fine grained. We needed in total 5139.7 seconds to train model, from which 5095.94 seconds spent in optimization.
+
+\textbf{Results of the experiment:} How we can see from Table~\ref{table:400GlobalDomainWithAllAbstractsTop400Fine} our model provide maximum precision on most of entity types and maximum recall on some entity types. This helps to have a bit better results the experiment in coarse grain model from Table~\ref{table:400GlobalDomainWithAllAbstractsTop400Coarse}. Also in comparing with the main experiment from Table~\ref{table:All3domainsWithAll3DomainsTop300Fine} we have a slightly lower results here, but a more annotated entities.
+
+
+	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
@@ -1732,11 +1750,16 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9870} & \textbf{0,9709} & \textbf{0,9789}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 400 abstracts from every domain \label{table:400GlobalDomainWithAllAbstractsTop400Fine}}
 	\end{table}
 
+\textbf{Description of the experiment:} In this experiment we use the same trained model from previous experiment, but now the test file contains only abstracts from "POLITICS" domain, who is annotated in fine grain.
+
+\textbf{Results of the experiment:} Table~\ref{table:400GlobalDomainWithPoliticsTop400Fine} show the output of the experiment, where we can see that even we have Election type on model and test file, the model do not find any entity with that type. Also for the Politician type we have a very low recall, which reflects that there is a very low overall result. Here we can also see which types the model recognize from other 2 domains, who are not part of the dataset. This also contributes to lower result.
+
+In comparing with the experiment in coarse grain (see Table~\ref{table:400GlobalDomainWithPoliticsTop400Coarse}, now we have a bit better overall result. As well the results here are better than in main experiment from Table~\ref{table:All3domainsWithPoliticsTop300Fine}, even the model now recognize more types than there.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 0,0000 & 1,0000 & 0,0000\\				
@@ -1749,11 +1772,14 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsLeague & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9619} & \textbf{0,4151} & \textbf{0,5799}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 400 abstracts from "POLITICS" domain \label{table:400GlobalDomainWithPoliticsTop400Fine}}
 	\end{table}	
 
+\textbf{Description of the experiment:} How in the previous experiment also here we have the same model but now tested with abstracts from "SPORT" domain annotated in fine grain.
+
+\textbf{Results of the experiment:} In Table~\ref{table:400GlobalDomainWithSportsTop400Fine} we have the output of the provided experiment. How we can see the results are not bad at all for such big data. Comparable with the coarse grain model in Table~\ref{table:400GlobalDomainWithSportTop400Coarse} now we have a better overall result, although model also recognize wrong entities. Referencing to main experiment in Table~\ref{table:All3domainsWithSportTop300Fine} the results there are bit lower than now, even though than model recognize more wrong entities than in main experiment.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 0,0000 & 1,0000 & 0,0000\\
@@ -1769,11 +1795,15 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9821} & \textbf{0,9721} & \textbf{0,9770}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 400 abstracts from "SPORT" domain \label{table:400GlobalDomainWithSportsTop400Fine}}
 	\end{table}	
 
+
+\textbf{Description of the experiment:} The last experiment with the model used in previous 3 experiment is now the dataset test file with abstracts from "TRANSPORTATION" domain also annotated in fine grain.
+
+\textbf{Results of the experiment:} Table~\ref{table:400GlobalDomainWithTransportationTop400Fine} shows that our train model provide a bit better results than the coarse grain experiment in Table~\ref{table:400GlobalDomainWithTransportationTop400Coarse}. Also comparing with the main experiment from Table~\ref{table:All3domainsWithTransportationTop300Fine}, results there are little bit better than now. Than can be because model recognize one more wrong entity (PoliticalParty entity).
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
@@ -1790,23 +1820,31 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9866} & \textbf{0,9866} & \textbf{0,9866}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 400 abstracts from "TRANSPORTATION" domain \label{table:400GlobalDomainWithTransportationTop400Fine}}
 	\end{table}		
 	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Evaluation of domain specific models with 400 abstracts}
+
+\textbf{Description of the experiment:} Experiment in Table~\ref{table:400PoliticsDomainWithPoliticsTop400Coarse} was provided with model trained only with abstracts from "POLITICS" domain in coarse grain. To train this model we needed 125.6 seconds, from which 114.88 seconds spent in optimization. The model is tested with the same dataset that is created.
+
+\textbf{Results of the experiment:} How we can see from Table~\ref{table:400PoliticsDomainWithPoliticsTop400Coarse} the result is not bad at all for this big model. In comparing with experiments provided with global domain in Table~\ref{table:400GlobalDomainWithAllAbstractsTop400Coarse} and in Table~\ref{table:400GlobalDomainWithPoliticsTop400Coarse}, the result now is better and a significant difference in result we can see in experiment where we had a global model tested with same dataset like here (see Table~\ref{table:400GlobalDomainWithPoliticsTop400Coarse}). Also referencing to main experiment from Table~\ref{table:PoliticsdomainsWithPoliticsTop300Coarse} where the only difference is the number of abstracts used for training the model, now the result is a better than there, although that now we have more data.  
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9866 & 0,9479 & 0,9669\\\hline
 				\textbf{Totals} & \textbf{0,9866} & \textbf{0,9479} & \textbf{0,9669}\\\hline
 		\end{tabular}
+		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 400 abstracts from the same domain \label{table:400PoliticsDomainWithPoliticsTop400Coarse}}
 	\end{table}
 
+\textbf{Description of the experiment:} For the purposes of this experiment we have used the same data from the previous one, but now annotated in fine grain. To train this kind of model we needed 416.7 seconds, from which 405.16 seconds spent in optimization. 
+
+\textbf{Results of the experiment:} We tested the model with the same data that was created and how we can see from Table~\ref{table:400PoliticsDomainWithPoliticsTop400Fine} the overall result is better than previous experiment with coarse grain model. Also in comparing with the main experiment from Table~\ref{table:PoliticsdomainsWithPoliticsTop300Fine} now model provides also a better result, but not that significant like in experiment from Table~\ref{table:400GlobalDomainWithPoliticsTop400Fine}. 
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Election & 0,9975 & 0,9590 & 0,9779\\
@@ -1814,23 +1852,29 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Politician & 0,9977 & 0,9920 & 0,9948\\\hline
 				\textbf{Totals} & \textbf{0,9906} & \textbf{0,9717} & \textbf{0,9810}\\\hline
 		\end{tabular}
+		\caption{Outcome of "POLITICS" domain specific model in fine grained run with 400 abstracts from the same domain \label{table:400PoliticsDomainWithPoliticsTop400Fine}}
 	\end{table}	
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\textbf{Description of the experiment:} Experiment in Table~\ref{table:400SportDomainWithSportTop400Coarse} is provided with a coarse grain model trained with abstracts only from "SPORT" domain. The time needed to train this model was 90.9 seconds, from which 81.58 seconds spent in optimization. To test it we have used the same dataset that model was trained.  
+
+\textbf{Results of the experiment:} How we can see from Table~\ref{table:400SportDomainWithSportTop400Coarse} the trained model give a worthy results, who in comparing with the experiments provided with global model in Table~\ref{table:400GlobalDomainWithAllAbstractsTop400Coarse} and Table~\ref{table:400GlobalDomainWithSportTop400Coarse} are a bit better. As well comparing with the results from the main experiment (see Table~\ref{table:SportdomainsWithSportTop300Coarse}) we see that now results are also quite better, although we have a more entities.   
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				SPORT & 0,9858 & 0,9676 & 0,9766\\\hline
 				\textbf{Totals} & \textbf{0,9858} & \textbf{0,8676} & \textbf{0,9766}\\\hline
 		\end{tabular}
+		\caption{Outcome of "SPORT" domain specific model in coarse grained run with 400 abstracts from the same domain \label{table:400SportDomainWithSportTop400Coarse}}
 	\end{table}
 
+\textbf{Description of the experiment:} In this experiment we have used the same dataset from previous, but now entities are annotated in fine grain. To train a fine grain model we have need 915.1 seconds, from which 898.50 second spent in optimization. As well as previous the model is tested with the dataset that is trained.
+
+\textbf{Results of the experiment:} In Table~\ref{table:400SportDomainWithSportTop400Fine} we see the output of the experiment. Model give maximum precision on most of entities, as well the recall values are not bad at all but only one entity has maximum result. This results with a bit lower F1 score than the maximum value. In comparing with the previous experiment now overall result is a little bit better. Also comparing with the experiment with a global model in Table~\ref{table:400GlobalDomainWithSportsTop400Fine}, again results are better. Final comparison is with main experiment in Table~\ref{table:SportdomainsWithSportTop300Fine}, where as well the result is significantly better now.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Athlete & 1,0000 & 0,9731 & 0,9863\\
@@ -1842,23 +1886,28 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 0,9900 & 0,9796\\\hline
 				\textbf{Totals} & \textbf{0,9865} & \textbf{0,9727} & \textbf{0,9796}\\\hline
 		\end{tabular}
+		\caption{Outcome of "SPORT" domain specific model in fine grained run with 400 abstracts from the same domain \label{table:400SportDomainWithSportTop400Fine}}
 	\end{table}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\textbf{Description of the experiment:} At the end we train a model with abstracts from "TRANSPORTATION" domain. To train a coarse grain model from this domain we needed 72.5 seconds, from which 64.53 seconds spent in optimization. Of coarse, here also we tested the model with the same dataset that was created. 
+
+\textbf{Results of the experiment:} In Table~\ref{table:400TransportationDomainWithTransportationTop400Coarse} we see that the model, unlike in previous experiment, gives values from every measurement close to maximum value. When we compare the results with the results from experiments provided with the global model in Table~\ref{table:400GlobalDomainWithAllAbstractsTop400Coarse} and Table~\ref{table:400GlobalDomainWithTransportationTop400Coarse} we can see that now we again have a bit better result than in those experiments. Referring to main experiment in Table~\ref{table:TransportationDomainsWithTransportationTop300Coarse}, the results are as well significantly better and more usable.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				TRANSPORTATION & 0,9954 & 0,9747 & 0,9850\\\hline
 				\textbf{Totals} & \textbf{0,9954} & \textbf{0,9747} & \textbf{0,9850}\\\hline
 		\end{tabular}
+		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 400 abstracts from the same domain \label{table:400TransportationDomainWithTransportationTop400Coarse}}
 	\end{table}
 	
+\textbf{Description of the experiment:} We also train a fine grain model from "TRANSPORTATION" domain. To train it we needed 725.2 seconds, from which 711.78 seconds spent in optimization. As well as the previous experiment, the model is tested with the same dataset that is created.
+
+\textbf{Results of the experiment:}	From the output of the experiment in Table~\ref{table:400TransportationDomainWithTransportationTop400Fine} we can see that model provides excellent results, despite that, that is tested with big dataset. Comparing with the experiment who was provided with the global model and tested with same dataset like here in Table~\ref{table:400GlobalDomainWithTransportationTop400Fine}, now we have a bit better results, but a significant improvement on the results we have when we refer to the main experiment from Table~\ref{table:TransportationDomainsWithTransportationTop300Fine}.	
 	
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 1,0000 & 0,9835 & 0,9917\\
@@ -1871,16 +1920,20 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9970} & \textbf{0,9807} & \textbf{0,9888}\\\hline
 		\end{tabular}
+		\caption{Outcome of "TRANSPORTATION" domain specific model in fine grained run with 400 abstracts from the same domain \label{table:400TransportationDomainWithTransportationTop400Fine}}
 	\end{table}	
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\subsection{Top 500 Links}
+\subsubsection{Evaluation of global domain with 500 abstracts from every domain }
 
+\textbf{Datasets with 500 abstracts for every domain.} In this final group of experiments with 500 abstracts per domain we will repeat all experiments unlike in previous groups. To retrieve and prepare datasets for training in Stanford NER, our algorithm needs in total 3.63 hours.  
+
+	\textbf{Description of the experiment:} In Table~\ref{table:500GlobalDomainWithAllAbstractsTop500Coarse} we provide an experiment where the model is trained with, in total, 1500 abstracts annotated in coarse grain. To train this kind of model we needed  1021.3 seconds, from which 989.89 seconds spent in optimization. The model is tested with the dataset that was trained. 
+
+	\textbf{Results of the experiment:} As we can see from Table~\ref{table:500GlobalDomainWithAllAbstractsTop500Coarse} model provides amazing results even though that we have now a lot of data. From here we can see that results are closer to the main experiment from Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}, but results there are bit better than now. 
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9788 & 0,9444 & 0,9613\\
@@ -1888,11 +1941,14 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				TRANSPORTATION & 0,9962 & 0,9750 & 0,9855\\\hline
 				\textbf{Totals} & \textbf{0,9857} & \textbf{0,9587} & \textbf{0,9720}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 500 abstracts from every domain \label{table:500GlobalDomainWithAllAbstractsTop500Coarse}}
 	\end{table}
 
+\textbf{Description of the experiment:} For purposes of this experiment we have used the model train previously, but now it is tested with the dataset that contains only abstracts from "POLITICS" domain, annotated in coarse grain.
+
+	\textbf{Results of the experiment:} From Table~\ref{table:500GlobalDomainWithPoliticsTop500Coarse} we see that even the precision is not that bad, but because of very low recall, the F1 score is lower, which means that model recognize only half of our entities. Also model recognize entities that are not part of the tested dataset. As well when we compare with the previous experiment is clearly that there the results for "POLITICS" domain are way more better. Also comparably with the main experiment from Table~\ref{table:All3domainsWithPoliticsTop300Coarse} results now are bit better, although there model recognize only some entities from "TRANSPORTATION" domain.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9734 & 0,4095 & 0,5765\\
@@ -1900,11 +1956,14 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9549} & \textbf{0,4095} & \textbf{0,5732}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 500 abstracts from "POLITICS" domain \label{table:500GlobalDomainWithPoliticsTop500Coarse}}
 	\end{table}
 
+\textbf{Description of the experiment:} In this experiment we also used the global trained model, but now it is tested with "SPORT" domain abstracts dataset.
+
+	\textbf{Results of the experiment:} Table~\ref{table:500GlobalDomainWithSportTop500Coarse} shows the output of the experiment, from where we see that even the results aren't at their maximum are quite satisfying for such a big model and dataset. Also here model recognize entities that are not part of the dataset. As well in comparing with the results for "SPORT" type in global model, now we have a very very little lower result. The same situation is with the main experiment in Table~\ref{table:All3domainsWithSportTop300Coarse}, where again results there are bit better.tter now.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,0000 & 1,0000 & 0,0000\\
@@ -1912,11 +1971,14 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9788} & \textbf{0,9594} & \textbf{0,9690}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 500 abstracts from "SPORT" domain \label{table:500GlobalDomainWithSportTop500Coarse}}
 	\end{table}	
 
+	\textbf{Description of the experiment:} Final experiment with the global domain is that is tested with the dataset that contains only abstracts from "TRANSPORTATION" domain.
+
+	\textbf{Results of the experiment:} From Table~\ref{table:500GlobalDomainWithTransportationTop500Coarse} we see that model again recognize some entities from other 2 domains, that are not part of the tested dataset. Also if we compare only results for "TRANSPORTATION" domain with the results from global experiment in Table~\ref{table:500GlobalDomainWithAllAbstractsTop500Coarse}, they are almost the same without any significant difference. The situation in main experiment from Table~\ref{table:All3domainsWithTransportationTop300Coarse} is a little bit different, because there model recognize only one wrong entity and the results are bit better.
+	
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,0000 & 1,0000 & 0,0000\\
@@ -1924,14 +1986,17 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				TRANSPORTATION & 0,9961 & 0,9769 & 0,9864\\\hline
 				\textbf{Totals} & \textbf{0,9870} & \textbf{0,9769} & \textbf{0,9819}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in coarse grained run with 500 abstracts from "TRANSPORTATION" domain \label{table:500GlobalDomainWithTransportationTop500Coarse}}
 	\end{table}	
 		
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
 
-\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
+	\textbf{Description of the experiment:} For purposes of this and the next 3 experiments we train a fine grain global model with 500 abstracts from every domain. To train this kind of model we needed 6706.7 seconds, from which 6650.30 seconds spent in optimization. In this experiment we tested the model with the dataset that was trained. 
+
+	\textbf{Results of the experiment:} From Table~\ref{table:500GlobalDomainWithAllAbstractsTop500Fine} we can see the results for every particular ontology type. So even we have a lot of entities we see that results are not bad at all, even model provides maximum precision on most of entities and maximum recall on some of entities, which for a big model is excellent. When we compare with the results from coarse grain model, now we have a bit better overall result. As well referencing to main experiment in Table~\ref{table:All3domainsWithAll3DomainsTop300Fine} the results there are bit worst than here, although here we have more data.
+
+	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 1,0000 & 0,9929 & 0,9964\\
@@ -1953,11 +2018,14 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9866} & \textbf{0,9669} & \textbf{0,9766}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 500 abstracts from every domain \label{table:500GlobalDomainWithAllAbstractsTop500Fine}}
 	\end{table}
 
+\textbf{Description of the experiment:} In this experiment we tested the global model with dataset that contains only abstracts from "POLITICS" domain, of coarse annotated in fine grain.  
+
+	\textbf{Results of the experiment:} Table~\ref{table:500GlobalDomainWithPoliticsTop500Fine} shows the output of the experiment, where model provides terrible results and also recognize entity types which is not part of the dataset, but don't recognize any entity with Election type who is part of the dataset. This model for consolation gives a bit better results than the experiment with coarse grain model in Table~\ref{table:500GlobalDomainWithPoliticsTop500Coarse}. As well referring to main experiment in Table~\ref{table:All3domainsWithPoliticsTop300Fine}, now model gives a bit better results, but when we take also the size of the model this is a huge difference.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 0,0000 & 1,0000 & 0,0000\\				
@@ -1970,11 +2038,14 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsLeague & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9631} & \textbf{0,4138} & \textbf{0,5789}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 500 abstracts from "POLITICS" domain \label{table:500GlobalDomainWithPoliticsTop500Fine}}
 	\end{table}	
 
+	\textbf{Description of the experiment:} Here we also have the global train model, but for this experiment is tested with dataset abstracts from "SPORT" domain.
+
+	\textbf{Results of the experiment:} As we see from Table~\ref{table:500GlobalDomainWithSportTop500Fine} model gives slightly better results than in the experiment with coarse grain model from Table~\ref{table:500GlobalDomainWithAllAbstractsTop500Coarse}. As well referencing to main experiment in Table~\ref{table:All3domainsWithSportTop300Fine}, now model provides a bit lower result.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 0,0000 & 1,0000 & 0,0000\\
@@ -1990,11 +2061,14 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9785} & \textbf{0,9690} & \textbf{0,9737}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 500 abstracts from "SPORT" domain \label{table:500GlobalDomainWithSportTop500Fine}}
 	\end{table}	
 
+	\textbf{Description of the experiment:} The final experiment with the global model is with dataset that contains only abstracts from "TRANSPORTATION" domain.
+
+	\textbf{Results of the experiment:} Table~\ref{table:500GlobalDomainWithTransportationTop500Fine} shows the outcome of the experiment, where for the types from "TRANSPORTATION" domain we have an excellent results, but because model also recognize wrong entities, the overall results is lower. But in comparing with the experiment with coarse grain model in Table~\ref{table:500GlobalDomainWithTransportationTop500Coarse}, now we have a bit better results. As well referring to main experiment in Table~\ref{table:All3domainsWithTransportationTop300Fine}, we now have again a bit lower result.
+
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 1,0000 & 0,9927 & 0,9963\\
@@ -2011,23 +2085,23 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9884} & \textbf{0,9833} & \textbf{0,9858}\\\hline
 		\end{tabular}
+		\caption{Outcomes of global model in fine grained run with 500 abstracts from "TRANSPORTATION" domain \label{table:500GlobalDomainWithTransportationTop500Fine}}
 	\end{table}		
 	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Evaluation of domain specific models with 500 abstracts}
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				POLITICS & 0,9808 & 0,9450 & 0,9626\\\hline
 				\textbf{Totals} & \textbf{0,9808} & \textbf{0,9450} & \textbf{0,9626}\\\hline
 		\end{tabular}
+		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500PoliticsDomainWithPoliticsTop500Coarse}}
 	\end{table}
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Election & 0,9915 & 0,9393 & 0,9647\\
@@ -2035,23 +2109,21 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Politician & 0,9962 & 0,9877 & 0,9919\\\hline
 				\textbf{Totals} & \textbf{0,9890} & \textbf{0,9648} & \textbf{0,9768}\\\hline
 		\end{tabular}
+		\caption{Outcome of "POLITICS" domain specific model in fine grained run with 500 abstracts from the same domain \label{table:500PoliticsDomainWithPoliticsTop500Fine}}
 	\end{table}	
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				SPORT & 0,9856 & 0,9706 & 0,9780\\\hline
 				\textbf{Totals} & \textbf{0,9856} & \textbf{0,9706} & \textbf{0,9780}\\\hline
 		\end{tabular}
+		\caption{Outcome of "SPORT" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500SportDomainWithSportTop500Coarse}}
 	\end{table}
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Athlete & 1,0000 & 0,9791 & 0,9894\\
@@ -2063,23 +2135,21 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 0,9915 & 0,9957\\\hline
 				\textbf{Totals} & \textbf{0,9861} & \textbf{0,9731} & \textbf{0,9796}\\\hline
 		\end{tabular}
+		\caption{Outcome of "SPORT" domain specific model in fine grained run with 500 abstracts from the same domain \label{table:500SportDomainWithSportTop500Fine}}
 	\end{table}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				TRANSPORTATION & 0,9974 & 0,9756 & 0,9864\\\hline
 				\textbf{Totals} & \textbf{0,9974} & \textbf{0,9756} & \textbf{0,9864}\\\hline
 		\end{tabular}
+		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500TransportationDomainWithTransportationTop500Coarse}}
 	\end{table}
 	
 	
 	\begin{table}[H]\centering
-		\caption{TABLE}
-		\label{}
 		\begin{tabular}{|l|l|l|l|}
 			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
 				Aircraft & 1,0000 & 0,9781 & 0,9889\\
@@ -2092,6 +2162,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9961} & \textbf{0,9769} & \textbf{0,9864}\\\hline
 		\end{tabular}
+		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500TransportationDomainWithTransportationTop500Fine}}
 	\end{table}	
 		
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	

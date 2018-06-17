@@ -43,17 +43,23 @@
 \contentsline {subsubsection}{\numberline {3.3.2.3}Evaluation of domain specific models with 20 abstracts}{41}{subsubsection.3.3.2.3}
 \contentsline {subsubsection}{\numberline {3.3.2.4}Evaluation of global domain with 40 abstracts from every domain }{44}{subsubsection.3.3.2.4}
 \contentsline {subsubsection}{\numberline {3.3.2.5}Evaluation of domain specific models with 40 abstracts}{48}{subsubsection.3.3.2.5}
-\contentsline {subsection}{\numberline {3.3.3}Experiments that have more than 300 abstracts in model and test files}{55}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}MIXED}{63}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{66}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{74}{subsection.3.3.6}
-\contentsline {section}{\numberline {3.4}Summary of results}{85}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Graphs}{85}{subsection.3.4.1}
-\contentsline {chapter}{Conclusion}{87}{chapter*.9}
-\contentsline {chapter}{Bibliography}{89}{chapter*.10}
-\contentsline {appendix}{\chapternumberline {A}Retrieved types}{93}{appendix.A}
-\contentsline {section}{\numberline {A.1}POLITICS types}{93}{section.A.1}
-\contentsline {section}{\numberline {A.2}SPORT types}{93}{section.A.2}
-\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{94}{section.A.3}
-\contentsline {appendix}{\chapternumberline {B}Stanford NER properties file}{97}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Contents of CD}{99}{appendix.C}
+\contentsline {subsubsection}{\numberline {3.3.2.6}Evaluation of global domain with 100 abstracts from every domain }{51}{subsubsection.3.3.2.6}
+\contentsline {subsubsection}{\numberline {3.3.2.7}Evaluation of domain specific models with 100 abstracts}{55}{subsubsection.3.3.2.7}
+\contentsline {subsection}{\numberline {3.3.3}Experiments that have more than 300 abstracts in model and test files}{58}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Evaluation of global domain with 400 abstracts from every domain }{58}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Evaluation of domain specific models with 400 abstracts}{63}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.3}Evaluation of global domain with 500 abstracts from every domain }{66}{subsubsection.3.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.4}Evaluation of domain specific models with 500 abstracts}{71}{subsubsection.3.3.3.4}
+\contentsline {subsection}{\numberline {3.3.4}MIXED}{73}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{76}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{84}{subsection.3.3.6}
+\contentsline {section}{\numberline {3.4}Summary of results}{95}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Graphs}{95}{subsection.3.4.1}
+\contentsline {chapter}{Conclusion}{97}{chapter*.9}
+\contentsline {chapter}{Bibliography}{99}{chapter*.10}
+\contentsline {appendix}{\chapternumberline {A}Retrieved types}{103}{appendix.A}
+\contentsline {section}{\numberline {A.1}POLITICS types}{103}{section.A.1}
+\contentsline {section}{\numberline {A.2}SPORT types}{103}{section.A.2}
+\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{104}{section.A.3}
+\contentsline {appendix}{\chapternumberline {B}Stanford NER properties file}{107}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Contents of CD}{109}{appendix.C}
