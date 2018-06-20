@@ -34,32 +34,30 @@
 \contentsline {section}{\numberline {3.1}Goals of the experiments}{21}{section.3.1}
 \contentsline {section}{\numberline {3.2}Evaluation metrics}{22}{section.3.2}
 \contentsline {section}{\numberline {3.3}List of experiments}{22}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Main experiment}{22}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Global domain models}{22}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Evaluation of domain specific models}{26}{subsubsection.3.3.1.2}
-\contentsline {subsection}{\numberline {3.3.2}Experiments that has less than 300 abstracts in model}{29}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Evaluation of domain specific models}{33}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Evaluation of global domain with 20 abstracts from every domain }{36}{subsubsection.3.3.2.2}
+\contentsline {subsection}{\numberline {3.3.1}Main experiment}{23}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Global domain models}{23}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Evaluation of domain specific models}{27}{subsubsection.3.3.1.2}
+\contentsline {subsection}{\numberline {3.3.2}Experiments that has less than 300 abstracts in model}{30}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Evaluation of domain specific models}{34}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Evaluation of global domain with 20 abstracts from every domain }{37}{subsubsection.3.3.2.2}
 \contentsline {subsubsection}{\numberline {3.3.2.3}Evaluation of domain specific models with 20 abstracts}{41}{subsubsection.3.3.2.3}
 \contentsline {subsubsection}{\numberline {3.3.2.4}Evaluation of global domain with 40 abstracts from every domain }{44}{subsubsection.3.3.2.4}
-\contentsline {subsubsection}{\numberline {3.3.2.5}Evaluation of domain specific models with 40 abstracts}{48}{subsubsection.3.3.2.5}
-\contentsline {subsubsection}{\numberline {3.3.2.6}Evaluation of global domain with 100 abstracts from every domain }{51}{subsubsection.3.3.2.6}
-\contentsline {subsubsection}{\numberline {3.3.2.7}Evaluation of domain specific models with 100 abstracts}{55}{subsubsection.3.3.2.7}
-\contentsline {subsection}{\numberline {3.3.3}Experiments that have more than 300 abstracts in model and test files}{58}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}Evaluation of global domain with 400 abstracts from every domain }{58}{subsubsection.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.3.2}Evaluation of domain specific models with 400 abstracts}{63}{subsubsection.3.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3.3}Evaluation of global domain with 500 abstracts from every domain }{66}{subsubsection.3.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.4}Evaluation of domain specific models with 500 abstracts}{71}{subsubsection.3.3.3.4}
-\contentsline {subsection}{\numberline {3.3.4}MIXED}{75}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Experiments with lower training abstracts on model, but higher abstracts on test file}{78}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Experiments with higher training abstracts on model, but lower abstracts on test file}{86}{subsection.3.3.6}
-\contentsline {section}{\numberline {3.4}Summary of results}{97}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Graphs}{97}{subsection.3.4.1}
-\contentsline {chapter}{Conclusion}{99}{chapter*.9}
-\contentsline {chapter}{Bibliography}{101}{chapter*.10}
-\contentsline {appendix}{\chapternumberline {A}Retrieved types}{105}{appendix.A}
-\contentsline {section}{\numberline {A.1}POLITICS types}{105}{section.A.1}
-\contentsline {section}{\numberline {A.2}SPORT types}{105}{section.A.2}
-\contentsline {section}{\numberline {A.3}TRANSPORTATION types}{106}{section.A.3}
-\contentsline {appendix}{\chapternumberline {B}Stanford NER properties file}{109}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Contents of CD}{111}{appendix.C}
+\contentsline {subsubsection}{\numberline {3.3.2.5}Evaluation of domain specific models with 40 abstracts}{49}{subsubsection.3.3.2.5}
+\contentsline {subsubsection}{\numberline {3.3.2.6}Evaluation of global domain with 100 abstracts from every domain }{52}{subsubsection.3.3.2.6}
+\contentsline {subsubsection}{\numberline {3.3.2.7}Evaluation of domain specific models with 100 abstracts}{56}{subsubsection.3.3.2.7}
+\contentsline {subsection}{\numberline {3.3.3}Experiments that have more than 300 abstracts in model and test files}{59}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Evaluation of global domain with 400 abstracts from every domain }{59}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Evaluation of domain specific models with 400 abstracts}{64}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.3}Evaluation of global domain with 500 abstracts from every domain }{67}{subsubsection.3.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.4}Evaluation of domain specific models with 500 abstracts}{72}{subsubsection.3.3.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Evaluation of domains tested with two or more datasets}{75}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Evaluation of model who are trained with 500 abstracts and are tested with texts from news papers}{79}{subsection.3.3.5}
+\contentsline {chapter}{Conclusion}{85}{chapter*.9}
+\contentsline {subsection}{Future work}{86}{section*.10}
+\contentsline {subsection}{\numberline {3.3.6}Potential usage}{86}{subsection.3.3.6}
+\contentsline {chapter}{Bibliography}{87}{chapter*.11}
+\contentsline {appendix}{\chapternumberline {A}Retrieved types}{91}{appendix.A}
+\contentsline {section}{\numberline {A.1}Acronyms}{91}{section.A.1}
+\contentsline {section}{\numberline {A.2}POLITICS domain types}{91}{section.A.2}
+\contentsline {section}{\numberline {A.3}SPORT domain types}{91}{section.A.3}
+\contentsline {appendix}{\chapternumberline {B}Contents of CD}{93}{appendix.B}
