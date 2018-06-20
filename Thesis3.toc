@@ -54,8 +54,8 @@
 \contentsline {subsection}{\numberline {3.3.5}Evaluation of model who are trained with 500 abstracts and are tested with texts from news papers}{79}{subsection.3.3.5}
 \contentsline {chapter}{Conclusion}{85}{chapter*.9}
 \contentsline {subsection}{Future work}{86}{section*.10}
-\contentsline {subsection}{\numberline {3.3.6}Potential usage}{86}{subsection.3.3.6}
-\contentsline {chapter}{Bibliography}{87}{chapter*.11}
+\contentsline {subsection}{Potential usage}{86}{section*.11}
+\contentsline {chapter}{Bibliography}{87}{chapter*.12}
 \contentsline {appendix}{\chapternumberline {A}Retrieved types}{91}{appendix.A}
 \contentsline {section}{\numberline {A.1}Acronyms}{91}{section.A.1}
 \contentsline {section}{\numberline {A.2}POLITICS domain types}{91}{section.A.2}
