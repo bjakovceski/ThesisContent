@@ -13,51 +13,51 @@
 \contentsline {subsubsection}{\numberline {1.1.2.2}DBpedia Spotlight}{6}{subsubsection.1.1.2.2}
 \contentsline {subsubsection}{\numberline {1.1.2.3}spaCy}{6}{subsubsection.1.1.2.3}
 \contentsline {subsubsection}{\numberline {1.1.2.4}GATE}{6}{subsubsection.1.1.2.4}
-\contentsline {subsubsection}{\numberline {1.1.2.5}OpenNLP}{6}{subsubsection.1.1.2.5}
+\contentsline {subsubsection}{\numberline {1.1.2.5}OpenNLP}{7}{subsubsection.1.1.2.5}
 \contentsline {subsubsection}{\numberline {1.1.2.6}Chatbot NER}{7}{subsubsection.1.1.2.6}
-\contentsline {subsection}{\numberline {1.1.3}RDF/NIF}{7}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}DBpedia}{7}{subsection.1.1.4}
-\contentsline {subsubsection}{\numberline {1.1.4.1}DBpedia NIF}{8}{subsubsection.1.1.4.1}
-\contentsline {subsubsection}{\numberline {1.1.4.2}DBpedia ontology}{8}{subsubsection.1.1.4.2}
-\contentsline {subsection}{\numberline {1.1.5}Apache Jena}{9}{subsection.1.1.5}
-\contentsline {subsection}{\numberline {1.1.6}SPARQL}{9}{subsection.1.1.6}
-\contentsline {section}{\numberline {1.2}Related work}{10}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Domain specific Named Entity Recognition}{10}{subsection.1.2.1}
-\contentsline {chapter}{\chapternumberline {2}Domain specific named entity recognition}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}Data pre-processing}{11}{section.2.1}
-\contentsline {section}{\numberline {2.2}Domain specification}{13}{section.2.2}
-\contentsline {section}{\numberline {2.3}Types retrieval}{14}{section.2.3}
-\contentsline {section}{\numberline {2.4}Data transformation}{15}{section.2.4}
-\contentsline {section}{\numberline {2.5}Model generation}{18}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Training datasets}{18}{subsection.2.5.1}
-\contentsline {chapter}{\chapternumberline {3}Experiments}{21}{chapter.3}
-\contentsline {section}{\numberline {3.1}Goals of the experiments}{21}{section.3.1}
-\contentsline {section}{\numberline {3.2}Evaluation metrics}{22}{section.3.2}
-\contentsline {section}{\numberline {3.3}List of experiments}{22}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Main experiment}{23}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Global domain models}{23}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Evaluation of domain specific models}{27}{subsubsection.3.3.1.2}
-\contentsline {subsection}{\numberline {3.3.2}Experiments that has less than 300 abstracts in model}{30}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Evaluation of domain specific models}{34}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Evaluation of global domain with 20 abstracts from every domain }{37}{subsubsection.3.3.2.2}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Evaluation of domain specific models with 20 abstracts}{41}{subsubsection.3.3.2.3}
-\contentsline {subsubsection}{\numberline {3.3.2.4}Evaluation of global domain with 40 abstracts from every domain }{44}{subsubsection.3.3.2.4}
-\contentsline {subsubsection}{\numberline {3.3.2.5}Evaluation of domain specific models with 40 abstracts}{49}{subsubsection.3.3.2.5}
-\contentsline {subsubsection}{\numberline {3.3.2.6}Evaluation of global domain with 100 abstracts from every domain }{52}{subsubsection.3.3.2.6}
-\contentsline {subsubsection}{\numberline {3.3.2.7}Evaluation of domain specific models with 100 abstracts}{56}{subsubsection.3.3.2.7}
-\contentsline {subsection}{\numberline {3.3.3}Experiments that have more than 300 abstracts in model and test files}{59}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}Evaluation of global domain with 400 abstracts from every domain }{59}{subsubsection.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.3.2}Evaluation of domain specific models with 400 abstracts}{64}{subsubsection.3.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3.3}Evaluation of global domain with 500 abstracts from every domain }{67}{subsubsection.3.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.4}Evaluation of domain specific models with 500 abstracts}{72}{subsubsection.3.3.3.4}
-\contentsline {subsection}{\numberline {3.3.4}Evaluation of domains tested with two or more datasets}{75}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Evaluation of model who are trained with 500 abstracts and are tested with texts from news papers}{79}{subsection.3.3.5}
-\contentsline {chapter}{Conclusion}{85}{chapter*.9}
-\contentsline {subsection}{Future work}{86}{section*.10}
-\contentsline {subsection}{Potential usage}{86}{section*.11}
-\contentsline {chapter}{Bibliography}{87}{chapter*.12}
-\contentsline {appendix}{\chapternumberline {A}Retrieved types}{91}{appendix.A}
-\contentsline {section}{\numberline {A.1}Acronyms}{91}{section.A.1}
-\contentsline {section}{\numberline {A.2}POLITICS domain types}{91}{section.A.2}
-\contentsline {section}{\numberline {A.3}SPORT domain types}{91}{section.A.3}
-\contentsline {appendix}{\chapternumberline {B}Contents of CD}{93}{appendix.B}
+\contentsline {subsection}{\numberline {1.1.3}RDF and NLP interchange format}{7}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}DBpedia}{9}{subsection.1.1.4}
+\contentsline {subsubsection}{\numberline {1.1.4.1}DBpedia NIF}{9}{subsubsection.1.1.4.1}
+\contentsline {subsubsection}{\numberline {1.1.4.2}DBpedia ontology}{9}{subsubsection.1.1.4.2}
+\contentsline {subsection}{\numberline {1.1.5}Apache Jena}{10}{subsection.1.1.5}
+\contentsline {subsection}{\numberline {1.1.6}SPARQL}{10}{subsection.1.1.6}
+\contentsline {section}{\numberline {1.2}Related work}{11}{section.1.2}
+\contentsline {chapter}{\chapternumberline {2}Domain specific named entity recognition}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Data pre-processing}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Domain specification}{15}{section.2.2}
+\contentsline {section}{\numberline {2.3}Domain population}{16}{section.2.3}
+\contentsline {section}{\numberline {2.4}Data transformation}{17}{section.2.4}
+\contentsline {section}{\numberline {2.5}Model generation}{20}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Training datasets}{20}{subsection.2.5.1}
+\contentsline {chapter}{\chapternumberline {3}Experiments}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Goals of the experiments}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Evaluation metrics}{23}{section.3.2}
+\contentsline {section}{\numberline {3.3}List of experiments}{24}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Main experiment}{25}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Global domain models}{25}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Evaluation of domain specific models}{29}{subsubsection.3.3.1.2}
+\contentsline {subsection}{\numberline {3.3.2}Experiments that has less than 300 abstracts in model}{32}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Evaluation of domain specific models}{36}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Evaluation of global domain with 20 abstracts from every domain }{39}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Evaluation of domain specific models with 20 abstracts}{44}{subsubsection.3.3.2.3}
+\contentsline {subsubsection}{\numberline {3.3.2.4}Evaluation of global domain with 40 abstracts from every domain }{47}{subsubsection.3.3.2.4}
+\contentsline {subsubsection}{\numberline {3.3.2.5}Evaluation of domain specific models with 40 abstracts}{51}{subsubsection.3.3.2.5}
+\contentsline {subsubsection}{\numberline {3.3.2.6}Evaluation of global domain with 100 abstracts from every domain }{54}{subsubsection.3.3.2.6}
+\contentsline {subsubsection}{\numberline {3.3.2.7}Evaluation of domain specific models with 100 abstracts}{58}{subsubsection.3.3.2.7}
+\contentsline {subsection}{\numberline {3.3.3}Experiments that have more than 300 abstracts in model and test files}{61}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Evaluation of global domain with 400 abstracts from every domain }{61}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Evaluation of domain specific models with 400 abstracts}{66}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.3}Evaluation of global domain with 500 abstracts from every domain }{69}{subsubsection.3.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.4}Evaluation of domain specific models with 500 abstracts}{74}{subsubsection.3.3.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Evaluation of domains tested with two or more datasets}{77}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Evaluation of model who are trained with 500 abstracts and are tested with texts from news papers}{81}{subsection.3.3.5}
+\contentsline {chapter}{Conclusion}{87}{chapter*.9}
+\contentsline {subsection}{Future work}{88}{section*.10}
+\contentsline {chapter}{Bibliography}{89}{chapter*.11}
+\contentsline {appendix}{\chapternumberline {A}Appendix}{93}{appendix.A}
+\contentsline {section}{\numberline {A.1}Acronyms}{93}{section.A.1}
+\contentsline {section}{\numberline {A.2}POLITICS domain types}{93}{section.A.2}
+\contentsline {section}{\numberline {A.3}SPORT domain types}{93}{section.A.3}
+\contentsline {section}{\numberline {A.4}TRANSPORTATION domain types}{94}{section.A.4}
+\contentsline {section}{\numberline {A.5}Properties file used for training models}{94}{section.A.5}
+\contentsline {appendix}{\chapternumberline {B}Contents of CD}{97}{appendix.B}
