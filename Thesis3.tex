@@ -20,12 +20,14 @@
 \usepackage{dirtree} %directory tree visualisation
 
 \usepackage{listings}
+%\lstset{language=SQL,morekeywords={PREFIX,java,rdf,rdfs,url}}
+
 %\usepackage{booktabs, makecell, longtable}
 
 \usepackage[section]{placeins}
 \usepackage{float}
 \usepackage{pgfplots}
-\graphicspath{ {"C:/Users/Jakovcheski/Desktop/Stanford NER output/OneAnnotationAbstractBaseOnPageRank/"} }
+\graphicspath{ {"C:/Users/Jakovcheski/Desktop/"} }
 
 % list of acronyms
  \usepackage[acronym,nonumberlist,toc,numberedsection=autolabel,nomain]{glossaries}
@@ -67,25 +69,24 @@
 \begin{introduction}
 
 \section{Motivation}
-    Named Entity Recognition (NER)\cite{wiki:NER} is locating and classifying named entities in text into some pre-defined categories such as locations, organizations, person name, sport etc. Today NER is used to different areas from full-text search and filtering to preprocessing tool for other NLP tasks \cite{master:NER}.  	
+    Named Entity Recognition (NER)\cite{wiki:NER} is locating and classifying named entities in text into some pre-defined categories such as locations, organizations, person name, sport etc. Today NER is used to different areas from full-text search and filtering to preprocessing tool for other Natural Language Processing (NLP tasks), such as Text Summarization, Machine Translation, Part-of-speech tagging, Entity linking, Text simplification etc. \cite{master:NER}.  	
 		
-    Most NER applications are trained on a general text and on a specific domain, the problem is that they are optimized for the specific type of data i.e. specific domain. That means that those NER applications can give nice results on texts or domains that are trained, but bad results for texts on a specific domain for which that NER is not trained.
+    Most NER applications are trained on a general text and on a specific domain, the problem is that they are optimized for the specific type of data i.e. specific domain. That means that those NER applications can give very good results on texts or domains that are trained, but bad results for texts on a specific domain for which that NER application is not trained.
 	  
     Most of the NER applications are trained on a small number of types. For example, at the moment of writing this thesis, Stanford NER\footnote{http://nlp.stanford.edu:8080/ner/} has a model that have maximum 7 types, DBpedia Spotlight\footnote{https://www.dbpedia-spotlight.org/demo/} has model with 31 types, spaCy\footnote{https://spacy.io/usage/linguistic-features} build-in model has 18 types and spaCy Wikipedia scheme model have 4 types.
 	  
-	The main goal of this thesis is to research possibilities of training NER models for a specific domain. To achieve this goal it is necessary to create datasets for certain domains. This research is focused on 3 domains, "POLITICS", "SPORT" and "TRANSPORTATION". Every domain is specified with a certain number on types from DBpedia Ontology, then for creating datasets is used DBpedia NIF who gives an opportunity to approaches to information from Wikipedia abstracts, for example, types that annotated words has in those abstracts.
-	  
-	  %Thesis research which is the quality of trained domains, the impact of the size of the data and the quality of the defined domains.
+	The main goal of this thesis is to research possibilities of training NER models for a specific domain and as well for a specific types. To achieve this goal it is necessary to create datasets for certain domains. This research is focused on 3 domains, "POLITICS", "SPORT" and "TRANSPORTATION". Every domain is specified with a certain number on types from DBpedia Ontology, then for creating datasets is used DBpedia NIF dataset who provides data for every Wikipedia article.
+	
+	 %gives an opportunity to approaches to information from Wikipedia abstracts, for example, types that annotated words has in those abstracts.
 	  
 	  
 \section{Goals of the thesis}	
-	Nevertheless, vast majority of the developed NER systems have been developed as general-purpose systems. While they can perform well on multiple domains (macro level), on specific domains (micro level) their performance quality might be low. The ultimate goal of the thesis is to develop domain-specific NER models. Guidelines:
+	Vast majority of the developed NER systems have been developed as general-purpose systems. While they can perform well on multiple domains (macro level), on specific domains (micro level) their performance quality might be low. The ultimate goal of the thesis is to develop domain-specific NER models. Guidelines:
 \begin{itemize}
 	\item Investigate possible datasets for domain-specific training of NER.
 	\item Develop NER training datasets for several selected domains (e.g. sports,
 politics, music, etc.).
-	\item Train a domain-specific NER model using existing frameworks, such as
-DBpedia Spotlight or StanfordNER.
+	\item Train domain-specific NER model using StanfordNER.
 	\item Validate and evaluate the developed domain-specific NER models. 
 \end{itemize}	
 	
@@ -93,11 +94,11 @@ DBpedia Spotlight or StanfordNER.
 
 This thesis is divided into three chapters.
 
-The first chapter we will take a look on frequently used techniques and the basic concept in Named-Entity Recognition and on the related work is covered existing solutions and already provided experiments in domain specific field.
+The first chapter describes the frequently used techniques and the basic concept in Named-Entity Recognition and on the related work is covered existing solutions and already provided experiments in domain specific field.
 
-Chapter Domain specific named entity recognition defines the process of pre-processing raw big data to data ready to use for creating datasets. As well the process of choosing the domains and their types. How after defining the domains, data are prepared to datasets ready for using in Stanford NER. And as well how those datasets are used in application to train a models.
+Second chapter defines the process of pre-processing raw big data to data ready to use for creating datasets. As well the process of choosing the domains and their types. How after defining the domains, data are prepared to datasets ready for using in Stanford NER. And as well how those datasets are used in application to train a models.
 
-The third chapter goes through all experiments that we provided with the created datasets and models, to ensure our goals. As well chapter classifies the impact of the number of abstracts used to train and test different models.
+The final chapter goes through all experiments that we provided with the created datasets and models, to ensure our goals. As well chapter classifies the impact of the number of abstracts used to train and test different models.
 	
 
 \end{introduction}
@@ -118,7 +119,7 @@ Information extraction (IE) \cite{wiki:IE} is the task of automatically extracti
 
 	Another view of that what Information extraction is that automatically building a relational database from information contained in unstructured text. Unlike linear-chain models, general CRFs can capture long distance dependencies between labels. For example, if the same name is mentioned more than once in a document, all mentions probably have the same label, and it is useful to extract them all, because each mention may contain different complementary information about the underlying entity \cite{article:IE}.
 
-	To understand better what IE is let's give trivial example\footnote{https://ontotext.com/knowledgehub/fundamentals/information-extraction/}. Imagine receiving an email message with some date in it. So extracting information from mail message, such as time and date and adding to your Calendar to create some event is part of IE. Millions of people use this on their daily basis and they are not aware of that how that works and what technology is used for that.
+	To understand better what IE is let's give trivial example\footnote{https://ontotext.com/knowledgehub/fundamentals/information-extraction/}. Imagine receiving an email message with some date in it. So extracting date information from mail message, and adding to Calendar for create some event is part of IE. Millions of people use this on their daily basis and they are not aware of that how that works and what technology is used for that.
 
 	Figure~\ref{fig:InformationExtraction} gives us a closer look at what Information extraction (IE) is, and how State-of-the-Art algorithms transform unstructured text to structured sequences understandable for machines. 
 
@@ -132,7 +133,9 @@ Information extraction (IE) \cite{wiki:IE} is the task of automatically extracti
 \subsection{Named Entity Recognition}\label{NER subsection}
 Named Entity Recognition (NER) \cite{article:NER} is the problem of identifying and classifying proper names in text, including locations, such as China; people, such as George Bush; and organizations, such as the United Nations. The named-entity recognition task is, given a sentence, first to segment which words are part of entities, and then to classify each entity by type (person, organization, location, and so on). The challenge of this problem is that many named entities are too rare to appear even in a large training set, and therefore the system must identify them based only on context.
 
-One approach to NER is to classify each word independently as one of either Person, Location, Organization, or Other (meaning not an entity). The problem with this approach is that it assumes that given the input, all of the named entity labels are independent. In fact, the named-entity labels of neighboring words are dependent; for example, while New York is a location, New York Times is an organization.
+NER is not perfect, we can see wrong recognition in example where New York is a location, New York Times is an organization. Meaning it assumes that given the input, all of the named entity labels are independent, but as in our example neighboring words can be dependent, leading NER to giving wrong entity.
+
+%One approach to NER is to classify each word independently as one of either Person, Location, Organization, or Other (meaning not an entity). The problem with this approach is that it assumes that given the input, all of the named entity labels are independent. In fact, the named-entity labels of neighboring words are dependent; for example, while New York is a location, New York Times is an organization.
 
 
 Most research on NER systems has been structured as taking an unannotated block of text, such as this one:
@@ -190,10 +193,14 @@ Chatbot NER\footnote{https://haptik.ai/tech/open-sourcing-chatbot-ner/} is heuri
 	RDF \cite{w3c:RDF} has features that facilitate data merging even if the underlying schemas differ, and it specifically supports the evolution of schemas over time without requiring all the data consumers to be changed.
 	
 	In this thesis we use datasets that are stored in NIF, which is described below. 
-
-	Natural Language Processing Interchange Format (NIF)\footnote{http://aksw.org/Projects/NIF.html} \cite{w3c:NIF} is an RDF-based format. The classes to represent linguistic data are defined in the NIF Core Ontology. All ontology classes are derived from the main class nif:String which respresents strings of Unicode characters.
 	
+	Natural Language Processing Interchange Format (NIF)\footnote{http://aksw.org/Projects/NIF.html} \cite{w3c:NIF} is an RDF-based format. The main idea of NIF is to allow NLP tools to exchange annotations about text in RDF. So the prerequisite is that text should be referencable by URIs, so that they can be used as resources in RDF statements \cite{article:NIF}. 
 	
+	The classes to represent linguistic data are defined in the NIF Core Ontology. The NIF Core Ontology also provide  properties to describe the relations between substrings, text, documents and their URI schemes \cite{article:NIF}. All ontology classes are derived from the main class nif:String which represents strings of Unicode characters.
+	
+	NIF is built upon the Unicode Normalization Form C, which follows recommendation of the RDF standard for rdf:Literal. Each URI scheme is a subclass of nif:String. Users of NIF can also create their own URI schemes by subclassing nif:String and providing documentation on the Web in the rdfs:comment field. This puts restriction over the URI syntax, so for example instances of type nif:RFC5147String have to adhere to the NIF URI scheme based on RFC 5147.
+	
+	As well another important subclass of nif:String is the nif:Context OWL class. This class is assigned to the whole string of the text. The purpose of an individual of this class is special, because the string of this individual is used to calculate the indices for all substrings. Therefore, all substrings have to have a relation nif:referenceContext pointing to an instance of nif:Context.~\ref{NIF Example} provides an example of NIF structure.	
 	
 \begin{lstlisting}[basicstyle=\small,caption={{Example of NIF taken from \protect\footnotemark \label{NIF Example}}},captionpos=b]
 
@@ -218,11 +225,11 @@ migrated from Siberia by way of the Bering land bridge..." .
 ex:United_States?dbpv=2016-10&char=7745,9418 a nif:Section;
 nif:beginIndex "7745"^^xsd:nonNegativeInteger;
 if:endIndex"9418"^^xsd:nonNegativeInteger;
-nif:hasParagraphex:United_States?dbpv=2016-10&char=7860,8740;
-nif:lastParagraphex:United_States?dbpv=2016-10&char=8741,9418;
-nif:nextSectionex:United_States?dbpv=2016-10&char=9420,12898;
-nif:referenceContextex:United_States?dbpv=2016-10&nif=context;
-nif:superStringex:United_States?dbpv=2016-10&char=7548,7743 .
+nif:hasParagraph ex:United_States?dbpv=2016-10&char=7860,8740;
+nif:lastParagraph ex:United_States?dbpv=2016-10&char=8741,9418;
+nif:nextSection ex:United_States?dbpv=2016-10&char=9420,12898;
+nif:referenceContext ex:United_States?dbpv=2016-10&nif=context;
+nif:superString ex:United_States?dbpv=2016-10&char=7548,7743 .
 
 ex:United_States?dbpv=2016-10&nif=paragraph&char=7860,8740
 anif:Paragraph;
@@ -230,14 +237,14 @@ nif:beginIndex"7860"^^xsd:nonNegativeInteger;
 nif:endIndex"8740"^^xsd:nonNegativeInteger;
 nif:nextParagraphex:United_States?dbpv=2016-10&char=8741,9418;
 nif:referenceContextex:United_States?dbpv=2016-10&nif=context;
-nif:superStringex:United_States?dbpv=2016-10&char=7745,9418.
+nif:superString ex:United_States?dbpv=2016-10&char=7745,9418.
 
 ex:United_States?dbpv=2016-10&char=7913,7920 a nif:Word;
 nif:anchorOf"Siberia";
 nif:beginIndex"7913"^^xsd:nonNegativeInteger;
 nif:endIndex"7920"^^xsd:nonNegativeInteger;
-nif:referenceContextex:United_States?dbpv=2016-10&nif=context;
-nif:superStringex:United_States?dbpv=2016-10&char=7860,8740;
+nif:referenceContext ex:United_States?dbpv=2016-10&nif=context;
+nif:superString ex:United_States?dbpv=2016-10&char=7860,8740;
 itsrdf:taIdentRef<http://dbpedia.org/resource/Siberia> .
 	
 \end{lstlisting}
@@ -266,7 +273,7 @@ For the purposes of this thesis we will use DBpedia NIF dataset version 2016-04 
 \subsubsection{DBpedia ontology}\label{DBpediaOntology}
 	The DBpedia Ontology is a shallow, cross-domain ontology, which has been manually created based on the most commonly used infoboxes within Wikipedia. The ontology currently covers 685 classes which form a subsumption hierarchy and are described by 2,795 different properties.
 
-	Since the DBpedia 2016/10 release, the ontology is a directed-acyclic graph, not a tree. Classes may have multiple superclasses, which is important for the mappings to schema.org. A taxonomy can still be constructed by ignoring all superclasses except the one that is specified first in the list and is considered the most important \cite{dbpedia:Ontology}. 
+	Since the DBpedia 2016/10 release, the ontology is a directed-acyclic graph, not a tree. Classes may have multiple superclasses, which is important for the mappings to schema.org. \cite{dbpedia:Ontology}. 
 
 DBpedia ontology classes can be found here\footnote{\url{http://mappings.dbpedia.org/server/ontology/classes/}}.
 
@@ -308,19 +315,22 @@ ORDER BY DESC(?v) LIMIT 10
 	Traditionally Named Entity Recognition (NER)\cite{article:DomainSpecific} systems have been built using available annotated datasets (like CoNLL, MUC) and demonstrate excellent performance. However, these models fail to generalize onto other domains like Sports and Finance where conventions and language use can differ significantly. Furthermore, several domains do not have large amounts of annotated labeled data for training robust Named Entity Recognition models.
 With specifying the domain we can create a bigger model with more annotated words and reading the whole text will be same or even faster that reading text with a global domain.  
 
-	In [http://www-users.cs.york.ac.uk/~suresh/papers/AUMFGNERAACD.pdf] authors used the WordNet English database for retrieving entities. As domain they chose "LOCATION" and "PERSON" based on to test the words from the Lord of the Rings book. After the small experiment they figure out that the "PERSON" domain is quite a large domain, so after some fine-tuning they changed to "ANIMATE" domain, which in their main experiment gives better results.
+	In \cite{RelatedWork:Alfonseca02anunsupervised} authors used the WordNet English database for retrieving entities. As domain they chose Lord of the Rings book and  "LOCATION" and "PERSON" types. After the small experiment they figure out that the "PERSON" type is quite a large, so after some fine-tuning they changed to "ANIMATE" type, which in their main experiment gives better results.
 
-	Authors in [https://arxiv.org/pdf/1612.00148.pdf] propose methods to effectively adapt models learned on one domain onto other domains using distributed word representation from Online Media. As well they demonstrate how to effectively use such domain specific knowledge to learn NER models. Like domain are chosen "FINANCE" and "SPORT" because as they say domains from CoNLL or MUC performs poor results. Also are compared the global model and a domain specific models, so from the observation the training data in domain specific models get increased and perform better results.
+	Authors in \cite{RelatedWork:OnlineMedia} propose methods to effectively adapt models learned on one domain onto other domains using distributed word representation from Online Media. As well they demonstrate how to effectively use such domain specific knowledge to learn NER models. They chose "FINANCE" and "SPORT" types because as they say domains from CoNLL or MUC performs poor results. Also are compared the global model and a domain specific models, so from the observation the training data in domain specific models get increased and perform better results.
  
- As well [https://homes.cs.washington.edu/~mausam/papers/emnlp11.pdf] authors for domain chose tweets and use T-NER system and for comparing the results, they used Stanford NER system. They created a dataset with 2400 annotated tweets with 10 popular tweets domain. Based on their experiments the T-NER system performs a way more better results than the Stanford NER system, where they have 3 types, "PERSON", "LOCATION" and "ORGANIZATION". 
-
+ As well \cite{RelatedWork:Tweets} authors for domain chose tweets and use T-NER system and for comparing the results, they used Stanford NER system. They created a dataset with 2400 annotated tweets with 10 popular tweets domain. Based on their experiments the T-NER system performs a way more better results than the Stanford NER system, where they have 3 types, "PERSON", "LOCATION" and "ORGANIZATION". 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%NEW CHAPTER%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%CHAPTER 2%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Domain specific named entity recognition}\label{}
-	In this chapter we will go through the whole process of transforming raw DBpedia datasets to datasets that are ready for training a model with Stanford NER and the process of training models with Stanford NER. Section~\ref{dataPreProcessing} explains the process of filtering the data with relevant information from DBpedia NIF datasets and preparing them for processing. In Section~\ref{domainSpecification} we explain how we choose "POLITICS", "SPORT" and "TRANSPORTATION" domains. Section~\ref{typesRetrieval} shows all ontology types that we retrieve for every domain and grouping them to more specific ontology type. In Section~\ref{StanfordNERoutput} is explained the process of preparing datasets for training in Stanford NER. And finally in Section~\ref{modelGeneration} is shown the process of training models from prepared datasets with Stanford NER.  
+\begin{figure}
+\includegraphics[width=\textwidth]{"DomainSpecificNER-Chaper2".png}
+		\caption{Chapter 2 flow}\label{}
+\end{figure}	
+	%In this chapter we will go through the whole process of transforming raw DBpedia datasets to datasets that are ready for training a model with Stanford NER and the process of training models with Stanford NER. Section~\ref{dataPreProcessing} explains the process of filtering the data with relevant information from DBpedia NIF datasets and preparing them for processing. In Section~\ref{domainSpecification} we explain how we choose "POLITICS", "SPORT" and "TRANSPORTATION" domains. Section~\ref{typesRetrieval} shows all ontology types that we retrieve for every domain and grouping them to more specific ontology type. In Section~\ref{StanfordNERoutput} is explained the process of preparing datasets for training in Stanford NER. And finally in Section~\ref{modelGeneration} is shown the process of training models from prepared datasets with Stanford NER.  
 
 \section{Data pre-processing}\label{dataPreProcessing}
 	To be able to create domain specific datasets we need training data which covers multiple domains, where used multiple types. We choose data from DBpedia NIF Datasets (for more information about DBpedia NIF see Section~\ref{DBpediaNIF}) for the English language in .ttl format. This dataset is provided with 3 partitions that we used only 2 of them. Those partitions are:
@@ -368,14 +378,14 @@ In "POLITICS" domain we retrieve in total 26 types, found at Appendix~\ref{Polit
 
 	We do the same for "SPORT" domain where we retrieve in total 171 types, found in Appendix~\ref{SportTypes}, so those types, same as "POLITICS" domain, are more specified in 8 types, like SportClub, SportsLeague, SportsTeam, Athlete, Coach, OrganizationMember, SportsManager and SportsEvent. Grouping of types is also shown in appendix~\ref{SportTypes}. This domain is a nice example of that even we retrieve quite a big number of types, we can reduce that number with more specific types which further don't lose the sense of type. For instance "David de Gea" has a type of SoccerPlayer, but after processing will have type of Athlete, which gives sense, because any type of sport player is an athlete.
 
-	At the end we repeat the process for "TRANSPORTATION" domain, where we retrieve in total 86 types. Retrieved types can be found in Appendix~\ref{TransportationTypes}. Those types are after minimized in 14 more specific types like Aircraft, Automobile, Locomotive, MilitaryVehicle, Motorcycle, On-SiteTransportation, Rocket, Ship, SpaceShuttle, SpaceStation, Spacecraft, Train, PublicTransitSystem and Infrastructure. The logic of that who we create more specific ontology types is same as in "POLITICS" or "SPORT" domain.   
+	At the end we repeat the process for "TRANSPORTATION" domain, where we retrieve in total 86 types. Retrieved types can be found in Appendix~\ref{TransportationTypes}. Those types are after minimized in 14 more specific types like Aircraft, Automobile,  On-SiteTransportation, Locomotive, MilitaryVehicle, Motorcycle, Rocket, Ship, SpaceShuttle, SpaceStation, Spacecraft, Train, PublicTransitSystem and Infrastructure. The logic of that who we create more specific ontology types is same as in "POLITICS" or "SPORT" domain.   
 
 	The reason why we group ontology types to more generic ones is that, that when the dataset has a smaller number of types, training a model with Stanford NER is more faster and requires less memory for training. Another reason is faster providing a NER, because is needed to read less types and also the overall results after testing with same data perform better than when ontology types where not grouped.
 
 \section{Data transformation}\label{StanfordNERoutput}
 	We define domains as well their types that we will retrieve and process, now we should put everything together and prepare data for Stanford NER application. In Data pre-processing (see Section~\ref{dataPreProcessing}) we explain how we handled the data downloaded from DBpedia NIF dataset and we briefly touch how those data will be prepared for training in Stanford NER application. 
 
-	The final thing that is missing is how we will choose which abstracts will be part of our models. Because our goal is to create models with different number of abstracts we need some strict order of retrieved links from DBpedia dataset. In order to chose the data, we chose those articles with higher PageRank values. PageRank \cite{wiki:PR} is an algorithm used by Google Search to rank websites in their search engine results. So with a prepared SPARQL queries and with help of Apache Jena framework (see Section~\ref{ApacheJena}) we implemented retrieving links, on Java, on DBpedia endpoint\footnote{\url{http://www.dbpedia.com/sparql}}. After retrieving those data, based on their PageRank we check does retrieved link from DBpedia is part on our abstract file. If link is found in nif-abstract dataset it's written to two files, one file is where are written all abstracts from every domain and another file is file for that specific domain. Those files are creating in RDF format, with n-triples, that means that there is subject, in our case that is the link of abstract, then predicate who has isString annotation which tells that next triple contains the abstract text and finally object where abstract text is placed. Next thing that we need to do is to find all annotated words from abstract and their types. The algorithm of finding types is explained in Section~\ref{dataPreProcessing}. What is not mention there is that after finding the types, the abstract is written to file, where on first position is word and on the second position is the type of that word, if there is any, if not the type is O. Final step is to prepare data to be able to train models in Stanford NER with the types that we define in Section~\ref{typesRetrieval}. Because files contains all types that were found on the abstracts we need to clean and group them, as well to create datasets with coarse and fine grained entities with fine and coarse types. The algorithm is very simple, it reads the files who already has all types and if type is part of our retrieved types then either type is leaved as it is, or is grouped to more specific type, for instance if word has type Ambassador, then after filtering that word will have Politician type. The same is for coarse grained annotation, but here proper types after filtering are "POLITICS", "SPORT" or "TRANSPORTATION" type. The whole process is also illustrated at Algorithm~\ref{AlgorithmMain}.
+	The final thing that is missing is how we will choose which abstracts will be part of our models. Because our goal is to create models with different number of abstracts we need some strict order of retrieved links from DBpedia dataset. In order to chose the data, we chose those articles with higher PageRank values. PageRank \cite{wiki:PR} is an algorithm used by Google Search to rank websites in their search engine results. So with a prepared SPARQL queries (SPARQL queries for every domain can be found in ~\ref{POLITICS SPARQL}, \ref{SPORT SPARQL} and \ref{TRANSPORTATION SPARQL} appendix) and with help of Apache Jena framework (see Section~\ref{ApacheJena}) we implemented retrieving links, on Java, on DBpedia endpoint\footnote{\url{http://www.dbpedia.com/sparql}}. After retrieving those data, based on their PageRank we check does retrieved link from DBpedia is part on our abstract file. If link is found in nif-abstract dataset it's written to two files, one file is where are written all abstracts from every domain and another file is file for that specific domain. Those files are creating in RDF format, with n-triples, that means that there is subject, in our case that is the link of abstract, then predicate who has isString annotation which tells that next triple contains the abstract text and finally object where abstract text is placed. Next thing that we need to do is to find all annotated words from abstract and their types. The algorithm of finding types is explained in Section~\ref{dataPreProcessing}. What is not mention there is that after finding the types, the abstract is written to file, where on first position is word and on the second position is the type of that word, if there is any, if not the type is O. Final step is to prepare data to be able to train models in Stanford NER with the types that we define in Section~\ref{typesRetrieval}. Because files contains all types that were found on the abstracts we need to clean and group them, as well to create datasets with coarse and fine grained entities with fine and coarse types. The algorithm is very simple, it reads the files who already has all types and if type is part of our retrieved types then either type is leaved as it is, or is grouped to more specific type, for instance if word has type Ambassador, then after filtering that word will have Politician type. The same is for coarse grained annotation, but here proper types after filtering are "POLITICS", "SPORT" or "TRANSPORTATION" type. The whole process is also illustrated at Algorithm~\ref{AlgorithmMain}.
 	
 		Interesting fact is that, that when we retrieve links from DBpedia with a specific ontology types types, some links there have types that are not even part of our domain. Here are some interesting links that we catch:
 	
@@ -521,15 +531,19 @@ Written in formula, the $F_{1} =2\cdot \frac{precision \cdot recall}{precision +
 
 \end{itemize}
 
+Figure~\ref{TimeGraph} shows the time that algorithm explained in Section~\ref{StanfordNERoutput} need to process data and prepare datasets ready for training with Stanford NER. As we can see time grows approximately linearly.
+
+\begin{figure}\centering
+
 \begin{tikzpicture}
 \begin{axis}[
     title={Time needed to prepare datasets for training},
-    xlabel={[Time in mitunes]},
-    ylabel={[Number of retrieved abstracts]},
-    xmin=0, xmax=250,
-    ymin=0, ymax=550,
-    xtick={0,10,30,60,100,140,180,220},
-    ytick={0,10,20,40,100,200,300,400,500},
+    ylabel={[Time in mitunes]},
+    xlabel={[Number of retrieved abstracts]},
+    ymin=0, ymax=250,
+    xmin=0, xmax=550,
+    ytick={0,10,30,60,100,140,180,220},
+    xtick={0,20,60,100,200,300,400,500},
     legend pos=north west,
     ymajorgrids=true,
     grid style=dashed,
@@ -537,17 +551,20 @@ Written in formula, the $F_{1} =2\cdot \frac{precision \cdot recall}{precision +
  
 \addplot[color=blue, mark=square,]
     coordinates {
-    (10.81,10)(21.30,20)(30.94,40)(63.71,100)(143.71,300)(184.92,400)(217.84,500)
+    %(10.81,10)(21.30,20)(30.94,40)(63.71,100)(143.71,300)(184.92,400)(217.84,500)
+    (10,10.81)(20,21.30)(40,30.94)(100,63.71)(300,143.71)(400,184.92)(500, 217.84)
     };
     %\legend{CuSO$_4\cdot$5H$_2$O}
  
 \end{axis}
 \end{tikzpicture}
+\caption{\label{TimeGraph}}
+\end{figure}
 
 
 
 \subsection{Main experiment}\label{MainExperiment}
-	This is our main experiment where other experiments will be compared with this one. This model is trained with top 300 Wikipedia abstracts for every domain. Algorithm for preparing the data for training model explained in section~\ref{StanfordNERoutput} takes 2.40 hours. The model is trained in coarse grained and takes 844.63 seconds in optimization and 873.7 seconds on CRFClassifier training.
+	This is our main experiment where other experiments will be compared with this one. This model is trained with top 300 Wikipedia abstracts for every domain. Algorithm for preparing the data for training model explained in Section~\ref{StanfordNERoutput} takes 2.40 hours. The model is trained in coarse grained and takes 873.7 seconds, from which 844.63 seconds spent in optimization.
 
 \subsubsection{Global domain models}
 	First experiment that we do with this model is that we run it with the same text that model is trained in coarse grained. Results are promising, we are above 95\% as shown in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}, which is great number for such middle weight model. With such results, someone will say that those are nice results and other experiments will only have a worst results. But let see how model will behaves when we tested with abstracts for every specific domain.
@@ -560,44 +577,44 @@ Written in formula, the $F_{1} =2\cdot \frac{precision \cdot recall}{precision +
 				TRANSPORTATION & 0,9940 & 0,9823 & 0,9881\\\hline
 				\textbf{Totals} & \textbf{0,9875} & \textbf{0,9625} & \textbf{0,9748}\\\hline
 		\end{tabular}
-		\caption{Outcomes of base experiment run to be used as reference for subsequential experiments \label{table:All3domainsWithAll3DomiansTop300Coarse}}
+		\caption{Resultss of base experiment run to be used as reference for subsequential experiments \label{table:All3domainsWithAll3DomiansTop300Coarse}}
 	\end{table}	
 	
 	Table~\ref{table:All3domainsWithPoliticsTop300Coarse} shows the output of model when is tested with abstracts from a "POLITICS" domain. As we said in Section~\ref{StanfordNERoutput} this type of abstract has the biggest word annotation. Result is not even close with the result from previous experiment. Also, trained model annotated words with a "TRANSPORTATION" domain, where the test file don't have any word with that annotation. 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9839 & 0,4025 & 0,5713\\
 				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9792} & \textbf{0,4025} & \textbf{0,5705}\\\hline
 		\end{tabular}
-		\caption{Outcomes of base model in coarse grained run with "POLITICS" abstracts\label{table:All3domainsWithPoliticsTop300Coarse}}
+		\caption{Resultss of base model in coarse grained run with "POLITICS" abstracts\label{table:All3domainsWithPoliticsTop300Coarse}}
 	\end{table}	
 	
 	Table~\ref{table:All3domainsWithSportTop300Coarse} gives us results from abstracts from "SPORT" domain. Here we have the same results like in first experiment, but because trained model annotated some words with a "POLITICS" or "TRANSPORTATION", even those that our test file contains only abstracts from "SPORT" domains and words has only "SPORT" type, the overall result is only a little bit lower that the first experiment.
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,0000 & 1,0000 & 0,0000\\
 				SPORT & 0,9846 & 0,9628 & 0,9736\\
 				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9819} & \textbf{0,9628} & \textbf{0,9722}\\\hline
 		\end{tabular}
-		\caption{Outcomes of base model in coarse grained run with "SPORT" abstracts \label{table:All3domainsWithSportTop300Coarse}}
+		\caption{Resultss of base model in coarse grained run with "SPORT" abstracts \label{table:All3domainsWithSportTop300Coarse}}
 	\end{table}	
 	
 	Table~\ref{table:All3domainsWithTransportationTop300Coarse} provide outcome with testing with abstracts only from "TRANSPORTATION" domain. As in the previous experiment, the result now is almost the same like in first experiment, but even thought that trained model, as in previous 2 experiments, annotated words with a "SPORT" type, the overall results is better that the experiment where test file contains all abstracts from every domain. 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 0,0000 & 1,0000 & 0,0000\\
 				TRANSPORTATION & 0,9940 & 0,9822 & 0,9880\\\hline
 				\textbf{Totals} & \textbf{0,9861} & \textbf{0,9822} & \textbf{0,9841}\\\hline
 		\end{tabular}
-	\caption{Outcomes of base model in coarse grained run with "TRANSPORTATION" abstracts \label{table:All3domainsWithTransportationTop300Coarse}}
+	\caption{Resultss of base model in coarse grained run with "TRANSPORTATION" abstracts \label{table:All3domainsWithTransportationTop300Coarse}}
 	\end{table}	
 	
 	In conclusion with this kind of experiments we can say that it is not a good idea to train a model with all chosen domains and then use texts from specific domain to perform NER.
@@ -608,7 +625,7 @@ Written in formula, the $F_{1} =2\cdot \frac{precision \cdot recall}{precision +
 
 \begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
 				Athlete & 1,0000 & 0,9802 & 0,9900\\
 				Automobile & 1,0000 & 1,0000 & 1,0000\\ 
@@ -628,14 +645,14 @@ Written in formula, the $F_{1} =2\cdot \frac{precision \cdot recall}{precision +
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9880} & \textbf{0,9712} & \textbf{0,9795}\\\hline
 		\end{tabular}
-		\caption{Outcomes of base experiment in fine grained run to be used as reference for subsequential experiments \label{table:All3domainsWithAll3DomainsTop300Fine}}
+		\caption{Resultss of base experiment in fine grained run to be used as reference for subsequential experiments \label{table:All3domainsWithAll3DomainsTop300Fine}}
 	\end{table}
 
 Then we tested our model with abstracts from "POLITICS" domain. How we can see from Table~\ref{table:All3domainsWithPoliticsTop300Fine} there is some improvements on overall result unlike the experiment in coarse grained, but no satisfying at all. As well table shows that some words again are annotated with types from "SPORT" and "TRANSPORTATION" domain.
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 0,0000 & 0,0000 & 0,0000\\
 				PoliticalParty & 0,9860 & 0,9628 & 0,9743\\
 				Politician & 1,0000 & 0,1849 & 0,3120\\
@@ -644,14 +661,14 @@ Then we tested our model with abstracts from "POLITICS" domain. How we can see f
 				SportsLeague & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9825} & \textbf{0,4072} & \textbf{0,5758}\\\hline
 		\end{tabular}
-		\caption{Outcomes of base model in fine grained run with "POLITICS" abstracts\label{table:All3domainsWithPoliticsTop300Fine}}
+		\caption{Resultss of base model in fine grained run with "POLITICS" abstracts\label{table:All3domainsWithPoliticsTop300Fine}}
 	\end{table}	
 
     After that we rerun the experiment, but now with abstracts from "SPORT" domain. In Table~\ref{table:All3domainsWithSportTop300Fine} we can see minor growth of the results unlike experiment in Table~\ref{table:All3domainsWithSportTop300Coarse}, but this improvements are so small that are almost unimportant. Also our model annotated some words with types from "POLITICS" and "TRANSPORTATION" domain which the test file don't have those types at all.
     
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 1,0000 & 0,9802 & 0,9900\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
 				Politician & 0,0000 & 1,0000 & 0,0000\\
@@ -663,14 +680,14 @@ Then we tested our model with abstracts from "POLITICS" domain. How we can see f
 				Train & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9821} & \textbf{0,9716} & \textbf{0,9768}\\\hline
 		\end{tabular}
-		\caption{Outcomes of base model in fine grained run with "SPORT" abstracts \label{table:All3domainsWithSportTop300Fine}}
+		\caption{Resultss of base model in fine grained run with "SPORT" abstracts \label{table:All3domainsWithSportTop300Fine}}
 	\end{table}
 	
     Finally the last experiment with this model are the abstracts from "TRANSPORTATION" domain. Table~\ref{table:All3domainsWithTransportationTop300Fine} shows the output of the provided experiment, where like in previous 2 experiments we can notice a very little improvements on results, from experiment in Table~\ref{table:All3domainsWithTransportationTop300Coarse}, who again can be unimportant. As in previous experiments similarly here model annotated some words with types from other 2 domains, which test file does not even contains.
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
 				Automobile & 1,0000 & 1,0000 & 1,0000\\				
 				Infrastructure & 1,0000 & 0,9820 & 0,9909\\
@@ -684,7 +701,7 @@ Then we tested our model with abstracts from "POLITICS" domain. How we can see f
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9862} & \textbf{0,9881} & \textbf{0,9871}\\\hline
 		\end{tabular}
-		\caption{Outcomes of base model in fine grained run with "TRANSPORTATION" abstracts\label{table:All3domainsWithTransportationTop300Fine}}
+		\caption{Resultss of base model in fine grained run with "TRANSPORTATION" abstracts\label{table:All3domainsWithTransportationTop300Fine}}
 	\end{table}	
 	
 	Provided experiments with the model who is trained with all abstracts from every domain annotated in fine grained, overall provide a very little improvement on results on every experiment. With that observation trained model annotated in fine grained is better to use instead of the model that is annotated in coarse grained. Another benefit of this type of model is that we can see which types are annotated and their results. But, because those improvements are small and is needed almost four times more time to train a fine grained model, maybe the better solution will be a models trained in coarse grained, everything depends on us. Does we want to trained models faster or we want to be more precise. 
@@ -698,24 +715,24 @@ Then we tested our model with abstracts from "POLITICS" domain. How we can see f
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,8039 & 0,6779 & 0,7355\\\hline
 				\textbf{Totals} & \textbf{0,8039} & \textbf{0,6779} & \textbf{0,7355}\\\hline
 		\end{tabular}
-		\caption{Outcomes of "POLITICS" base model in coarse grained run with "POLITICS" abstracts \label{table:PoliticsdomainsWithPoliticsTop300Coarse}}
+		\caption{Resultss of "POLITICS" base model in coarse grained run with "POLITICS" abstracts \label{table:PoliticsdomainsWithPoliticsTop300Coarse}}
 	\end{table}
 	
 	We repeat previous experiment, but now everything in fine grained. Time for training this kind of model i total was 163.5 seconds, from which 155.94 seconds spend on optimization. Table~\ref{table:PoliticsdomainsWithPoliticsTop300Fine} shows that this kind of model provides better result that coarse grained model and the experiment provided in Table~\ref{table:All3domainsWithPoliticsTop300Fine}, but again worst than model trained with all abstracts (see Table~\ref{table:All3domainsWithAll3DomainsTop300Fine}).
 	 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 0,8240 & 0,6398 & 0,7203\\
 				PoliticalParty & 0,8100 & 0,7006 & 0,7513\\
 				Politician & 0,8599 & 0,7234 & 0,7858\\\hline
 				\textbf{Totals} & \textbf{0,8354} & \textbf{0,6980} & \textbf{0,7606}\\\hline
 		\end{tabular}
-		\caption{Outcomes of "POLITICS" base model in fine grained run with "POLITICS" abstracts \label{table:PoliticsdomainsWithPoliticsTop300Fine}}
+		\caption{Resultss of "POLITICS" base model in fine grained run with "POLITICS" abstracts \label{table:PoliticsdomainsWithPoliticsTop300Fine}}
 	\end{table}	
 	
 	In conclusion with provided 2 experiments and from this point of view, for this domain we can say that training a specific model will give better results and will perform faster that global domain tested with text from specific domain. On the other hand the global domain tested with a texts that is trained, how we can see from Table~\ref{table:All3domainsWithAll3DomainsTop300Fine} and Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse} perform even better results that specific trained models.  
@@ -725,17 +742,17 @@ Then we tested our model with abstracts from "POLITICS" domain. How we can see f
 Next experiment that we do is the same like the previous one, but now the domain is "SPORT". Training time for this model was 93.0 seconds in total, but 82.97 seconds spend on optimization. This model and test file, how in previous one is run with 300 abstracts. Table~\ref{table:SportdomainsWithSportTop300Coarse} shows the outcome of the experiment in coarse grained. From the table we can see that this domain provide a better result that "POLITICS" domain, because here we have less annotated words. But, when compared with base experiment from Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse} and Table~\ref{table:All3domainsWithSportTop300Coarse} those experiments perform better results that this one. 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 0,9432 & 0,8839 & 0,9126\\\hline
 				\textbf{Totals} & \textbf{0,9432} & \textbf{0,8839} & \textbf{0,9126}\\\hline
 		\end{tabular}
-		\caption{Outcomes of "SPORT" base model in coarse grained run with "SPORT" abstracts \label{table:SportdomainsWithSportTop300Coarse}}
+		\caption{Resultss of "SPORT" base model in coarse grained run with "SPORT" abstracts \label{table:SportdomainsWithSportTop300Coarse}}
 	\end{table}
 
 Also we train a model in fine grained, with total time of 554.9 seconds, with 543.55 seconds spend on optimization and provide an experiment. Table~\ref{table:SportdomainsWithSportTop300Fine} show that the result is little bit more better that result with model in coarse grained, but still this result is lower that the results for Table~\ref{table:All3domainsWithAll3DomainsTop300Fine} and Table~\ref{table:All3domainsWithSportTop300Fine}.
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 0,9713 & 0,8366 & 0,8989\\
 				Coach & 1,0000 & 0,7500 & 0,8571\\
 				SportsClub & 0,9453 & 0,9041 & 0,9242\\
@@ -745,7 +762,7 @@ Also we train a model in fine grained, with total time of 554.9 seconds, with 54
 				SportsTeam & 0,9845 & 0,8301 & 0,9007\\\hline
 				\textbf{Totals} & \textbf{0,9592} & \textbf{0,8750} & \textbf{0,9152}\\\hline
 		\end{tabular}
-		\caption{Outcomes of "SPORT" base model in fine grained run with "SPORT" abstracts \label{table:SportdomainsWithSportTop300Fine}}
+		\caption{Resultss of "SPORT" base model in fine grained run with "SPORT" abstracts \label{table:SportdomainsWithSportTop300Fine}}
 	\end{table}
 	
 	After provided 2 experiments with trained models for specific domain, the results shows that training a global model will perform better result than training a domain specific model.	
@@ -755,17 +772,17 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
   Table~\ref{table:TransportationDomainsWithTransportationTop300Coarse} show the experiment outcome in coarse grained, where we can see that this result is lower than results from experiments provided in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse} and Table~\ref{table:All3domainsWithTransportationTop300Coarse}.  
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				TRANSPORTATION & 0,9583 & 0,9109 & 0,9340\\\hline
 				\textbf{Totals} & \textbf{0,9583} & \textbf{0,9109} & \textbf{0,9340}\\\hline
 		\end{tabular}
-		\caption{Outcomes of "TRANSPORTATION" base model in coarse grained run with "TRANSPORTATION" abstracts \label{table:TransportationDomainsWithTransportationTop300Coarse}}
+		\caption{Resultss of "TRANSPORTATION" base model in coarse grained run with "TRANSPORTATION" abstracts \label{table:TransportationDomainsWithTransportationTop300Coarse}}
 	\end{table}
 	
 	Finally we make an experiment in fine grained. Total training time was 702.6 seconds, from which 686.50 seconds spend on optimization. In Table~\ref{table:TransportationDomainsWithTransportationTop300Fine} we can see the results of provided experiment, where those results are even worse that the experiment with coarse grained model, which in previous two domain, "SPORT" and "POLITICS" was not that case. Also those results are worse than the experiments with a global domain in Table~\ref{table:All3domainsWithAll3DomainsTop300Fine} and Table~\ref{table:All3domainsWithTransportationTop300Fine}. 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 0,9659 & 0,8333 & 0,8947\\
 				Automobile & 1,0000 & 0,8000 & 0,8889\\				
 				Infrastructure & 0,9550 & 0,9550 & 0,9550\\
@@ -776,7 +793,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9660} & \textbf{0,9010} & \textbf{0,9324}\\\hline
 		\end{tabular}
-		\caption{Outcomes of "TRANSPORTATION" base model in fine grained run with "TRANSPORTATION" abstracts \label{table:TransportationDomainsWithTransportationTop300Fine}}
+		\caption{Resultss of "TRANSPORTATION" base model in fine grained run with "TRANSPORTATION" abstracts \label{table:TransportationDomainsWithTransportationTop300Fine}}
 	\end{table}	
 
 	In conclusion with the provided experiments in this section, we can say that training a global model and providing a NER is a better, but a little bit slowest solution than training a domain specific model, except the "POLITICS" domain, where the results was better in domain specific model unlike the experiment with a global domain and test file with "POLITICS" abstracts, but worse than experiment with a global domain tested with abstracts from all 3 domains. Then we waned to see the impact of fine grained trained models, where in most of the cases this kind of models provide a better results than models trained in coarse grained, except the experiment in "TRANSPORTATION" specific domain where the coarse grained model was better that fine grained model.
@@ -789,19 +806,20 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	\textbf{Model trained with 10 abstracts to every domain.} To retrieve links from DBpedia with SPARQL and prepare data to be able to train models with 10 abstract, our algorithm explain in Section~\ref{StanfordNERoutput} takes in total 10.81 minutes, which comparing with main experiment, where we need 2.40 hours, is way more faster to prepare data. Of coarse this indicates that training models will also be faster than in main experiment.
 	
 	\textbf{Coarse grained model.} 
+	
 	\textbf{Description of the experiment.} How in the main experiment, also here we start with model trained in coarse grained. To train this kind of model we need 19.6 seconds, from which 17.44 seconds spend on optimization. 
 	
 	\textbf{Results of the experiment.} From Table~\ref{table:GlobalDomainWithAllAbstractsTop10Coarse} we see that trained model perform the best results without any loosing of words in "SPORT" and "TRANSPORTATION" domains, but worst result in "POLITICS" domain. The result of "POLITICS" domain is even worst than the result from main experiment provided in Table~\ref{table:All3domainsWithAll3DomiansTop300Coarse}. Because of this, there is a little bit lower overall result than in the main experiment. This can indicates that training models with lowest number of abstracts, for this kind of domains, is not worth. But let's see how model will behaves when is tested with abstracts from a specific domains.
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9655 & 0,9333 & 0,9492\\
 				SPORT & 1,0000 & 1,0000 & 1,0000\\
 				TRANSPORTATION & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9811} & \textbf{0,9630} & \textbf{0,9720}\\\hline
 		\end{tabular}
-	\caption{Outcomes of global model in coarse grained run with 10 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop10Coarse}}
+	\caption{Resultss of global model in coarse grained run with 10 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop10Coarse}}
 	\end{table}
 
 	\textbf{Description of the experiment.} In this experiment we take the same model from the previous one, but now tested only with dataset that contains abstracts from "POLITICS" domain.
@@ -810,13 +828,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9655 & 0,3636 & 0,5283\\\hline
 				%SPORT & 1,0000 & 1,0000 & 1,0000\\\hline
 				%TRANSPORTATION & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9655} & \textbf{0,3636} & \textbf{0,5283}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 10 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop10Coarse}}
+		\caption{Resultss of global model in coarse grained run with 10 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop10Coarse}}
 	\end{table}
 
 	\textbf{Description of the experiment.} For purposes of this experiment we have again used global model, but now tested with abstracts only from "SPORT" domain. 
@@ -825,11 +843,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 10 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop10Coarse}}	
+		\caption{Resultss of global model in coarse grained run with 10 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop10Coarse}}	
 	\end{table}	
 
 	\textbf{Description of the result.} Finally we tested the model with abstract from "TRANSPORTATION" domain. 
@@ -838,11 +856,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				TRANSPORTATION & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 10 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop10Coarse}}	
+		\caption{Resultss of global model in coarse grained run with 10 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop10Coarse}}	
 	\end{table}
 
 	In conclusion with the results from provided experiments we see that there is a huge impact of the number of abstracts for training a global model in coarse grained. We see that for "SPORT" and "TRANSPORTATION" domain our model provide maximum results, which is what we want to reach.
@@ -857,7 +875,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	  	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
 				Athlete & 1,0000 & 1,0000 & 1,0000\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
@@ -871,7 +889,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9811} & \textbf{0,9630} & \textbf{0,9720}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 10 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop10Fine}}	
+		\caption{Resultss of global model in fine grained run with 10 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop10Fine}}	
 	\end{table}
 
 	\textbf{Description of the experiment.} Then how in previous experiments, we take the global train model and test it with abstracts from every specific domain separately. 
@@ -880,13 +898,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 0,0000 & 0,0000 & 0,0000\\
 				PoliticalParty & 0,9600 & 0,9231 & 0,9412\\
 				Politician & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9655} & \textbf{0,3636} & \textbf{0,5283}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 10 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop10Fine}}		
+		\caption{Resultss of global model in fine grained run with 10 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop10Fine}}		
 	\end{table}	
 
 	\textbf{Description of the experiment.} In this experiment we also used the global model, but now tested with dataset that contains only abstracts from "SPORT" domain. 
@@ -895,7 +913,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 1,0000 & 1,0000 & 1,0000\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
 				SportsClub & 1,0000 & 1,0000 & 1,0000\\
@@ -904,7 +922,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 10 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop10Fine}}		
+		\caption{Resultss of global model in fine grained run with 10 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop10Fine}}		
 	\end{table}
 	
 	\textbf{Description of the experiment.} Final experiment that we do with global train model was with "TRANSPORTATION" domain abstracts. 
@@ -913,13 +931,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
 				PublicTransitSystem & 1,0000 & 1,0000 & 1,0000\\
 				Ship & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 10 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop10Fine}}		
+		\caption{Resultss of global model in fine grained run with 10 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop10Fine}}		
 	\end{table}
 	
 	In conclusion from the provided experiments where we had 10 abstracts on every domain, in comparing with the main experiments, we can say that there is an impact on performing a NER with a smallest number of abstracts for training a testing models. Here when we use coarse of fine grained global model and test it with texts from specific domain, except the "POLITICS" domain abstracts, on other two domain, model perform NER without any misleading, which is what we waned to reach. Also training such small models takes way more less time, than training a big models. 
@@ -933,11 +951,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9737 & 0,9610 & 0,9673\\\hline
 				\textbf{Totals} & \textbf{0,9737} & \textbf{0,9610} & \textbf{0,9673}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 10 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop10Coarse}}
+		\caption{Results of "POLITICS" domain specific model in coarse grained run with 10 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop10Coarse}}
 	\end{table}	
 	
 	\textbf{Description of the experiment.} Because we want to know the impact when model is trained in fine grained, we make an experiment with fine grained model. For training this model we need 8.3 seconds, from which 6.99 seconds spent in optimization. As well here the model is tested with the same dataset like is trained. 
@@ -946,13 +964,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 1,0000 & 0,9333 & 0,9655\\
 				PoliticalParty & 0,9600 & 0,9231 & 0,9412\\
 				Politician & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9867} & \textbf{0,9610} & \textbf{0,9737}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in fine grained run with 10 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop10Fine}}		
+		\caption{Results of "POLITICS" domain specific model in fine grained run with 10 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop10Fine}}		
 	\end{table}	
 
 	From the "POLITICS" domain specific experiments we can say that for this kind of domain with a lower number of abstracts for training a model the application provide NER with better results unlike the same experiments from the main experiment, where we have a worst results than here.
@@ -964,11 +982,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in coarse grained run with 10 abstracts from the same domain \label{table:SportDomainWithSportTop10Coarse}}
+		\caption{Results of "SPORT" domain specific model in coarse grained run with 10 abstracts from the same domain \label{table:SportDomainWithSportTop10Coarse}}
 	\end{table}	
 
 	\textbf{Description of the experiment.} Same as in the previous experiment, also here we have a fine grained model. Time needed for training this model was 26.4 seconds, from which 24.64 seconds spent in optimization. Of coarse, the model is tested with the dataset with which was trained.
@@ -977,7 +995,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 1,0000 & 1,0000 & 1,0000\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
 				SportsClub & 1,0000 & 1,0000 & 1,0000\\
@@ -986,7 +1004,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in fine grained run with 10 abstracts from the same domain \label{table:SportDomainWithSportTop10Fine}}
+		\caption{Results of "SPORT" domain specific model in fine grained run with 10 abstracts from the same domain \label{table:SportDomainWithSportTop10Fine}}
 	\end{table}	
 
 	From the experiments provided in Table~\ref{table:SportDomainWithSportTop10Coarse} and Table~\ref{table:SportDomainWithSportTop10Fine} as well as in previous experiment the number of abstracts needed for training a model plays significant role also in "SPORT" domain. Here as well there is no difference if model is trained in coarse or fine grain, because we have the same result, but here plays role the time needed for training those models.
@@ -997,11 +1015,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				TRANSPORTATION & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 10 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop10Coarse}}
+		\caption{Results of "TRANSPORTATION" domain specific model in coarse grained run with 10 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop10Coarse}}
 	\end{table}
 
 	\textbf{Description of the experiment.} With total time of 14.3 seconds, from which 12.99 seconds spent on optimization we trained a fine grained model for "TRANSPORTATION" domain. 
@@ -1010,13 +1028,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
    
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
 				PublicTransitSystem & 1,0000 & 1,0000 & 1,0000\\
 				Ship & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in fine grained run with 10 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop10Fine}}
+		\caption{Results of "TRANSPORTATION" domain specific model in fine grained run with 10 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop10Fine}}
 	\end{table}
 
 	"TRANSPORTATION" domain model as well as previous two domain models provide a better NER than the main experiment, but of coarse here we have much less annotated words in model and if we test this model with some other data, the results will be worst than in the main experiment where we have much more data.
@@ -1031,13 +1049,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 1,0000 & 0,9615 & 0,9804\\
 				SPORT & 1,0000 & 1,0000 & 1,0000\\
 				TRANSPORTATION & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9780} & \textbf{0,9889}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 20 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop20Coarse}}
+		\caption{Resultss of global model in coarse grained run with 20 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop20Coarse}}
 	\end{table}
 
 \textbf{Description of the experiment:} For purposes of the experiment in Table~\ref{table:GlobalDomainWithPoliticsTop20Coarse} we have use the same global trained model from the previous experiment, but now the test file contains only 20 abstracts from "POLITICS" domain. 
@@ -1046,11 +1064,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 1,0000 & 0,3906 & 0,5618\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,3906} & \textbf{0,5618}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 20 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop20Coarse}}
+		\caption{Resultss of global model in coarse grained run with 20 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop20Coarse}}
 	\end{table}
 
 \textbf{Description of the experiment:} This experiment is almost identical like previous one, with only difference is test file, where now we tested with abstracts from "SPORT" domain.
@@ -1059,11 +1077,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 20 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop20Coarse}}
+		\caption{Resultss of global model in coarse grained run with 20 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop20Coarse}}
 	\end{table}	
 
 \textbf{Description of the experiment:} The final experiment is also the same like previous two, where now test file contains only abstracts from "TRANSPORTATION" domain.
@@ -1072,12 +1090,12 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 0,0000 & 1,0000 & 0,0000\\
 				TRANSPORTATION & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9231} & \textbf{1,0000} & \textbf{0,9600}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 20 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop20Coarse}}
+		\caption{Resultss of global model in coarse grained run with 20 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop20Coarse}}
 	\end{table}	
 
 \textbf{Description of the experiment:} Experiment in Table~\ref{table:GlobalDomainWithAllAbstractsTop20Fine} is provided with same data like the experiment in Table~\ref{table:GlobalDomainWithAllAbstractsTop20Coarse}, but now the model and test data are annotated in fine grained. We needed in total 239.1 seconds to train model, from which 233.18 seconds spent in optimization.
@@ -1086,7 +1104,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 0,5000 & 0,6667\\
 				Athlete & 1,0000 & 1,0000 & 1,0000\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
@@ -1102,7 +1120,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9560} & \textbf{0,9775}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 20 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop20Fine}}
+		\caption{Resultss of global model in fine grained run with 20 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop20Fine}}
 	\end{table}
 
 \textbf{Description of the experiment:} In this experiment we use the same trained model from previous experiment, but now the test file contains only abstracts from "POLITICS" domain, who is annotated in fine grain.
@@ -1111,13 +1129,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 0,0000 & 0,0000 & 0,0000\\
 				PoliticalParty & 1,0000 & 0,9512 & 0,9750\\
 				Politician & 1,0000 & 0,2000 & 0,3333\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,3906} & \textbf{0,5618}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 20 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop20Fine}}
+		\caption{Resultss of global model in fine grained run with 20 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop20Fine}}
 	\end{table}	
 
 \textbf{Description of the experiment:} How in the previous experiment also here we have the same model but now tested with abstracts from "SPORT" domain annotated in fine grain.
@@ -1126,7 +1144,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 1,0000 & 1,0000 & 1,0000\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
 				SportsClub & 1,0000 & 1,0000 & 1,0000\\
@@ -1135,7 +1153,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 20 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop20Fine}}
+		\caption{Resultss of global model in fine grained run with 20 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop20Fine}}
 	\end{table}	
 
 \textbf{Description of the experiment:} The last experiment with the model used in previous 3 experiment is now the dataset test file with abstracts from "TRANSPORTATION" domain also annotated in fine grain.
@@ -1144,7 +1162,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 0,5000 & 0,6667\\
 				Infrastructure & 1,0000 & 0,5000 & 0,6667\\
 				Ship & 1,0000 & 1,0000 & 1,0000\\				
@@ -1153,7 +1171,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9091} & \textbf{0,8333} & \textbf{0,8696}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 20 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop20Fine}}		
+		\caption{Resultss of global model in fine grained run with 20 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop20Fine}}		
 	\end{table}
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 	 
@@ -1166,11 +1184,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9921 & 0,9766 & 0,9843\\\hline
 				\textbf{Totals} & \textbf{0,9921} & \textbf{0,9766} & \textbf{0,9843}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 20 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop20Coarse}}		
+		\caption{Results of "POLITICS" domain specific model in coarse grained run with 20 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop20Coarse}}		
 	\end{table}	
 	
 \textbf{Description of the experiment:} For the purposes of this experiment we have used the same data from the previous one, but now annotated in fine grain. To train this kind of model we needed 12.4 seconds, from which 10.80 seconds spent in optimization.  
@@ -1179,13 +1197,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 1,0000 & 0,9688 & 0,9841\\
 				PoliticalParty & 1,0000 & 0,9512 & 0,9750\\
 				Politician & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9766} & \textbf{0,9881}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in fine grained run with 20 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop20Fine}}	
+		\caption{Results of "POLITICS" domain specific model in fine grained run with 20 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop20Fine}}	
 	\end{table}
 
 
@@ -1195,11 +1213,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in coarse grained run with 20 abstracts from the same domain \label{table:SportDomainWithSportTop20Coarse}}			
+		\caption{Results of "SPORT" domain specific model in coarse grained run with 20 abstracts from the same domain \label{table:SportDomainWithSportTop20Coarse}}			
 	\end{table}	
 	
 \textbf{Description of the experiment:} In this experiment we have used the same dataset from previous, but now entities are annotated in fine grain. To train a fine grain model we have need 26.4 seconds, from which 24.46 second spent in optimization. As well as previous the model is tested with the dataset that is trained.
@@ -1208,7 +1226,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 1,0000 & 1,0000 & 1,0000\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
 				SportsClub & 1,0000 & 1,0000 & 1,0000\\
@@ -1217,7 +1235,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in fine grained run with 20 abstracts from the same domain \label{table:SportDomainWithSportTop20Fine}}			
+		\caption{Results of "SPORT" domain specific model in fine grained run with 20 abstracts from the same domain \label{table:SportDomainWithSportTop20Fine}}			
 	\end{table}	
 	
 	
@@ -1227,11 +1245,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				TRANSPORTATION & 1,0000 & 0,8333 & 0,9091\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,8333} & \textbf{0,9091}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 20 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop20Coarse}}			
+		\caption{Results of "TRANSPORTATION" domain specific model in coarse grained run with 20 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop20Coarse}}			
 	\end{table}	
 	
 \textbf{Description of the experiment:} We also train a fine grain model from "TRANSPORTATION" domain. To train it we needed 14.3 seconds, from which 12.99 seconds spent in optimization. As well as the previous experiment, the model is tested with the same dataset that is created.
@@ -1240,7 +1258,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 0,5000 & 0,6667\\
 				Infrastructure & 1,0000 & 0,5000 & 0,6667\\
 				Ship & 1,0000 & 1,0000 & 1,0000\\				
@@ -1248,7 +1266,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SpaceStation & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,7500} & \textbf{0,8571}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in fine grained run with 20 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop20Fine}}			
+		\caption{Results of "TRANSPORTATION" domain specific model in fine grained run with 20 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop20Fine}}			
 	\end{table}
 	
 	Until now we can say that the number of abstracts used to train a models has an impact on the final results and also it is faster to train a smaller models, but in that case we are short on entities and types. We still have 2 more groups of different number of abstracts, 40 abstracts per domain and 100 abstracts per domain. So let see how those groups will behave in comparing with the main experiment, where we have 300 abstracts per domain. 
@@ -1264,13 +1282,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9890 & 0,9375 & 0,9626\\
 				SPORT & 1,0000 & 1,0000 & 1,0000\\
 				TRANSPORTATION & 1,0000 & 0,9846 & 0,9922\\\hline
 				\textbf{Totals} & \textbf{0,9960} & \textbf{0,9724} & \textbf{0,9841}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 40 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop40Coarse}}
+		\caption{Resultss of global model in coarse grained run with 40 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop40Coarse}}
 	\end{table}
 
 
@@ -1280,11 +1298,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9890 & 0,3529 & 0,5202\\\hline
 				\textbf{Totals} & \textbf{0,9890} & \textbf{0,3529} & \textbf{0,5202}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 40 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop40Coarse}}
+		\caption{Resultss of global model in coarse grained run with 40 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop40Coarse}}
 	\end{table}
 
 
@@ -1294,11 +1312,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 40 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop40Coarse}}
+		\caption{Resultss of global model in coarse grained run with 40 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop40Coarse}}
 	\end{table}	
 
 
@@ -1308,12 +1326,12 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 0,0000 & 1,0000 & 0,0000\\
 				TRANSPORTATION & 1,0000 & 0,9846 & 0,9922\\\hline
 				\textbf{Totals} & \textbf{0,9697} & \textbf{0,9846} & \textbf{0,9771}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 40 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop40Coarse}}
+		\caption{Resultss of global model in coarse grained run with 40 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop40Coarse}}
 	\end{table}	
 		
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
@@ -1324,7 +1342,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
 				Athlete & 1,0000 & 1,0000 & 1,0000\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
@@ -1341,7 +1359,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9960} & \textbf{0,9764} & \textbf{0,9861}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 40 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop40Fine}}
+		\caption{Resultss of global model in fine grained run with 40 abstracts from every domain \label{table:GlobalDomainWithAllAbstractsTop40Fine}}
 	\end{table}
 
 
@@ -1351,13 +1369,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 0,0000 & 0,0000 & 0,0000\\
 				PoliticalParty & 0,9863 & 0,9730 & 0,9796\\
 				Politician & 1,0000 & 0,1565 & 0,2707\\\hline
 				\textbf{Totals} & \textbf{0,9890} & \textbf{0,3529} & \textbf{0,5202}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 40 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop40Fine}}
+		\caption{Resultss of global model in coarse grained run with 40 abstracts from "POLITICS" domain \label{table:GlobalDomainWithPoliticsTop40Fine}}
 	\end{table}	
 
 
@@ -1367,7 +1385,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 1,0000 & 1,0000 & 1,0000\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
 				SportsClub & 1,0000 & 1,0000 & 1,0000\\
@@ -1376,7 +1394,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 40 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop40Fine}}
+		\caption{Resultss of global model in coarse grained run with 40 abstracts from "SPORT" domain \label{table:GlobalDomainWithSportTop40Fine}}
 	\end{table}	
 
 
@@ -1386,7 +1404,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
 				Infrastructure & 1,0000 & 1,0000 & 1,0000\\
 				PublicTransitSystem & 1,0000 & 1,0000 & 1,0000\\
@@ -1396,7 +1414,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9701} & \textbf{1,0000} & \textbf{0,9848}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 40 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop40Fine}}
+		\caption{Resultss of global model in coarse grained run with 40 abstracts from "TRANSPORTATION" domain \label{table:GlobalDomainWithTransportationTop40Fine}}
 	\end{table}	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1409,11 +1427,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9921 & 0,9804 & 0,9862\\\hline
 				\textbf{Totals} & \textbf{0,9921} & \textbf{0,9804} & \textbf{0,9862}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 40 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop40Coarse}}	
+		\caption{Results of "POLITICS" domain specific model in coarse grained run with 40 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop40Coarse}}	
 	\end{table}
 
 
@@ -1423,13 +1441,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 		
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 1,0000 & 0,9848 & 0,9924\\
 				PoliticalParty & 0,9863 & 0,9730 & 0,9796\\
 				Politician & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9960} & \textbf{0,9882} & \textbf{0,9921}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in fine grained run with 40 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop40Fine}}
+		\caption{Results of "POLITICS" domain specific model in fine grained run with 40 abstracts from the same domain \label{table:PoliticsDomainWithPoliticsTop40Fine}}
 	\end{table}
 			
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1440,11 +1458,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{1,0000} & \textbf{1,0000}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in coarse grained run with 40 abstracts from the same domain \label{table:SportDomainWithSportTop40Coarse}}
+		\caption{Results of "SPORT" domain specific model in coarse grained run with 40 abstracts from the same domain \label{table:SportDomainWithSportTop40Coarse}}
 	\end{table}
 
 
@@ -1454,7 +1472,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 1,0000 & 1,0000 & 1,0000\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
 				SportsClub & 1,0000 & 0,9474 & 0,9730\\
@@ -1463,7 +1481,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9890} & \textbf{0,9945}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in fine grained run with 40 abstracts from the same domain \label{table:SportDomainWithSportTop40Fine}}
+		\caption{Results of "SPORT" domain specific model in fine grained run with 40 abstracts from the same domain \label{table:SportDomainWithSportTop40Fine}}
 	\end{table}	
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
@@ -1474,11 +1492,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				TRANSPORTATION & 1,0000 & 0,9846 & 0,9922\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9846} & \textbf{0,9922}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 40 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop40Coarse}}
+		\caption{Results of "TRANSPORTATION" domain specific model in coarse grained run with 40 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop40Coarse}}
 	\end{table}	
 
 	\textbf{Description of the experiment:} Lastly we train a fine grain model with the same data like in previous experiment, but of coarse annotated in fine grain. To train this kind of model we needed 44.6 seconds, from which 41.63 seconds spent in optimization. It is tested as usual.
@@ -1488,7 +1506,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
 				Infrastructure & 1,0000 & 1,0000 & 1,0000\\
 				PublicTransitSystem & 1,0000 & 0,9630 & 0,9811\\
@@ -1497,7 +1515,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SpaceStation & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9846} & \textbf{0,9922}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in fine grained run with 40 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop40Fine}}
+		\caption{Results of "TRANSPORTATION" domain specific model in fine grained run with 40 abstracts from the same domain \label{table:TransportationDomainWithTransportationTop40Fine}}
 	\end{table}	
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1513,13 +1531,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9920 & 0,9612 & 0,9764\\
 				SPORT & 0,9963 & 0,9926 & 0,9944\\
 				TRANSPORTATION & 1,0000 & 0,9735 & 0,9865\\\hline
 				\textbf{Totals} & \textbf{0,9952} & \textbf{0,9766} & \textbf{0,9856}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 100 abstracts from every domain \label{table:100GlobalDomainWithAllAbstractsTop100Coarse}}
+		\caption{Resultss of global model in coarse grained run with 100 abstracts from every domain \label{table:100GlobalDomainWithAllAbstractsTop100Coarse}}
 	\end{table}
 
 
@@ -1529,11 +1547,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9920 & 0,3615 & 0,5299\\\hline
 				\textbf{Totals} & \textbf{0,9920} & \textbf{0,3615} & \textbf{0,5299}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 100 abstracts from "POLITICS" domain \label{table:100GlobalDomainWithPoliticsTop100Coarse}}
+		\caption{Resultss of global model in coarse grained run with 100 abstracts from "POLITICS" domain \label{table:100GlobalDomainWithPoliticsTop100Coarse}}
 	\end{table}
 
 
@@ -1543,11 +1561,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 0,9962 & 0,9888 & 0,9925\\\hline
 				\textbf{Totals} & \textbf{0,9962} & \textbf{0,9888} & \textbf{0,9925}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 100 abstracts from "SPORT" domain \label{table:100GlobalDomainWithSportTop100Coarse}}
+		\caption{Resultss of global model in coarse grained run with 100 abstracts from "SPORT" domain \label{table:100GlobalDomainWithSportTop100Coarse}}
 	\end{table}	
 
 
@@ -1557,12 +1575,12 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 0,0000 & 1,0000 & 0,0000\\
 				TRANSPORTATION & 1,0000 & 0,9735 & 0,9865\\\hline
 				\textbf{Totals} & \textbf{0,9821} & \textbf{0,9735} & \textbf{0,9778}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 100 abstracts from "TRANSPORTATION" domain \label{table:100GlobalDomainWithTransportationTop100Coarse}}
+		\caption{Resultss of global model in coarse grained run with 100 abstracts from "TRANSPORTATION" domain \label{table:100GlobalDomainWithTransportationTop100Coarse}}
 	\end{table}	
 		
 
@@ -1574,7 +1592,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 0,6957 & 0,8205\\
 				Athlete & 1,0000 & 0,4167 & 0,5882\\
 				Automobile & 1,0000 & 1,0000 & 1,0000\\ 
@@ -1594,7 +1612,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9452} & \textbf{0,7535} & \textbf{0,8385}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 100 abstracts from every domain \label{table:100GlobalDomainWithAllAbstractsTop100Fine}}
+		\caption{Resultss of global model in fine grained run with 100 abstracts from every domain \label{table:100GlobalDomainWithAllAbstractsTop100Fine}}
 	\end{table}
 
 
@@ -1604,14 +1622,14 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 0,0000 & 0,0000 & 0,0000\\
 				PoliticalParty & 0,8774 & 0,6700 & 0,7598\\
 				Politician & 1,0000 & 0,1285 & 0,2278\\
 				SportsEvent & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,8985} & \textbf{0,2580} & \textbf{0,4009}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 100 abstracts from "POLITICS" domain \label{table:100GlobalDomainWithPoliticsTop100Fine}}
+		\caption{Resultss of global model in fine grained run with 100 abstracts from "POLITICS" domain \label{table:100GlobalDomainWithPoliticsTop100Fine}}
 	\end{table}	
 
 
@@ -1621,7 +1639,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 1,0000 & 0,4167 & 0,5882\\
 				Coach & 1,0000 & 0,6667 & 0,8000\\
 				SportsClub & 0,9506 & 0,9390 & 0,9448\\
@@ -1631,7 +1649,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 0,6250 & 0,7692\\\hline
 				\textbf{Totals} & \textbf{0,9683} & \textbf{0,7985} & \textbf{0,8753}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 100 abstracts from "SPORT" domain \label{table:100GlobalDomainWithSportTop100Fine}}
+		\caption{Resultss of global model in fine grained run with 100 abstracts from "SPORT" domain \label{table:100GlobalDomainWithSportTop100Fine}}
 	\end{table}	
 
 
@@ -1641,7 +1659,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 0,6957 & 0,8205\\
 				Automobile & 1,0000 & 1,0000 & 1,0000\\				
 				Infrastructure & 1,0000 & 1,0000 & 1,0000\\
@@ -1654,7 +1672,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9677} & \textbf{0,7965} & \textbf{0,8738}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 100 abstracts from "TRANSPORTATION" domain \label{table:100GlobalDomainWithTransportationTop100Fine}}
+		\caption{Resultss of global model in fine grained run with 100 abstracts from "TRANSPORTATION" domain \label{table:100GlobalDomainWithTransportationTop100Fine}}
 	\end{table}		
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1667,11 +1685,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9956 & 0,9898 & 0,9927\\\hline
 				\textbf{Totals} & \textbf{0,9956} & \textbf{0,9898} & \textbf{0,9927}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 100 abstracts from the same domain \label{table:100PoliticsDomainWithPoliticsTop100Coarse}}
+		\caption{Results of "POLITICS" domain specific model in coarse grained run with 100 abstracts from the same domain \label{table:100PoliticsDomainWithPoliticsTop100Coarse}}
 	\end{table}
 
 
@@ -1681,13 +1699,13 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 1,0000 & 0,9878 & 0,9939\\
 				PoliticalParty & 0,9950 & 0,9852 & 0,9901\\
 				Politician & 0,9937 & 0,9906 & 0,9922\\\hline
 				\textbf{Totals} & \textbf{0,9956} & \textbf{0,9883} & \textbf{0,9920}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in fine grained run with 100 abstracts from the same domain \label{table:100PoliticsDomainWithPoliticsTop100Fine}}
+		\caption{Results of "POLITICS" domain specific model in fine grained run with 100 abstracts from the same domain \label{table:100PoliticsDomainWithPoliticsTop100Fine}}
 	\end{table}	
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1698,11 +1716,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 0,9963 & 0,9963 & 0,9963\\\hline
 				\textbf{Totals} & \textbf{0,9963} & \textbf{0,9963} & \textbf{0,9963}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in coarse grained run with 100 abstracts from the same domain \label{table:100SportDomainWithSportTop100Coarse}}
+		\caption{Results of "SPORT" domain specific model in coarse grained run with 100 abstracts from the same domain \label{table:100SportDomainWithSportTop100Coarse}}
 	\end{table}
 
 
@@ -1712,7 +1730,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 1,0000 & 0,9722 & 0,9859\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
 				SportsClub & 1,0000 & 0,9878 & 0,9939\\
@@ -1722,7 +1740,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				SportsTeam & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9888} & \textbf{0,9944}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in fine grained run with 100 abstracts from the same domain \label{table:100SportDomainWithSportTop100Fine}}
+		\caption{Results of "SPORT" domain specific model in fine grained run with 100 abstracts from the same domain \label{table:100SportDomainWithSportTop100Fine}}
 	\end{table}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1732,11 +1750,11 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				TRANSPORTATION & 1,0000 & 0,9912 & 0,9956\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9912} & \textbf{0,9956}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 100 abstracts from the same domain \label{table:100TransportationDomainWithTransportationTop100Coarse}}
+		\caption{Results of "TRANSPORTATION" domain specific model in coarse grained run with 100 abstracts from the same domain \label{table:100TransportationDomainWithTransportationTop100Coarse}}
 	\end{table}
 	
 
@@ -1746,7 +1764,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
 				Automobile & 1,0000 & 1,0000 & 1,0000\\				
 				Infrastructure & 1,0000 & 1,0000 & 1,0000\\
@@ -1757,7 +1775,7 @@ Final experiment that we do with this size of abstracts (300 abstracts) is with 
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{1,0000} & \textbf{0,9735} & \textbf{0,9865}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in fine grained run with 100 abstracts from the same domain \label{table:100TransportationDomainWithTransportationTop100Fine}}
+		\caption{Results of "TRANSPORTATION" domain specific model in fine grained run with 100 abstracts from the same domain \label{table:100TransportationDomainWithTransportationTop100Fine}}
 	\end{table}	
 
 
@@ -1776,13 +1794,13 @@ In this subsection we have a two groups of number of abstracts retrieved from DB
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9804 & 0,9434 & 0,9615\\
 				SPORT & 0,9832 & 0,9590 & 0,9709\\
 				TRANSPORTATION & 0,9941 & 0,9754 & 0,9847\\\hline
 				\textbf{Totals} & \textbf{0,9849} & \textbf{0,9584} & \textbf{0,9714}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 400 abstracts from every domain \label{table:400GlobalDomainWithAllAbstractsTop400Coarse}}
+		\caption{Resultss of global model in coarse grained run with 400 abstracts from every domain \label{table:400GlobalDomainWithAllAbstractsTop400Coarse}}
 	\end{table}
 
 \textbf{Description of the experiment:} For purposes of the experiment in Table~\ref{table:400GlobalDomainWithPoliticsTop400Coarse} we have use the same global trained model from the previous experiment, but now the test file contains only 400 abstracts from "POLITICS" domain. 
@@ -1791,13 +1809,13 @@ In this subsection we have a two groups of number of abstracts retrieved from DB
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9754 & 0,4082 & 0,5756\\
 				SPORT & 0,0000 & 1,0000 & 0,0000\\
 				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9531} & \textbf{0,4082} & \textbf{0,5716}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 400 abstracts from "POLITICS" domain \label{table:400GlobalDomainWithPoliticsTop400Coarse}}
+		\caption{Resultss of global model in coarse grained run with 400 abstracts from "POLITICS" domain \label{table:400GlobalDomainWithPoliticsTop400Coarse}}
 	\end{table}
 
 
@@ -1808,13 +1826,13 @@ In this subsection we have a two groups of number of abstracts retrieved from DB
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,0000 & 1,0000 & 0,0000\\
 				SPORT & 0,9837 & 0,9588 & 0,9711\\
 				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9805} & \textbf{0,9588} & \textbf{0,9695}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 400 abstracts from "SPORT" domain \label{table:400GlobalDomainWithSportTop400Coarse}}
+		\caption{Resultss of global model in coarse grained run with 400 abstracts from "SPORT" domain \label{table:400GlobalDomainWithSportTop400Coarse}}
 	\end{table}	
 
 \textbf{Description of the experiment:} The final experiment is also the same like previous two, where now test file contains only abstracts from "TRANSPORTATION" domain.
@@ -1823,13 +1841,13 @@ In this subsection we have a two groups of number of abstracts retrieved from DB
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,0000 & 1,0000 & 0,0000\\
 				SPORT & 0,0000 & 1,0000 & 0,0000\\
 				TRANSPORTATION & 0,9939 & 0,9762 & 0,9806\\\hline
 				\textbf{Totals} & \textbf{0,9861} & \textbf{0,9822} & \textbf{0,9841}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 400 abstracts from "TRANSPORTATION" domain \label{table:400GlobalDomainWithTransportationTop400Coarse}}
+		\caption{Resultss of global model in coarse grained run with 400 abstracts from "TRANSPORTATION" domain \label{table:400GlobalDomainWithTransportationTop400Coarse}}
 	\end{table}	
 		
 
@@ -1842,7 +1860,7 @@ In this subsection we have a two groups of number of abstracts retrieved from DB
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
 				Athlete & 1,0000 & 0,9899 & 0,9949\\
 				Automobile & 1,0000 & 1,0000 & 1,0000\\ 
@@ -1862,7 +1880,7 @@ In this subsection we have a two groups of number of abstracts retrieved from DB
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9870} & \textbf{0,9709} & \textbf{0,9789}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 400 abstracts from every domain \label{table:400GlobalDomainWithAllAbstractsTop400Fine}}
+		\caption{Resultss of global model in fine grained run with 400 abstracts from every domain \label{table:400GlobalDomainWithAllAbstractsTop400Fine}}
 	\end{table}
 
 \textbf{Description of the experiment:} In this experiment we use the same trained model from previous experiment, but now the test file contains only abstracts from "POLITICS" domain, who is annotated in fine grain.
@@ -1873,7 +1891,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 0,0000 & 1,0000 & 0,0000\\				
 				Election & 0,0000 & 0,0000 & 0,0000\\
 				PoliticalParty & 0,9766 & 0,9484 & 0,9623\\
@@ -1884,7 +1902,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 				SportsLeague & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9619} & \textbf{0,4151} & \textbf{0,5799}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 400 abstracts from "POLITICS" domain \label{table:400GlobalDomainWithPoliticsTop400Fine}}
+		\caption{Resultss of global model in fine grained run with 400 abstracts from "POLITICS" domain \label{table:400GlobalDomainWithPoliticsTop400Fine}}
 	\end{table}	
 
 \textbf{Description of the experiment:} How in the previous experiment also here we have the same model but now tested with abstracts from "SPORT" domain annotated in fine grain.
@@ -1893,7 +1911,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 0,0000 & 1,0000 & 0,0000\\
 				Athlete & 1,0000 & 0,9899 & 0,9949\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
@@ -1907,7 +1925,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 				Train & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9821} & \textbf{0,9721} & \textbf{0,9770}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 400 abstracts from "SPORT" domain \label{table:400GlobalDomainWithSportsTop400Fine}}
+		\caption{Resultss of global model in fine grained run with 400 abstracts from "SPORT" domain \label{table:400GlobalDomainWithSportsTop400Fine}}
 	\end{table}	
 
 
@@ -1917,7 +1935,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 1,0000 & 1,0000\\
 				Automobile & 1,0000 & 1,0000 & 1,0000\\				
 				Infrastructure & 1,0000 & 0,9896 & 0,9948\\
@@ -1932,7 +1950,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9866} & \textbf{0,9866} & \textbf{0,9866}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 400 abstracts from "TRANSPORTATION" domain \label{table:400GlobalDomainWithTransportationTop400Fine}}
+		\caption{Resultss of global model in fine grained run with 400 abstracts from "TRANSPORTATION" domain \label{table:400GlobalDomainWithTransportationTop400Fine}}
 	\end{table}		
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1945,11 +1963,11 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9866 & 0,9479 & 0,9669\\\hline
 				\textbf{Totals} & \textbf{0,9866} & \textbf{0,9479} & \textbf{0,9669}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 400 abstracts from the same domain \label{table:400PoliticsDomainWithPoliticsTop400Coarse}}
+		\caption{Results of "POLITICS" domain specific model in coarse grained run with 400 abstracts from the same domain \label{table:400PoliticsDomainWithPoliticsTop400Coarse}}
 	\end{table}
 
 \textbf{Description of the experiment:} For the purposes of this experiment we have used the same data from the previous one, but now annotated in fine grain. To train this kind of model we needed 416.7 seconds, from which 405.16 seconds spent in optimization. 
@@ -1958,13 +1976,13 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 0,9975 & 0,9590 & 0,9779\\
 				PoliticalParty & 0,9767 & 0,9530 & 0,9647\\
 				Politician & 0,9977 & 0,9920 & 0,9948\\\hline
 				\textbf{Totals} & \textbf{0,9906} & \textbf{0,9717} & \textbf{0,9810}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in fine grained run with 400 abstracts from the same domain \label{table:400PoliticsDomainWithPoliticsTop400Fine}}
+		\caption{Results of "POLITICS" domain specific model in fine grained run with 400 abstracts from the same domain \label{table:400PoliticsDomainWithPoliticsTop400Fine}}
 	\end{table}	
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1975,11 +1993,11 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 0,9858 & 0,9676 & 0,9766\\\hline
 				\textbf{Totals} & \textbf{0,9858} & \textbf{0,8676} & \textbf{0,9766}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in coarse grained run with 400 abstracts from the same domain \label{table:400SportDomainWithSportTop400Coarse}}
+		\caption{Results of "SPORT" domain specific model in coarse grained run with 400 abstracts from the same domain \label{table:400SportDomainWithSportTop400Coarse}}
 	\end{table}
 
 \textbf{Description of the experiment:} In this experiment we have used the same dataset from previous, but now entities are annotated in fine grain. To train a fine grain model we have need 915.1 seconds, from which 898.50 second spent in optimization. As well as previous the model is tested with the dataset that is trained.
@@ -1988,7 +2006,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 1,0000 & 0,9731 & 0,9863\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
 				SportsClub & 0,9815 & 0,9715 & 0,9765\\
@@ -1998,7 +2016,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 				SportsTeam & 1,0000 & 0,9900 & 0,9796\\\hline
 				\textbf{Totals} & \textbf{0,9865} & \textbf{0,9727} & \textbf{0,9796}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in fine grained run with 400 abstracts from the same domain \label{table:400SportDomainWithSportTop400Fine}}
+		\caption{Results of "SPORT" domain specific model in fine grained run with 400 abstracts from the same domain \label{table:400SportDomainWithSportTop400Fine}}
 	\end{table}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2008,11 +2026,11 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				TRANSPORTATION & 0,9954 & 0,9747 & 0,9850\\\hline
 				\textbf{Totals} & \textbf{0,9954} & \textbf{0,9747} & \textbf{0,9850}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 400 abstracts from the same domain \label{table:400TransportationDomainWithTransportationTop400Coarse}}
+		\caption{Results of "TRANSPORTATION" domain specific model in coarse grained run with 400 abstracts from the same domain \label{table:400TransportationDomainWithTransportationTop400Coarse}}
 	\end{table}
 	
 \textbf{Description of the experiment:} We also train a fine grain model from "TRANSPORTATION" domain. To train it we needed 725.2 seconds, from which 711.78 seconds spent in optimization. As well as the previous experiment, the model is tested with the same dataset that is created.
@@ -2021,7 +2039,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 0,9835 & 0,9917\\
 				Automobile & 1,0000 & 0,9583 & 0,9787\\				
 				Infrastructure & 1,0000 & 0,9948 & 0,9974\\
@@ -2032,7 +2050,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9970} & \textbf{0,9807} & \textbf{0,9888}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in fine grained run with 400 abstracts from the same domain \label{table:400TransportationDomainWithTransportationTop400Fine}}
+		\caption{Results of "TRANSPORTATION" domain specific model in fine grained run with 400 abstracts from the same domain \label{table:400TransportationDomainWithTransportationTop400Fine}}
 	\end{table}	
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2047,13 +2065,13 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9788 & 0,9444 & 0,9613\\
 				SPORT & 0,9850 & 0,9596 & 0,9721\\
 				TRANSPORTATION & 0,9962 & 0,9750 & 0,9855\\\hline
 				\textbf{Totals} & \textbf{0,9857} & \textbf{0,9587} & \textbf{0,9720}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 500 abstracts from every domain \label{table:500GlobalDomainWithAllAbstractsTop500Coarse}}
+		\caption{Resultss of global model in coarse grained run with 500 abstracts from every domain \label{table:500GlobalDomainWithAllAbstractsTop500Coarse}}
 	\end{table}
 
 \textbf{Description of the experiment:} For purposes of this experiment we have used the model train previously, but now it is tested with the dataset that contains only abstracts from "POLITICS" domain, annotated in coarse grain.
@@ -2062,13 +2080,13 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9734 & 0,4095 & 0,5765\\
 				SPORT & 0,0000 & 1,0000 & 0,0000\\
 				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9549} & \textbf{0,4095} & \textbf{0,5732}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 500 abstracts from "POLITICS" domain \label{table:500GlobalDomainWithPoliticsTop500Coarse}}
+		\caption{Resultss of global model in coarse grained run with 500 abstracts from "POLITICS" domain \label{table:500GlobalDomainWithPoliticsTop500Coarse}}
 	\end{table}
 
 \textbf{Description of the experiment:} In this experiment we also used the global trained model, but now it is tested with "SPORT" domain abstracts dataset.
@@ -2077,13 +2095,13 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,0000 & 1,0000 & 0,0000\\
 				SPORT & 0,9849 & 0,9594 & 0,9720\\
 				TRANSPORTATION & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9788} & \textbf{0,9594} & \textbf{0,9690}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 500 abstracts from "SPORT" domain \label{table:500GlobalDomainWithSportTop500Coarse}}
+		\caption{Resultss of global model in coarse grained run with 500 abstracts from "SPORT" domain \label{table:500GlobalDomainWithSportTop500Coarse}}
 	\end{table}	
 
 	\textbf{Description of the experiment:} Final experiment with the global domain is that is tested with the dataset that contains only abstracts from "TRANSPORTATION" domain.
@@ -2092,13 +2110,13 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,0000 & 1,0000 & 0,0000\\
 				SPORT & 0,0000 & 1,0000 & 0,0000\\
 				TRANSPORTATION & 0,9961 & 0,9769 & 0,9864\\\hline
 				\textbf{Totals} & \textbf{0,9870} & \textbf{0,9769} & \textbf{0,9819}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in coarse grained run with 500 abstracts from "TRANSPORTATION" domain \label{table:500GlobalDomainWithTransportationTop500Coarse}}
+		\caption{Resultss of global model in coarse grained run with 500 abstracts from "TRANSPORTATION" domain \label{table:500GlobalDomainWithTransportationTop500Coarse}}
 	\end{table}	
 		
 
@@ -2110,7 +2128,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 0,9929 & 0,9964\\
 				Athlete & 1,0000 & 0,9896 & 0,9948\\
 				Automobile & 1,0000 & 1,0000 & 1,0000\\ 
@@ -2130,7 +2148,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9866} & \textbf{0,9669} & \textbf{0,9766}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 500 abstracts from every domain \label{table:500GlobalDomainWithAllAbstractsTop500Fine}}
+		\caption{Resultss of global model in fine grained run with 500 abstracts from every domain \label{table:500GlobalDomainWithAllAbstractsTop500Fine}}
 	\end{table}
 
 \textbf{Description of the experiment:} In this experiment we tested the global model with dataset that contains only abstracts from "POLITICS" domain, of coarse annotated in fine grain.  
@@ -2139,7 +2157,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 0,0000 & 1,0000 & 0,0000\\				
 				Election & 0,0000 & 0,0000 & 0,0000\\
 				PoliticalParty & 0,9774 & 0,9400 & 0,9583\\
@@ -2150,7 +2168,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 				SportsLeague & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9631} & \textbf{0,4138} & \textbf{0,5789}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 500 abstracts from "POLITICS" domain \label{table:500GlobalDomainWithPoliticsTop500Fine}}
+		\caption{Resultss of global model in fine grained run with 500 abstracts from "POLITICS" domain \label{table:500GlobalDomainWithPoliticsTop500Fine}}
 	\end{table}	
 
 	\textbf{Description of the experiment:} Here we also have the global train model, but for this experiment is tested with dataset abstracts from "SPORT" domain.
@@ -2159,7 +2177,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 0,0000 & 1,0000 & 0,0000\\
 				Athlete & 1,0000 & 0,9896 & 0,9948\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
@@ -2173,7 +2191,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 				Train & 0,0000 & 1,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,9785} & \textbf{0,9690} & \textbf{0,9737}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 500 abstracts from "SPORT" domain \label{table:500GlobalDomainWithSportTop500Fine}}
+		\caption{Resultss of global model in fine grained run with 500 abstracts from "SPORT" domain \label{table:500GlobalDomainWithSportTop500Fine}}
 	\end{table}	
 
 	\textbf{Description of the experiment:} The final experiment with the global model is with dataset that contains only abstracts from "TRANSPORTATION" domain.
@@ -2182,7 +2200,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 0,9927 & 0,9963\\
 				Automobile & 1,0000 & 1,0000 & 1,0000\\				
 				Infrastructure & 1,0000 & 0,9783 & 0,9890\\
@@ -2197,7 +2215,7 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9884} & \textbf{0,9833} & \textbf{0,9858}\\\hline
 		\end{tabular}
-		\caption{Outcomes of global model in fine grained run with 500 abstracts from "TRANSPORTATION" domain \label{table:500GlobalDomainWithTransportationTop500Fine}}
+		\caption{Resultss of global model in fine grained run with 500 abstracts from "TRANSPORTATION" domain \label{table:500GlobalDomainWithTransportationTop500Fine}}
 	\end{table}		
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2210,11 +2228,11 @@ In comparing with the experiment in coarse grain (see Table~\ref{table:400Global
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				POLITICS & 0,9808 & 0,9450 & 0,9626\\\hline
 				\textbf{Totals} & \textbf{0,9808} & \textbf{0,9450} & \textbf{0,9626}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500PoliticsDomainWithPoliticsTop500Coarse}}
+		\caption{Results of "POLITICS" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500PoliticsDomainWithPoliticsTop500Coarse}}
 	\end{table}
 
 textbf{Description of the experiment:} With the same data from the previous experiment, but not annotated in fine grain, we train new model. We needed 479.3 seconds to train this model, from which 465.16 seconds spent in optimization. The model is tested with the same dataset that was trained.
@@ -2223,13 +2241,13 @@ textbf{Description of the experiment:} With the same data from the previous expe
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Election & 0,9915 & 0,9393 & 0,9647\\
 				PoliticalParty & 0,9777 & 0,9502 & 0,9637\\
 				Politician & 0,9962 & 0,9877 & 0,9919\\\hline
 				\textbf{Totals} & \textbf{0,9890} & \textbf{0,9648} & \textbf{0,9768}\\\hline
 		\end{tabular}
-		\caption{Outcome of "POLITICS" domain specific model in fine grained run with 500 abstracts from the same domain \label{table:500PoliticsDomainWithPoliticsTop500Fine}}
+		\caption{Results of "POLITICS" domain specific model in fine grained run with 500 abstracts from the same domain \label{table:500PoliticsDomainWithPoliticsTop500Fine}}
 	\end{table}	
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2240,11 +2258,11 @@ textbf{Description of the experiment:} With the same data from the previous expe
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				SPORT & 0,9856 & 0,9706 & 0,9780\\\hline
 				\textbf{Totals} & \textbf{0,9856} & \textbf{0,9706} & \textbf{0,9780}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500SportDomainWithSportTop500Coarse}}
+		\caption{Results of "SPORT" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500SportDomainWithSportTop500Coarse}}
 	\end{table}
 
 	\textbf{Description of the experiment:} This experiment is provided with a "SPORT" fine grain model. To train this model we needed 1175.1 seconds, from which 1158.90 seconds spent in optimization. Test is the same like previous experiment, where dataset now are annotated in fine grain.
@@ -2253,7 +2271,7 @@ textbf{Description of the experiment:} With the same data from the previous expe
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Athlete & 1,0000 & 0,9791 & 0,9894\\
 				Coach & 1,0000 & 1,0000 & 1,0000\\
 				SportsClub & 0,9771 & 0,9630 & 0,9700\\
@@ -2263,7 +2281,7 @@ textbf{Description of the experiment:} With the same data from the previous expe
 				SportsTeam & 1,0000 & 0,9915 & 0,9957\\\hline
 				\textbf{Totals} & \textbf{0,9861} & \textbf{0,9731} & \textbf{0,9796}\\\hline
 		\end{tabular}
-		\caption{Outcome of "SPORT" domain specific model in fine grained run with 500 abstracts from the same domain \label{table:500SportDomainWithSportTop500Fine}}
+		\caption{Results of "SPORT" domain specific model in fine grained run with 500 abstracts from the same domain \label{table:500SportDomainWithSportTop500Fine}}
 	\end{table}	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2274,11 +2292,11 @@ textbf{Description of the experiment:} With the same data from the previous expe
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				TRANSPORTATION & 0,9974 & 0,9756 & 0,9864\\\hline
 				\textbf{Totals} & \textbf{0,9974} & \textbf{0,9756} & \textbf{0,9864}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500TransportationDomainWithTransportationTop500Coarse}}
+		\caption{Results of "TRANSPORTATION" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500TransportationDomainWithTransportationTop500Coarse}}
 	\end{table}
 	
 	\textbf{Description of the experiment:} The final experiment with this group of number of abstracts is fine grain model for "TRANSPORTATION" domain. Time taken to train this kind of model was in total 1040.2 seconds, from which 1023.55 seconds, spent in optimization. Testing routine is the same here.
@@ -2287,7 +2305,7 @@ textbf{Description of the experiment:} With the same data from the previous expe
 	
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 1,0000 & 0,9781 & 0,9889\\
 				Automobile & 1,0000 & 0,8800 & 0,9362\\				
 				Infrastructure & 1,0000 & 0,9870 & 0,9934\\
@@ -2298,7 +2316,7 @@ textbf{Description of the experiment:} With the same data from the previous expe
 				Train & 1,0000 & 1,0000 & 1,0000\\\hline
 				\textbf{Totals} & \textbf{0,9961} & \textbf{0,9769} & \textbf{0,9864}\\\hline
 		\end{tabular}
-		\caption{Outcome of "TRANSPORTATION" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500TransportationDomainWithTransportationTop500Fine}}
+		\caption{Results of "TRANSPORTATION" domain specific model in coarse grained run with 500 abstracts from the same domain \label{table:500TransportationDomainWithTransportationTop500Fine}}
 	\end{table}	
 		
 	In this group of experiment where trained models and datasets contains more abstracts than in the main experiment, we had a quite surprisingly results. In most of the experiments the results where better than in the main experiment, which when we compare the size of the data that makes a huge difference on recognized entities. As well we had some results where the results where a bit lower than in the main experiment, but again here comes the size of data, which as we say, we have a way more recognized entities. 
@@ -2313,7 +2331,7 @@ textbf{Description of the experiment:} With the same data from the previous expe
 
 \begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 0,9242 & 0,5755 & 0,7093\\
 				Athlete & 0,8182 & 0,3778 & 0,5169\\
 				Automobile & 0,9565 & 0,3607 & 0,5238\\ 
@@ -2336,7 +2354,7 @@ textbf{Description of the experiment:} With the same data from the previous expe
 				Train & 1,0000 & 0,5455 & 0,7059\\\hline
 				\textbf{Totals} & \textbf{0,8206} & \textbf{0,4837} & \textbf{0,6087}\\\hline
 		\end{tabular}
-		\caption{All 3 Domains Fine Grained Top 300, tested with all 3 domains fine grained top 500 Links and all 3 domains fine grained top 500 links with lower PageRank \label{table:Global300FineDomainTestedWithTwo500Datasets}}
+		\caption{Results of fine grain global model trained 300 abstracts per domain, tested with dataset that contains 500 abstracts, but with lower PageRank on article and dataset that contains 500 abstracts, but with higher PageRank. \label{table:Global300FineDomainTestedWithTwo500Datasets}}
 	\end{table}
 
 \textbf{Description of experiment.} This experiment is provided with the global train model in fine grain that was trained with 500 abstracts per domain. Model is tested with the two datasets. One dataset contains 500 abstracts per domain, so the same dataset that model is trained, and the other dataset contains also 500 abstracts, but now those abstracts has a lower PageRank. 
@@ -2345,7 +2363,7 @@ textbf{Description of the experiment:} With the same data from the previous expe
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 0,9735 & 0,6934 & 0,8099\\
 				Athlete & 0,9101 & 0,6222 & 0,7391\\
 				Automobile & 1,0000 & 0,4098 & 0,5814\\ 
@@ -2369,7 +2387,7 @@ textbf{Description of the experiment:} With the same data from the previous expe
 				Train & 1,0000 & 0,5455 & 0,7059\\\hline
 				\textbf{Totals} & \textbf{0,8844} & \textbf{0,6592} & \textbf{0,7553}\\\hline
 		\end{tabular}
-		\caption{All 3 Domains Fine Grained Top 500 Links  With All 3 Domains Fine Grained Top 500 Links And All 3 Domains Fine Grained Top 500 Links With Lower Page Rank \label{table:Global500FineDomainTestedWithTwo500Datasets}}
+		\caption{Results of fine grain global model trained 500 abstracts per domain, tested with dataset that contains 500 abstracts, but with lower PageRank on article and dataset that contains 500 abstracts, but with higher PageRank.\label{table:Global500FineDomainTestedWithTwo500Datasets}}
 	\end{table}
 
 
@@ -2379,7 +2397,7 @@ textbf{Description of the experiment:} With the same data from the previous expe
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 0,6667 & 0,1111 & 0,1905\\
 				Athlete & 0,4675 & 0,1268 & 0,1994\\
 				Automobile & 0,0000 & 0,0000 & 0,0000\\ 
@@ -2403,7 +2421,7 @@ textbf{Description of the experiment:} With the same data from the previous expe
 				Train & 0,0000 & 0,0000 & 0,0000\\\hline
 				\textbf{Totals} & \textbf{0,5983} & \textbf{0,2670} & \textbf{0,3692}\\\hline
 		\end{tabular}
-		\caption{All 3 Domains Fine Grained Top 500 Links With All 3 Domains Fine Grained Top 500 Links With Lower PageRank \label{table:Global500FineDomainTestedWithTwo500Datasets}}
+		\caption{Results of fine grain global model trained 500 abstracts per domain, tested with dataset that contains 500 abstracts, but with lower PageRank on article. \label{table:Global500FineDomainTestedWithTwo500Datasets}}
 	\end{table}
 
 
@@ -2413,7 +2431,7 @@ textbf{Description of the experiment:} With the same data from the previous expe
 
 	\begin{table}[H]\centering
 		\begin{tabular}{|l|l|l|l|}
-			\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+			\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 				Aircraft & 0,9950 & 0,9706 & 0,9826\\
 				Athlete & 0,0000 & 0,0000 & 0,0000\\
 				Automobile & 1,0000 & 0,8500 & 0,9189\\ 
@@ -2433,11 +2451,11 @@ textbf{Description of the experiment:} With the same data from the previous expe
 				Train & 1,0000 & 0,9091 & 0,9524\\\hline
 				\textbf{Totals} & \textbf{0,9909} & \textbf{0,3491} & \textbf{0,5163}\\\hline
 		\end{tabular}
-		\caption{Transportation Fine Grained Top 500 Links Run With All 3 Domains Fine Grained Top 300 Links And Transportation Fine Grained Top 300 Links \label{table:Transportation500With2Datasets}}
+		\caption{Result of "TRANSPORTATION" fine grained  Top 500 Links tested with global dataset that contains 300 abstracts per domain and "TRANSPORTATION" fine grained dataset with 300 abstracts \label{table:Transportation500With2Datasets}}
 	\end{table}
 	
 	
-	As we can see from the previous 4 experiments, it really depends on that who we choose the datasets and also on the size of the model. Also those experiments shows that if model is trained with one data and is tested with completely different data, the results are of course very low. Maybe if the model was trained with more abstracts and then tested, the results will be better. But because we where short on RAM memory we  not succeed to train a bigger model.
+	As we can see from the previous 4 experiments, it really depends on that how we choose the datasets and also on the size of the model. Also those experiments shows that if model is trained with one data and is tested with completely different data, the results are of course very low. Maybe if the model was trained with more abstracts and then tested, the results will be better. But because we have not enough RAM memory we  not succeed to train a bigger model.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Evaluation of model who are trained with 500 abstracts and are tested with texts from news papers}\label{NewsPapersEvaluation}
 In this section we wanted to know who the trained models will behaves when they are tested with texts from daily life, or in this case texts from BCC and CNN web page. We make a datasets for every domain. Those datasets contains 3 texts per domain. As well we choose a fine grain, because from the previous experiments we noticed that those models gives better results.
@@ -2445,6 +2463,8 @@ In this section we wanted to know who the trained models will behaves when they 
 
 \textbf{BBC}
 
+For the purposes of this experiment we have used BBC articles \footnote{\url{https://www.bbc.com/sport/tennis/43964642}} \footnote{\url{https://www.bbc.com/sport/rugby-union/43969948}} \footnote{\url{https://www.bbc.com/news/election-us-2016-37855894}} \footnote{\url{https://www.bbc.com/news/world-us-canada-43453312}} \footnote{\url{https://www.bbc.co.uk/news/technology-43962881}} \footnote{\url{https://www.bbc.com/news/uk-wales-43913363}}
+ 
 \textbf{Description of the experiment.} For purposes of this experiment we used a fine grain model who was trained with 500 abstracts per domain, which is our biggest trained model. We tested it with the dataset than contains texts from BBC website. This dataset has 2 texts for every domain.
 
 \textbf{Results of the experiment.} As we can see from Table~\ref{table:BBCWith1500Model} the results are not satisfying at all. Even a such a big train model it is not able to recognize all entities. It's true that we don't have a lot annotated words in dataset, but we still expected higher results.
@@ -2452,7 +2472,7 @@ In this section we wanted to know who the trained models will behaves when they 
 
 \begin{table}[H]\centering
 	\begin{tabular}{|l|l|l|l|}
-		\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+		\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
         Athlete & 1,0000 & 0,0303 & 0,0588\\
  		Infrastructure & 1,0000 & 0,1818 & 0,3077\\
 		PoliticalFunction & 0,0000 & 0,0000&  0,0000\\  
@@ -2464,7 +2484,7 @@ In this section we wanted to know who the trained models will behaves when they 
     	SportsTeam & 0,0000 & 0,0000 & 0,0000\\\hline  
 		\textbf{Totals} & \textbf{1,0000} & \textbf{0,0357} & \textbf{0,0690 }\\\hline
 	\end{tabular}			
-		\caption{Outcome of fine grain model trained with 1500 abstracts, tested with text from BBC\label{table:BBCWith1500Model}}
+		\caption{Results of fine grain model trained with 1500 abstracts, tested with text from BBC\label{table:BBCWith1500Model}}
 	\end{table}
 
 \textbf{Description of the experiment.} In this experiment we get the model trained with 500 abstracts from "POLITICS" domain. We tested it with the text from the politics spare from BBC web site.
@@ -2473,14 +2493,14 @@ In this section we wanted to know who the trained models will behaves when they 
 	
 	\begin{table}[H]\centering
 	\begin{tabular}{|l|l|l|l|}
-		\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+		\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 		Election & 0,0000 & 0,0000 & 0,0000\\
 		PoliticalFunction & 0,0000 & 0,0000 &  0,0000\\  
  		PoliticalParty & 1,0000 & 0,1538 & 0,2667\\  
-     	Politician & 0,5000 & 0,0588 & 0,1053\\
+     	Politician & 0,5000 & 0,0588 & 0,1053\\\hline
 		\textbf{Totals} & \textbf{0,6250} & \textbf{0,0649} & \textbf{0,1176 }\\\hline
 	\end{tabular}			
-		\caption{Outcome of fine grain model trained with 1500 abstracts, tested with text from BBC based on sport domain\label{table:BBCPoliticsWith500SportModel}}
+		\caption{Results of fine grain model trained with 1500 abstracts, tested with text from BBC based on sport domain\label{table:BBCPoliticsWith500SportModel}}
 	\end{table}
 	
 \textbf{Description of the experiment.} For this experiment we used the model trained with 500 abstracts from "SPORT" domain. As in previous experiment, also here, model is tested with texts from the same domain like it is trained.
@@ -2489,7 +2509,7 @@ In this section we wanted to know who the trained models will behaves when they 
 	
 	\begin{table}[H]\centering
 	\begin{tabular}{|l|l|l|l|}
-		\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+		\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
         Athlete & 1,0000 & 0,0303 & 0,0588\\
 		SportsClub & 0,0000 & 0,0000 & 0,0000\\
     	SportsEvent & 0,0000 & 0,0000 & 0,0000\\
@@ -2497,7 +2517,7 @@ In this section we wanted to know who the trained models will behaves when they 
    		SportsTeam & 0,0000 & 1,0000 & 0,0000\\\hline  
 		\textbf{Totals} & \textbf{1,0000} & \textbf{0,0127} & \textbf{0,0250}\\\hline
 	\end{tabular}			
-		\caption{Outcome of fine grain model trained with 1500 abstracts, tested with text from BBC\label{table:BBCSportWith500SportModel}}
+		\caption{Results of fine grain model trained with 1500 abstracts, tested with text from BBC\label{table:BBCSportWith500SportModel}}
 	\end{table}
 
 \textbf{Description of the experiment.} This experiment shows how the model trained with 500 abstracts from "TRANSPORTATION" domain will behave when it is tested with texts from same domain taken from BBC web site.
@@ -2506,18 +2526,20 @@ In this section we wanted to know who the trained models will behaves when they 
 	
 	\begin{table}[H]\centering
 	\begin{tabular}{|l|l|l|l|}
-		\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+		\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
    		PublicTransitSystem & 0,0000 & 0,0000 & 0,0000\\
    		Infrastructure &  1,0000 & 0,1818 & 0,3077	\\\hline  
 		\textbf{Totals} & \textbf{1,0000} & \textbf{0,1429} & \textbf{0,2500}\\\hline
 	\end{tabular}			
-		\caption{Outcome of fine grain model trained with 1500 abstracts, tested with text from BBC\label{table:BBCTransportationWith500TransportationModel}}
+		\caption{Results of fine grain model trained with 1500 abstracts, tested with text from BBC\label{table:BBCTransportationWith500TransportationModel}}
 	\end{table}
 	
 	
 	
 	
-	\textbf{CNN}
+	\textbf{CNN} 
+	
+	For the purposes of this experiment we have used BBC articles \footnote{\url{https://edition.cnn.com/2018/04/30/politics/trump-merkel-putin-advice/index.html}} \footnote{\url{https://m.cnn.com/en/article/h_53075a6fd222756ef530d84023dd8be7}} \footnote{\url{https://edition.cnn.com/2018/04/27/sport/tiger-woods-pga-tour-players-championship-spt/index.html}} \footnote{\url{https://edition.cnn.com/2018/04/24/sport/kentucky-derby-gronkowski-horse-racing-nfl-spt/index.html}} \footnote{\url{https://edition.cnn.com/travel/article/most-extreme-airports-world/index.html}} \footnote{\url{http://money.cnn.com/2018/05/02/news/companies/boeing-747-qantas-fleet/index.html}}
 
 \textbf{Description of the experiment.} For purposes of this experiment we used the same model like in experiment in Table~\ref{table:BBCWith1500Model}, but now the model is tested with texts from CNN web page.
 
@@ -2525,7 +2547,7 @@ In this section we wanted to know who the trained models will behaves when they 
 
 \begin{table}[H]\centering
 	\begin{tabular}{|l|l|l|l|}
-		\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+		\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
         Athlete & 0,0000 & 0,0000 & 0,0000\\
  		GeopoliticalOrganization & 0,0000 & 0,0000 & 0,0000\\
  		Infrastructure & 0,0000 & 1,0000 & 0,0000\\
@@ -2535,7 +2557,7 @@ In this section we wanted to know who the trained models will behaves when they 
    		SportsLeague & 0,0000 & 0,0000 & 0,0000\\\hline  
 		\textbf{Totals} & \textbf{0,1667} & \textbf{0,0139} & \textbf{0,0256}\\\hline
 	\end{tabular}			
-		\caption{Outcome of fine grain model trained with 1500 abstracts, tested with text from CNN\label{table:CNNWith1500Model}}
+		\caption{Results of fine grain model trained with 1500 abstracts, tested with text from CNN\label{table:CNNWith1500Model}}
 	\end{table}	
 	
 
@@ -2546,12 +2568,12 @@ In this section we wanted to know who the trained models will behaves when they 
 	
 	\begin{table}[H]\centering
 	\begin{tabular}{|l|l|l|l|}
-		\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+		\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
 		GeopoliticalOrganization & 0,0000 & 0,0000 & 0,0000\\
-     	Politician & 0,8333 & 0,0893 & 0,1613\\
+     	Politician & 0,8333 & 0,0893 & 0,1613\\\hline
 		\textbf{Totals} & \textbf{0,8333} & \textbf{0,0877} & \textbf{0,1587 }\\\hline
 	\end{tabular}			
-		\caption{Outcome of fine grain model trained with 1500 abstracts, tested with text from CNN based on sport domain\label{table:CNNPoliticsWith500PoliticsModel}}
+		\caption{Results of fine grain model trained with 1500 abstracts, tested with text from CNN based on sport domain\label{table:CNNPoliticsWith500PoliticsModel}}
 	\end{table}
 	
 
@@ -2561,7 +2583,7 @@ In this section we wanted to know who the trained models will behaves when they 
 	
 	\begin{table}[H]\centering
 	\begin{tabular}{|l|l|l|l|}
-		\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+		\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
         Athlete & 1,0000 & 0,0667 & 0,1250\\
 		SportsClub & 0,0000 & 0,0000 & 0,0000\\
     	SportsEvent & 0,0000 & 0,0000 & 0,0000\\
@@ -2569,7 +2591,7 @@ In this section we wanted to know who the trained models will behaves when they 
    		SportsTeam & 0,0000 & 1,0000 & 0,0000\\\hline  
 		\textbf{Totals} & \textbf{0,5000} & \textbf{0,0370} & \textbf{0,0690}\\\hline
 	\end{tabular}			
-		\caption{Outcome of fine grain model trained with 1500 abstracts, tested with text from CNN\label{table:CNNSportWith500SportModel}}
+		\caption{Results of fine grain model trained with 1500 abstracts, tested with text from CNN\label{table:CNNSportWith500SportModel}}
 	\end{table}
 	
 
@@ -2579,27 +2601,47 @@ In this section we wanted to know who the trained models will behaves when they 
 
 	\begin{table}[H]\centering
 	\begin{tabular}{|l|l|l|l|}
-		\hline {\textbf{Entity}} & {\textbf{P}} & {\textbf{R}} & {\textbf{F1}}\\\hline
+		\hline {\textbf{Entity}} & {\textbf{Precision}} & {\textbf{Recall}} & {\textbf{F1 score}}\\\hline
         Aircraft & 0,0000 & 1,0000 & 0,0000\\
    		Infrastructure & 0,0000 & 1,0000 & 0,0000\\\hline  
 		\textbf{Totals} & \textbf{0,0000} & \textbf{1,0000} & \textbf{0,0000}\\\hline
 	\end{tabular}			
-		\caption{Outcome of fine grain model trained with 1500 abstracts, tested with text from BBC\label{table:CNNTransportationWith500TransportationModel}}
+		\caption{Results of fine grain model trained with 1500 abstracts, tested with text from BBC\label{table:CNNTransportationWith500TransportationModel}}
 	\end{table}	
 	
 
 From the provided 8 experiments, except the experiment in Table~\ref{table:BBCTransportationWith500TransportationModel} where domain specific model gives worst results than a global model, in all other experiment we had a better or same results, which shows that the domain specific models are more usable. Another advantage is the time to train and test models.
 	
+\subsection{Summary of the results}
+
+The global models from the main experiment who have 300 abstracts per domain, gives a slight better results that the domain specific models, except the "POLITICS" domain specific models who have a way better results than a global model. As well the fine grain models provides a bit better results than a coarse grain models.
+
+In the group of 10 abstracts per domain, the results from the global models and domain specific models were almost the same, except the "POLITICS" domain specific models who again gives a way better results than a global model. As well in this group of experiment the coarse and fine grain models gives very similar results, without any big difference.
+
+The domain specific models from 20 abstracts per domain group, again gives a better results than the global models. But here the coarse grain models provides a bit better results than a fine grain models.
+
+The same situation was for group of 40 abstracts per domain, where the fine grain domain specific models provides a better results. But from this point, global models start to recognize wrong entities which were not part of the testing dataset.
+
+In the group of 100 abstracts per domain, the models from a specific domain annotated in coarse grain provides a better results than the global models in both annotation and better results than domain specific fine grain models.
+
+The domain specific fine grain models from groups of 400 abstracts per domain and 500 abstracts per domain gives a slightly better results than the results from other types of experiments in particular group.
+
+As well we test some models with the datasets that were not used for training the model or with bigger dataset than the model was trained. So the results from those experiments were lower than any previous experiments, which shows that results depends on data used to train and test model.
+
+Finally we took some articles from BBC and CNN new papers and we test the models from 500 abstracts per domain group. In those experiments, in most of the cases, the domain specific models gives a bit better results. But results were not that high like in every previous experiment.
+
+We also notice that every group of experiment provides a better results than the results from the main experiment. As well time needed to train and test domain specific models was less than the time for global models. 
+
+
 
 \begin{conclusion}
-%\section{Conclusion}
 	The goal of this master thesis was to check does creating and testing domain specific models that will be used in NER application is a better solution, than global models who are used until now.
 	
-	In introduction chapter was explained which technologies was used to create this thesis and also common NER applications used today. As well it covers the related work about this topic.
+	At the beginning was explained which technologies was used to create this thesis and also common NER applications used today. As well it covers the related work about this topic.
 	
-	Next chapter covers the whole process of preparing the datasets ready to be used in Stanford NER application. In first section is explained the process of transforming downloaded raw data to data that are ready for processing to be able, in reasonable time, to create a datasets. As well touches the algorithm that was used for preparing datasets. Next section explains the way of choosing the domains that were used in this thesis. Third section deals with choosing types for the particular domain and grouping them if it's needed. Next section explains the process of transforming structured data from first section, to datasets that are ready to be used in Stanford NER application for training models. And the final section covers the process of training models that were use in experiments.
+	After that it is explained the whole process of preparing the datasets ready to be used in Stanford NER application. Where is explained the process of transforming downloaded raw data to data that are ready for processing to be able, in reasonable time, to create a datasets. As well touches the algorithm that was used for preparing datasets. Secondly we explained the way of choosing the domains that were used in this thesis. After that we deals with choosing types for the particular domain and grouping them if it's needed. Then we explain the process of transforming structured data from first section, to datasets that are ready to be used in Stanford NER application for training models. And at the end we cover the process of training models that were use in experiments.
 	
-	Third chapter deals with all the experiments that were provided, that where needed to check does domain specific models will provide better results than a global models. First section covers the highlighted goals of the experiments. Next section explains the evaluation metrics used to compare results from experiments. And the final section covers all provided experiments that were needed to answer to the set goals. In that section was created one main experiment where all other experiments were compared with those results. As well where covered experiments with texts from the daily basis, like texts from new papers.
+	Finally we provide all experiments, that where needed to check does domain specific models will provide better results than a global models. We cover the highlighted goals of the experiments. Then are explained the evaluation metrics used to compare results from experiments. And finally we go through all provided experiments that were needed to answer to the set goals. In that section was created one main experiment where all other experiments were compared with those results. As well where covered experiments with texts from the daily basis, like texts from new papers.
 	
 	From the provided experiments we can conclude that creating and training a domain specific models gives better results than a global domain that are used today. Another advantage of using a domain specific model is the time. For training and testing those models, is needed less time and less memory. This knowledge gives an opportunity to train a bigger domain specific models where can be covered more data. As well from the observation on results, the fine grain models provides a bit better results, than a coarse grain model. Disadvantage of this kind of models is that is needed more time and memory to train it. But, like advantage is the list of used and recognized entities.
 	
@@ -2629,30 +2671,62 @@ From the provided 8 experiments, except the experiment in Table~\ref{table:BBCTr
 \textbf{RDF} Resource Description Framework
 
 \textbf{NIF} Natural Language Processing Interchange Format
+
+\textbf{IE} Information Extraction
+
+\textbf{CRF} Conditional Random Field
+
+\textbf{GATE} General Architecture for Text Engineering
+
+\textbf{ANNIE} A Nearly-New Information Extraction System
 .
 
 \section{POLITICS domain types}\label{PoliticsTypes}
-Parliament, Election,PoliticalParty, GeopoliticalOrganisation, Politician, Ambassador, Chancellor, Congressman, Deputy, Governor, Lieutenant, Mayor, MemberOfParliament, Minister, President, PrimeMinister, Senator, VicePresident, VicePrimeMinister, PoliticianSpouse, PersonFunction, PoliticalFunction, Profession, TopicalConcept and PoliticalConcept.
+\textbf{Types:} Politician, Ambassador, Chancellor, Congressman, Deputy, Governor, Lieutenant, Mayor, MemberOfParliament, Minister, President, PrimeMinister, Senator, VicePresident and VicePrimeMinister \textbf{are grouped at} Politician type.
+
+\textbf{Types:} Parliament, Election,PoliticalParty, GeopoliticalOrganisation, PoliticianSpouse, PersonFunction, PoliticalFunction, Profession, TopicalConcept and PoliticalConcept \textbf{are not grouped}.
 
 \section{SPORT domain types}\label{SportTypes}
-Types: Sport, firstOlympicEvent, footedness, TeamSport, SportsClub, HockeyClub, RugbyClub, SoccerClub, chairmanTitle, clubsRecordGoalscorer, fansgroup, firstGame, ground, largestWin, managerTitle, worstDefeat and NationalSoccerClub are grouped at SportsClub type.
+\textbf{Types:} Sport, firstOlympicEvent, footedness, TeamSport, SportsClub, HockeyClub, RugbyClub, SoccerClub, chairmanTitle, clubsRecordGoalscorer, fansgroup, firstGame, ground, largestWin, managerTitle, worstDefeat and NationalSoccerClub \textbf{are grouped at} SportsClub type.
 
-Types: SportsLeague, AmericanFootballLeague, AustralianFootballLeague, AutoRacingLeague, BaseballLeague, BasketballLeague, BowlingLeague, BoxingLeague, CanadianFootballLeague, CricketLeague, CurlingLeague, CyclingLeague, FieldHockeyLeague, FormulaOneRacing, GolfLeague, HandballLeague, IceHockeyLeague, InlineHockeyLeague, LacrosseLeague, MixedMartialArtsLeague, MotorcycleRacingLeague, PaintballLeague, PoloLeague, RadioControlledRacingLeague, RugbyLeague, SoccerLeague, SoftballLeague, SpeedwayLeague, TennisLeague, VideogamesLeague and VolleyballLeague are grouped at SportsLeague type.
+\textbf{Types:} SportsLeague, AmericanFootballLeague, AustralianFootballLeague, AutoRacingLeague, BaseballLeague, BasketballLeague, BowlingLeague, BoxingLeague, CanadianFootballLeague, CricketLeague, CurlingLeague, CyclingLeague, FieldHockeyLeague, FormulaOneRacing, GolfLeague, HandballLeague, IceHockeyLeague, InlineHockeyLeague, LacrosseLeague, MixedMartialArtsLeague, MotorcycleRacingLeague, PaintballLeague, PoloLeague, RadioControlledRacingLeague, RugbyLeague, SoccerLeague, SoftballLeague, SpeedwayLeague, TennisLeague, VideogamesLeague and VolleyballLeague \textbf{are grouped at} SportsLeague type.
 
-Types: SportsTeam, AmericanFootballTeam, AustralianFootballTeam, BaseballTeam, BasketballTeam, CanadianFootballTeam, CricketTeam, CyclingTeam, FormulaOneTeam, HandballTeam, HockeyTeam and SpeedwayTeam are grouped at SportsTeam type.
+\textbf{Types:} SportsTeam, AmericanFootballTeam, AustralianFootballTeam, BaseballTeam, BasketballTeam, CanadianFootballTeam, CricketTeam, CyclingTeam, FormulaOneTeam, HandballTeam, HockeyTeam and SpeedwayTeam \textbf{are grouped at} SportsTeam type.
 
-Types: Athlete, ArcherPlayer, AthleticsPlayer, AustralianRulesFootballPlayer, BadmintonPlayer, BaseballPlayer, BasketballPlayer, Bodybuilder, Boxer, AmateurBoxer, BullFighter, Canoeist, ChessPlayer, Cricketer, Cyclist, DartsPlayer, Fencer, GaelicGamesPlayer, GolfPlayer, GridironFootballPlayer, AmericanFootballPlayer, CanadianFootballPlayer, Gymnast, HandballPlayer, HighDiver, HorseRider, Jockey, LacrossePlayer, MartialArtist, MotorsportRacer, MotorcycleRider, MotocycleRacer, SpeedwayRider, RacingDriver, DTMRacer, FormulaOneRacer, NascarDriver, RallyDriver, NationalCollegiateAthleticAssociationAthlete, NetballPlayer, PokerPlayer, Rower, RugbyPlayer, SnookerPlayer, SnookerChamp, SoccerPlayer, SquashPlayer, Surfer, Swimmer, TableTennisPlayer, TeamMember, TennisPlayer, VolleyballPlayer, BeachVolleyballPlayer , WaterPoloPlayer, WinterSportPlayer, Biathlete, BobsleighAthlete , CrossCountrySkier, Curler, FigureSkater, IceHockeyPlayer, NordicCombined, Skater, Ski\_jumper, Skier, SpeedSkater, Wrestler, SumoWrestler, Athletics and currentWorldChampion are grouped at Athlete type.
+\textbf{Types:} Athlete, ArcherPlayer, AthleticsPlayer, AustralianRulesFootballPlayer, BadmintonPlayer, BaseballPlayer, BasketballPlayer, Bodybuilder, Boxer, AmateurBoxer, BullFighter, Canoeist, ChessPlayer, Cricketer, Cyclist, DartsPlayer, Fencer, GaelicGamesPlayer, GolfPlayer, GridironFootballPlayer, AmericanFootballPlayer, CanadianFootballPlayer, Gymnast, HandballPlayer, HighDiver, HorseRider, Jockey, LacrossePlayer, MartialArtist, MotorsportRacer, MotorcycleRider, MotocycleRacer, SpeedwayRider, RacingDriver, DTMRacer, FormulaOneRacer, NascarDriver, RallyDriver, NationalCollegiateAthleticAssociationAthlete, NetballPlayer, PokerPlayer, Rower, RugbyPlayer, SnookerPlayer, SnookerChamp, SoccerPlayer, SquashPlayer, Surfer, Swimmer, TableTennisPlayer, TeamMember, TennisPlayer, VolleyballPlayer, BeachVolleyballPlayer , WaterPoloPlayer, WinterSportPlayer, Biathlete, BobsleighAthlete , CrossCountrySkier, Curler, FigureSkater, IceHockeyPlayer, NordicCombined, Skater, Ski\_jumper, Skier, SpeedSkater, Wrestler, SumoWrestler, Athletics and currentWorldChampion \textbf{are grouped at} Athlete type.
 
-Types: Coach, AmericanFootballCoach, CollegeCoach and VolleyballCoach are grouped at Coach type.
+\textbf{Types:} Coach, AmericanFootballCoach, CollegeCoach and VolleyballCoach \textbf{are grouped at} Coach type.
 
-Types: OrganizationMember, SportsTeamMember are grouped at OrganizationMember type.
+\textbf{Types:} OrganizationMember, SportsTeamMember \textbf{are grouped at} OrganizationMember type.
 
-Types: SportsManager, SoccerManager are grouped at SportsManager type.
+\textbf{Types:} SportsManager, SoccerManager \textbf{are grouped at} SportsManager type.
 
-Types: SportsEvent, CyclingCompetition, FootballMatch, GrandPrix, InternationalFootballLeagueEvent, MixedMartialArtsEvent, NationalFootballLeagueEvent, Olympics, OlympicEvent, Race, CyclingRace, HorseRace, MotorRace, Tournament, GolfTournament, SoccerTournament, TennisTournament, WomensTennisAssociationTournament, WrestlingEvent, SportCompetitionResult, OlympicResult, SnookerWorldRanking, SportsSeason, MotorsportSeason, SportsTeamSeason, BaseballSeason, FootballLeagueSeason, NationalFootballLeagueSeason, NCAATeamSeason, SoccerClubSeason, SoccerLeagueSeason and MotorSportSeason are grouped at SportsEvent type. 
+\textbf{Types:} SportsEvent, CyclingCompetition, FootballMatch, GrandPrix, InternationalFootballLeagueEvent, MixedMartialArtsEvent, NationalFootballLeagueEvent, Olympics, OlympicEvent, Race, CyclingRace, HorseRace, MotorRace, Tournament, GolfTournament, SoccerTournament, TennisTournament, WomensTennisAssociationTournament, WrestlingEvent, SportCompetitionResult, OlympicResult, SnookerWorldRanking, SportsSeason, MotorsportSeason, SportsTeamSeason, BaseballSeason, FootballLeagueSeason, NationalFootballLeagueSeason, NCAATeamSeason, SoccerClubSeason, SoccerLeagueSeason and MotorSportSeason \textbf{are grouped at} SportsEvent type. 
 
 \section{TRANSPORTATION domain types}\label{TransportationTypes}
+\textbf{Types:} Aircraft, aircraftType, aircraftUser, ceiling, dischargeAverage, enginePower, engineType, gun, powerType, wingArea, wingspan and MilitaryAircraft \textbf{are grouped at } Aircraft type.
 
+\textbf{Types:} Automobile, automobilePlatform, bodyStyle, transmission and AutomobileEngine \textbf{are grouped at } Automobile.
+
+\textbf{Types:} Locomotive, boiler and CylinderCount \textbf{are grouped at} Locomotive.
+
+\textbf{Types:} MilitaryVehicle, Motorcycle, SpaceStation \textbf{are not grouped.}
+
+\textbf{Types:} On-SiteTransportation, ConveyorSystem, Escalator and MovingWalkway \textbf{are grouped at} On-SiteTransportation type.
+
+\textbf{Types:} Rocket, countryOrigin, finalFlight, lowerEarthOrbitPayload, maidenFlight, rocketFunction, rocketStages and RocketEngine \textbf{are grouped at} Rocket type.
+
+\textbf{Types:} Ship, captureDate, homeport, layingDown, maidenVoyage, numberOfPassengers, shipCrew and shipLaunch \textbf{are grouped at} Ship type.
+
+\textbf{Types:} SpaceShuttle, contractAward, Crews, firstFlight, lastFlight, missions, numberOfCrew, numberOfLaunches and satellitesDeployed \textbf{are grouped at} SpaceShuttle type.
+
+\textbf{Types:} Spacecraft, cargoFuel, cargoGas, cargoWater and rocket \textbf{are grouped at} Spacecraft type.
+
+\textbf{Types:} Train, locomotive, wagon and TrainCarriage \textbf{are grouped at} Train type.
+
+\textbf{Types:} Tram, PublicTransitSystem, Airline and BusCompany \textbf{are grouped at} PublicTransitSystem type.
+
+\textbf{Types:} Infrastructure, Airport, Port, RestArea, RouteOfTransportation, Bridge, RailwayLine, RailwayTunnel, WaterwayTunnel, Station, MetroStation, RailwayStation, RouteStop and TramStation \textbf{are grouped at} Infrastructure type.
 \section{Properties file used for training models}\label{NER Properties file}
 \begin{lstlisting}
 	# location of the training file
@@ -2704,6 +2778,263 @@ Types: SportsEvent, CyclingCompetition, FootballMatch, GrandPrix, InternationalF
 	useTypeySequences=true
 	wordShape=chris2useLC
 \end{lstlisting}
+
+\section{POLITICS domain SPARQL query}\label{POLITICS SPARQL}
+\begin{lstlisting}
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo:<http://dbpedia.org/ontology/>
+
+PREFIX vrank:<http://purl.org/voc/vrank#>
+
+SELECT ?s ?v
+FROM <http://dbpedia.org>
+FROM <http://people.aifb.kit.edu/ath/#DBpedia_PageRank>
+WHERE {
+{?s rdf:type dbo:PoliticalParty .}
+UNION
+{?s rdf:type dbo:Politician .}
+UNION
+{
+	?s rdf:type dbo:SocietalEvent.
+	?s rdf:type dbo:Election.
+}
+UNION
+{
+	?s rdf:type dbo:Person.
+	?s rdf:type dbo:OfficeHolder.
+}
+?s vrank:hasRank/vrank:rankValue ?v.
+}
+ORDER BY DESC(?v) LIMIT 10
+\end{lstlisting}
+
+\section{SPORT domain SPARQL query}\label{SPORT SPARQL}
+\begin{lstlisting}
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo:<http://dbpedia.org/ontology/>
+
+PREFIX vrank:<http://purl.org/voc/vrank#>
+
+SELECT ?s ?v
+FROM <http://dbpedia.org>
+FROM <http://people.aifb.kit.edu/ath/#DBpedia_PageRank>
+WHERE {
+{?s rdf:type dbo:Sport.}
+UNION
+{?s rdf:type dbo:SportsLeague.}
+UNION
+{?s rdf:type dbo:SportsTeam.}
+UNION
+{?s rdf:type dbo:Athlete.}
+UNION
+{?s rdf:type dbo:AustralianRulesFootballPlayer.}
+UNION
+{?s rdf:type dbo:BadmintonPlayer.}
+UNION
+{?s rdf:type dbo:BaseballPlayer.}
+UNION
+{?s rdf:type dbo:BasketballPlayer.}
+UNION
+{?s rdf:type dbo:Bodybuilder.}
+UNION
+{?s rdf:type dbo:Boxer.}
+UNION
+{?s rdf:type dbo:Canoeist.}
+UNION
+{?s rdf:type dbo:ChessPlayer.}
+UNION
+{?s rdf:type dbo:Cricketer.}
+UNION
+{?s rdf:type dbo:Cyclist.}
+UNION
+{?s rdf:type dbo:DartsPlayer.}
+UNION
+{?s rdf:type dbo:Fencer.}
+UNION
+{?s rdf:type dbo:GaelicGamesPlayer.}
+UNION
+{?s rdf:type dbo:GolfPlayer.}
+UNION
+{?s rdf:type dbo:GridironFootballPlayer.}
+UNION
+{?s rdf:type dbo:Gymnast.}
+UNION
+{?s rdf:type dbo:HandballPlayer.}
+UNION
+{?s rdf:type dbo:HighDiver.}
+UNION
+{?s rdf:type dbo:HorseRider.}
+UNION
+{?s rdf:type dbo:Jockey.}
+UNION
+{?s rdf:type dbo:LacrossePlayer.}
+UNION
+{?s rdf:type dbo:MartialArtist.}
+UNION
+{?s rdf:type dbo:MotorsportRacer.}
+UNION
+{?s rdf:type dbo:NationalCollegiateAthleticAssociationAthlete .}
+UNION
+{?s rdf:type dbo:NetballPlayer.}
+UNION
+{?s rdf:type dbo:PokerPlayer.}
+UNION
+{?s rdf:type dbo:RugbyPlayer.}
+UNION
+{?s rdf:type dbo:SnookerPlayer.}
+UNION
+{?s rdf:type dbo:SoccerPlayer.}
+UNION
+{?s rdf:type dbo:SquashPlayer.}
+UNION
+{?s rdf:type dbo:Surfer.}
+UNION
+{?s rdf:type dbo:Swimmer.}
+UNION
+{?s rdf:type dbo:TableTennisPlayer.}
+UNION
+{?s rdf:type dbo:TeamMember.}
+UNION
+{?s rdf:type dbo:TennisPlayer.}
+UNION
+{?s rdf:type dbo:VolleyballPlayer.}
+UNION
+{?s rdf:type dbo:WaterPoloPlayer.}
+UNION
+{?s rdf:type dbo:WinterSportPlayer.}
+UNION
+{?s rdf:type dbo:Wrestler.}
+UNION
+{?s rdf:type dbo:Coach.}
+UNION
+{?s rdf:type dbo:OrganisationMember.}
+UNION
+{?s rdf:type dbo:SportsManager.}
+UNION
+{?s rdf:type dbo:SportsEvent.}
+UNION
+{?s rdf:type dbo:Race.}
+UNION
+{?s rdf:type dbo:Tournament.}
+UNION
+{?s rdf:type dbo:WrestlingEvent.}
+UNION
+{?s rdf:type dbo:SportCompetitionResult.}
+UNION
+{?s rdf:type dbo:SportsSeason.}
+UNION
+{?s rdf:type dbo:Referee.}
+UNION
+{?s rdf:type dbo:SportFacility.}
+UNION
+{?s rdf:type dbo:CricketGround.}
+UNION
+{?s rdf:type dbo:GolfCourse.}
+UNION
+{?s rdf:type dbo:RaceTrack.}
+UNION
+{?s rdf:type dbo:SkiArea.}
+
+?s vrank:hasRank/vrank:rankValue ?v.
+}
+ORDER BY DESC(?v) LIMIT 10
+\end{lstlisting}
+
+\section{TRANSPORTATION domain SPARQL query}\label{TRANSPORTATION SPARQL}
+
+\begin{lstlisting}
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo:<http://dbpedia.org/ontology/>
+
+PREFIX vrank:<http://purl.org/voc/vrank#>
+
+SELECT ?s ?v
+FROM <http://dbpedia.org>
+FROM <http://people.aifb.kit.edu/ath/#DBpedia_PageRank>
+WHERE {
+{?s rdf:type dbo:Aircraft.}
+UNION
+{?s rdf:type dbo:Automobile.}
+UNION
+{?s rdf:type dbo:Locomotive.}
+UNION
+{?s rdf:type dbo:MilitaryVehicle.}
+UNION
+{?s rdf:type dbo:Motorcycle.}
+UNION
+{?s rdf:type dbo:On-SiteTransportation.}
+UNION
+{?s rdf:type dbo:Rocket.}
+UNION
+{?s rdf:type dbo:Ship.}
+UNION
+{?s rdf:type dbo:SpaceShuttle.}
+UNION
+{?s rdf:type dbo:SpaceStation.}
+UNION
+{?s rdf:type dbo:Spacecraft.}
+UNION
+{?s rdf:type dbo:Train.}
+UNION
+{?s rdf:type dbo:TrainCarriage.}
+UNION
+{?s rdf:type dbo:Tram.}
+UNION
+{?s rdf:type dbo:Engine.}
+UNION
+{?s rdf:type dbo:AutomobileEngine.}
+UNION
+{?s rdf:type dbo:RocketEngine.}
+UNION
+{
+?s rdf:type dbo:Company.
+?s rdf:type dbo:PublicTransitSystem.
+}
+UNION
+{?s rdf:type dbo:Airline.}
+UNION
+{?s rdf:type dbo:BusCompany.}
+UNION
+{?s rdf:type dbo:Infrastructure.}
+UNION
+{?s rdf:type dbo:Airport.}
+UNION
+{?s rdf:type dbo:Port.}
+UNION
+{?s rdf:type dbo:RestArea.}
+UNION
+{?s rdf:type dbo:RouteOfTransportation.}
+UNION
+{?s rdf:type dbo:Bridge.}
+UNION
+{?s rdf:type dbo:RailwayLine.}
+UNION
+{?s rdf:type dbo:RailwayTunnel.}
+UNION
+{?s rdf:type dbo:Road.}
+UNION
+{?s rdf:type dbo:RoadJunction.}
+UNION
+{?s rdf:type dbo:RoadTunnel.}
+UNION
+{?s rdf:type dbo:WaterwayTunnel.}
+UNION
+{?s rdf:type dbo:Station.}
+UNION
+{?s rdf:type dbo:MetroStation.}
+UNION
+{?s rdf:type dbo:RailwayStation.}
+UNION
+{?s rdf:type dbo:RouteStop.}
+UNION
+{?s rdf:type dbo:TramStop.}
+
+
+?s vrank:hasRank/vrank:rankValue ?v.
+}
+ORDER BY DESC(?v) LIMIT 10
+\end{lstlisting}
+
 \chapter{Contents of CD}\label{app:CDcontent}
 
 %Visualise the contents of enclosed media. Use of \verb|dirtree| is recommended. Note that directories src and text with appropriate contents are mandatory.
