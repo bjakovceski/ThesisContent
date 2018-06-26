@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  24 JUN 2018 19:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  24 JUN 2018 21:43
 entering extended mode
 **./Thesis3.tex
 (Thesis3.tex
@@ -1975,34 +1975,34 @@ l.706
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.706 	
+       ] [29pdfTeX warning (ext4): destination with the same identifier (name{t
+able.3.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.726 	
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+3.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.726 	
        ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2856) has occurred while \output is active []
 
- [29pdfTeX warning (ext4): destination with the same identifier (name{table.3.9
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.724 	
-       ] [30pdfTeX warning (ext4): destination with the same identifier (name{t
-able.3.10}) has been already used, duplicate ignored
+ [30pdfTeX warning (ext4): destination with the same identifier (name{table.3.1
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.766 	\end{table}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{table.3.11}) has been already used, duplicate ignored
+l.767 	
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+3.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.766 	\end{table}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{table.3.12}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.766 	\end{table}
-                  ]
+l.767 	
+       ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31pdfTeX warning (ext4): destination with the same identifier (name{table.3.1
@@ -2980,7 +2980,7 @@ Here is how much of TeX's memory you used:
  44824 multiletter control sequences out of 15000+200000
  76121 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,96p,2614b,1864s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,12n,96p,2617b,1864s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{lstnumber.1.1.44} has been referenced but does no
 t exist, replaced by a fixed one
 
@@ -3010,7 +3010,7 @@ c/lm/lmssbx10.pfb><C:/Users/Jakovcheski/AppData/Local/Programs/MiKTeX 2.9/fonts
  2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Jakovcheski/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Jakovcheski/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb>
-Output written on Thesis3.pdf (125 pages, 1164669 bytes).
+Output written on Thesis3.pdf (125 pages, 1164763 bytes).
 PDF statistics:
  2297 PDF objects out of 2487 (max. 8388607)
  729 named destinations out of 1000 (max. 500000)
